@@ -1,164 +1,87 @@
 [
   {
     "name": "LuckyF",
-    "rating": 2133,
-    "wins": 458,
-    "loses": 396,
+    "rating": 2082,
+    "wins": 306,
+    "loses": 244,
     "draws": 4
   },
   {
+    "name": "FireToSky",
+    "rating": 2030,
+    "wins": 212,
+    "loses": 74,
+    "draws": 2
+  },
+  {
+    "name": "De_Luxe",
+    "rating": 1964,
+    "wins": 284,
+    "loses": 189,
+    "draws": 2
+  },
+  {
     "name": "Joker2k",
-    "rating": 2098,
-    "wins": 164,
+    "rating": 1960,
+    "wins": 148,
     "loses": 32,
     "draws": 1
   },
   {
-    "name": "FireToSky",
-    "rating": 2092,
-    "wins": 372,
-    "loses": 106,
-    "draws": 2
-  },
-  {
-    "name": "boovli",
-    "rating": 2040,
-    "wins": 111,
-    "loses": 22,
-    "draws": 0
-  },
-  {
-    "name": "De_Luxe",
-    "rating": 2001,
-    "wins": 380,
-    "loses": 297,
-    "draws": 2
-  },
-  {
     "name": "Dave_HUN",
-    "rating": 1998,
-    "wins": 223,
-    "loses": 99,
+    "rating": 1934,
+    "wins": 171,
+    "loses": 75,
     "draws": 1
   },
   {
-    "name": "BISHOP",
-    "rating": 1945,
-    "wins": 334,
-    "loses": 182,
-    "draws": 3
-  },
-  {
     "name": "saneok",
-    "rating": 1924,
-    "wins": 302,
-    "loses": 214,
+    "rating": 1895,
+    "wins": 190,
+    "loses": 138,
     "draws": 1
   },
   {
     "name": "Antiplayer",
-    "rating": 1924,
-    "wins": 297,
-    "loses": 117,
-    "draws": 7
-  },
-  {
-    "name": "caliban",
-    "rating": 1923,
-    "wins": 202,
-    "loses": 165,
-    "draws": 1
-  },
-  {
-    "name": "AlexTheGreat",
-    "rating": 1921,
-    "wins": 30,
-    "loses": 3,
-    "draws": 0
-  },
-  {
-    "name": "Gomunguls",
-    "rating": 1919,
-    "wins": 338,
-    "loses": 169,
-    "draws": 2
+    "rating": 1889,
+    "wins": 218,
+    "loses": 81,
+    "draws": 3
   },
   {
     "name": "herolwy",
-    "rating": 1903,
-    "wins": 570,
-    "loses": 183,
+    "rating": 1880,
+    "wins": 362,
+    "loses": 115,
     "draws": 8
   },
   {
-    "name": "HellLighT",
-    "rating": 1893,
-    "wins": 289,
-    "loses": 168,
-    "draws": 5
-  },
-  {
-    "name": "Diabler",
-    "rating": 1891,
-    "wins": 215,
-    "loses": 142,
-    "draws": 0
-  },
-  {
-    "name": "Dirty_Player",
-    "rating": 1889,
-    "wins": 108,
-    "loses": 73,
-    "draws": 4
-  },
-  {
-    "name": "Dawidu91",
-    "rating": 1884,
-    "wins": 283,
-    "loses": 141,
-    "draws": 1
-  },
-  {
-    "name": "Getto",
-    "rating": 1884,
-    "wins": 114,
-    "loses": 17,
-    "draws": 0
-  },
-  {
-    "name": "Falcone",
-    "rating": 1884,
-    "wins": 365,
-    "loses": 320,
-    "draws": 1
-  },
-  {
-    "name": "Jelen117",
-    "rating": 1880,
-    "wins": 162,
-    "loses": 94,
-    "draws": 6
-  },
-  {
-    "name": "Amster",
-    "rating": 1861,
-    "wins": 184,
-    "loses": 86,
-    "draws": 4
-  },
-  {
-    "name": "Sevensan",
-    "rating": 1854,
-    "wins": 170,
-    "loses": 92,
+    "name": "Gomunguls",
+    "rating": 1877,
+    "wins": 298,
+    "loses": 137,
     "draws": 2
   },
   {
-    "name": "Redwhait",
-    "rating": 1853,
-    "wins": 358,
-    "loses": 241,
-    "draws": 6
+    "name": "BISHOP",
+    "rating": 1868,
+    "wins": 238,
+    "loses": 118,
+    "draws": 3
+  },
+  {
+    "name": "caliban",
+    "rating": 1862,
+    "wins": 126,
+    "loses": 105,
+    "draws": 1
+  },
+  {
+    "name": "boovli",
+    "rating": 1860,
+    "wins": 59,
+    "loses": 18,
+    "draws": 0
   },
   {
     "name": "Сатир",
@@ -168,53 +91,67 @@
     "draws": 3
   },
   {
-    "name": "Grizvald",
-    "rating": 1849,
-    "wins": 374,
-    "loses": 289,
+    "name": "Falcone",
+    "rating": 1850,
+    "wins": 253,
+    "loses": 208,
+    "draws": 1
+  },
+  {
+    "name": "Dawidu91",
+    "rating": 1844,
+    "wins": 171,
+    "loses": 77,
     "draws": 1
   },
   {
     "name": "KobRa_RR",
-    "rating": 1848,
-    "wins": 338,
-    "loses": 136,
+    "rating": 1841,
+    "wins": 234,
+    "loses": 84,
     "draws": 4
   },
   {
-    "name": "Stizko",
-    "rating": 1827,
-    "wins": 39,
-    "loses": 12,
+    "name": "HellLighT",
+    "rating": 1840,
+    "wins": 253,
+    "loses": 140,
+    "draws": 5
+  },
+  {
+    "name": "Jelen117",
+    "rating": 1839,
+    "wins": 110,
+    "loses": 66,
+    "draws": 2
+  },
+  {
+    "name": "Diabler",
+    "rating": 1821,
+    "wins": 147,
+    "loses": 110,
     "draws": 0
   },
   {
-    "name": "kamukag3e",
-    "rating": 1815,
-    "wins": 174,
-    "loses": 80,
-    "draws": 1
+    "name": "Sevensan",
+    "rating": 1821,
+    "wins": 170,
+    "loses": 92,
+    "draws": 2
   },
   {
-    "name": "Xocenk",
-    "rating": 1808,
-    "wins": 97,
-    "loses": 67,
-    "draws": 0
+    "name": "Amster",
+    "rating": 1814,
+    "wins": 156,
+    "loses": 66,
+    "draws": 4
   },
   {
-    "name": "=Lizard=",
-    "rating": 1808,
-    "wins": 413,
-    "loses": 361,
-    "draws": 8
-  },
-  {
-    "name": "Dima Surmay",
-    "rating": 1806,
-    "wins": 584,
-    "loses": 365,
-    "draws": 3
+    "name": "Redwhait",
+    "rating": 1814,
+    "wins": 266,
+    "loses": 173,
+    "draws": 6
   },
   {
     "name": "Maretti",
@@ -224,88 +161,95 @@
     "draws": 1
   },
   {
-    "name": "Yostairs",
-    "rating": 1798,
-    "wins": 273,
-    "loses": 137,
-    "draws": 0
-  },
-  {
-    "name": "matador99",
+    "name": "kamukag3e",
     "rating": 1794,
-    "wins": 191,
-    "loses": 139,
+    "wins": 174,
+    "loses": 80,
+    "draws": 1
+  },
+  {
+    "name": "Xocenk",
+    "rating": 1791,
+    "wins": 69,
+    "loses": 43,
     "draws": 0
   },
   {
-    "name": "Amiloo",
-    "rating": 1783,
-    "wins": 164,
-    "loses": 134,
+    "name": "Yostairs",
+    "rating": 1782,
+    "wins": 169,
+    "loses": 105,
+    "draws": 0
+  },
+  {
+    "name": "=Lizard=",
+    "rating": 1778,
+    "wins": 313,
+    "loses": 277,
+    "draws": 8
+  },
+  {
+    "name": "Dima Surmay",
+    "rating": 1774,
+    "wins": 384,
+    "loses": 245,
+    "draws": 3
+  },
+  {
+    "name": "Bahan",
+    "rating": 1771,
+    "wins": 195,
+    "loses": 60,
     "draws": 0
   },
   {
     "name": "silenthill",
-    "rating": 1780,
-    "wins": 255,
-    "loses": 206,
+    "rating": 1768,
+    "wins": 207,
+    "loses": 162,
     "draws": 5
   },
   {
+    "name": "Grizvald",
+    "rating": 1766,
+    "wins": 282,
+    "loses": 205,
+    "draws": 1
+  },
+  {
     "name": "Dark",
-    "rating": 1780,
-    "wins": 333,
-    "loses": 246,
+    "rating": 1761,
+    "wins": 317,
+    "loses": 210,
     "draws": 6
   },
   {
-    "name": "MuLLIyTa",
-    "rating": 1775,
-    "wins": 170,
-    "loses": 119,
-    "draws": 3
-  },
-  {
     "name": "Juristis",
-    "rating": 1770,
+    "rating": 1760,
     "wins": 78,
     "loses": 35,
     "draws": 0
   },
   {
-    "name": "twaryna",
-    "rating": 1761,
-    "wins": 323,
-    "loses": 236,
-    "draws": 12
-  },
-  {
-    "name": "ЯR",
-    "rating": 1754,
-    "wins": 347,
-    "loses": 338,
-    "draws": 3
-  },
-  {
-    "name": "Roger-ua",
-    "rating": 1754,
-    "wins": 151,
-    "loses": 98,
+    "name": "RozenKran",
+    "rating": 1759,
+    "wins": 149,
+    "loses": 77,
     "draws": 2
   },
   {
-    "name": "Tyranuxus",
-    "rating": 1748,
-    "wins": 39,
-    "loses": 18,
+    "name": "matador99",
+    "rating": 1756,
+    "wins": 91,
+    "loses": 71,
     "draws": 0
   },
   {
-    "name": "Medium_HP",
-    "rating": 1743,
-    "wins": 83,
-    "loses": 53,
-    "draws": 1
+    "name": "WiZarDX_576",
+    "rating": 1746,
+    "wins": 58,
+    "loses": 16,
+    "draws": 2
   },
   {
     "name": "GoD",
@@ -315,18 +259,11 @@
     "draws": 1
   },
   {
-    "name": "WiZarDX_576",
-    "rating": 1738,
-    "wins": 70,
-    "loses": 32,
-    "draws": 2
-  },
-  {
-    "name": "RozenKran",
-    "rating": 1733,
-    "wins": 181,
-    "loses": 109,
-    "draws": 2
+    "name": "Getto",
+    "rating": 1734,
+    "wins": 38,
+    "loses": 9,
+    "draws": 0
   },
   {
     "name": "Kilgor",
@@ -336,32 +273,25 @@
     "draws": 5
   },
   {
-    "name": "sonic111",
-    "rating": 1729,
-    "wins": 192,
-    "loses": 172,
-    "draws": 0
+    "name": "twaryna",
+    "rating": 1730,
+    "wins": 235,
+    "loses": 156,
+    "draws": 4
   },
   {
-    "name": "freesha",
+    "name": "ЯR",
+    "rating": 1730,
+    "wins": 211,
+    "loses": 210,
+    "draws": 3
+  },
+  {
+    "name": "Dirty_Player",
     "rating": 1726,
-    "wins": 175,
-    "loses": 130,
-    "draws": 5
-  },
-  {
-    "name": "Sanin",
-    "rating": 1723,
-    "wins": 333,
-    "loses": 293,
-    "draws": 5
-  },
-  {
-    "name": "Blitz",
-    "rating": 1723,
-    "wins": 163,
-    "loses": 158,
-    "draws": 5
+    "wins": 48,
+    "loses": 33,
+    "draws": 4
   },
   {
     "name": "Pit for LM",
@@ -371,249 +301,263 @@
     "draws": 0
   },
   {
+    "name": "Amiloo",
+    "rating": 1721,
+    "wins": 116,
+    "loses": 102,
+    "draws": 0
+  },
+  {
     "name": "Silence-",
-    "rating": 1720,
-    "wins": 270,
-    "loses": 189,
+    "rating": 1710,
+    "wins": 210,
+    "loses": 145,
     "draws": 1
   },
   {
-    "name": "graalzzz",
-    "rating": 1716,
-    "wins": 240,
-    "loses": 213,
+    "name": "Roger-ua",
+    "rating": 1707,
+    "wins": 119,
+    "loses": 82,
     "draws": 2
-  },
-  {
-    "name": "AYMAN",
-    "rating": 1715,
-    "wins": 128,
-    "loses": 58,
-    "draws": 0
   },
   {
     "name": "Ihromant",
-    "rating": 1713,
-    "wins": 639,
-    "loses": 493,
-    "draws": 0
-  },
-  {
-    "name": "Bahan",
-    "rating": 1712,
-    "wins": 255,
-    "loses": 72,
-    "draws": 0
-  },
-  {
-    "name": "shameonyou",
-    "rating": 1708,
-    "wins": 140,
-    "loses": 98,
-    "draws": 3
-  },
-  {
-    "name": "Xenofex",
-    "rating": 1708,
-    "wins": 42,
-    "loses": 7,
-    "draws": 0
-  },
-  {
-    "name": "Jubi-Juby",
-    "rating": 1707,
-    "wins": 178,
-    "loses": 131,
-    "draws": 2
-  },
-  {
-    "name": "Jaris",
     "rating": 1706,
-    "wins": 436,
-    "loses": 199,
-    "draws": 8
+    "wins": 319,
+    "loses": 269,
+    "draws": 0
   },
   {
-    "name": "crzq",
-    "rating": 1705,
-    "wins": 20,
-    "loses": 10,
-    "draws": 5
-  },
-  {
-    "name": "Andres",
-    "rating": 1702,
-    "wins": 180,
-    "loses": 130,
-    "draws": 2
-  },
-  {
-    "name": "ProtosArchon",
-    "rating": 1702,
-    "wins": 96,
-    "loses": 74,
+    "name": "Medium_HP",
+    "rating": 1704,
+    "wins": 71,
+    "loses": 49,
     "draws": 1
   },
   {
+    "name": "sonic111",
+    "rating": 1702,
+    "wins": 108,
+    "loses": 76,
+    "draws": 0
+  },
+  {
+    "name": "Sanin",
+    "rating": 1701,
+    "wins": 281,
+    "loses": 249,
+    "draws": 5
+  },
+  {
+    "name": "Tyranuxus",
+    "rating": 1700,
+    "wins": 23,
+    "loses": 10,
+    "draws": 0
+  },
+  {
+    "name": "Russel_lDHl",
+    "rating": 1697,
+    "wins": 80,
+    "loses": 60,
+    "draws": 2
+  },
+  {
+    "name": "shameonyou",
+    "rating": 1695,
+    "wins": 100,
+    "loses": 70,
+    "draws": 3
+  },
+  {
+    "name": "graalzzz",
+    "rating": 1694,
+    "wins": 148,
+    "loses": 125,
+    "draws": 2
+  },
+  {
+    "name": "freesha",
+    "rating": 1693,
+    "wins": 95,
+    "loses": 94,
+    "draws": 1
+  },
+  {
+    "name": "u2noob",
+    "rating": 1690,
+    "wins": 184,
+    "loses": 205,
+    "draws": 2
+  },
+  {
+    "name": "MuLLIyTa",
+    "rating": 1689,
+    "wins": 146,
+    "loses": 115,
+    "draws": 3
+  },
+  {
+    "name": "Jubi-Juby",
+    "rating": 1689,
+    "wins": 170,
+    "loses": 111,
+    "draws": 2
+  },
+  {
     "name": "BoLo",
-    "rating": 1698,
+    "rating": 1687,
     "wins": 166,
     "loses": 93,
     "draws": 1
   },
   {
-    "name": "kenben",
-    "rating": 1697,
-    "wins": 43,
-    "loses": 11,
-    "draws": 1
-  },
-  {
     "name": "Heroin_HP",
-    "rating": 1694,
+    "rating": 1681,
     "wins": 109,
     "loses": 95,
     "draws": 2
   },
   {
-    "name": "MikeM",
-    "rating": 1692,
-    "wins": 163,
-    "loses": 66,
-    "draws": 2
-  },
-  {
-    "name": "Antal_RR",
-    "rating": 1692,
-    "wins": 156,
-    "loses": 113,
-    "draws": 11
-  },
-  {
-    "name": "Vinceras",
-    "rating": 1683,
-    "wins": 205,
-    "loses": 199,
-    "draws": 0
-  },
-  {
-    "name": "Tofsla",
-    "rating": 1680,
-    "wins": 96,
-    "loses": 79,
-    "draws": 2
-  },
-  {
-    "name": "Russel_lDHl",
-    "rating": 1680,
-    "wins": 120,
-    "loses": 120,
-    "draws": 6
-  },
-  {
-    "name": "Toganash",
-    "rating": 1678,
-    "wins": 233,
-    "loses": 252,
+    "name": "ProtosArchon",
+    "rating": 1681,
+    "wins": 72,
+    "loses": 62,
     "draws": 1
   },
   {
-    "name": "u2noob",
-    "rating": 1677,
-    "wins": 196,
-    "loses": 253,
-    "draws": 2
-  },
-  {
-    "name": "dead0202",
-    "rating": 1667,
-    "wins": 137,
-    "loses": 67,
+    "name": "Nodl",
+    "rating": 1673,
+    "wins": 20,
+    "loses": 6,
     "draws": 0
   },
   {
-    "name": "Mizrael",
-    "rating": 1664,
-    "wins": 277,
-    "loses": 246,
+    "name": "MikeM",
+    "rating": 1673,
+    "wins": 79,
+    "loses": 42,
     "draws": 2
   },
   {
-    "name": "LeBron",
+    "name": "Xenofex",
+    "rating": 1673,
+    "wins": 26,
+    "loses": 3,
+    "draws": 0
+  },
+  {
+    "name": "Vinceras",
+    "rating": 1671,
+    "wins": 145,
+    "loses": 135,
+    "draws": 0
+  },
+  {
+    "name": "Antal_RR",
+    "rating": 1666,
+    "wins": 88,
+    "loses": 61,
+    "draws": 3
+  },
+  {
+    "name": "yan_vas",
+    "rating": 1662,
+    "wins": 58,
+    "loses": 38,
+    "draws": 0
+  },
+  {
+    "name": "Andres",
+    "rating": 1662,
+    "wins": 156,
+    "loses": 118,
+    "draws": 2
+  },
+  {
+    "name": "Toganash",
     "rating": 1661,
-    "wins": 37,
-    "loses": 56,
+    "wins": 233,
+    "loses": 253,
+    "draws": 1
+  },
+  {
+    "name": "Tofsla",
+    "rating": 1660,
+    "wins": 80,
+    "loses": 55,
+    "draws": 2
+  },
+  {
+    "name": "Jaris",
+    "rating": 1659,
+    "wins": 236,
+    "loses": 103,
+    "draws": 4
+  },
+  {
+    "name": "AlexTheGreat",
+    "rating": 1656,
+    "wins": 10,
+    "loses": 3,
+    "draws": 0
+  },
+  {
+    "name": "Мирон",
+    "rating": 1655,
+    "wins": 56,
+    "loses": 40,
+    "draws": 1
+  },
+  {
+    "name": "LeBron",
+    "rating": 1654,
+    "wins": 29,
+    "loses": 24,
     "draws": 0
   },
   {
     "name": "Drakonin",
-    "rating": 1661,
+    "rating": 1654,
     "wins": 15,
     "loses": 6,
     "draws": 1
   },
   {
-    "name": "Мирон",
-    "rating": 1660,
-    "wins": 56,
-    "loses": 44,
-    "draws": 1
+    "name": "Blitz",
+    "rating": 1652,
+    "wins": 95,
+    "loses": 102,
+    "draws": 5
   },
   {
-    "name": "theShevanesian",
-    "rating": 1656,
-    "wins": 232,
-    "loses": 165,
-    "draws": 1
-  },
-  {
-    "name": "yan_vas",
-    "rating": 1653,
-    "wins": 82,
-    "loses": 62,
-    "draws": 0
-  },
-  {
-    "name": "WAYD",
-    "rating": 1653,
-    "wins": 52,
-    "loses": 27,
+    "name": "flate",
+    "rating": 1649,
+    "wins": 131,
+    "loses": 126,
     "draws": 3
   },
   {
-    "name": "Nodl",
-    "rating": 1651,
-    "wins": 20,
-    "loses": 10,
-    "draws": 0
-  },
-  {
-    "name": "Palach HP",
-    "rating": 1648,
-    "wins": 77,
-    "loses": 54,
+    "name": "Mizrael",
+    "rating": 1647,
+    "wins": 169,
+    "loses": 166,
     "draws": 2
   },
   {
-    "name": "positive",
-    "rating": 1646,
-    "wins": 189,
-    "loses": 207,
-    "draws": 0
+    "name": "kenben",
+    "rating": 1643,
+    "wins": 27,
+    "loses": 7,
+    "draws": 1
   },
   {
-    "name": "Magl",
-    "rating": 1644,
-    "wins": 100,
-    "loses": 77,
-    "draws": 10
-  },
-  {
-    "name": "Sav1tarrr",
+    "name": "WAYD",
     "rating": 1641,
-    "wins": 196,
-    "loses": 156,
-    "draws": 0
+    "wins": 52,
+    "loses": 27,
+    "draws": 3
   },
   {
     "name": "The_",
@@ -623,17 +567,17 @@
     "draws": 1
   },
   {
-    "name": "Lucky George",
-    "rating": 1638,
-    "wins": 271,
-    "loses": 248,
-    "draws": 1
+    "name": "=Stinger=",
+    "rating": 1639,
+    "wins": 49,
+    "loses": 39,
+    "draws": 5
   },
   {
-    "name": "ckotuHa",
-    "rating": 1636,
-    "wins": 162,
-    "loses": 115,
+    "name": "Socrat",
+    "rating": 1637,
+    "wins": 65,
+    "loses": 36,
     "draws": 1
   },
   {
@@ -644,6 +588,13 @@
     "draws": 0
   },
   {
+    "name": "PaTRioT",
+    "rating": 1634,
+    "wins": 185,
+    "loses": 156,
+    "draws": 0
+  },
+  {
     "name": "LordKoper",
     "rating": 1627,
     "wins": 15,
@@ -651,67 +602,25 @@
     "draws": 0
   },
   {
-    "name": "OUTLAW",
+    "name": "positive",
     "rating": 1625,
-    "wins": 151,
-    "loses": 185,
+    "wins": 137,
+    "loses": 139,
     "draws": 0
-  },
-  {
-    "name": "MrP1nchy",
-    "rating": 1623,
-    "wins": 74,
-    "loses": 67,
-    "draws": 1
-  },
-  {
-    "name": "PaTRioT",
-    "rating": 1622,
-    "wins": 413,
-    "loses": 312,
-    "draws": 0
-  },
-  {
-    "name": "sShreKs",
-    "rating": 1622,
-    "wins": 95,
-    "loses": 61,
-    "draws": 0
-  },
-  {
-    "name": "=Stinger=",
-    "rating": 1621,
-    "wins": 49,
-    "loses": 43,
-    "draws": 5
-  },
-  {
-    "name": "VespaLover",
-    "rating": 1621,
-    "wins": 24,
-    "loses": 9,
-    "draws": 0
-  },
-  {
-    "name": "Huanito",
-    "rating": 1620,
-    "wins": 183,
-    "loses": 163,
-    "draws": 5
   },
   {
     "name": "tun7gus7",
-    "rating": 1619,
-    "wins": 325,
-    "loses": 217,
+    "rating": 1622,
+    "wins": 177,
+    "loses": 125,
     "draws": 0
   },
   {
-    "name": "Meo",
-    "rating": 1618,
-    "wins": 143,
-    "loses": 155,
-    "draws": 2
+    "name": "VespaLover",
+    "rating": 1619,
+    "wins": 24,
+    "loses": 9,
+    "draws": 0
   },
   {
     "name": "H2SO4",
@@ -721,18 +630,46 @@
     "draws": 1
   },
   {
-    "name": "Georg_",
-    "rating": 1614,
-    "wins": 158,
-    "loses": 142,
+    "name": "theShevanesian",
+    "rating": 1616,
+    "wins": 140,
+    "loses": 105,
     "draws": 1
   },
   {
-    "name": "bRitvo4kA",
-    "rating": 1614,
-    "wins": 50,
-    "loses": 36,
+    "name": "Nitro",
+    "rating": 1615,
+    "wins": 208,
+    "loses": 166,
+    "draws": 1
+  },
+  {
+    "name": "dead0202",
+    "rating": 1613,
+    "wins": 37,
+    "loses": 19,
     "draws": 0
+  },
+  {
+    "name": "AYMAN",
+    "rating": 1613,
+    "wins": 68,
+    "loses": 34,
+    "draws": 0
+  },
+  {
+    "name": "Palach HP",
+    "rating": 1613,
+    "wins": 73,
+    "loses": 54,
+    "draws": 2
+  },
+  {
+    "name": "ckotuHa",
+    "rating": 1610,
+    "wins": 110,
+    "loses": 75,
+    "draws": 1
   },
   {
     "name": "UrukHai",
@@ -742,17 +679,24 @@
     "draws": 1
   },
   {
-    "name": "Godofwrcrft",
+    "name": "mda",
     "rating": 1607,
-    "wins": 71,
-    "loses": 63,
-    "draws": 1
+    "wins": 117,
+    "loses": 70,
+    "draws": 0
   },
   {
-    "name": "Zorkust",
-    "rating": 1606,
-    "wins": 18,
-    "loses": 4,
+    "name": "Meo",
+    "rating": 1607,
+    "wins": 111,
+    "loses": 111,
+    "draws": 2
+  },
+  {
+    "name": "_NEO_",
+    "rating": 1605,
+    "wins": 85,
+    "loses": 65,
     "draws": 1
   },
   {
@@ -763,11 +707,25 @@
     "draws": 2
   },
   {
-    "name": "Puzzz0",
-    "rating": 1601,
-    "wins": 54,
-    "loses": 31,
+    "name": "bRitvo4kA",
+    "rating": 1603,
+    "wins": 42,
+    "loses": 28,
     "draws": 0
+  },
+  {
+    "name": "Sav1tarrr",
+    "rating": 1601,
+    "wins": 48,
+    "loses": 40,
+    "draws": 0
+  },
+  {
+    "name": "Zorkust",
+    "rating": 1600,
+    "wins": 18,
+    "loses": 4,
+    "draws": 1
   },
   {
     "name": "Lim4",
@@ -777,18 +735,25 @@
     "draws": 0
   },
   {
-    "name": "mda",
-    "rating": 1597,
-    "wins": 297,
-    "loses": 222,
-    "draws": 0
+    "name": "dom2",
+    "rating": 1599,
+    "wins": 216,
+    "loses": 148,
+    "draws": 4
   },
   {
-    "name": "nubasik",
+    "name": "Lucky George",
     "rating": 1597,
-    "wins": 64,
-    "loses": 45,
-    "draws": 0
+    "wins": 227,
+    "loses": 192,
+    "draws": 1
+  },
+  {
+    "name": "Georg_",
+    "rating": 1594,
+    "wins": 102,
+    "loses": 94,
+    "draws": 1
   },
   {
     "name": "Nick_Maniac",
@@ -798,32 +763,18 @@
     "draws": 0
   },
   {
-    "name": "flate",
-    "rating": 1593,
-    "wins": 215,
-    "loses": 202,
-    "draws": 3
-  },
-  {
-    "name": "dom2",
-    "rating": 1593,
-    "wins": 252,
-    "loses": 176,
-    "draws": 4
-  },
-  {
-    "name": "Socrat",
+    "name": "rebellious",
     "rating": 1592,
-    "wins": 77,
-    "loses": 48,
+    "wins": 74,
+    "loses": 88,
     "draws": 1
   },
   {
-    "name": "_NEO_",
-    "rating": 1592,
-    "wins": 109,
-    "loses": 85,
-    "draws": 1
+    "name": "Puzzz0",
+    "rating": 1588,
+    "wins": 26,
+    "loses": 19,
+    "draws": 0
   },
   {
     "name": "Stryfe",
@@ -840,17 +791,17 @@
     "draws": 0
   },
   {
+    "name": "Godofwrcrft",
+    "rating": 1587,
+    "wins": 63,
+    "loses": 43,
+    "draws": 1
+  },
+  {
     "name": "0771",
     "rating": 1586,
     "wins": 12,
     "loses": 0,
-    "draws": 0
-  },
-  {
-    "name": "Краб",
-    "rating": 1585,
-    "wins": 30,
-    "loses": 14,
     "draws": 0
   },
   {
@@ -861,39 +812,46 @@
     "draws": 0
   },
   {
-    "name": "Al Feyn",
-    "rating": 1580,
-    "wins": 184,
-    "loses": 175,
-    "draws": 0
-  },
-  {
-    "name": "PROger",
+    "name": "Aiwe",
     "rating": 1579,
-    "wins": 139,
-    "loses": 132,
-    "draws": 5
+    "wins": 125,
+    "loses": 128,
+    "draws": 2
   },
   {
-    "name": "BLUR",
-    "rating": 1577,
-    "wins": 127,
-    "loses": 166,
+    "name": "MrP1nchy",
+    "rating": 1578,
+    "wins": 54,
+    "loses": 51,
+    "draws": 1
+  },
+  {
+    "name": "Stizko",
+    "rating": 1578,
+    "wins": 11,
+    "loses": 8,
     "draws": 0
   },
   {
-    "name": "GUNAR",
-    "rating": 1577,
-    "wins": 294,
-    "loses": 344,
-    "draws": 3
+    "name": "Краб",
+    "rating": 1578,
+    "wins": 30,
+    "loses": 14,
+    "draws": 0
   },
   {
-    "name": "J.0.K.E.R",
+    "name": "Magl",
+    "rating": 1575,
+    "wins": 32,
+    "loses": 25,
+    "draws": 2
+  },
+  {
+    "name": "Huanito",
     "rating": 1574,
-    "wins": 6,
-    "loses": 2,
-    "draws": 0
+    "wins": 119,
+    "loses": 135,
+    "draws": 5
   },
   {
     "name": "Aya",
@@ -910,24 +868,31 @@
     "draws": 0
   },
   {
-    "name": "W4RICK",
+    "name": "Gort",
     "rating": 1571,
-    "wins": 127,
-    "loses": 64,
+    "wins": 17,
+    "loses": 11,
     "draws": 0
   },
   {
-    "name": "Pahanidze",
-    "rating": 1569,
-    "wins": 18,
-    "loses": 7,
+    "name": "battanas",
+    "rating": 1571,
+    "wins": 124,
+    "loses": 107,
+    "draws": 3
+  },
+  {
+    "name": "nubasik",
+    "rating": 1570,
+    "wins": 44,
+    "loses": 37,
     "draws": 0
   },
   {
-    "name": "RiMpel2",
+    "name": "OUTLAW",
     "rating": 1569,
-    "wins": 10,
-    "loses": 0,
+    "wins": 43,
+    "loses": 73,
     "draws": 0
   },
   {
@@ -938,53 +903,67 @@
     "draws": 0
   },
   {
-    "name": "Loinz",
+    "name": "Al Feyn",
     "rating": 1567,
-    "wins": 82,
-    "loses": 101,
+    "wins": 100,
+    "loses": 95,
     "draws": 0
   },
   {
-    "name": "TT_HNK",
-    "rating": 1566,
-    "wins": 109,
-    "loses": 143,
-    "draws": 1
+    "name": "W4RICK",
+    "rating": 1567,
+    "wins": 51,
+    "loses": 32,
+    "draws": 0
   },
   {
     "name": "kolianxxxxxx",
-    "rating": 1561,
+    "rating": 1565,
     "wins": 21,
     "loses": 16,
     "draws": 0
   },
   {
-    "name": "Aiwe",
-    "rating": 1561,
-    "wins": 173,
-    "loses": 192,
-    "draws": 2
+    "name": "GUNAR",
+    "rating": 1565,
+    "wins": 174,
+    "loses": 196,
+    "draws": 3
   },
   {
-    "name": "xrenoff",
-    "rating": 1561,
+    "name": "J.0.K.E.R",
+    "rating": 1565,
     "wins": 6,
     "loses": 2,
     "draws": 0
   },
   {
-    "name": "Nikolaev",
-    "rating": 1560,
-    "wins": 75,
-    "loses": 70,
+    "name": "asd1978",
+    "rating": 1564,
+    "wins": 44,
+    "loses": 26,
     "draws": 0
   },
   {
-    "name": "Nintendo",
+    "name": "xrenoff",
+    "rating": 1563,
+    "wins": 6,
+    "loses": 2,
+    "draws": 0
+  },
+  {
+    "name": "Mercurial-",
     "rating": 1559,
-    "wins": 15,
-    "loses": 10,
-    "draws": 1
+    "wins": 32,
+    "loses": 32,
+    "draws": 0
+  },
+  {
+    "name": "Loinz",
+    "rating": 1558,
+    "wins": 66,
+    "loses": 85,
+    "draws": 0
   },
   {
     "name": "skd",
@@ -994,10 +973,10 @@
     "draws": 4
   },
   {
-    "name": "StickyFingaz",
+    "name": "crzq",
     "rating": 1557,
-    "wins": 90,
-    "loses": 87,
+    "wins": 4,
+    "loses": 2,
     "draws": 1
   },
   {
@@ -1008,11 +987,11 @@
     "draws": 0
   },
   {
-    "name": "battanas",
+    "name": "Wonder Child",
     "rating": 1556,
-    "wins": 192,
-    "loses": 183,
-    "draws": 3
+    "wins": 5,
+    "loses": 1,
+    "draws": 0
   },
   {
     "name": "Shlots",
@@ -1043,53 +1022,39 @@
     "draws": 0
   },
   {
-    "name": "=Napalm=",
+    "name": "TT_HNK",
     "rating": 1553,
+    "wins": 69,
+    "loses": 79,
+    "draws": 1
+  },
+  {
+    "name": "=Napalm=",
+    "rating": 1552,
     "wins": 4,
     "loses": 4,
     "draws": 0
   },
   {
-    "name": "60pW",
-    "rating": 1553,
-    "wins": 74,
-    "loses": 246,
-    "draws": 5
+    "name": "Егор Коробейников",
+    "rating": 1552,
+    "wins": 58,
+    "loses": 33,
+    "draws": 2
   },
   {
-    "name": "RitoSux",
-    "rating": 1553,
-    "wins": 68,
-    "loses": 83,
+    "name": "60pW",
+    "rating": 1550,
+    "wins": 66,
+    "loses": 114,
     "draws": 1
   },
   {
-    "name": "Wonder Child",
-    "rating": 1553,
-    "wins": 5,
-    "loses": 1,
-    "draws": 0
-  },
-  {
-    "name": "gr1",
-    "rating": 1552,
-    "wins": 10,
-    "loses": 0,
-    "draws": 0
-  },
-  {
-    "name": "Keba",
-    "rating": 1552,
-    "wins": 33,
-    "loses": 32,
-    "draws": 0
-  },
-  {
-    "name": "Ambra",
+    "name": "PROger",
     "rating": 1548,
-    "wins": 55,
-    "loses": 59,
-    "draws": 0
+    "wins": 71,
+    "loses": 72,
+    "draws": 1
   },
   {
     "name": "RetroFM",
@@ -1099,11 +1064,11 @@
     "draws": 1
   },
   {
-    "name": "Wladysha",
+    "name": "Keba",
     "rating": 1547,
-    "wins": 37,
-    "loses": 40,
-    "draws": 1
+    "wins": 33,
+    "loses": 32,
+    "draws": 0
   },
   {
     "name": "высокий",
@@ -1113,17 +1078,17 @@
     "draws": 0
   },
   {
-    "name": "rebellious",
-    "rating": 1546,
-    "wins": 82,
-    "loses": 120,
-    "draws": 1
-  },
-  {
     "name": "Volodymyr",
     "rating": 1545,
     "wins": 7,
     "loses": 6,
+    "draws": 0
+  },
+  {
+    "name": "Pahanidze",
+    "rating": 1544,
+    "wins": 14,
+    "loses": 7,
     "draws": 0
   },
   {
@@ -1134,17 +1099,24 @@
     "draws": 0
   },
   {
-    "name": "Fidesxfx",
+    "name": "Nintendo",
     "rating": 1543,
-    "wins": 186,
-    "loses": 227,
-    "draws": 0
+    "wins": 15,
+    "loses": 10,
+    "draws": 1
   },
   {
     "name": "PReDS",
     "rating": 1543,
     "wins": 13,
     "loses": 11,
+    "draws": 1
+  },
+  {
+    "name": "XIII",
+    "rating": 1543,
+    "wins": 62,
+    "loses": 57,
     "draws": 1
   },
   {
@@ -1155,32 +1127,32 @@
     "draws": 0
   },
   {
-    "name": "Javdet",
+    "name": "StickyFingaz",
     "rating": 1540,
-    "wins": 250,
-    "loses": 255,
-    "draws": 3
+    "wins": 46,
+    "loses": 59,
+    "draws": 1
   },
   {
-    "name": "genie.",
+    "name": "Wladysha",
+    "rating": 1538,
+    "wins": 37,
+    "loses": 40,
+    "draws": 1
+  },
+  {
+    "name": "Fidesxfx",
     "rating": 1536,
-    "wins": 15,
-    "loses": 12,
+    "wins": 78,
+    "loses": 119,
     "draws": 0
   },
   {
-    "name": "asd1978",
-    "rating": 1536,
-    "wins": 56,
-    "loses": 38,
-    "draws": 0
-  },
-  {
-    "name": "mals",
+    "name": "Javdet",
     "rating": 1535,
-    "wins": 132,
-    "loses": 227,
-    "draws": 4
+    "wins": 198,
+    "loses": 199,
+    "draws": 3
   },
   {
     "name": "Chingis",
@@ -1190,20 +1162,6 @@
     "draws": 1
   },
   {
-    "name": "Mercurial-",
-    "rating": 1534,
-    "wins": 72,
-    "loses": 96,
-    "draws": 0
-  },
-  {
-    "name": "Gort",
-    "rating": 1533,
-    "wins": 37,
-    "loses": 31,
-    "draws": 0
-  },
-  {
     "name": "RealShans",
     "rating": 1533,
     "wins": 3,
@@ -1211,24 +1169,24 @@
     "draws": 0
   },
   {
-    "name": "Dust_HL",
+    "name": "RitoSux",
     "rating": 1532,
-    "wins": 4,
-    "loses": 5,
-    "draws": 0
+    "wins": 48,
+    "loses": 59,
+    "draws": 1
   },
   {
-    "name": "TiamathPL",
+    "name": "bul",
     "rating": 1532,
-    "wins": 5,
-    "loses": 4,
-    "draws": 0
+    "wins": 81,
+    "loses": 83,
+    "draws": 1
   },
   {
-    "name": "MrocznyRuchacz",
+    "name": "genie.",
     "rating": 1531,
-    "wins": 10,
-    "loses": 0,
+    "wins": 15,
+    "loses": 12,
     "draws": 0
   },
   {
@@ -1239,10 +1197,31 @@
     "draws": 0
   },
   {
+    "name": "TiamathPL",
+    "rating": 1529,
+    "wins": 5,
+    "loses": 4,
+    "draws": 0
+  },
+  {
+    "name": "sir Davos Seaworth",
+    "rating": 1529,
+    "wins": 76,
+    "loses": 49,
+    "draws": 0
+  },
+  {
     "name": "nik312",
     "rating": 1528,
     "wins": 6,
     "loses": 7,
+    "draws": 0
+  },
+  {
+    "name": "Etalon",
+    "rating": 1528,
+    "wins": 21,
+    "loses": 19,
     "draws": 0
   },
   {
@@ -1253,18 +1232,39 @@
     "draws": 0
   },
   {
-    "name": "BeerWarrior",
-    "rating": 1527,
-    "wins": 22,
-    "loses": 20,
+    "name": "mals",
+    "rating": 1528,
+    "wins": 104,
+    "loses": 151,
+    "draws": 4
+  },
+  {
+    "name": "Freestyler",
+    "rating": 1528,
+    "wins": 13,
+    "loses": 7,
     "draws": 0
   },
   {
-    "name": "bul",
+    "name": "Dust_HL",
+    "rating": 1528,
+    "wins": 4,
+    "loses": 5,
+    "draws": 0
+  },
+  {
+    "name": "Ambra",
     "rating": 1527,
-    "wins": 153,
-    "loses": 139,
-    "draws": 1
+    "wins": 43,
+    "loses": 31,
+    "draws": 0
+  },
+  {
+    "name": "RiMpel2",
+    "rating": 1526,
+    "wins": 2,
+    "loses": 0,
+    "draws": 0
   },
   {
     "name": "c0nn3c71nkK.ppL",
@@ -1272,13 +1272,6 @@
     "wins": 9,
     "loses": 13,
     "draws": 0
-  },
-  {
-    "name": "socola",
-    "rating": 1525,
-    "wins": 225,
-    "loses": 214,
-    "draws": 1
   },
   {
     "name": "Kluka",
@@ -1302,17 +1295,24 @@
     "draws": 0
   },
   {
+    "name": "cost",
+    "rating": 1524,
+    "wins": 119,
+    "loses": 139,
+    "draws": 3
+  },
+  {
+    "name": "MrocznyRuchacz",
+    "rating": 1523,
+    "wins": 2,
+    "loses": 0,
+    "draws": 0
+  },
+  {
     "name": "RA_Ge",
     "rating": 1523,
     "wins": 4,
     "loses": 3,
-    "draws": 0
-  },
-  {
-    "name": "sir Davos Seaworth",
-    "rating": 1523,
-    "wins": 288,
-    "loses": 153,
     "draws": 0
   },
   {
@@ -1323,18 +1323,18 @@
     "draws": 0
   },
   {
+    "name": "Turkish",
+    "rating": 1522,
+    "wins": 28,
+    "loses": 22,
+    "draws": 1
+  },
+  {
     "name": "unq_flipmo",
     "rating": 1521,
     "wins": 35,
     "loses": 19,
     "draws": 0
-  },
-  {
-    "name": "BA/IEHOK",
-    "rating": 1520,
-    "wins": 27,
-    "loses": 41,
-    "draws": 3
   },
   {
     "name": "Законопослушный гражданин",
@@ -1344,18 +1344,25 @@
     "draws": 0
   },
   {
-    "name": "Faria",
+    "name": "Nikolaev",
     "rating": 1519,
-    "wins": 29,
-    "loses": 22,
+    "wins": 63,
+    "loses": 66,
     "draws": 0
   },
   {
-    "name": "MerlinTheMagician",
-    "rating": 1517,
-    "wins": 6,
-    "loses": 7,
+    "name": "gr1",
+    "rating": 1519,
+    "wins": 2,
+    "loses": 0,
     "draws": 0
+  },
+  {
+    "name": "socola",
+    "rating": 1516,
+    "wins": 149,
+    "loses": 154,
+    "draws": 1
   },
   {
     "name": "Inoxodec",
@@ -1363,20 +1370,6 @@
     "wins": 1,
     "loses": 0,
     "draws": 0
-  },
-  {
-    "name": "Freestyler",
-    "rating": 1516,
-    "wins": 13,
-    "loses": 7,
-    "draws": 0
-  },
-  {
-    "name": "Turkish",
-    "rating": 1515,
-    "wins": 40,
-    "loses": 30,
-    "draws": 1
   },
   {
     "name": "JustTheWay",
@@ -1398,13 +1391,6 @@
     "wins": 14,
     "loses": 12,
     "draws": 0
-  },
-  {
-    "name": "Vatya",
-    "rating": 1515,
-    "wins": 62,
-    "loses": 71,
-    "draws": 7
   },
   {
     "name": "RoninHW",
@@ -1435,6 +1421,20 @@
     "draws": 0
   },
   {
+    "name": "Faria",
+    "rating": 1513,
+    "wins": 29,
+    "loses": 22,
+    "draws": 0
+  },
+  {
+    "name": "vladonof",
+    "rating": 1513,
+    "wins": 4,
+    "loses": 2,
+    "draws": 0
+  },
+  {
     "name": "Simba",
     "rating": 1513,
     "wins": 2,
@@ -1442,53 +1442,53 @@
     "draws": 0
   },
   {
-    "name": "vladonof",
+    "name": "DickTator",
     "rating": 1512,
-    "wins": 4,
-    "loses": 2,
+    "wins": 1,
+    "loses": 0,
     "draws": 0
   },
   {
-    "name": "MicroElf",
+    "name": "MerlinTheMagician",
     "rating": 1512,
-    "wins": 41,
-    "loses": 49,
+    "wins": 6,
+    "loses": 7,
     "draws": 0
   },
   {
-    "name": "SECTOR767",
+    "name": "Druzik",
+    "rating": 1512,
+    "wins": 1,
+    "loses": 0,
+    "draws": 0
+  },
+  {
+    "name": "BA/IEHOK",
     "rating": 1511,
-    "wins": 139,
-    "loses": 132,
-    "draws": 1
-  },
-  {
-    "name": "Dandy",
-    "rating": 1509,
-    "wins": 55,
-    "loses": 31,
-    "draws": 0
+    "wins": 27,
+    "loses": 41,
+    "draws": 3
   },
   {
     "name": "ffoolabezlp",
-    "rating": 1509,
+    "rating": 1511,
     "wins": 2,
     "loses": 0,
     "draws": 0
   },
   {
-    "name": "vitalic",
-    "rating": 1509,
-    "wins": 3,
-    "loses": 5,
+    "name": "Dandy",
+    "rating": 1510,
+    "wins": 55,
+    "loses": 31,
     "draws": 0
   },
   {
-    "name": "Derbent",
+    "name": "korvet",
     "rating": 1509,
-    "wins": 49,
-    "loses": 44,
-    "draws": 1
+    "wins": 40,
+    "loses": 43,
+    "draws": 2
   },
   {
     "name": "BuTaJIuK",
@@ -1498,32 +1498,11 @@
     "draws": 0
   },
   {
-    "name": "Benis_xDD",
-    "rating": 1508,
-    "wins": 115,
-    "loses": 159,
-    "draws": 1
-  },
-  {
     "name": "Docent Picolan",
     "rating": 1508,
     "wins": 3,
     "loses": 2,
     "draws": 0
-  },
-  {
-    "name": "Druzik",
-    "rating": 1508,
-    "wins": 1,
-    "loses": 0,
-    "draws": 0
-  },
-  {
-    "name": "cost",
-    "rating": 1508,
-    "wins": 175,
-    "loses": 171,
-    "draws": 3
   },
   {
     "name": "horror145",
@@ -1533,11 +1512,18 @@
     "draws": 0
   },
   {
-    "name": "AViLovePlay",
-    "rating": 1506,
-    "wins": 3,
-    "loses": 2,
+    "name": "sShreKs",
+    "rating": 1507,
+    "wins": 43,
+    "loses": 53,
     "draws": 0
+  },
+  {
+    "name": "Benis_xDD",
+    "rating": 1506,
+    "wins": 67,
+    "loses": 103,
+    "draws": 1
   },
   {
     "name": "MrGoo",
@@ -1547,24 +1533,10 @@
     "draws": 1
   },
   {
-    "name": "злой_романтик",
+    "name": "AViLovePlay",
     "rating": 1505,
-    "wins": 118,
-    "loses": 182,
-    "draws": 10
-  },
-  {
-    "name": "korvet",
-    "rating": 1504,
-    "wins": 40,
-    "loses": 43,
-    "draws": 2
-  },
-  {
-    "name": "DickTator",
-    "rating": 1504,
-    "wins": 1,
-    "loses": 0,
+    "wins": 3,
+    "loses": 2,
     "draws": 0
   },
   {
@@ -1582,32 +1554,18 @@
     "draws": 0
   },
   {
-    "name": "-=Leon=-",
-    "rating": 1502,
-    "wins": 6,
-    "loses": 4,
-    "draws": 0
-  },
-  {
-    "name": "Mar",
-    "rating": 1501,
-    "wins": 160,
-    "loses": 175,
-    "draws": 1
-  },
-  {
-    "name": "Montt",
-    "rating": 1501,
-    "wins": 65,
-    "loses": 103,
-    "draws": 1
-  },
-  {
     "name": "FAVorite",
     "rating": 1501,
     "wins": 39,
     "loses": 39,
     "draws": 0
+  },
+  {
+    "name": "Derbent",
+    "rating": 1501,
+    "wins": 49,
+    "loses": 44,
+    "draws": 1
   },
   {
     "name": "grisha_nikolov",
@@ -1617,17 +1575,17 @@
     "draws": 0
   },
   {
-    "name": "Rayne",
-    "rating": 1501,
-    "wins": 99,
-    "loses": 82,
-    "draws": 1
-  },
-  {
     "name": "ksemiya",
     "rating": 1500,
     "wins": 0,
     "loses": 0,
+    "draws": 0
+  },
+  {
+    "name": "Nedved46",
+    "rating": 1500,
+    "wins": 118,
+    "loses": 122,
     "draws": 0
   },
   {
@@ -1638,6 +1596,13 @@
     "draws": 0
   },
   {
+    "name": "cuc9ctblu",
+    "rating": 1499,
+    "wins": 24,
+    "loses": 35,
+    "draws": 1
+  },
+  {
     "name": "Alessandro",
     "rating": 1499,
     "wins": 2,
@@ -1645,18 +1610,32 @@
     "draws": 0
   },
   {
-    "name": "Vladimir_Ospa",
+    "name": "SECTOR767",
     "rating": 1499,
     "wins": 47,
-    "loses": 35,
-    "draws": 2
+    "loses": 48,
+    "draws": 1
   },
   {
-    "name": "Nedved46",
+    "name": "-=Leon=-",
     "rating": 1498,
-    "wins": 238,
-    "loses": 270,
+    "wins": 6,
+    "loses": 4,
     "draws": 0
+  },
+  {
+    "name": "Kashchei",
+    "rating": 1498,
+    "wins": 159,
+    "loses": 119,
+    "draws": 0
+  },
+  {
+    "name": "aka.Ward3n",
+    "rating": 1498,
+    "wins": 123,
+    "loses": 231,
+    "draws": 5
   },
   {
     "name": "Ogwumike",
@@ -1666,32 +1645,25 @@
     "draws": 0
   },
   {
-    "name": "Sniol",
-    "rating": 1498,
-    "wins": 106,
-    "loses": 65,
+    "name": "Montt",
+    "rating": 1497,
+    "wins": 45,
+    "loses": 59,
     "draws": 1
   },
   {
-    "name": "OchenZloyPapashka",
+    "name": "Vladimir_Ospa",
     "rating": 1497,
-    "wins": 5,
-    "loses": 2,
-    "draws": 0
-  },
-  {
-    "name": "Mori",
-    "rating": 1497,
-    "wins": 46,
-    "loses": 44,
-    "draws": 0
-  },
-  {
-    "name": "Егор Коробейников",
-    "rating": 1496,
-    "wins": 74,
-    "loses": 69,
+    "wins": 47,
+    "loses": 35,
     "draws": 2
+  },
+  {
+    "name": "Sniol",
+    "rating": 1497,
+    "wins": 30,
+    "loses": 25,
+    "draws": 1
   },
   {
     "name": "Pupa",
@@ -1715,10 +1687,17 @@
     "draws": 0
   },
   {
-    "name": "dozzerka",
-    "rating": 1493,
-    "wins": 1,
-    "loses": 1,
+    "name": "MoreRakeIsBetter",
+    "rating": 1495,
+    "wins": 2,
+    "loses": 2,
+    "draws": 0
+  },
+  {
+    "name": "BLUR",
+    "rating": 1492,
+    "wins": 31,
+    "loses": 38,
     "draws": 0
   },
   {
@@ -1729,10 +1708,24 @@
     "draws": 0
   },
   {
-    "name": "MoreRakeIsBetter",
+    "name": "Trisaghion",
+    "rating": 1492,
+    "wins": 6,
+    "loses": 5,
+    "draws": 0
+  },
+  {
+    "name": "Tarmo",
     "rating": 1492,
     "wins": 2,
-    "loses": 2,
+    "loses": 3,
+    "draws": 0
+  },
+  {
+    "name": "dozzerka",
+    "rating": 1491,
+    "wins": 1,
+    "loses": 1,
     "draws": 0
   },
   {
@@ -1740,6 +1733,27 @@
     "rating": 1491,
     "wins": 5,
     "loses": 5,
+    "draws": 0
+  },
+  {
+    "name": "Pashqa",
+    "rating": 1491,
+    "wins": 33,
+    "loses": 31,
+    "draws": 0
+  },
+  {
+    "name": "Wyndoc",
+    "rating": 1491,
+    "wins": 22,
+    "loses": 32,
+    "draws": 0
+  },
+  {
+    "name": "osfaraon",
+    "rating": 1491,
+    "wins": 32,
+    "loses": 57,
     "draws": 0
   },
   {
@@ -1757,24 +1771,45 @@
     "draws": 0
   },
   {
-    "name": "CanaBeasT",
-    "rating": 1489,
-    "wins": 76,
-    "loses": 83,
+    "name": "vitalic",
+    "rating": 1490,
+    "wins": 3,
+    "loses": 5,
     "draws": 0
+  },
+  {
+    "name": "Greend",
+    "rating": 1490,
+    "wins": 1,
+    "loses": 2,
+    "draws": 0
+  },
+  {
+    "name": "nifend",
+    "rating": 1490,
+    "wins": 0,
+    "loses": 1,
+    "draws": 0
+  },
+  {
+    "name": "Eztujke",
+    "rating": 1489,
+    "wins": 4,
+    "loses": 4,
+    "draws": 0
+  },
+  {
+    "name": "злой_романтик",
+    "rating": 1489,
+    "wins": 82,
+    "loses": 142,
+    "draws": 6
   },
   {
     "name": "Alkapone",
     "rating": 1489,
     "wins": 9,
     "loses": 8,
-    "draws": 1
-  },
-  {
-    "name": "_XS!_",
-    "rating": 1488,
-    "wins": 6,
-    "loses": 9,
     "draws": 1
   },
   {
@@ -1792,31 +1827,24 @@
     "draws": 0
   },
   {
-    "name": "Tarmo",
-    "rating": 1488,
-    "wins": 2,
-    "loses": 3,
-    "draws": 0
-  },
-  {
-    "name": "Lech [PS]",
-    "rating": 1488,
-    "wins": 1,
-    "loses": 3,
-    "draws": 0
-  },
-  {
-    "name": "Wyndoc",
-    "rating": 1488,
-    "wins": 22,
-    "loses": 36,
-    "draws": 0
-  },
-  {
-    "name": "Etalon",
+    "name": "_XS!_",
     "rating": 1487,
-    "wins": 93,
-    "loses": 79,
+    "wins": 6,
+    "loses": 9,
+    "draws": 1
+  },
+  {
+    "name": "JoanFo",
+    "rating": 1487,
+    "wins": 57,
+    "loses": 49,
+    "draws": 1
+  },
+  {
+    "name": "Messir",
+    "rating": 1487,
+    "wins": 3,
+    "loses": 3,
     "draws": 0
   },
   {
@@ -1834,10 +1862,10 @@
     "draws": 0
   },
   {
-    "name": "RukaVsalate",
+    "name": "Rudykh",
     "rating": 1487,
-    "wins": 0,
-    "loses": 1,
+    "wins": 1,
+    "loses": 2,
     "draws": 0
   },
   {
@@ -1848,6 +1876,13 @@
     "draws": 0
   },
   {
+    "name": "moonlyer",
+    "rating": 1487,
+    "wins": 0,
+    "loses": 1,
+    "draws": 0
+  },
+  {
     "name": "Koldun_nsk",
     "rating": 1487,
     "wins": 4,
@@ -1855,24 +1890,10 @@
     "draws": 0
   },
   {
-    "name": "Kashchei",
-    "rating": 1486,
-    "wins": 171,
-    "loses": 131,
-    "draws": 0
-  },
-  {
     "name": "-A-",
     "rating": 1486,
     "wins": 0,
     "loses": 1,
-    "draws": 0
-  },
-  {
-    "name": "Greend",
-    "rating": 1486,
-    "wins": 1,
-    "loses": 2,
     "draws": 0
   },
   {
@@ -1887,13 +1908,6 @@
     "rating": 1486,
     "wins": 1,
     "loses": 2,
-    "draws": 0
-  },
-  {
-    "name": "Messir",
-    "rating": 1485,
-    "wins": 3,
-    "loses": 3,
     "draws": 0
   },
   {
@@ -1939,17 +1953,24 @@
     "draws": 0
   },
   {
+    "name": "Lech [PS]",
+    "rating": 1485,
+    "wins": 1,
+    "loses": 3,
+    "draws": 0
+  },
+  {
+    "name": "R@sIM",
+    "rating": 1485,
+    "wins": 139,
+    "loses": 191,
+    "draws": 5
+  },
+  {
     "name": "Gallicij",
     "rating": 1485,
     "wins": 0,
     "loses": 1,
-    "draws": 0
-  },
-  {
-    "name": "TK_Fred",
-    "rating": 1485,
-    "wins": 24,
-    "loses": 31,
     "draws": 0
   },
   {
@@ -1974,17 +1995,10 @@
     "draws": 0
   },
   {
-    "name": "Trisaghion",
+    "name": "RukaVsalate",
     "rating": 1484,
-    "wins": 6,
-    "loses": 5,
-    "draws": 0
-  },
-  {
-    "name": "Rudykh",
-    "rating": 1484,
-    "wins": 1,
-    "loses": 2,
+    "wins": 0,
+    "loses": 1,
     "draws": 0
   },
   {
@@ -2009,10 +2023,10 @@
     "draws": 0
   },
   {
-    "name": "MercuryDVZ",
-    "rating": 1483,
-    "wins": 127,
-    "loses": 134,
+    "name": "Данил Украинский",
+    "rating": 1484,
+    "wins": 1,
+    "loses": 2,
     "draws": 0
   },
   {
@@ -2037,32 +2051,11 @@
     "draws": 0
   },
   {
-    "name": "Данил Украинский",
-    "rating": 1483,
-    "wins": 1,
-    "loses": 2,
-    "draws": 0
-  },
-  {
     "name": "MetallEater",
     "rating": 1482,
     "wins": 0,
     "loses": 1,
     "draws": 0
-  },
-  {
-    "name": "osfaraon",
-    "rating": 1482,
-    "wins": 60,
-    "loses": 117,
-    "draws": 0
-  },
-  {
-    "name": "XIII",
-    "rating": 1482,
-    "wins": 62,
-    "loses": 61,
-    "draws": 1
   },
   {
     "name": "13th",
@@ -2086,6 +2079,13 @@
     "draws": 0
   },
   {
+    "name": "ZOOMisBack",
+    "rating": 1481,
+    "wins": 3,
+    "loses": 4,
+    "draws": 0
+  },
+  {
     "name": "perpendicularstyle",
     "rating": 1481,
     "wins": 4,
@@ -2100,10 +2100,31 @@
     "draws": 0
   },
   {
+    "name": "asfeo",
+    "rating": 1481,
+    "wins": 0,
+    "loses": 1,
+    "draws": 0
+  },
+  {
+    "name": "Rayne",
+    "rating": 1481,
+    "wins": 27,
+    "loses": 26,
+    "draws": 1
+  },
+  {
     "name": "Smoke_mk",
     "rating": 1480,
     "wins": 0,
     "loses": 1,
+    "draws": 0
+  },
+  {
+    "name": "ooppss",
+    "rating": 1480,
+    "wins": 1,
+    "loses": 3,
     "draws": 0
   },
   {
@@ -2114,24 +2135,31 @@
     "draws": 1
   },
   {
-    "name": "ZOOMisBack",
+    "name": "Aeterno",
     "rating": 1480,
-    "wins": 3,
-    "loses": 4,
+    "wins": 9,
+    "loses": 8,
     "draws": 0
   },
   {
-    "name": "Nikostar",
-    "rating": 1479,
-    "wins": 14,
-    "loses": 15,
+    "name": "TK_Fred",
+    "rating": 1480,
+    "wins": 24,
+    "loses": 31,
     "draws": 0
   },
   {
-    "name": "smerti",
+    "name": "CanaBeasT",
     "rating": 1479,
-    "wins": 0,
-    "loses": 2,
+    "wins": 60,
+    "loses": 75,
+    "draws": 0
+  },
+  {
+    "name": "Mori",
+    "rating": 1479,
+    "wins": 34,
+    "loses": 28,
     "draws": 0
   },
   {
@@ -2163,13 +2191,6 @@
     "draws": 0
   },
   {
-    "name": "rus12345",
-    "rating": 1478,
-    "wins": 3,
-    "loses": 6,
-    "draws": 0
-  },
-  {
     "name": "CbIHA",
     "rating": 1478,
     "wins": 0,
@@ -2191,6 +2212,20 @@
     "draws": 0
   },
   {
+    "name": "OchenZloyPapashka",
+    "rating": 1477,
+    "wins": 1,
+    "loses": 2,
+    "draws": 0
+  },
+  {
+    "name": "Nikostar",
+    "rating": 1477,
+    "wins": 14,
+    "loses": 15,
+    "draws": 0
+  },
+  {
     "name": "Dimast",
     "rating": 1477,
     "wins": 0,
@@ -2205,37 +2240,16 @@
     "draws": 0
   },
   {
-    "name": "MadNomad",
-    "rating": 1476,
-    "wins": 0,
-    "loses": 2,
-    "draws": 0
-  },
-  {
-    "name": "Pashqa",
-    "rating": 1476,
-    "wins": 49,
-    "loses": 43,
-    "draws": 0
-  },
-  {
-    "name": "Порфустанг",
+    "name": "Taso",
     "rating": 1475,
     "wins": 2,
     "loses": 4,
     "draws": 0
   },
   {
-    "name": "JoanFo",
+    "name": "fanatTwaryny",
     "rating": 1475,
-    "wins": 93,
-    "loses": 85,
-    "draws": 1
-  },
-  {
-    "name": "Taso",
-    "rating": 1475,
-    "wins": 2,
+    "wins": 3,
     "loses": 4,
     "draws": 0
   },
@@ -2247,7 +2261,21 @@
     "draws": 0
   },
   {
+    "name": "Порфустанг",
+    "rating": 1473,
+    "wins": 2,
+    "loses": 4,
+    "draws": 0
+  },
+  {
     "name": "mishok_",
+    "rating": 1473,
+    "wins": 0,
+    "loses": 2,
+    "draws": 0
+  },
+  {
+    "name": "MadNomad",
     "rating": 1473,
     "wins": 0,
     "loses": 2,
@@ -2261,10 +2289,10 @@
     "draws": 0
   },
   {
-    "name": "CraggyHaggy",
-    "rating": 1472,
-    "wins": 5,
-    "loses": 8,
+    "name": "MicroElf",
+    "rating": 1473,
+    "wins": 17,
+    "loses": 25,
     "draws": 0
   },
   {
@@ -2282,6 +2310,13 @@
     "draws": 0
   },
   {
+    "name": "rus12345",
+    "rating": 1471,
+    "wins": 3,
+    "loses": 6,
+    "draws": 0
+  },
+  {
     "name": "Stomper",
     "rating": 1471,
     "wins": 9,
@@ -2289,10 +2324,17 @@
     "draws": 0
   },
   {
-    "name": "Chauok",
+    "name": "bubuch",
     "rating": 1471,
-    "wins": 1,
-    "loses": 3,
+    "wins": 155,
+    "loses": 149,
+    "draws": 0
+  },
+  {
+    "name": "smerti",
+    "rating": 1471,
+    "wins": 0,
+    "loses": 2,
     "draws": 0
   },
   {
@@ -2300,6 +2342,13 @@
     "rating": 1470,
     "wins": 0,
     "loses": 2,
+    "draws": 0
+  },
+  {
+    "name": "CraggyHaggy",
+    "rating": 1470,
+    "wins": 5,
+    "loses": 8,
     "draws": 0
   },
   {
@@ -2327,13 +2376,6 @@
     "name": "Gi5d",
     "rating": 1469,
     "wins": 1,
-    "loses": 3,
-    "draws": 0
-  },
-  {
-    "name": "Peres3ka",
-    "rating": 1469,
-    "wins": 0,
     "loses": 3,
     "draws": 0
   },
@@ -2380,11 +2422,25 @@
     "draws": 0
   },
   {
+    "name": "K_Shadow",
+    "rating": 1466,
+    "wins": 5,
+    "loses": 8,
+    "draws": 0
+  },
+  {
     "name": "Heroes13",
     "rating": 1466,
     "wins": 8,
     "loses": 7,
     "draws": 0
+  },
+  {
+    "name": "Ominous1",
+    "rating": 1466,
+    "wins": 116,
+    "loses": 117,
+    "draws": 1
   },
   {
     "name": "Grybi",
@@ -2395,6 +2451,13 @@
   },
   {
     "name": "Beevil",
+    "rating": 1466,
+    "wins": 1,
+    "loses": 3,
+    "draws": 0
+  },
+  {
+    "name": "MKR",
     "rating": 1466,
     "wins": 1,
     "loses": 3,
@@ -2415,14 +2478,21 @@
     "draws": 0
   },
   {
-    "name": "Rising",
+    "name": "RomarioGrom",
     "rating": 1465,
-    "wins": 0,
+    "wins": 1,
     "loses": 3,
     "draws": 0
   },
   {
-    "name": "RomarioGrom",
+    "name": "VovaOgo",
+    "rating": 1465,
+    "wins": 29,
+    "loses": 43,
+    "draws": 0
+  },
+  {
+    "name": "Chauok",
     "rating": 1465,
     "wins": 1,
     "loses": 3,
@@ -2436,13 +2506,6 @@
     "draws": 0
   },
   {
-    "name": "Kadavercianin",
-    "rating": 1464,
-    "wins": 1,
-    "loses": 3,
-    "draws": 0
-  },
-  {
     "name": "Lexmaster",
     "rating": 1464,
     "wins": 14,
@@ -2450,45 +2513,17 @@
     "draws": 0
   },
   {
-    "name": "nifend",
+    "name": "Fas1kTV",
     "rating": 1464,
-    "wins": 0,
-    "loses": 5,
+    "wins": 12,
+    "loses": 17,
     "draws": 0
   },
   {
-    "name": "Avangard-ROM",
-    "rating": 1464,
-    "wins": 1,
-    "loses": 5,
-    "draws": 0
-  },
-  {
-    "name": "cuc9ctblu",
-    "rating": 1462,
-    "wins": 28,
-    "loses": 47,
-    "draws": 1
-  },
-  {
-    "name": "Timbuktu",
-    "rating": 1462,
-    "wins": 155,
-    "loses": 124,
-    "draws": 4
-  },
-  {
-    "name": "MKR",
+    "name": "Kadavercianin",
     "rating": 1462,
     "wins": 1,
     "loses": 3,
-    "draws": 0
-  },
-  {
-    "name": "bubuch",
-    "rating": 1462,
-    "wins": 207,
-    "loses": 193,
     "draws": 0
   },
   {
@@ -2499,31 +2534,59 @@
     "draws": 0
   },
   {
-    "name": "Fas1kTV",
-    "rating": 1462,
-    "wins": 12,
-    "loses": 21,
+    "name": "Rising",
+    "rating": 1461,
+    "wins": 0,
+    "loses": 3,
     "draws": 0
   },
   {
-    "name": "noobass-kontrobass",
+    "name": "Telder54",
     "rating": 1461,
-    "wins": 18,
-    "loses": 25,
-    "draws": 0
+    "wins": 19,
+    "loses": 16,
+    "draws": 2
+  },
+  {
+    "name": "yarik1987",
+    "rating": 1461,
+    "wins": 80,
+    "loses": 109,
+    "draws": 4
   },
   {
     "name": "alkaposha",
     "rating": 1460,
-    "wins": 71,
-    "loses": 85,
-    "draws": 5
+    "wins": 55,
+    "loses": 57,
+    "draws": 1
   },
   {
     "name": "easywtf",
     "rating": 1460,
     "wins": 3,
     "loses": 6,
+    "draws": 0
+  },
+  {
+    "name": "Cez",
+    "rating": 1459,
+    "wins": 9,
+    "loses": 12,
+    "draws": 0
+  },
+  {
+    "name": "MercuryDVZ",
+    "rating": 1459,
+    "wins": 95,
+    "loses": 110,
+    "draws": 0
+  },
+  {
+    "name": "MagicModjo",
+    "rating": 1459,
+    "wins": 0,
+    "loses": 2,
     "draws": 0
   },
   {
@@ -2541,10 +2604,10 @@
     "draws": 0
   },
   {
-    "name": "MagicModjo",
+    "name": "norinta",
     "rating": 1458,
-    "wins": 0,
-    "loses": 2,
+    "wins": 2,
+    "loses": 5,
     "draws": 0
   },
   {
@@ -2555,13 +2618,6 @@
     "draws": 0
   },
   {
-    "name": "Cez",
-    "rating": 1457,
-    "wins": 9,
-    "loses": 12,
-    "draws": 0
-  },
-  {
     "name": "Deadshot",
     "rating": 1457,
     "wins": 2,
@@ -2569,24 +2625,17 @@
     "draws": 0
   },
   {
-    "name": "ooppss",
-    "rating": 1457,
-    "wins": 5,
-    "loses": 15,
-    "draws": 0
-  },
-  {
-    "name": "yarik1987",
-    "rating": 1457,
-    "wins": 92,
-    "loses": 117,
-    "draws": 4
-  },
-  {
     "name": "Jorj",
     "rating": 1457,
     "wins": 0,
     "loses": 3,
+    "draws": 0
+  },
+  {
+    "name": "MinasMorgul",
+    "rating": 1457,
+    "wins": 30,
+    "loses": 48,
     "draws": 0
   },
   {
@@ -2597,6 +2646,20 @@
     "draws": 0
   },
   {
+    "name": "Avangard-ROM",
+    "rating": 1457,
+    "wins": 1,
+    "loses": 5,
+    "draws": 0
+  },
+  {
+    "name": "BeerWarrior",
+    "rating": 1456,
+    "wins": 6,
+    "loses": 12,
+    "draws": 0
+  },
+  {
     "name": "CaliSunset",
     "rating": 1456,
     "wins": 2,
@@ -2604,24 +2667,24 @@
     "draws": 0
   },
   {
-    "name": "VovaOgo",
+    "name": "xn1",
     "rating": 1456,
-    "wins": 29,
-    "loses": 43,
+    "wins": 1,
+    "loses": 4,
     "draws": 0
   },
   {
-    "name": "fanatTwaryny",
+    "name": "Peres3ka",
     "rating": 1456,
-    "wins": 3,
-    "loses": 8,
+    "wins": 0,
+    "loses": 3,
     "draws": 0
   },
   {
-    "name": "Zodmund",
+    "name": "Mond96",
     "rating": 1454,
-    "wins": 26,
-    "loses": 49,
+    "wins": 0,
+    "loses": 3,
     "draws": 0
   },
   {
@@ -2635,6 +2698,13 @@
     "name": "TrainKept",
     "rating": 1454,
     "wins": 4,
+    "loses": 6,
+    "draws": 0
+  },
+  {
+    "name": "yarzapp",
+    "rating": 1453,
+    "wins": 3,
     "loses": 6,
     "draws": 0
   },
@@ -2653,24 +2723,10 @@
     "draws": 0
   },
   {
-    "name": "norinta",
-    "rating": 1453,
-    "wins": 2,
-    "loses": 5,
-    "draws": 0
-  },
-  {
     "name": "D0wnButNotD3f3ateD",
     "rating": 1453,
     "wins": 2,
     "loses": 5,
-    "draws": 0
-  },
-  {
-    "name": "Bayazet",
-    "rating": 1452,
-    "wins": 24,
-    "loses": 26,
     "draws": 0
   },
   {
@@ -2688,17 +2744,10 @@
     "draws": 0
   },
   {
-    "name": "Deagostin",
-    "rating": 1452,
-    "wins": 0,
-    "loses": 3,
-    "draws": 0
-  },
-  {
-    "name": "K_Shadow",
+    "name": "Marqadam",
     "rating": 1451,
-    "wins": 25,
-    "loses": 40,
+    "wins": 2,
+    "loses": 4,
     "draws": 0
   },
   {
@@ -2709,17 +2758,10 @@
     "draws": 1
   },
   {
-    "name": "Piterius",
-    "rating": 1450,
-    "wins": 58,
-    "loses": 65,
-    "draws": 0
-  },
-  {
     "name": "korovka1987",
     "rating": 1450,
-    "wins": 35,
-    "loses": 28,
+    "wins": 15,
+    "loses": 16,
     "draws": 0
   },
   {
@@ -2730,17 +2772,17 @@
     "draws": 0
   },
   {
-    "name": "Marqadam",
+    "name": "Deagostin",
     "rating": 1450,
-    "wins": 2,
-    "loses": 4,
+    "wins": 0,
+    "loses": 3,
     "draws": 0
   },
   {
-    "name": "yarzapp",
+    "name": "ZeReBro SS",
     "rating": 1449,
-    "wins": 3,
-    "loses": 6,
+    "wins": 0,
+    "loses": 3,
     "draws": 0
   },
   {
@@ -2751,11 +2793,25 @@
     "draws": 1
   },
   {
+    "name": "StekAttack",
+    "rating": 1448,
+    "wins": 9,
+    "loses": 11,
+    "draws": 0
+  },
+  {
     "name": "Sloth_D",
     "rating": 1448,
     "wins": 28,
     "loses": 45,
     "draws": 0
+  },
+  {
+    "name": "Timbuktu",
+    "rating": 1448,
+    "wins": 63,
+    "loses": 72,
+    "draws": 4
   },
   {
     "name": "Beliard",
@@ -2765,11 +2821,18 @@
     "draws": 0
   },
   {
-    "name": "kinger",
+    "name": "Zodmund",
     "rating": 1447,
-    "wins": 58,
-    "loses": 91,
-    "draws": 2
+    "wins": 22,
+    "loses": 37,
+    "draws": 0
+  },
+  {
+    "name": "Bayazet",
+    "rating": 1447,
+    "wins": 8,
+    "loses": 14,
+    "draws": 0
   },
   {
     "name": "JustObserver",
@@ -2786,11 +2849,11 @@
     "draws": 0
   },
   {
-    "name": "ZeReBro SS",
+    "name": "Alin",
     "rating": 1446,
-    "wins": 0,
-    "loses": 3,
-    "draws": 0
+    "wins": 133,
+    "loses": 178,
+    "draws": 2
   },
   {
     "name": "shlimberger",
@@ -2800,11 +2863,11 @@
     "draws": 0
   },
   {
-    "name": "Surreal",
-    "rating": 1445,
-    "wins": 99,
-    "loses": 150,
-    "draws": 1
+    "name": "noobass-kontrobass",
+    "rating": 1446,
+    "wins": 14,
+    "loses": 21,
+    "draws": 0
   },
   {
     "name": "kotleta",
@@ -2822,34 +2885,27 @@
   },
   {
     "name": "Fatal1ty",
-    "rating": 1444,
+    "rating": 1443,
     "wins": 3,
     "loses": 8,
     "draws": 0
   },
   {
-    "name": "Alin",
-    "rating": 1444,
-    "wins": 217,
-    "loses": 318,
-    "draws": 2
-  },
-  {
-    "name": "Sumer and Akkad",
-    "rating": 1442,
-    "wins": 9,
-    "loses": 10,
-    "draws": 0
-  },
-  {
-    "name": "GapLomah",
-    "rating": 1442,
+    "name": "igrayukakMogy",
+    "rating": 1443,
     "wins": 1,
     "loses": 4,
     "draws": 0
   },
   {
-    "name": "igrayukakMogy",
+    "name": "Jambo",
+    "rating": 1442,
+    "wins": 0,
+    "loses": 4,
+    "draws": 0
+  },
+  {
+    "name": "GapLomah",
     "rating": 1442,
     "wins": 1,
     "loses": 4,
@@ -2863,10 +2919,10 @@
     "draws": 2
   },
   {
-    "name": "Jambo",
+    "name": "Sumer and Akkad",
     "rating": 1441,
-    "wins": 0,
-    "loses": 4,
+    "wins": 9,
+    "loses": 10,
     "draws": 0
   },
   {
@@ -2889,6 +2945,20 @@
     "wins": 5,
     "loses": 11,
     "draws": 1
+  },
+  {
+    "name": "Foxoni4",
+    "rating": 1440,
+    "wins": 13,
+    "loses": 17,
+    "draws": 1
+  },
+  {
+    "name": "Wallys",
+    "rating": 1440,
+    "wins": 13,
+    "loses": 23,
+    "draws": 0
   },
   {
     "name": "Skroder",
@@ -2919,13 +2989,6 @@
     "draws": 0
   },
   {
-    "name": "Nitro",
-    "rating": 1438,
-    "wins": 232,
-    "loses": 202,
-    "draws": 1
-  },
-  {
     "name": "Daio14",
     "rating": 1438,
     "wins": 2,
@@ -2933,17 +2996,10 @@
     "draws": 0
   },
   {
-    "name": "Pradromalo",
-    "rating": 1438,
-    "wins": 0,
-    "loses": 6,
-    "draws": 0
-  },
-  {
-    "name": "ShadowManiac",
+    "name": "Browser",
     "rating": 1437,
-    "wins": 49,
-    "loses": 86,
+    "wins": 70,
+    "loses": 181,
     "draws": 1
   },
   {
@@ -2952,13 +3008,6 @@
     "wins": 2,
     "loses": 6,
     "draws": 0
-  },
-  {
-    "name": "Norbakk",
-    "rating": 1436,
-    "wins": 27,
-    "loses": 41,
-    "draws": 1
   },
   {
     "name": "mexOn",
@@ -2975,24 +3024,10 @@
     "draws": 1
   },
   {
-    "name": "Telder54",
-    "rating": 1433,
-    "wins": 23,
-    "loses": 24,
-    "draws": 2
-  },
-  {
     "name": "Ashtray",
     "rating": 1432,
     "wins": 10,
     "loses": 16,
-    "draws": 0
-  },
-  {
-    "name": "asfeo",
-    "rating": 1432,
-    "wins": 0,
-    "loses": 5,
     "draws": 0
   },
   {
@@ -3003,6 +3038,20 @@
     "draws": 0
   },
   {
+    "name": "olegas227",
+    "rating": 1431,
+    "wins": 35,
+    "loses": 45,
+    "draws": 1
+  },
+  {
+    "name": "Pradromalo",
+    "rating": 1431,
+    "wins": 0,
+    "loses": 6,
+    "draws": 0
+  },
+  {
     "name": "BlackFatal",
     "rating": 1431,
     "wins": 9,
@@ -3010,23 +3059,37 @@
     "draws": 0
   },
   {
-    "name": "jobstar",
-    "rating": 1430,
-    "wins": 51,
-    "loses": 56,
-    "draws": 1
-  },
-  {
-    "name": "moonlyer",
+    "name": "Norbakk",
     "rating": 1429,
-    "wins": 0,
-    "loses": 5,
-    "draws": 0
+    "wins": 27,
+    "loses": 41,
+    "draws": 1
   },
   {
     "name": "MelSpirit",
     "rating": 1429,
     "wins": 1,
+    "loses": 5,
+    "draws": 0
+  },
+  {
+    "name": "Scorpiona",
+    "rating": 1429,
+    "wins": 127,
+    "loses": 200,
+    "draws": 0
+  },
+  {
+    "name": "jobstar",
+    "rating": 1428,
+    "wins": 23,
+    "loses": 40,
+    "draws": 1
+  },
+  {
+    "name": "ded MazAi",
+    "rating": 1428,
+    "wins": 0,
     "loses": 5,
     "draws": 0
   },
@@ -3038,11 +3101,25 @@
     "draws": 0
   },
   {
-    "name": "ded MazAi",
-    "rating": 1426,
+    "name": "AerinSwift",
+    "rating": 1427,
     "wins": 0,
-    "loses": 5,
+    "loses": 6,
     "draws": 0
+  },
+  {
+    "name": "Piterius",
+    "rating": 1426,
+    "wins": 38,
+    "loses": 49,
+    "draws": 0
+  },
+  {
+    "name": "Vatya",
+    "rating": 1426,
+    "wins": 54,
+    "loses": 67,
+    "draws": 3
   },
   {
     "name": "WlaeronN",
@@ -3052,11 +3129,11 @@
     "draws": 0
   },
   {
-    "name": "AerinSwift",
-    "rating": 1425,
-    "wins": 0,
-    "loses": 6,
-    "draws": 0
+    "name": "Mar",
+    "rating": 1424,
+    "wins": 144,
+    "loses": 163,
+    "draws": 1
   },
   {
     "name": "Bikeman56",
@@ -3066,18 +3143,25 @@
     "draws": 0
   },
   {
-    "name": "Aeterno",
+    "name": "Court",
     "rating": 1424,
-    "wins": 29,
-    "loses": 24,
+    "wins": 27,
+    "loses": 54,
     "draws": 0
   },
   {
-    "name": "MinasMorgul",
+    "name": "Surreal",
     "rating": 1424,
-    "wins": 58,
-    "loses": 80,
-    "draws": 0
+    "wins": 39,
+    "loses": 58,
+    "draws": 1
+  },
+  {
+    "name": "identity",
+    "rating": 1424,
+    "wins": 48,
+    "loses": 56,
+    "draws": 1
   },
   {
     "name": "Akitsu",
@@ -3087,17 +3171,10 @@
     "draws": 1
   },
   {
-    "name": "StekAttack",
-    "rating": 1422,
-    "wins": 9,
-    "loses": 15,
-    "draws": 0
-  },
-  {
-    "name": "Лось",
-    "rating": 1422,
-    "wins": 9,
-    "loses": 17,
+    "name": "Omaha",
+    "rating": 1423,
+    "wins": 0,
+    "loses": 5,
     "draws": 0
   },
   {
@@ -3115,24 +3192,17 @@
     "draws": 0
   },
   {
-    "name": "aka.Ward3n",
-    "rating": 1420,
-    "wins": 203,
-    "loses": 307,
-    "draws": 9
-  },
-  {
-    "name": "MadSpirit",
-    "rating": 1420,
-    "wins": 139,
-    "loses": 210,
-    "draws": 0
-  },
-  {
     "name": "Kamnerub",
     "rating": 1419,
     "wins": 3,
     "loses": 12,
+    "draws": 0
+  },
+  {
+    "name": "ValWin",
+    "rating": 1419,
+    "wins": 2,
+    "loses": 5,
     "draws": 0
   },
   {
@@ -3143,11 +3213,32 @@
     "draws": 0
   },
   {
+    "name": "Simon5760",
+    "rating": 1418,
+    "wins": 85,
+    "loses": 100,
+    "draws": 0
+  },
+  {
     "name": "Chocolate Puma",
     "rating": 1418,
     "wins": 29,
     "loses": 38,
     "draws": 2
+  },
+  {
+    "name": "Лось",
+    "rating": 1418,
+    "wins": 9,
+    "loses": 17,
+    "draws": 0
+  },
+  {
+    "name": "noangel",
+    "rating": 1418,
+    "wins": 15,
+    "loses": 26,
+    "draws": 0
   },
   {
     "name": "FreeSmasher",
@@ -3157,11 +3248,32 @@
     "draws": 0
   },
   {
-    "name": "Ridelth",
+    "name": "PetkoDimitrov",
     "rating": 1417,
-    "wins": 15,
-    "loses": 20,
+    "wins": 2,
+    "loses": 6,
     "draws": 0
+  },
+  {
+    "name": "kinger",
+    "rating": 1417,
+    "wins": 46,
+    "loses": 79,
+    "draws": 2
+  },
+  {
+    "name": "Sup",
+    "rating": 1417,
+    "wins": 1,
+    "loses": 12,
+    "draws": 0
+  },
+  {
+    "name": "Zen",
+    "rating": 1417,
+    "wins": 106,
+    "loses": 112,
+    "draws": 1
   },
   {
     "name": "logrime",
@@ -3171,25 +3283,18 @@
     "draws": 0
   },
   {
-    "name": "ValWin",
-    "rating": 1416,
-    "wins": 2,
-    "loses": 5,
-    "draws": 0
-  },
-  {
-    "name": "Zen",
-    "rating": 1416,
-    "wins": 246,
-    "loses": 168,
-    "draws": 1
-  },
-  {
     "name": "The_Sonic",
-    "rating": 1415,
+    "rating": 1416,
     "wins": 2,
     "loses": 8,
     "draws": 0
+  },
+  {
+    "name": "DoubleW",
+    "rating": 1416,
+    "wins": 25,
+    "loses": 32,
+    "draws": 1
   },
   {
     "name": "RaiseTheDead",
@@ -3200,9 +3305,23 @@
   },
   {
     "name": "No_Name",
-    "rating": 1414,
+    "rating": 1413,
     "wins": 5,
     "loses": 11,
+    "draws": 0
+  },
+  {
+    "name": "unfaism",
+    "rating": 1412,
+    "wins": 0,
+    "loses": 8,
+    "draws": 1
+  },
+  {
+    "name": "Ridelth",
+    "rating": 1412,
+    "wins": 15,
+    "loses": 20,
     "draws": 0
   },
   {
@@ -3213,31 +3332,31 @@
     "draws": 1
   },
   {
-    "name": "Browser",
+    "name": "Underwood",
     "rating": 1412,
-    "wins": 70,
-    "loses": 213,
+    "wins": 14,
+    "loses": 20,
     "draws": 1
   },
   {
-    "name": "Dark30",
+    "name": "Psyche_7",
     "rating": 1411,
-    "wins": 162,
-    "loses": 205,
-    "draws": 2
-  },
-  {
-    "name": "Illuy",
-    "rating": 1411,
-    "wins": 6,
-    "loses": 9,
+    "wins": 27,
+    "loses": 40,
     "draws": 0
   },
   {
-    "name": "Sup",
-    "rating": 1409,
+    "name": "MadSpirit",
+    "rating": 1411,
+    "wins": 59,
+    "loses": 90,
+    "draws": 0
+  },
+  {
+    "name": "daoded",
+    "rating": 1410,
     "wins": 1,
-    "loses": 16,
+    "loses": 10,
     "draws": 0
   },
   {
@@ -3276,30 +3395,23 @@
     "draws": 1
   },
   {
-    "name": "olegas227",
-    "rating": 1406,
-    "wins": 39,
-    "loses": 85,
-    "draws": 1
-  },
-  {
-    "name": "unfaism",
-    "rating": 1405,
-    "wins": 0,
-    "loses": 12,
-    "draws": 1
-  },
-  {
-    "name": "Alone",
-    "rating": 1405,
+    "name": "Illuy",
+    "rating": 1407,
     "wins": 6,
-    "loses": 20,
+    "loses": 9,
     "draws": 0
   },
   {
-    "name": "Ghiblee",
-    "rating": 1404,
-    "wins": 3,
+    "name": "andabat",
+    "rating": 1406,
+    "wins": 7,
+    "loses": 13,
+    "draws": 0
+  },
+  {
+    "name": "Heromight",
+    "rating": 1405,
+    "wins": 2,
     "loses": 9,
     "draws": 0
   },
@@ -3311,6 +3423,13 @@
     "draws": 0
   },
   {
+    "name": "ShadowManiac",
+    "rating": 1403,
+    "wins": 33,
+    "loses": 58,
+    "draws": 1
+  },
+  {
     "name": "Spinhead",
     "rating": 1403,
     "wins": 2,
@@ -3318,32 +3437,46 @@
     "draws": 0
   },
   {
-    "name": "Eztujke",
+    "name": "MoxuTo",
     "rating": 1403,
-    "wins": 8,
-    "loses": 16,
+    "wins": 91,
+    "loses": 123,
+    "draws": 2
+  },
+  {
+    "name": "denast",
+    "rating": 1403,
+    "wins": 29,
+    "loses": 40,
     "draws": 0
   },
   {
-    "name": "BlooDy)DriVeR",
+    "name": "Ghiblee",
     "rating": 1401,
-    "wins": 37,
-    "loses": 58,
-    "draws": 1
+    "wins": 3,
+    "loses": 9,
+    "draws": 0
   },
   {
     "name": "SVAROG",
-    "rating": 1401,
-    "wins": 24,
-    "loses": 46,
-    "draws": 5
+    "rating": 1399,
+    "wins": 20,
+    "loses": 38,
+    "draws": 1
   },
   {
-    "name": "andabat",
-    "rating": 1400,
-    "wins": 7,
-    "loses": 13,
+    "name": "avellimachi",
+    "rating": 1399,
+    "wins": 95,
+    "loses": 108,
     "draws": 0
+  },
+  {
+    "name": "PunkeR",
+    "rating": 1399,
+    "wins": 15,
+    "loses": 22,
+    "draws": 1
   },
   {
     "name": "zwei",
@@ -3353,10 +3486,17 @@
     "draws": 0
   },
   {
-    "name": "Wallys",
+    "name": "Vazelin",
     "rating": 1398,
-    "wins": 13,
-    "loses": 35,
+    "wins": 2,
+    "loses": 10,
+    "draws": 0
+  },
+  {
+    "name": "Elmidar",
+    "rating": 1397,
+    "wins": 21,
+    "loses": 29,
     "draws": 0
   },
   {
@@ -3367,10 +3507,17 @@
     "draws": 0
   },
   {
-    "name": "Vazelin",
+    "name": "Pridu",
     "rating": 1397,
-    "wins": 2,
-    "loses": 10,
+    "wins": 130,
+    "loses": 107,
+    "draws": 0
+  },
+  {
+    "name": "Alone",
+    "rating": 1397,
+    "wins": 6,
+    "loses": 20,
     "draws": 0
   },
   {
@@ -3381,20 +3528,6 @@
     "draws": 0
   },
   {
-    "name": "Court",
-    "rating": 1395,
-    "wins": 55,
-    "loses": 94,
-    "draws": 0
-  },
-  {
-    "name": "R@sIM",
-    "rating": 1395,
-    "wins": 147,
-    "loses": 215,
-    "draws": 5
-  },
-  {
     "name": "Убитый",
     "rating": 1395,
     "wins": 32,
@@ -3402,60 +3535,32 @@
     "draws": 3
   },
   {
-    "name": "PunkeR",
-    "rating": 1394,
-    "wins": 15,
-    "loses": 22,
-    "draws": 1
-  },
-  {
-    "name": "Graf_Bananov",
-    "rating": 1394,
-    "wins": 85,
-    "loses": 91,
-    "draws": 1
-  },
-  {
-    "name": "noangel",
-    "rating": 1394,
-    "wins": 35,
-    "loses": 46,
-    "draws": 0
-  },
-  {
-    "name": "MoxuTo",
-    "rating": 1392,
-    "wins": 123,
-    "loses": 151,
-    "draws": 2
-  },
-  {
-    "name": "Elmidar",
-    "rating": 1391,
-    "wins": 41,
-    "loses": 61,
-    "draws": 0
-  },
-  {
-    "name": "avellimachi",
-    "rating": 1390,
-    "wins": 275,
-    "loses": 248,
-    "draws": 0
-  },
-  {
     "name": "Chemist_HP",
-    "rating": 1390,
-    "wins": 145,
-    "loses": 257,
+    "rating": 1393,
+    "wins": 89,
+    "loses": 153,
+    "draws": 1
+  },
+  {
+    "name": "BlooDy)DriVeR",
+    "rating": 1391,
+    "wins": 29,
+    "loses": 46,
     "draws": 1
   },
   {
     "name": "Hi-Tech",
-    "rating": 1389,
-    "wins": 124,
-    "loses": 159,
+    "rating": 1390,
+    "wins": 80,
+    "loses": 135,
     "draws": 2
+  },
+  {
+    "name": "Graf_Bananov",
+    "rating": 1390,
+    "wins": 85,
+    "loses": 91,
+    "draws": 1
   },
   {
     "name": "bolotnik",
@@ -3465,38 +3570,24 @@
     "draws": 1
   },
   {
+    "name": "Shved1502",
+    "rating": 1387,
+    "wins": 10,
+    "loses": 20,
+    "draws": 0
+  },
+  {
     "name": "Hideyosi",
-    "rating": 1388,
+    "rating": 1387,
     "wins": 2,
     "loses": 10,
     "draws": 0
   },
   {
-    "name": "DoubleW",
+    "name": "Pinchie",
     "rating": 1387,
-    "wins": 77,
-    "loses": 84,
-    "draws": 5
-  },
-  {
-    "name": "Pridu",
-    "rating": 1386,
-    "wins": 250,
-    "loses": 175,
-    "draws": 0
-  },
-  {
-    "name": "denast",
-    "rating": 1384,
-    "wins": 45,
-    "loses": 52,
-    "draws": 0
-  },
-  {
-    "name": "daoded",
-    "rating": 1382,
-    "wins": 1,
-    "loses": 14,
+    "wins": 6,
+    "loses": 20,
     "draws": 0
   },
   {
@@ -3507,25 +3598,32 @@
     "draws": 0
   },
   {
-    "name": "Underwood",
-    "rating": 1381,
-    "wins": 26,
-    "loses": 32,
-    "draws": 1
-  },
-  {
     "name": "Alexey-omsk",
-    "rating": 1381,
-    "wins": 31,
-    "loses": 61,
+    "rating": 1382,
+    "wins": 19,
+    "loses": 45,
     "draws": 0
   },
   {
     "name": "crewgn",
-    "rating": 1379,
+    "rating": 1381,
     "wins": 1,
     "loses": 10,
     "draws": 0
+  },
+  {
+    "name": "Yosha",
+    "rating": 1380,
+    "wins": 60,
+    "loses": 84,
+    "draws": 0
+  },
+  {
+    "name": "Dark30",
+    "rating": 1378,
+    "wins": 110,
+    "loses": 165,
+    "draws": 2
   },
   {
     "name": "SuRoTa",
@@ -3535,31 +3633,17 @@
     "draws": 0
   },
   {
-    "name": "Yosha",
-    "rating": 1377,
-    "wins": 88,
-    "loses": 132,
-    "draws": 0
-  },
-  {
-    "name": "Pinchie",
-    "rating": 1377,
-    "wins": 6,
-    "loses": 20,
-    "draws": 0
-  },
-  {
-    "name": "Foxoni4",
-    "rating": 1376,
-    "wins": 41,
-    "loses": 49,
+    "name": "o1dboy79",
+    "rating": 1374,
+    "wins": 76,
+    "loses": 133,
     "draws": 1
   },
   {
-    "name": "o1dboy79",
-    "rating": 1372,
-    "wins": 148,
-    "loses": 265,
+    "name": "iryzhakov",
+    "rating": 1370,
+    "wins": 11,
+    "loses": 22,
     "draws": 1
   },
   {
@@ -3570,11 +3654,18 @@
     "draws": 0
   },
   {
-    "name": "iryzhakov",
-    "rating": 1366,
-    "wins": 31,
-    "loses": 42,
-    "draws": 1
+    "name": "DarkSavant94",
+    "rating": 1365,
+    "wins": 1,
+    "loses": 10,
+    "draws": 0
+  },
+  {
+    "name": "Astroinferon",
+    "rating": 1364,
+    "wins": 1,
+    "loses": 11,
+    "draws": 0
   },
   {
     "name": "Jewelmask",
@@ -3584,13 +3675,6 @@
     "draws": 3
   },
   {
-    "name": "Astroinferon",
-    "rating": 1362,
-    "wins": 1,
-    "loses": 11,
-    "draws": 0
-  },
-  {
     "name": "COBECTb",
     "rating": 1358,
     "wins": 24,
@@ -3598,10 +3682,24 @@
     "draws": 3
   },
   {
+    "name": "Slayzer",
+    "rating": 1357,
+    "wins": 21,
+    "loses": 38,
+    "draws": 0
+  },
+  {
+    "name": "Izgoy",
+    "rating": 1357,
+    "wins": 281,
+    "loses": 188,
+    "draws": 4
+  },
+  {
     "name": "lampadra",
-    "rating": 1356,
+    "rating": 1355,
     "wins": 4,
-    "loses": 21,
+    "loses": 13,
     "draws": 0
   },
   {
@@ -3612,6 +3710,13 @@
     "draws": 1
   },
   {
+    "name": "PutinKING",
+    "rating": 1353,
+    "wins": 176,
+    "loses": 186,
+    "draws": 0
+  },
+  {
     "name": "Rabe",
     "rating": 1352,
     "wins": 9,
@@ -3619,17 +3724,17 @@
     "draws": 1
   },
   {
-    "name": "dan_choi",
-    "rating": 1351,
-    "wins": 162,
-    "loses": 178,
-    "draws": 2
-  },
-  {
     "name": "Alihes",
     "rating": 1351,
     "wins": 5,
     "loses": 15,
+    "draws": 0
+  },
+  {
+    "name": "Tamior",
+    "rating": 1350,
+    "wins": 1,
+    "loses": 13,
     "draws": 0
   },
   {
@@ -3640,6 +3745,20 @@
     "draws": 0
   },
   {
+    "name": "Volland",
+    "rating": 1349,
+    "wins": 25,
+    "loses": 52,
+    "draws": 0
+  },
+  {
+    "name": "dan_choi",
+    "rating": 1348,
+    "wins": 94,
+    "loses": 158,
+    "draws": 2
+  },
+  {
     "name": "SP_SkyLine",
     "rating": 1348,
     "wins": 10,
@@ -3647,59 +3766,52 @@
     "draws": 0
   },
   {
-    "name": "Ominous1",
-    "rating": 1347,
-    "wins": 120,
-    "loses": 137,
+    "name": "blblbl",
+    "rating": 1345,
+    "wins": 32,
+    "loses": 48,
     "draws": 1
   },
   {
-    "name": "Scorpiona",
-    "rating": 1346,
-    "wins": 147,
-    "loses": 264,
-    "draws": 0
-  },
-  {
-    "name": "DarkSavant94",
-    "rating": 1345,
-    "wins": 1,
-    "loses": 10,
-    "draws": 0
-  },
-  {
     "name": "marajan",
-    "rating": 1345,
+    "rating": 1344,
     "wins": 45,
     "loses": 78,
     "draws": 1
   },
   {
-    "name": "Player_",
+    "name": "Limar_Rikon",
     "rating": 1341,
-    "wins": 68,
-    "loses": 187,
-    "draws": 3
+    "wins": 9,
+    "loses": 23,
+    "draws": 0
+  },
+  {
+    "name": "Pyre",
+    "rating": 1339,
+    "wins": 21,
+    "loses": 46,
+    "draws": 1
   },
   {
     "name": "MaxGor",
-    "rating": 1335,
-    "wins": 46,
-    "loses": 116,
+    "rating": 1334,
+    "wins": 30,
+    "loses": 92,
     "draws": 2
-  },
-  {
-    "name": "Mond96",
-    "rating": 1332,
-    "wins": 0,
-    "loses": 15,
-    "draws": 0
   },
   {
     "name": "Kirill Samoylenko",
     "rating": 1331,
     "wins": 3,
     "loses": 13,
+    "draws": 0
+  },
+  {
+    "name": "zuro007",
+    "rating": 1331,
+    "wins": 21,
+    "loses": 36,
     "draws": 0
   },
   {
@@ -3713,8 +3825,15 @@
     "name": "wariator",
     "rating": 1329,
     "wins": 90,
-    "loses": 191,
+    "loses": 187,
     "draws": 2
+  },
+  {
+    "name": "Player_",
+    "rating": 1328,
+    "wins": 36,
+    "loses": 115,
+    "draws": 3
   },
   {
     "name": "Akella",
@@ -3724,25 +3843,11 @@
     "draws": 1
   },
   {
-    "name": "suicid_pe.iarba",
-    "rating": 1327,
-    "wins": 96,
-    "loses": 154,
+    "name": "Notforyou",
+    "rating": 1326,
+    "wins": 5,
+    "loses": 21,
     "draws": 0
-  },
-  {
-    "name": "zoog",
-    "rating": 1327,
-    "wins": 178,
-    "loses": 463,
-    "draws": 19
-  },
-  {
-    "name": "St_Klaus",
-    "rating": 1324,
-    "wins": 71,
-    "loses": 166,
-    "draws": 4
   },
   {
     "name": "pusher",
@@ -3752,20 +3857,6 @@
     "draws": 0
   },
   {
-    "name": "Simon5760",
-    "rating": 1323,
-    "wins": 97,
-    "loses": 128,
-    "draws": 0
-  },
-  {
-    "name": "h3pro",
-    "rating": 1318,
-    "wins": 57,
-    "loses": 146,
-    "draws": 1
-  },
-  {
     "name": "TNO",
     "rating": 1314,
     "wins": 5,
@@ -3773,39 +3864,60 @@
     "draws": 0
   },
   {
-    "name": "xn1",
+    "name": "Cosmic Magician",
     "rating": 1314,
-    "wins": 5,
-    "loses": 20,
-    "draws": 0
-  },
-  {
-    "name": "blblbl",
-    "rating": 1307,
-    "wins": 44,
-    "loses": 72,
+    "wins": 15,
+    "loses": 32,
     "draws": 1
   },
   {
-    "name": "Gee",
-    "rating": 1307,
-    "wins": 416,
-    "loses": 624,
-    "draws": 14
+    "name": "h3pro",
+    "rating": 1314,
+    "wins": 41,
+    "loses": 102,
+    "draws": 1
   },
   {
-    "name": "Slayzer",
-    "rating": 1303,
-    "wins": 25,
-    "loses": 54,
+    "name": "samuils",
+    "rating": 1313,
+    "wins": 10,
+    "loses": 23,
+    "draws": 0
+  },
+  {
+    "name": "Armageddets",
+    "rating": 1310,
+    "wins": 12,
+    "loses": 25,
+    "draws": 0
+  },
+  {
+    "name": "liverpool",
+    "rating": 1309,
+    "wins": 11,
+    "loses": 33,
+    "draws": 0
+  },
+  {
+    "name": "suicid_pe.iarba",
+    "rating": 1304,
+    "wins": 44,
+    "loses": 82,
     "draws": 0
   },
   {
     "name": "Zillot",
-    "rating": 1300,
-    "wins": 69,
-    "loses": 273,
+    "rating": 1301,
+    "wins": 25,
+    "loses": 85,
     "draws": 0
+  },
+  {
+    "name": "Gee",
+    "rating": 1300,
+    "wins": 236,
+    "loses": 428,
+    "draws": 6
   },
   {
     "name": "Noom",
@@ -3815,24 +3927,38 @@
     "draws": 0
   },
   {
-    "name": "Night Troll",
-    "rating": 1294,
-    "wins": 75,
-    "loses": 188,
-    "draws": 8
+    "name": "Fill-ua",
+    "rating": 1295,
+    "wins": 94,
+    "loses": 229,
+    "draws": 3
   },
   {
-    "name": "Notforyou",
-    "rating": 1294,
-    "wins": 5,
-    "loses": 25,
+    "name": "Shanti",
+    "rating": 1293,
+    "wins": 16,
+    "loses": 46,
     "draws": 0
   },
   {
-    "name": "Volland",
-    "rating": 1293,
-    "wins": 105,
-    "loses": 176,
+    "name": "s_jay_is_god",
+    "rating": 1292,
+    "wins": 20,
+    "loses": 48,
+    "draws": 0
+  },
+  {
+    "name": "zoog",
+    "rating": 1291,
+    "wins": 134,
+    "loses": 295,
+    "draws": 15
+  },
+  {
+    "name": "iluzzionist",
+    "rating": 1289,
+    "wins": 2,
+    "loses": 19,
     "draws": 0
   },
   {
@@ -3850,53 +3976,25 @@
     "draws": 0
   },
   {
-    "name": "Iamsamstan",
-    "rating": 1286,
-    "wins": 159,
-    "loses": 411,
-    "draws": 4
-  },
-  {
-    "name": "Shved1502",
-    "rating": 1285,
-    "wins": 18,
-    "loses": 68,
-    "draws": 0
-  },
-  {
-    "name": "Pyre",
-    "rating": 1284,
-    "wins": 21,
-    "loses": 66,
-    "draws": 1
-  },
-  {
     "name": "Denspb",
-    "rating": 1284,
+    "rating": 1288,
     "wins": 0,
     "loses": 16,
     "draws": 0
   },
   {
-    "name": "Psyche_7",
-    "rating": 1282,
-    "wins": 27,
-    "loses": 56,
-    "draws": 0
+    "name": "Iamsamstan",
+    "rating": 1285,
+    "wins": 119,
+    "loses": 307,
+    "draws": 4
   },
   {
     "name": "krag",
-    "rating": 1282,
+    "rating": 1283,
     "wins": 72,
     "loses": 88,
     "draws": 2
-  },
-  {
-    "name": "Armageddets",
-    "rating": 1281,
-    "wins": 36,
-    "loses": 45,
-    "draws": 0
   },
   {
     "name": "AGUMON",
@@ -3906,17 +4004,10 @@
     "draws": 0
   },
   {
-    "name": "Cosmic Magician",
-    "rating": 1278,
-    "wins": 63,
-    "loses": 112,
-    "draws": 5
-  },
-  {
-    "name": "Limar_Rikon",
-    "rating": 1276,
-    "wins": 25,
-    "loses": 51,
+    "name": "DreadKn1ght",
+    "rating": 1275,
+    "wins": 10,
+    "loses": 36,
     "draws": 0
   },
   {
@@ -3927,17 +4018,17 @@
     "draws": 0
   },
   {
-    "name": "Odessit1991",
-    "rating": 1266,
-    "wins": 85,
-    "loses": 223,
-    "draws": 0
+    "name": "Night Troll",
+    "rating": 1272,
+    "wins": 71,
+    "loses": 188,
+    "draws": 8
   },
   {
-    "name": "samuils",
-    "rating": 1265,
-    "wins": 26,
-    "loses": 63,
+    "name": "Odessit1991",
+    "rating": 1269,
+    "wins": 17,
+    "loses": 51,
     "draws": 0
   },
   {
@@ -3948,6 +4039,13 @@
     "draws": 0
   },
   {
+    "name": "St_Klaus",
+    "rating": 1263,
+    "wins": 43,
+    "loses": 130,
+    "draws": 4
+  },
+  {
     "name": "Churik",
     "rating": 1261,
     "wins": 5,
@@ -3955,25 +4053,11 @@
     "draws": 0
   },
   {
-    "name": "s_jay_is_god",
-    "rating": 1254,
-    "wins": 56,
-    "loses": 92,
-    "draws": 0
-  },
-  {
-    "name": "zuro007",
-    "rating": 1254,
-    "wins": 41,
-    "loses": 108,
-    "draws": 0
-  },
-  {
-    "name": "Fill-ua",
-    "rating": 1253,
-    "wins": 174,
-    "loses": 381,
-    "draws": 3
+    "name": "Dorsaj",
+    "rating": 1259,
+    "wins": 84,
+    "loses": 152,
+    "draws": 2
   },
   {
     "name": "Kalcefar",
@@ -3983,60 +4067,25 @@
     "draws": 0
   },
   {
-    "name": "Shanti",
-    "rating": 1251,
-    "wins": 24,
-    "loses": 86,
-    "draws": 0
-  },
-  {
-    "name": "Dorsaj",
-    "rating": 1250,
-    "wins": 152,
-    "loses": 276,
-    "draws": 2
-  },
-  {
-    "name": "Tamior",
-    "rating": 1242,
-    "wins": 5,
-    "loses": 33,
-    "draws": 0
-  },
-  {
-    "name": "identity",
-    "rating": 1230,
-    "wins": 48,
-    "loses": 80,
+    "name": "Vigo",
+    "rating": 1244,
+    "wins": 12,
+    "loses": 42,
     "draws": 1
   },
   {
-    "name": "Heromight",
-    "rating": 1226,
-    "wins": 6,
-    "loses": 29,
+    "name": "9li9ht",
+    "rating": 1230,
+    "wins": 20,
+    "loses": 69,
     "draws": 0
   },
   {
-    "name": "PetkoDimitrov",
-    "rating": 1225,
-    "wins": 10,
-    "loses": 30,
-    "draws": 0
-  },
-  {
-    "name": "Omaha",
-    "rating": 1224,
-    "wins": 0,
-    "loses": 25,
-    "draws": 0
-  },
-  {
-    "name": "PutinKING",
-    "rating": 1220,
-    "wins": 180,
-    "loses": 218,
-    "draws": 0
+    "name": "muunis",
+    "rating": 1229,
+    "wins": 30,
+    "loses": 65,
+    "draws": 1
   },
   {
     "name": "happy orange",
@@ -4046,45 +4095,24 @@
     "draws": 4
   },
   {
-    "name": "Vigo",
-    "rating": 1208,
-    "wins": 28,
-    "loses": 154,
-    "draws": 5
-  },
-  {
-    "name": "DreadKn1ght",
-    "rating": 1205,
-    "wins": 10,
-    "loses": 48,
-    "draws": 0
-  },
-  {
     "name": "Sevan_80",
-    "rating": 1197,
-    "wins": 236,
-    "loses": 660,
+    "rating": 1206,
+    "wins": 152,
+    "loses": 496,
     "draws": 5
   },
   {
-    "name": "liverpool",
-    "rating": 1196,
-    "wins": 11,
-    "loses": 41,
-    "draws": 0
-  },
-  {
-    "name": "Izgoy",
-    "rating": 1188,
-    "wins": 409,
-    "loses": 328,
-    "draws": 8
+    "name": "ДаУ",
+    "rating": 1178,
+    "wins": 29,
+    "loses": 114,
+    "draws": 3
   },
   {
     "name": "Be3y4uu",
-    "rating": 1153,
-    "wins": 15,
-    "loses": 95,
+    "rating": 1170,
+    "wins": 11,
+    "loses": 59,
     "draws": 0
   },
   {
@@ -4095,38 +4123,10 @@
     "draws": 2
   },
   {
-    "name": "9li9ht",
-    "rating": 1140,
-    "wins": 28,
-    "loses": 121,
-    "draws": 0
-  },
-  {
-    "name": "muunis",
-    "rating": 1139,
-    "wins": 78,
-    "loses": 149,
-    "draws": 1
-  },
-  {
-    "name": "iluzzionist",
-    "rating": 1080,
-    "wins": 2,
-    "loses": 59,
-    "draws": 0
-  },
-  {
-    "name": "ДаУ",
-    "rating": 1057,
-    "wins": 29,
-    "loses": 146,
-    "draws": 3
-  },
-  {
     "name": "Rockmachine",
-    "rating": 1030,
+    "rating": 1100,
     "wins": 18,
-    "loses": 144,
+    "loses": 116,
     "draws": 0
   }
 ]

@@ -15,9 +15,7 @@ import java.io.IOException;
 import java.net.URL;
 import java.time.LocalDate;
 import java.time.format.DateTimeFormatter;
-import java.util.ArrayList;
-import java.util.Collections;
-import java.util.List;
+import java.util.*;
 import java.util.stream.Collectors;
 
 public class StatisticsCollector {
@@ -29,10 +27,11 @@ public class StatisticsCollector {
     private static final String OLD_TOURNAMENTS = "http://forum.heroesworld.ru/forumdisplay.php?f=143";
 
     public List<GameResult> collect() throws IOException {
-        return parsePages(NEW_TOURNAMENTS, OLD_TOURNAMENTS);
+        Set<String> alreadyVisited = new HashSet<>();
+        return parsePages(alreadyVisited, NEW_TOURNAMENTS, OLD_TOURNAMENTS);
     }
 
-    public List<GameResult> parsePages(String... links) throws IOException {
+    public List<GameResult> parsePages(Set<String> alreadyVisited, String... links) throws IOException {
         List<GameResult> result = new ArrayList<>();
 
         for (String link : links) {
@@ -48,14 +47,14 @@ public class StatisticsCollector {
             }
 
             for (int i = 0; i < pages; i++) {
-                result.addAll(parseThemes(link + String.format("&page=%s&order=desc", i + 1)));
+                result.addAll(parseThemes(alreadyVisited, link + String.format("&page=%s&order=desc", i + 1)));
             }
         }
 
         return result;
     }
 
-    public List<GameResult> parseThemes(String link) throws IOException {
+    public List<GameResult> parseThemes(Set<String> alreadyVisited, String link) throws IOException {
         List<GameResult> result = new ArrayList<>();
         Document page = Jsoup.parse(new URL(link), 10000);
         List<String> themes = page.select("td.alt1").stream()
@@ -63,7 +62,10 @@ public class StatisticsCollector {
                 .map(el -> el.child(0).child(1).attr("href")).collect(Collectors.toList());
 
         for (String theme : themes) {
-            result.addAll(parseResults("http://forum.heroesworld.ru/" + theme));
+            if (!alreadyVisited.contains(theme)) {
+                result.addAll(parseResults("http://forum.heroesworld.ru/" + theme));
+                alreadyVisited.add(theme);
+            }
         }
 
         return result;
