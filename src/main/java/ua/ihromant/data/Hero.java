@@ -1,4 +1,4 @@
-package ua.ihromant;
+package ua.ihromant.data;
 
 import java.util.Map;
 import java.util.function.Function;

@@ -1,4 +1,4 @@
-package ua.ihromant;
+package ua.ihromant.data;
 
 import java.util.Map;
 import java.util.function.Function;
@@ -19,7 +19,7 @@ public enum Template {
         return name;
     }
 
-    public Template parse(String from) {
+    public static Template parse(String from) {
         return NAME_TO_TEMPLATE.get(from);
     }
 }
