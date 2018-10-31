@@ -1,5 +1,7 @@
 package ua.ihromant.parser;
 
+import com.fasterxml.jackson.databind.ObjectMapper;
+import com.fasterxml.jackson.datatype.jsr310.JavaTimeModule;
 import org.jsoup.Jsoup;
 import org.jsoup.nodes.Document;
 import org.jsoup.nodes.Element;
@@ -8,6 +10,7 @@ import org.jsoup.nodes.TextNode;
 import org.jsoup.select.Elements;
 import ua.ihromant.data.*;
 
+import java.io.FileOutputStream;
 import java.io.IOException;
 import java.net.URL;
 import java.time.LocalDate;
@@ -18,6 +21,9 @@ import java.util.List;
 import java.util.stream.Collectors;
 
 public class StatisticsCollector {
+    private static ObjectMapper mapper = new ObjectMapper()
+            .registerModule(new JavaTimeModule());
+
     private static DateTimeFormatter DATE_FORMATTER = DateTimeFormatter.ofPattern("dd.MM.yyyy");
     private static final String NEW_TOURNAMENTS = "http://forum.heroesworld.ru/forumdisplay.php?f=62";
     private static final String OLD_TOURNAMENTS = "http://forum.heroesworld.ru/forumdisplay.php?f=143";
@@ -175,6 +181,6 @@ public class StatisticsCollector {
     }
 
     public static void main(String[] args) throws IOException {
-        new StatisticsCollector().collect();
+        mapper.writeValue(new FileOutputStream("/home/ihromant/results.json"), new StatisticsCollector().collect());
     }
 }
