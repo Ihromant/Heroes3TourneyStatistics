@@ -92,15 +92,26 @@ public class StatisticsCollector {
                 System.out.println("Second WTF???"); // TODO
             }
 
-            if (status == ReportStatus.CONFIRMED) {
-                results.add(parseConfirmed(el.child(0).childNodes()));
+            List<Node> nodes = el.child(0).childNodes();
+
+            if (status == ReportStatus.CONFIRMED
+                    && validateNicknamePresent(((TextNode) nodes.get(4)).text())) { // sometimes happens on forum
+                results.add(parseConfirmed(nodes));
             }
 
-            if (status == ReportStatus.UNCONFIRMED) {
-                results.add(parseUnconfirmed(el.child(0).childNodes()));
+            if (status == ReportStatus.UNCONFIRMED
+                    && validateNicknamePresent(((TextNode) nodes.get(4)).text())) { // sometimes happens on forum
+                results.add(parseUnconfirmed(nodes));
             }
         }
+        results.forEach(res -> res.setTourneyLink(url));
         return results;
+    }
+
+    private static boolean validateNicknamePresent(String text) {
+        return !text.startsWith(", , , ) ")
+                && !text.startsWith(", Random, , , ")
+                && !text.startsWith(", , Random, , ) ");
     }
 
     private static GameResult parseConfirmed(List<Node> nodes) {

@@ -1,11 +1,18 @@
 package ua.ihromant.data;
 
+import com.fasterxml.jackson.annotation.JsonIgnore;
+
+import java.util.ArrayList;
+import java.util.List;
+
 public class StatisticsItem {
     private String name;
     private int rating;
     private int wins;
     private int loses;
     private int draws;
+    @JsonIgnore
+    private List<GameResult> playersResults = new ArrayList<>();
 
     public String getName() {
         return name;
@@ -45,5 +52,18 @@ public class StatisticsItem {
 
     public void setDraws(int draws) {
         this.draws = draws;
+    }
+
+    public List<GameResult> getPlayersResults() {
+        return playersResults;
+    }
+
+    public void setPlayersResults(List<GameResult> playersResults) {
+        this.playersResults = playersResults;
+    }
+
+    @JsonIgnore
+    public int getTotalGames() {
+        return wins + loses + draws;
     }
 }
