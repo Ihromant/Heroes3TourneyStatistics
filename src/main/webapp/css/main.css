@@ -1,0 +1,66 @@
+body,td,th {
+	color: #FFFFFF;
+}
+body {
+	background-color: #000000;
+	background-image: url(/img/fon1.png);
+}
+.old1 {
+	font-family: "Arial Black";
+	font-size: 36px;
+}
+.old2 {font-family: "Arial Black"}
+.old3 {color: #CC9900}
+a:link {
+	color: #FFFFFF;
+}
+a:visited {
+	color: #CCCCCC;
+}
+a:active {
+	color: #FF6600;
+}
+.old4 {color: #CC9900; font-family: "Arial Black"; }
+.old5 {font-size: 16px}
+.old8 {
+	color: #003333;
+	font-weight: bold;}
+.old9 {
+	color: #FFFFCC;
+	line-height: 14px;	
+}
+
+.hidden-rating {
+	display: none;
+}
+
+.old10 {
+	font-size: 16px;
+	font-weight: bold;
+	line-height: 14px;
+	background-color: #FFFFCC;
+}
+.old11 {
+	font-size: 16px;
+	font-weight: bold;
+	line-height: 14px;
+	background-color: #CCFFFF;
+}
+.old12 {
+	font-size: 16px;
+	font-weight: bold;
+	line-height: 14px;
+	background-color: Red;
+}
+.old13 {
+	font-size: 16px;
+	font-weight: bold;
+	line-height: 14px;
+	background-color: Green;
+}
+.old14 {
+	font-size: 16px;
+	font-weight: bold;
+	line-height: 14px;
+	background-color: #666666;
+}

@@ -1,0 +1,5168 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+        "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+    <title>Players rating</title>
+    <link href="/css/main.css" rel="stylesheet" type="text/css"/>
+</head>
+
+<body>
+
+<table width="100%" border="0" cellpadding="0" cellspacing="0">
+    <tr>
+        <td width="150" rowspan="2">
+            <div align="right"><a href="/"><img src="/img/logo.png" width="176" height="219" border="0"/></a></div>
+        </td>
+        <td width="90%" height="100">
+            <div align="center" class="old1 old3">
+                <p>Heroes III Stat Engine<br/>
+                    <span class="old5">(Total players statistics)</span></p>
+            </div>
+        </td>
+        <td><a href="/unconfirmed/"><img src="/img/att.gif" alt="Unconfirmed reports" width="341" height="133"
+                                         border="0"/></a></td>
+    </tr>
+    <tr>
+        <td colspan="2">
+            <table width="100%" border="3" cellpadding="3" cellspacing="0" bordercolor="#CCCCCC" bgcolor="#666666">
+                <tr>
+                    <td width="20%">
+                        <div align="center" class="old2"><a href="/">Home</a></div>
+                    </td>
+                    <td width="20%">
+                        <div align="center" class="old2"><a href="/rating">Rating</a></div>
+                    </td>
+                    <td width="20%">
+                        <div align="center" class="old2"><a href="/tournament_rating/">Tournament Rating</a></div>
+                    </td>
+                    <td width="20%">
+                        <div align="center" class="old2"><a href="/templates/">Templates</a></div>
+                    </td>
+                    <td width="20%">
+                        <div align="center" class="old2"><a href="/castles/">Castles</a></div>
+                    </td>
+                </tr>
+            </table>
+        </td>
+    </tr>
+</table>
+<br/>
+
+<table width="90%" border="1" align="center">
+    <tr>
+        <p2>
+            <td colspan=2>The ranking is updated once pr. hour. So when the report is confirmed by both players you have
+                to wait up to one hour before you can see the new ranking. Lastest update: <b>October 16 2018
+                    10:03:57.</b>
+        </p2>
+        <td>
+    </tr>
+    <tr>
+        <td valign="top">
+            <table border=2>
+                <tr align=center>
+                    <td colspan=7>Overall rating of HOMM3 players<br>In the table, only those who have 20+ reports</td>
+                </tr>
+                <tr align=center>
+                    <td>№</td>
+                    <td>Nickname</td>
+                    <td>Wins</td>
+                    <td>Losses</td>
+                    <td>Total<br>games</td>
+                    <td>Overall<br>rating</td>
+                </tr>
+                <#list overall.items as item>
+                <tr align=center>
+                    <td>${item?counter}</td>
+                    <td><a href="/rating/season_summer-autumn-2017/luckyf">${item.name}</a></td>
+                    <td>${item.wins}</td>
+                    <td>${item.loses}</td>
+                    <td>${item.totalGames}</td>
+                    <td>${item.rating}</td>
+                </tr>
+                </#list>
+            </table>
+        </td>
+<td valign="top">
+    <table border=2>
+        <tr align=center>
+            <td colspan=8> Summer-Autumn-2017 (current)</td>
+        </tr>
+        <tr align=center>
+            <td>№</td>
+            <td>Nickname</td>
+            <td>Wins</td>
+            <td>Losses</td>
+            <td>Total<br>games</td>
+            <td>Seasons<br>rating</td>
+        </tr>
+        <tr align=center>
+            <td>1</td>
+            <td><a href="/rating/season_summer-autumn-2017/luckyf">luckyf</a></td>
+            <td>105</td>
+            <td>86</td>
+            <td>191</td>
+            <td>1907</td>
+        </tr>
+        <tr align=center>
+            <td>2</td>
+            <td><a href="/rating/season_summer-autumn-2017/saneok">saneok</a></td>
+            <td>165</td>
+            <td>97</td>
+            <td>262</td>
+            <td>1866</td>
+        </tr>
+        <tr align=center>
+            <td>3</td>
+            <td><a href="/rating/season_summer-autumn-2017/firetosky">firetosky</a></td>
+            <td>107</td>
+            <td>29</td>
+            <td>136</td>
+            <td>1859</td>
+        </tr>
+        <tr align=center>
+            <td>4</td>
+            <td><a href="/rating/season_summer-autumn-2017/herolwy">herolwy</a></td>
+            <td>131</td>
+            <td>42</td>
+            <td>176</td>
+            <td>1821</td>
+        </tr>
+        <tr align=center>
+            <td>5</td>
+            <td><a href="/rating/season_summer-autumn-2017/kamukag3e">kamukag3e</a></td>
+            <td>167</td>
+            <td>74</td>
+            <td>242</td>
+            <td>1818</td>
+        </tr>
+        <tr align=center>
+            <td>6</td>
+            <td><a href="/rating/season_summer-autumn-2017/jelen117">jelen117</a></td>
+            <td>69</td>
+            <td>32</td>
+            <td>103</td>
+            <td>1817</td>
+        </tr>
+        <tr align=center>
+            <td>7</td>
+            <td><a href="/rating/season_summer-autumn-2017/antiplayer">antiplayer</a></td>
+            <td>81</td>
+            <td>33</td>
+            <td>116</td>
+            <td>1797</td>
+        </tr>
+        <tr align=center>
+            <td>8</td>
+            <td><a href="/rating/season_summer-autumn-2017/dave_hun">dave_hun</a></td>
+            <td>65</td>
+            <td>26</td>
+            <td>91</td>
+            <td>1795</td>
+        </tr>
+        <tr align=center>
+            <td>9</td>
+            <td><a href="/rating/season_summer-autumn-2017/de_luxe">de_luxe</a></td>
+            <td>138</td>
+            <td>99</td>
+            <td>237</td>
+            <td>1794</td>
+        </tr>
+        <tr align=center>
+            <td>10</td>
+            <td><a href="/rating/season_summer-autumn-2017/gomunguls">gomunguls</a></td>
+            <td>88</td>
+            <td>60</td>
+            <td>149</td>
+            <td>1791</td>
+        </tr>
+        <tr align=center>
+            <td>11</td>
+            <td><a href="/rating/season_summer-autumn-2017/helllight">helllight</a></td>
+            <td>65</td>
+            <td>36</td>
+            <td>101</td>
+            <td>1773</td>
+        </tr>
+        <tr align=center>
+            <td>12</td>
+            <td><a href="/rating/season_summer-autumn-2017/falcone">falcone</a></td>
+            <td>75</td>
+            <td>60</td>
+            <td>135</td>
+            <td>1763</td>
+        </tr>
+        <tr align=center>
+            <td>13</td>
+            <td><a href="/rating/season_summer-autumn-2017/bishop">bishop</a></td>
+            <td>78</td>
+            <td>34</td>
+            <td>112</td>
+            <td>1762</td>
+        </tr>
+        <tr align=center>
+            <td>14</td>
+            <td><a href="/rating/season_summer-autumn-2017/yostairs">yostairs</a></td>
+            <td>89</td>
+            <td>45</td>
+            <td>134</td>
+            <td>1757</td>
+        </tr>
+        <tr align=center>
+            <td>15</td>
+            <td><a href="/rating/season_summer-autumn-2017/redwhait">redwhait</a></td>
+            <td>73</td>
+            <td>45</td>
+            <td>118</td>
+            <td>1733</td>
+        </tr>
+        <tr align=center>
+            <td>16</td>
+            <td><a href="/rating/season_summer-autumn-2017/xocenk">xocenk</a></td>
+            <td>56</td>
+            <td>30</td>
+            <td>86</td>
+            <td>1721</td>
+        </tr>
+        <tr align=center>
+            <td>17</td>
+            <td><a href="/rating/season_summer-autumn-2017/silenthill">silenthill</a></td>
+            <td>59</td>
+            <td>43</td>
+            <td>102</td>
+            <td>1716</td>
+        </tr>
+        <tr align=center>
+            <td>18</td>
+            <td><a href="/rating/season_summer-autumn-2017/caliban">caliban</a></td>
+            <td>50</td>
+            <td>42</td>
+            <td>92</td>
+            <td>1715</td>
+        </tr>
+        <tr align=center>
+            <td>18</td>
+            <td><a href="/rating/season_summer-autumn-2017/dima surmay">dima surmay</a></td>
+            <td>128</td>
+            <td>74</td>
+            <td>202</td>
+            <td>1715</td>
+        </tr>
+        <tr align=center>
+            <td>19</td>
+            <td><a href="/rating/season_summer-autumn-2017/getto">getto</a></td>
+            <td>25</td>
+            <td>4</td>
+            <td>29</td>
+            <td>1714</td>
+        </tr>
+        <tr align=center>
+            <td>20</td>
+            <td><a href="/rating/season_summer-autumn-2017/dawidu91">dawidu91</a></td>
+            <td>58</td>
+            <td>36</td>
+            <td>94</td>
+            <td>1706</td>
+        </tr>
+        <tr align=center>
+            <td>21</td>
+            <td><a href="/rating/season_summer-autumn-2017/sevensan">sevensan</a></td>
+            <td>27</td>
+            <td>26</td>
+            <td>53</td>
+            <td>1703</td>
+        </tr>
+        <tr align=center>
+            <td>22</td>
+            <td><a href="/rating/season_summer-autumn-2017/diabler">diabler</a></td>
+            <td>39</td>
+            <td>22</td>
+            <td>61</td>
+            <td>1701</td>
+        </tr>
+        <tr align=center>
+            <td>22</td>
+            <td><a href="/rating/season_summer-autumn-2017/bolo">bolo</a></td>
+            <td>160</td>
+            <td>85</td>
+            <td>245</td>
+            <td>1701</td>
+        </tr>
+        <tr align=center>
+            <td>23</td>
+            <td><a href="/rating/season_summer-autumn-2017/boovli">boovli</a></td>
+            <td>28</td>
+            <td>10</td>
+            <td>38</td>
+            <td>1695</td>
+        </tr>
+        <tr align=center>
+            <td>24</td>
+            <td><a href="/rating/season_summer-autumn-2017/matador99">matador99</a></td>
+            <td>49</td>
+            <td>44</td>
+            <td>93</td>
+            <td>1669</td>
+        </tr>
+        <tr align=center>
+            <td>25</td>
+            <td><a href="/rating/season_summer-autumn-2017/=lizard=">=lizard=</a></td>
+            <td>79</td>
+            <td>80</td>
+            <td>162</td>
+            <td>1668</td>
+        </tr>
+        <tr align=center>
+            <td>26</td>
+            <td><a href="/rating/season_summer-autumn-2017/grizvald">grizvald</a></td>
+            <td>53</td>
+            <td>45</td>
+            <td>98</td>
+            <td>1666</td>
+        </tr>
+        <tr align=center>
+            <td>27</td>
+            <td><a href="/rating/season_summer-autumn-2017/russel_ldhl">russel_ldhl</a></td>
+            <td>41</td>
+            <td>28</td>
+            <td>70</td>
+            <td>1665</td>
+        </tr>
+        <tr align=center>
+            <td>28</td>
+            <td><a href="/rating/season_summer-autumn-2017/shameonyou">shameonyou</a></td>
+            <td>24</td>
+            <td>11</td>
+            <td>35</td>
+            <td>1664</td>
+        </tr>
+        <tr align=center>
+            <td>29</td>
+            <td><a href="/rating/season_summer-autumn-2017/kobra_rr">kobra_rr</a></td>
+            <td>37</td>
+            <td>17</td>
+            <td>54</td>
+            <td>1661</td>
+        </tr>
+        <tr align=center>
+            <td>30</td>
+            <td><a href="/rating/season_summer-autumn-2017/twaryna">twaryna</a></td>
+            <td>71</td>
+            <td>52</td>
+            <td>125</td>
+            <td>1658</td>
+        </tr>
+        <tr align=center>
+            <td>31</td>
+            <td><a href="/rating/season_summer-autumn-2017/sanin">sanin</a></td>
+            <td>77</td>
+            <td>84</td>
+            <td>161</td>
+            <td>1648</td>
+        </tr>
+        <tr align=center>
+            <td>32</td>
+            <td><a href="/rating/season_summer-autumn-2017/roger-ua">roger-ua</a></td>
+            <td>42</td>
+            <td>20</td>
+            <td>62</td>
+            <td>1645</td>
+        </tr>
+        <tr align=center>
+            <td>33</td>
+            <td><a href="/rating/season_summer-autumn-2017/silence-">silence-</a></td>
+            <td>53</td>
+            <td>38</td>
+            <td>91</td>
+            <td>1642</td>
+        </tr>
+        <tr align=center>
+            <td>34</td>
+            <td><a href="/rating/season_summer-autumn-2017/tyranuxus">tyranuxus</a></td>
+            <td>21</td>
+            <td>10</td>
+            <td>31</td>
+            <td>1634</td>
+        </tr>
+        <tr align=center>
+            <td>35</td>
+            <td><a href="/rating/season_summer-autumn-2017/amiloo">amiloo</a></td>
+            <td>43</td>
+            <td>34</td>
+            <td>77</td>
+            <td>1633</td>
+        </tr>
+        <tr align=center>
+            <td>36</td>
+            <td><a href="/rating/season_summer-autumn-2017/patriot">patriot</a></td>
+            <td>97</td>
+            <td>72</td>
+            <td>169</td>
+            <td>1631</td>
+        </tr>
+        <tr align=center>
+            <td>37</td>
+            <td><a href="/rating/season_summer-autumn-2017/u2noob">u2noob</a></td>
+            <td>34</td>
+            <td>37</td>
+            <td>71</td>
+            <td>1629</td>
+        </tr>
+        <tr align=center>
+            <td>37</td>
+            <td><a href="/rating/season_summer-autumn-2017/graalzzz">graalzzz</a></td>
+            <td>103</td>
+            <td>84</td>
+            <td>187</td>
+            <td>1629</td>
+        </tr>
+        <tr align=center>
+            <td>38</td>
+            <td><a href="/rating/season_summer-autumn-2017/wayd">wayd</a></td>
+            <td>51</td>
+            <td>26</td>
+            <td>80</td>
+            <td>1624</td>
+        </tr>
+        <tr align=center>
+            <td>39</td>
+            <td><a href="/rating/season_summer-autumn-2017/мирон">мирон</a></td>
+            <td>53</td>
+            <td>39</td>
+            <td>93</td>
+            <td>1621</td>
+        </tr>
+        <tr align=center>
+            <td>40</td>
+            <td><a href="/rating/season_summer-autumn-2017/bahan">bahan</a></td>
+            <td>18</td>
+            <td>4</td>
+            <td>22</td>
+            <td>1617</td>
+        </tr>
+        <tr align=center>
+            <td>41</td>
+            <td><a href="/rating/season_summer-autumn-2017/sonic111">sonic111</a></td>
+            <td>91</td>
+            <td>66</td>
+            <td>157</td>
+            <td>1616</td>
+        </tr>
+        <tr align=center>
+            <td>42</td>
+            <td><a href="/rating/season_summer-autumn-2017/zorkust">zorkust</a></td>
+            <td>18</td>
+            <td>4</td>
+            <td>23</td>
+            <td>1615</td>
+        </tr>
+        <tr align=center>
+            <td>42</td>
+            <td><a href="/rating/season_summer-autumn-2017/nodl">nodl</a></td>
+            <td>16</td>
+            <td>6</td>
+            <td>22</td>
+            <td>1615</td>
+        </tr>
+        <tr align=center>
+            <td>43</td>
+            <td><a href="/rating/season_summer-autumn-2017/drakonin">drakonin</a></td>
+            <td>14</td>
+            <td>6</td>
+            <td>21</td>
+            <td>1614</td>
+        </tr>
+        <tr align=center>
+            <td>43</td>
+            <td><a href="/rating/season_summer-autumn-2017/medium_hp">medium_hp</a></td>
+            <td>19</td>
+            <td>16</td>
+            <td>35</td>
+            <td>1614</td>
+        </tr>
+        <tr align=center>
+            <td>44</td>
+            <td><a href="/rating/season_summer-autumn-2017/juristis">juristis</a></td>
+            <td>11</td>
+            <td>3</td>
+            <td>14</td>
+            <td>1612</td>
+        </tr>
+        <tr align=center>
+            <td>45</td>
+            <td><a href="/rating/season_summer-autumn-2017/dark">dark</a></td>
+            <td>22</td>
+            <td>28</td>
+            <td>51</td>
+            <td>1611</td>
+        </tr>
+        <tr align=center>
+            <td>46</td>
+            <td><a href="/rating/season_summer-autumn-2017/mikem">mikem</a></td>
+            <td>39</td>
+            <td>23</td>
+            <td>62</td>
+            <td>1607</td>
+        </tr>
+        <tr align=center>
+            <td>47</td>
+            <td><a href="/rating/season_summer-autumn-2017/dead0202">dead0202</a></td>
+            <td>37</td>
+            <td>18</td>
+            <td>55</td>
+            <td>1606</td>
+        </tr>
+        <tr align=center>
+            <td>48</td>
+            <td><a href="/rating/season_summer-autumn-2017/яr">яr</a></td>
+            <td>92</td>
+            <td>88</td>
+            <td>180</td>
+            <td>1603</td>
+        </tr>
+        <tr align=center>
+            <td>49</td>
+            <td><a href="/rating/season_summer-autumn-2017/jubi-juby">jubi-juby</a></td>
+            <td>33</td>
+            <td>26</td>
+            <td>59</td>
+            <td>1600</td>
+        </tr>
+        <tr align=center>
+            <td>50</td>
+            <td><a href="/rating/season_summer-autumn-2017/antal_rr">antal_rr</a></td>
+            <td>44</td>
+            <td>39</td>
+            <td>86</td>
+            <td>1598</td>
+        </tr>
+        <tr align=center>
+            <td>50</td>
+            <td><a href="/rating/season_summer-autumn-2017/protosarchon">protosarchon</a></td>
+            <td>21</td>
+            <td>15</td>
+            <td>37</td>
+            <td>1598</td>
+        </tr>
+        <tr align=center>
+            <td>50</td>
+            <td><a href="/rating/season_summer-autumn-2017/freesha">freesha</a></td>
+            <td>66</td>
+            <td>49</td>
+            <td>115</td>
+            <td>1598</td>
+        </tr>
+        <tr align=center>
+            <td>51</td>
+            <td><a href="/rating/season_summer-autumn-2017/nedved46">nedved46</a></td>
+            <td>117</td>
+            <td>112</td>
+            <td>229</td>
+            <td>1596</td>
+        </tr>
+        <tr align=center>
+            <td>52</td>
+            <td><a href="/rating/season_summer-autumn-2017/joker2k">joker2k</a></td>
+            <td>9</td>
+            <td>1</td>
+            <td>10</td>
+            <td>1593</td>
+        </tr>
+        <tr align=center>
+            <td>52</td>
+            <td><a href="/rating/season_summer-autumn-2017/blitz">blitz</a></td>
+            <td>36</td>
+            <td>28</td>
+            <td>64</td>
+            <td>1593</td>
+        </tr>
+        <tr align=center>
+            <td>53</td>
+            <td><a href="/rating/season_summer-autumn-2017/dirty_player">dirty_player</a></td>
+            <td>16</td>
+            <td>13</td>
+            <td>29</td>
+            <td>1592</td>
+        </tr>
+        <tr align=center>
+            <td>53</td>
+            <td><a href="/rating/season_summer-autumn-2017/_neo_">_neo_</a></td>
+            <td>27</td>
+            <td>15</td>
+            <td>42</td>
+            <td>1592</td>
+        </tr>
+        <tr align=center>
+            <td>54</td>
+            <td><a href="/rating/season_summer-autumn-2017/ayman">ayman</a></td>
+            <td>15</td>
+            <td>6</td>
+            <td>21</td>
+            <td>1591</td>
+        </tr>
+        <tr align=center>
+            <td>55</td>
+            <td><a href="/rating/season_summer-autumn-2017/jaris">jaris</a></td>
+            <td>86</td>
+            <td>50</td>
+            <td>138</td>
+            <td>1590</td>
+        </tr>
+        <tr align=center>
+            <td>55</td>
+            <td><a href="/rating/season_summer-autumn-2017/mda">mda</a></td>
+            <td>77</td>
+            <td>54</td>
+            <td>131</td>
+            <td>1590</td>
+        </tr>
+        <tr align=center>
+            <td>56</td>
+            <td><a href="/rating/season_summer-autumn-2017/andres">andres</a></td>
+            <td>31</td>
+            <td>24</td>
+            <td>57</td>
+            <td>1589</td>
+        </tr>
+        <tr align=center>
+            <td>56</td>
+            <td><a href="/rating/season_summer-autumn-2017/stizko">stizko</a></td>
+            <td>7</td>
+            <td>1</td>
+            <td>8</td>
+            <td>1589</td>
+        </tr>
+        <tr align=center>
+            <td>57</td>
+            <td><a href="/rating/season_summer-autumn-2017/toganash">toganash</a></td>
+            <td>29</td>
+            <td>30</td>
+            <td>59</td>
+            <td>1584</td>
+        </tr>
+        <tr align=center>
+            <td>57</td>
+            <td><a href="/rating/season_summer-autumn-2017/ckotuha">ckotuha</a></td>
+            <td>69</td>
+            <td>45</td>
+            <td>115</td>
+            <td>1584</td>
+        </tr>
+        <tr align=center>
+            <td>58</td>
+            <td><a href="/rating/season_summer-autumn-2017/tun7gus7">tun7gus7</a></td>
+            <td>75</td>
+            <td>54</td>
+            <td>129</td>
+            <td>1583</td>
+        </tr>
+        <tr align=center>
+            <td>59</td>
+            <td><a href="/rating/season_summer-autumn-2017/ihromant">ihromant</a></td>
+            <td>204</td>
+            <td>181</td>
+            <td>385</td>
+            <td>1581</td>
+        </tr>
+        <tr align=center>
+            <td>59</td>
+            <td><a href="/rating/season_summer-autumn-2017/amster">amster</a></td>
+            <td>12</td>
+            <td>7</td>
+            <td>19</td>
+            <td>1581</td>
+        </tr>
+        <tr align=center>
+            <td>60</td>
+            <td><a href="/rating/season_summer-autumn-2017/alexthegreat">alexthegreat</a></td>
+            <td>5</td>
+            <td>0</td>
+            <td>5</td>
+            <td>1580</td>
+        </tr>
+        <tr align=center>
+            <td>60</td>
+            <td><a href="/rating/season_summer-autumn-2017/positive">positive</a></td>
+            <td>83</td>
+            <td>96</td>
+            <td>179</td>
+            <td>1580</td>
+        </tr>
+        <tr align=center>
+            <td>61</td>
+            <td><a href="/rating/season_summer-autumn-2017/puzzz0">puzzz0</a></td>
+            <td>26</td>
+            <td>16</td>
+            <td>42</td>
+            <td>1578</td>
+        </tr>
+        <tr align=center>
+            <td>62</td>
+            <td><a href="/rating/season_summer-autumn-2017/lebron">lebron</a></td>
+            <td>15</td>
+            <td>13</td>
+            <td>28</td>
+            <td>1573</td>
+        </tr>
+        <tr align=center>
+            <td>63</td>
+            <td><a href="/rating/season_summer-autumn-2017/flate">flate</a></td>
+            <td>28</td>
+            <td>24</td>
+            <td>52</td>
+            <td>1572</td>
+        </tr>
+        <tr align=center>
+            <td>64</td>
+            <td><a href="/rating/season_summer-autumn-2017/theshevanesian">theshevanesian</a></td>
+            <td>47</td>
+            <td>35</td>
+            <td>82</td>
+            <td>1567</td>
+        </tr>
+        <tr align=center>
+            <td>65</td>
+            <td><a href="/rating/season_summer-autumn-2017/mulliyta">mulliyta</a></td>
+            <td>21</td>
+            <td>18</td>
+            <td>40</td>
+            <td>1566</td>
+        </tr>
+        <tr align=center>
+            <td>65</td>
+            <td><a href="/rating/season_summer-autumn-2017/mizrael">mizrael</a></td>
+            <td>58</td>
+            <td>47</td>
+            <td>105</td>
+            <td>1566</td>
+        </tr>
+        <tr align=center>
+            <td>66</td>
+            <td><a href="/rating/season_summer-autumn-2017/yan_vas">yan_vas</a></td>
+            <td>26</td>
+            <td>24</td>
+            <td>50</td>
+            <td>1564</td>
+        </tr>
+        <tr align=center>
+            <td>67</td>
+            <td><a href="/rating/season_summer-autumn-2017/kolianxxxxxx">kolianxxxxxx</a></td>
+            <td>21</td>
+            <td>15</td>
+            <td>36</td>
+            <td>1563</td>
+        </tr>
+        <tr align=center>
+            <td>67</td>
+            <td><a href="/rating/season_summer-autumn-2017/краб">краб</a></td>
+            <td>30</td>
+            <td>14</td>
+            <td>44</td>
+            <td>1563</td>
+        </tr>
+        <tr align=center>
+            <td>67</td>
+            <td><a href="/rating/season_summer-autumn-2017/gort">gort</a></td>
+            <td>16</td>
+            <td>10</td>
+            <td>26</td>
+            <td>1563</td>
+        </tr>
+        <tr align=center>
+            <td>68</td>
+            <td><a href="/rating/season_summer-autumn-2017/xenofex">xenofex</a></td>
+            <td>5</td>
+            <td>1</td>
+            <td>6</td>
+            <td>1561</td>
+        </tr>
+        <tr align=center>
+            <td>68</td>
+            <td><a href="/rating/season_summer-autumn-2017/j.0.k.e.r">j.0.k.e.r</a></td>
+            <td>6</td>
+            <td>2</td>
+            <td>8</td>
+            <td>1561</td>
+        </tr>
+        <tr align=center>
+            <td>69</td>
+            <td><a href="/rating/season_summer-autumn-2017/turkish">turkish</a></td>
+            <td>22</td>
+            <td>13</td>
+            <td>36</td>
+            <td>1559</td>
+        </tr>
+        <tr align=center>
+            <td>70</td>
+            <td><a href="/rating/season_summer-autumn-2017/vespalover">vespalover</a></td>
+            <td>15</td>
+            <td>11</td>
+            <td>26</td>
+            <td>1556</td>
+        </tr>
+        <tr align=center>
+            <td>70</td>
+            <td><a href="/rating/season_summer-autumn-2017/meo">meo</a></td>
+            <td>63</td>
+            <td>76</td>
+            <td>139</td>
+            <td>1556</td>
+        </tr>
+        <tr align=center>
+            <td>70</td>
+            <td><a href="/rating/season_summer-autumn-2017/vinceras">vinceras</a></td>
+            <td>34</td>
+            <td>36</td>
+            <td>70</td>
+            <td>1556</td>
+        </tr>
+        <tr align=center>
+            <td>71</td>
+            <td><a href="/rating/season_summer-autumn-2017/wonder child">wonder child</a></td>
+            <td>5</td>
+            <td>1</td>
+            <td>6</td>
+            <td>1555</td>
+        </tr>
+        <tr align=center>
+            <td>71</td>
+            <td><a href="/rating/season_summer-autumn-2017/rebellious">rebellious</a></td>
+            <td>17</td>
+            <td>22</td>
+            <td>40</td>
+            <td>1555</td>
+        </tr>
+        <tr align=center>
+            <td>72</td>
+            <td><a href="/rating/season_summer-autumn-2017/kenben">kenben</a></td>
+            <td>9</td>
+            <td>5</td>
+            <td>14</td>
+            <td>1554</td>
+        </tr>
+        <tr align=center>
+            <td>73</td>
+            <td><a href="/rating/season_summer-autumn-2017/tofsla">tofsla</a></td>
+            <td>15</td>
+            <td>17</td>
+            <td>32</td>
+            <td>1552</td>
+        </tr>
+        <tr align=center>
+            <td>74</td>
+            <td><a href="/rating/season_summer-autumn-2017/w4rick">w4rick</a></td>
+            <td>51</td>
+            <td>32</td>
+            <td>83</td>
+            <td>1550</td>
+        </tr>
+        <tr align=center>
+            <td>75</td>
+            <td><a href="/rating/season_summer-autumn-2017/ritosux">ritosux</a></td>
+            <td>42</td>
+            <td>45</td>
+            <td>88</td>
+            <td>1549</td>
+        </tr>
+        <tr align=center>
+            <td>76</td>
+            <td><a href="/rating/season_summer-autumn-2017/godofwrcrft">godofwrcrft</a></td>
+            <td>59</td>
+            <td>38</td>
+            <td>97</td>
+            <td>1547</td>
+        </tr>
+        <tr align=center>
+            <td>77</td>
+            <td><a href="/rating/season_summer-autumn-2017/60pw">60pw</a></td>
+            <td>66</td>
+            <td>112</td>
+            <td>179</td>
+            <td>1546</td>
+        </tr>
+        <tr align=center>
+            <td>78</td>
+            <td><a href="/rating/season_summer-autumn-2017/xrenoff">xrenoff</a></td>
+            <td>5</td>
+            <td>2</td>
+            <td>7</td>
+            <td>1545</td>
+        </tr>
+        <tr align=center>
+            <td>79</td>
+            <td><a href="/rating/season_summer-autumn-2017/heroin_hp">heroin_hp</a></td>
+            <td>6</td>
+            <td>4</td>
+            <td>10</td>
+            <td>1544</td>
+        </tr>
+        <tr align=center>
+            <td>80</td>
+            <td><a href="/rating/season_summer-autumn-2017/palach hp">palach hp</a></td>
+            <td>12</td>
+            <td>9</td>
+            <td>22</td>
+            <td>1543</td>
+        </tr>
+        <tr align=center>
+            <td>81</td>
+            <td><a href="/rating/season_summer-autumn-2017/lucky george">lucky george</a></td>
+            <td>25</td>
+            <td>23</td>
+            <td>48</td>
+            <td>1541</td>
+        </tr>
+        <tr align=center>
+            <td>82</td>
+            <td><a href="/rating/season_summer-autumn-2017/crzq">crzq</a></td>
+            <td>4</td>
+            <td>2</td>
+            <td>7</td>
+            <td>1540</td>
+        </tr>
+        <tr align=center>
+            <td>83</td>
+            <td><a href="/rating/season_summer-autumn-2017/al feyn">al feyn</a></td>
+            <td>72</td>
+            <td>76</td>
+            <td>148</td>
+            <td>1536</td>
+        </tr>
+        <tr align=center>
+            <td>83</td>
+            <td><a href="/rating/season_summer-autumn-2017/nubasik">nubasik</a></td>
+            <td>5</td>
+            <td>2</td>
+            <td>7</td>
+            <td>1536</td>
+        </tr>
+        <tr align=center>
+            <td>84</td>
+            <td><a href="/rating/season_summer-autumn-2017/nintendo">nintendo</a></td>
+            <td>15</td>
+            <td>10</td>
+            <td>26</td>
+            <td>1534</td>
+        </tr>
+        <tr align=center>
+            <td>85</td>
+            <td><a href="/rating/season_summer-autumn-2017/sshreks">sshreks</a></td>
+            <td>16</td>
+            <td>12</td>
+            <td>28</td>
+            <td>1533</td>
+        </tr>
+        <tr align=center>
+            <td>85</td>
+            <td><a href="/rating/season_summer-autumn-2017/mercurial-">mercurial-</a></td>
+            <td>32</td>
+            <td>32</td>
+            <td>64</td>
+            <td>1533</td>
+        </tr>
+        <tr align=center>
+            <td>86</td>
+            <td><a href="/rating/season_summer-autumn-2017/mrp1nchy">mrp1nchy</a></td>
+            <td>22</td>
+            <td>25</td>
+            <td>48</td>
+            <td>1532</td>
+        </tr>
+        <tr align=center>
+            <td>87</td>
+            <td><a href="/rating/season_summer-autumn-2017/realshans">realshans</a></td>
+            <td>3</td>
+            <td>1</td>
+            <td>4</td>
+            <td>1530</td>
+        </tr>
+        <tr align=center>
+            <td>88</td>
+            <td><a href="/rating/season_summer-autumn-2017/socola">socola</a></td>
+            <td>62</td>
+            <td>55</td>
+            <td>118</td>
+            <td>1529</td>
+        </tr>
+        <tr align=center>
+            <td>88</td>
+            <td><a href="/rating/season_summer-autumn-2017/sav1tarrr">sav1tarrr</a></td>
+            <td>48</td>
+            <td>41</td>
+            <td>89</td>
+            <td>1529</td>
+        </tr>
+        <tr align=center>
+            <td>89</td>
+            <td><a href="/rating/season_summer-autumn-2017/beerwarrior">beerwarrior</a></td>
+            <td>4</td>
+            <td>2</td>
+            <td>6</td>
+            <td>1527</td>
+        </tr>
+        <tr align=center>
+            <td>89</td>
+            <td><a href="/rating/season_summer-autumn-2017/genie.">genie.</a></td>
+            <td>15</td>
+            <td>11</td>
+            <td>26</td>
+            <td>1527</td>
+        </tr>
+        <tr align=center>
+            <td>90</td>
+            <td><a href="/rating/season_summer-autumn-2017/gr1">gr1</a></td>
+            <td>2</td>
+            <td>0</td>
+            <td>2</td>
+            <td>1525</td>
+        </tr>
+        <tr align=center>
+            <td>90</td>
+            <td><a href="/rating/season_summer-autumn-2017/mrocznyruchacz">mrocznyruchacz</a></td>
+            <td>2</td>
+            <td>0</td>
+            <td>2</td>
+            <td>1525</td>
+        </tr>
+        <tr align=center>
+            <td>90</td>
+            <td><a href="/rating/season_summer-autumn-2017/rimpel2">rimpel2</a></td>
+            <td>2</td>
+            <td>0</td>
+            <td>2</td>
+            <td>1525</td>
+        </tr>
+        <tr align=center>
+            <td>90</td>
+            <td><a href="/rating/season_summer-autumn-2017/magl">magl</a></td>
+            <td>32</td>
+            <td>27</td>
+            <td>61</td>
+            <td>1525</td>
+        </tr>
+        <tr align=center>
+            <td>90</td>
+            <td><a href="/rating/season_summer-autumn-2017/battanas">battanas</a></td>
+            <td>33</td>
+            <td>39</td>
+            <td>72</td>
+            <td>1525</td>
+        </tr>
+        <tr align=center>
+            <td>90</td>
+            <td><a href="/rating/season_summer-autumn-2017/wyndoc">wyndoc</a></td>
+            <td>7</td>
+            <td>7</td>
+            <td>14</td>
+            <td>1525</td>
+        </tr>
+        <tr align=center>
+            <td>91</td>
+            <td><a href="/rating/season_summer-autumn-2017/benis_xdd">benis_xdd</a></td>
+            <td>48</td>
+            <td>64</td>
+            <td>113</td>
+            <td>1524</td>
+        </tr>
+        <tr align=center>
+            <td>92</td>
+            <td><a href="/rating/season_summer-autumn-2017/freestyler">freestyler</a></td>
+            <td>13</td>
+            <td>7</td>
+            <td>20</td>
+            <td>1523</td>
+        </tr>
+        <tr align=center>
+            <td>92</td>
+            <td><a href="/rating/season_summer-autumn-2017/tt_hnk">tt_hnk</a></td>
+            <td>40</td>
+            <td>41</td>
+            <td>81</td>
+            <td>1523</td>
+        </tr>
+        <tr align=center>
+            <td>93</td>
+            <td><a href="/rating/season_summer-autumn-2017/outlaw">outlaw</a></td>
+            <td>27</td>
+            <td>28</td>
+            <td>55</td>
+            <td>1522</td>
+        </tr>
+        <tr align=center>
+            <td>94</td>
+            <td><a href="/rating/season_summer-autumn-2017/gunar">gunar</a></td>
+            <td>90</td>
+            <td>103</td>
+            <td>193</td>
+            <td>1521</td>
+        </tr>
+        <tr align=center>
+            <td>94</td>
+            <td><a href="/rating/season_summer-autumn-2017/huanito">huanito</a></td>
+            <td>27</td>
+            <td>24</td>
+            <td>51</td>
+            <td>1521</td>
+        </tr>
+        <tr align=center>
+            <td>95</td>
+            <td><a href="/rating/season_summer-autumn-2017/cost">cost</a></td>
+            <td>26</td>
+            <td>18</td>
+            <td>44</td>
+            <td>1520</td>
+        </tr>
+        <tr align=center>
+            <td>95</td>
+            <td><a href="/rating/season_summer-autumn-2017/fidesxfx">fidesxfx</a></td>
+            <td>58</td>
+            <td>73</td>
+            <td>131</td>
+            <td>1520</td>
+        </tr>
+        <tr align=center>
+            <td>95</td>
+            <td><a href="/rating/season_summer-autumn-2017/dom2">dom2</a></td>
+            <td>9</td>
+            <td>7</td>
+            <td>16</td>
+            <td>1520</td>
+        </tr>
+        <tr align=center>
+            <td>95</td>
+            <td><a href="/rating/season_summer-autumn-2017/bul">bul</a></td>
+            <td>20</td>
+            <td>16</td>
+            <td>36</td>
+            <td>1520</td>
+        </tr>
+        <tr align=center>
+            <td>96</td>
+            <td><a href="/rating/season_summer-autumn-2017/tiamathpl">tiamathpl</a></td>
+            <td>5</td>
+            <td>4</td>
+            <td>9</td>
+            <td>1519</td>
+        </tr>
+        <tr align=center>
+            <td>97</td>
+            <td><a href="/rating/season_summer-autumn-2017/nikolaev">nikolaev</a></td>
+            <td>9</td>
+            <td>8</td>
+            <td>17</td>
+            <td>1518</td>
+        </tr>
+        <tr align=center>
+            <td>97</td>
+            <td><a href="/rating/season_summer-autumn-2017/georg_">georg_</a></td>
+            <td>54</td>
+            <td>50</td>
+            <td>105</td>
+            <td>1518</td>
+        </tr>
+        <tr align=center>
+            <td>97</td>
+            <td><a href="/rating/season_summer-autumn-2017/montt">montt</a></td>
+            <td>43</td>
+            <td>46</td>
+            <td>90</td>
+            <td>1518</td>
+        </tr>
+        <tr align=center>
+            <td>98</td>
+            <td><a href="/rating/season_summer-autumn-2017/justtheway">justtheway</a></td>
+            <td>1</td>
+            <td>0</td>
+            <td>1</td>
+            <td>1515</td>
+        </tr>
+        <tr align=center>
+            <td>98</td>
+            <td><a href="/rating/season_summer-autumn-2017/etalon">etalon</a></td>
+            <td>22</td>
+            <td>20</td>
+            <td>42</td>
+            <td>1515</td>
+        </tr>
+        <tr align=center>
+            <td>98</td>
+            <td><a href="/rating/season_summer-autumn-2017/vladonof">vladonof</a></td>
+            <td>2</td>
+            <td>1</td>
+            <td>3</td>
+            <td>1515</td>
+        </tr>
+        <tr align=center>
+            <td>99</td>
+            <td><a href="/rating/season_summer-autumn-2017/dust_hl">dust_hl</a></td>
+            <td>4</td>
+            <td>5</td>
+            <td>9</td>
+            <td>1514</td>
+        </tr>
+        <tr align=center>
+            <td>100</td>
+            <td><a href="/rating/season_summer-autumn-2017/socrat">socrat</a></td>
+            <td>6</td>
+            <td>5</td>
+            <td>11</td>
+            <td>1513</td>
+        </tr>
+        <tr align=center>
+            <td>101</td>
+            <td><a href="/rating/season_summer-autumn-2017/dicktator">dicktator</a></td>
+            <td>1</td>
+            <td>0</td>
+            <td>1</td>
+            <td>1512</td>
+        </tr>
+        <tr align=center>
+            <td>102</td>
+            <td><a href="/rating/season_summer-autumn-2017/druzik">druzik</a></td>
+            <td>1</td>
+            <td>0</td>
+            <td>1</td>
+            <td>1511</td>
+        </tr>
+        <tr align=center>
+            <td>102</td>
+            <td><a href="/rating/season_summer-autumn-2017/pahanidze">pahanidze</a></td>
+            <td>5</td>
+            <td>4</td>
+            <td>9</td>
+            <td>1511</td>
+        </tr>
+        <tr align=center>
+            <td>103</td>
+            <td><a href="/rating/season_summer-autumn-2017/stickyfingaz">stickyfingaz</a></td>
+            <td>14</td>
+            <td>12</td>
+            <td>26</td>
+            <td>1510</td>
+        </tr>
+        <tr align=center>
+            <td>104</td>
+            <td><a href="/rating/season_summer-autumn-2017/britvo4ka">britvo4ka</a></td>
+            <td>2</td>
+            <td>2</td>
+            <td>4</td>
+            <td>1509</td>
+        </tr>
+        <tr align=center>
+            <td>104</td>
+            <td><a href="/rating/season_summer-autumn-2017/wladysha">wladysha</a></td>
+            <td>7</td>
+            <td>7</td>
+            <td>15</td>
+            <td>1509</td>
+        </tr>
+        <tr align=center>
+            <td>104</td>
+            <td><a href="/rating/season_summer-autumn-2017/rozenkran">rozenkran</a></td>
+            <td>9</td>
+            <td>10</td>
+            <td>19</td>
+            <td>1509</td>
+        </tr>
+        <tr align=center>
+            <td>105</td>
+            <td><a href="/rating/season_summer-autumn-2017/loinz">loinz</a></td>
+            <td>27</td>
+            <td>30</td>
+            <td>57</td>
+            <td>1508</td>
+        </tr>
+        <tr align=center>
+            <td>106</td>
+            <td><a href="/rating/season_summer-autumn-2017/osfaraon">osfaraon</a></td>
+            <td>33</td>
+            <td>47</td>
+            <td>80</td>
+            <td>1507</td>
+        </tr>
+        <tr align=center>
+            <td>106</td>
+            <td><a href="/rating/season_summer-autumn-2017/=stinger=">=stinger=</a></td>
+            <td>2</td>
+            <td>4</td>
+            <td>6</td>
+            <td>1507</td>
+        </tr>
+        <tr align=center>
+            <td>106</td>
+            <td><a href="/rating/season_summer-autumn-2017/k_shadow">k_shadow</a></td>
+            <td>5</td>
+            <td>5</td>
+            <td>10</td>
+            <td>1507</td>
+        </tr>
+        <tr align=center>
+            <td>107</td>
+            <td><a href="/rating/season_summer-autumn-2017/rus12345">rus12345</a></td>
+            <td>3</td>
+            <td>3</td>
+            <td>6</td>
+            <td>1506</td>
+        </tr>
+        <tr align=center>
+            <td>108</td>
+            <td><a href="/rating/season_summer-autumn-2017/proger">proger</a></td>
+            <td>41</td>
+            <td>39</td>
+            <td>80</td>
+            <td>1505</td>
+        </tr>
+        <tr align=center>
+            <td>109</td>
+            <td><a href="/rating/season_summer-autumn-2017/aviloveplay">aviloveplay</a></td>
+            <td>3</td>
+            <td>2</td>
+            <td>5</td>
+            <td>1504</td>
+        </tr>
+        <tr align=center>
+            <td>109</td>
+            <td><a href="/rating/season_summer-autumn-2017/sector767">sector767</a></td>
+            <td>49</td>
+            <td>44</td>
+            <td>94</td>
+            <td>1504</td>
+        </tr>
+        <tr align=center>
+            <td>110</td>
+            <td><a href="/rating/season_summer-autumn-2017/vatya">vatya</a></td>
+            <td>0</td>
+            <td>0</td>
+            <td>1</td>
+            <td>1502</td>
+        </tr>
+        <tr align=center>
+            <td>110</td>
+            <td><a href="/rating/season_summer-autumn-2017/sir davos seaworth">sir davos seaworth</a></td>
+            <td>75</td>
+            <td>48</td>
+            <td>123</td>
+            <td>1502</td>
+        </tr>
+        <tr align=center>
+            <td>110</td>
+            <td><a href="/rating/season_summer-autumn-2017/denast">denast</a></td>
+            <td>4</td>
+            <td>3</td>
+            <td>7</td>
+            <td>1502</td>
+        </tr>
+        <tr align=center>
+            <td>111</td>
+            <td><a href="/rating/season_summer-autumn-2017/=napalm=">=napalm=</a></td>
+            <td>1</td>
+            <td>1</td>
+            <td>2</td>
+            <td>1501</td>
+        </tr>
+        <tr align=center>
+            <td>112</td>
+            <td><a href="/rating/season_summer-autumn-2017/kashchei">kashchei</a></td>
+            <td>3</td>
+            <td>3</td>
+            <td>6</td>
+            <td>1498</td>
+        </tr>
+        <tr align=center>
+            <td>113</td>
+            <td><a href="/rating/season_summer-autumn-2017/morerakeisbetter">morerakeisbetter</a></td>
+            <td>2</td>
+            <td>2</td>
+            <td>4</td>
+            <td>1496</td>
+        </tr>
+        <tr align=center>
+            <td>113</td>
+            <td><a href="/rating/season_summer-autumn-2017/graf_bananov">graf_bananov</a></td>
+            <td>2</td>
+            <td>3</td>
+            <td>5</td>
+            <td>1496</td>
+        </tr>
+        <tr align=center>
+            <td>114</td>
+            <td><a href="/rating/season_summer-autumn-2017/aeterno">aeterno</a></td>
+            <td>10</td>
+            <td>8</td>
+            <td>18</td>
+            <td>1495</td>
+        </tr>
+        <tr align=center>
+            <td>115</td>
+            <td><a href="/rating/season_summer-autumn-2017/merlinthemagician">merlinthemagician</a></td>
+            <td>3</td>
+            <td>4</td>
+            <td>7</td>
+            <td>1494</td>
+        </tr>
+        <tr align=center>
+            <td>115</td>
+            <td><a href="/rating/season_summer-autumn-2017/sniol">sniol</a></td>
+            <td>31</td>
+            <td>26</td>
+            <td>58</td>
+            <td>1494</td>
+        </tr>
+        <tr align=center>
+            <td>116</td>
+            <td><a href="/rating/season_summer-autumn-2017/wizardx_576">wizardx_576</a></td>
+            <td>3</td>
+            <td>4</td>
+            <td>7</td>
+            <td>1493</td>
+        </tr>
+        <tr align=center>
+            <td>116</td>
+            <td><a href="/rating/season_summer-autumn-2017/dozzerka">dozzerka</a></td>
+            <td>1</td>
+            <td>1</td>
+            <td>2</td>
+            <td>1493</td>
+        </tr>
+        <tr align=center>
+            <td>116</td>
+            <td><a href="/rating/season_summer-autumn-2017/javdet">javdet</a></td>
+            <td>34</td>
+            <td>44</td>
+            <td>78</td>
+            <td>1493</td>
+        </tr>
+        <tr align=center>
+            <td>117</td>
+            <td><a href="/rating/season_summer-autumn-2017/dandy">dandy</a></td>
+            <td>2</td>
+            <td>2</td>
+            <td>4</td>
+            <td>1492</td>
+        </tr>
+        <tr align=center>
+            <td>118</td>
+            <td><a href="/rating/season_summer-autumn-2017/aka.ward3n">aka.ward3n</a></td>
+            <td>22</td>
+            <td>19</td>
+            <td>42</td>
+            <td>1491</td>
+        </tr>
+        <tr align=center>
+            <td>119</td>
+            <td><a href="/rating/season_summer-autumn-2017/blur">blur</a></td>
+            <td>31</td>
+            <td>40</td>
+            <td>71</td>
+            <td>1490</td>
+        </tr>
+        <tr align=center>
+            <td>119</td>
+            <td><a href="/rating/season_summer-autumn-2017/rudykh">rudykh</a></td>
+            <td>1</td>
+            <td>2</td>
+            <td>3</td>
+            <td>1490</td>
+        </tr>
+        <tr align=center>
+            <td>120</td>
+            <td><a href="/rating/season_summer-autumn-2017/underwood">underwood</a></td>
+            <td>3</td>
+            <td>3</td>
+            <td>6</td>
+            <td>1489</td>
+        </tr>
+        <tr align=center>
+            <td>120</td>
+            <td><a href="/rating/season_summer-autumn-2017/nifend">nifend</a></td>
+            <td>0</td>
+            <td>1</td>
+            <td>1</td>
+            <td>1489</td>
+        </tr>
+        <tr align=center>
+            <td>120</td>
+            <td><a href="/rating/season_summer-autumn-2017/messir">messir</a></td>
+            <td>3</td>
+            <td>3</td>
+            <td>6</td>
+            <td>1489</td>
+        </tr>
+        <tr align=center>
+            <td>120</td>
+            <td><a href="/rating/season_summer-autumn-2017/trisaghion">trisaghion</a></td>
+            <td>6</td>
+            <td>5</td>
+            <td>11</td>
+            <td>1489</td>
+        </tr>
+        <tr align=center>
+            <td>121</td>
+            <td><a href="/rating/season_summer-autumn-2017/faria">faria</a></td>
+            <td>8</td>
+            <td>10</td>
+            <td>18</td>
+            <td>1488</td>
+        </tr>
+        <tr align=center>
+            <td>122</td>
+            <td><a href="/rating/season_summer-autumn-2017/d0wnbutnotd3f3ated">d0wnbutnotd3f3ated</a></td>
+            <td>2</td>
+            <td>3</td>
+            <td>5</td>
+            <td>1487</td>
+        </tr>
+        <tr align=center>
+            <td>122</td>
+            <td><a href="/rating/season_summer-autumn-2017/greend">greend</a></td>
+            <td>1</td>
+            <td>2</td>
+            <td>3</td>
+            <td>1487</td>
+        </tr>
+        <tr align=center>
+            <td>122</td>
+            <td><a href="/rating/season_summer-autumn-2017/fanattwaryny">fanattwaryny</a></td>
+            <td>2</td>
+            <td>3</td>
+            <td>5</td>
+            <td>1487</td>
+        </tr>
+        <tr align=center>
+            <td>123</td>
+            <td><a href="/rating/season_summer-autumn-2017/vladimir_ospa">vladimir_ospa</a></td>
+            <td>3</td>
+            <td>4</td>
+            <td>8</td>
+            <td>1486</td>
+        </tr>
+        <tr align=center>
+            <td>123</td>
+            <td><a href="/rating/season_summer-autumn-2017/sup">sup</a></td>
+            <td>0</td>
+            <td>1</td>
+            <td>1</td>
+            <td>1486</td>
+        </tr>
+        <tr align=center>
+            <td>123</td>
+            <td><a href="/rating/season_summer-autumn-2017/данил украинский">данил украинский</a></td>
+            <td>1</td>
+            <td>2</td>
+            <td>3</td>
+            <td>1486</td>
+        </tr>
+        <tr align=center>
+            <td>123</td>
+            <td><a href="/rating/season_summer-autumn-2017/dendroed">dendroed</a></td>
+            <td>0</td>
+            <td>1</td>
+            <td>1</td>
+            <td>1486</td>
+        </tr>
+        <tr align=center>
+            <td>123</td>
+            <td><a href="/rating/season_summer-autumn-2017/tarmo">tarmo</a></td>
+            <td>2</td>
+            <td>3</td>
+            <td>5</td>
+            <td>1486</td>
+        </tr>
+        <tr align=center>
+            <td>124</td>
+            <td><a href="/rating/season_summer-autumn-2017/stekattack">stekattack</a></td>
+            <td>0</td>
+            <td>1</td>
+            <td>1</td>
+            <td>1485</td>
+        </tr>
+        <tr align=center>
+            <td>124</td>
+            <td><a href="/rating/season_summer-autumn-2017/rukavsalate">rukavsalate</a></td>
+            <td>0</td>
+            <td>1</td>
+            <td>1</td>
+            <td>1485</td>
+        </tr>
+        <tr align=center>
+            <td>124</td>
+            <td><a href="/rating/season_summer-autumn-2017/svarog">svarog</a></td>
+            <td>1</td>
+            <td>2</td>
+            <td>4</td>
+            <td>1485</td>
+        </tr>
+        <tr align=center>
+            <td>125</td>
+            <td><a href="/rating/season_summer-autumn-2017/moonlyer">moonlyer</a></td>
+            <td>0</td>
+            <td>1</td>
+            <td>1</td>
+            <td>1484</td>
+        </tr>
+        <tr align=center>
+            <td>125</td>
+            <td><a href="/rating/season_summer-autumn-2017/pashqa">pashqa</a></td>
+            <td>12</td>
+            <td>11</td>
+            <td>23</td>
+            <td>1484</td>
+        </tr>
+        <tr align=center>
+            <td>125</td>
+            <td><a href="/rating/season_summer-autumn-2017/temnepatypa">temnepatypa</a></td>
+            <td>0</td>
+            <td>1</td>
+            <td>1</td>
+            <td>1484</td>
+        </tr>
+        <tr align=center>
+            <td>125</td>
+            <td><a href="/rating/season_summer-autumn-2017/asfeo">asfeo</a></td>
+            <td>0</td>
+            <td>1</td>
+            <td>1</td>
+            <td>1484</td>
+        </tr>
+        <tr align=center>
+            <td>126</td>
+            <td><a href="/rating/season_summer-autumn-2017/xiii">xiii</a></td>
+            <td>0</td>
+            <td>1</td>
+            <td>1</td>
+            <td>1483</td>
+        </tr>
+        <tr align=center>
+            <td>127</td>
+            <td><a href="/rating/season_summer-autumn-2017/zoomisback">zoomisback</a></td>
+            <td>3</td>
+            <td>4</td>
+            <td>7</td>
+            <td>1482</td>
+        </tr>
+        <tr align=center>
+            <td>127</td>
+            <td><a href="/rating/season_summer-autumn-2017/ochenzloypapashka">ochenzloypapashka</a></td>
+            <td>1</td>
+            <td>2</td>
+            <td>3</td>
+            <td>1482</td>
+        </tr>
+        <tr align=center>
+            <td>127</td>
+            <td><a href="/rating/season_summer-autumn-2017/korvet">korvet</a></td>
+            <td>0</td>
+            <td>1</td>
+            <td>1</td>
+            <td>1482</td>
+        </tr>
+        <tr align=center>
+            <td>127</td>
+            <td><a href="/rating/season_summer-autumn-2017/yarzapp">yarzapp</a></td>
+            <td>3</td>
+            <td>4</td>
+            <td>7</td>
+            <td>1482</td>
+        </tr>
+        <tr align=center>
+            <td>128</td>
+            <td><a href="/rating/season_summer-autumn-2017/joanfo">joanfo</a></td>
+            <td>24</td>
+            <td>25</td>
+            <td>49</td>
+            <td>1480</td>
+        </tr>
+        <tr align=center>
+            <td>128</td>
+            <td><a href="/rating/season_summer-autumn-2017/telder54">telder54</a></td>
+            <td>1</td>
+            <td>2</td>
+            <td>3</td>
+            <td>1480</td>
+        </tr>
+        <tr align=center>
+            <td>129</td>
+            <td><a href="/rating/season_summer-autumn-2017/lech [ps]">lech [ps]</a></td>
+            <td>1</td>
+            <td>3</td>
+            <td>4</td>
+            <td>1478</td>
+        </tr>
+        <tr align=center>
+            <td>129</td>
+            <td><a href="/rating/season_summer-autumn-2017/r@sim">r@sim</a></td>
+            <td>5</td>
+            <td>8</td>
+            <td>13</td>
+            <td>1478</td>
+        </tr>
+        <tr align=center>
+            <td>130</td>
+            <td><a href="/rating/season_summer-autumn-2017/asd1978">asd1978</a></td>
+            <td>7</td>
+            <td>7</td>
+            <td>14</td>
+            <td>1477</td>
+        </tr>
+        <tr align=center>
+            <td>130</td>
+            <td><a href="/rating/season_summer-autumn-2017/ooppss">ooppss</a></td>
+            <td>1</td>
+            <td>3</td>
+            <td>4</td>
+            <td>1477</td>
+        </tr>
+        <tr align=center>
+            <td>131</td>
+            <td><a href="/rating/season_summer-autumn-2017/aiwe">aiwe</a></td>
+            <td>15</td>
+            <td>20</td>
+            <td>35</td>
+            <td>1476</td>
+        </tr>
+        <tr align=center>
+            <td>131</td>
+            <td><a href="/rating/season_summer-autumn-2017/minasmorgul">minasmorgul</a></td>
+            <td>14</td>
+            <td>16</td>
+            <td>30</td>
+            <td>1476</td>
+        </tr>
+        <tr align=center>
+            <td>132</td>
+            <td><a href="/rating/season_summer-autumn-2017/keba">keba</a></td>
+            <td>27</td>
+            <td>28</td>
+            <td>55</td>
+            <td>1475</td>
+        </tr>
+        <tr align=center>
+            <td>133</td>
+            <td><a href="/rating/season_summer-autumn-2017/ba/iehok">ba/iehok</a></td>
+            <td>14</td>
+            <td>20</td>
+            <td>35</td>
+            <td>1474</td>
+        </tr>
+        <tr align=center>
+            <td>133</td>
+            <td><a href="/rating/season_summer-autumn-2017/alexey-omsk">alexey-omsk</a></td>
+            <td>3</td>
+            <td>4</td>
+            <td>7</td>
+            <td>1474</td>
+        </tr>
+        <tr align=center>
+            <td>134</td>
+            <td><a href="/rating/season_summer-autumn-2017/madnomad">madnomad</a></td>
+            <td>0</td>
+            <td>2</td>
+            <td>2</td>
+            <td>1473</td>
+        </tr>
+        <tr align=center>
+            <td>134</td>
+            <td><a href="/rating/season_summer-autumn-2017/smerti">smerti</a></td>
+            <td>0</td>
+            <td>2</td>
+            <td>2</td>
+            <td>1473</td>
+        </tr>
+        <tr align=center>
+            <td>135</td>
+            <td><a href="/rating/season_summer-autumn-2017/microelf">microelf</a></td>
+            <td>17</td>
+            <td>24</td>
+            <td>41</td>
+            <td>1471</td>
+        </tr>
+        <tr align=center>
+            <td>135</td>
+            <td><a href="/rating/season_summer-autumn-2017/eztujke">eztujke</a></td>
+            <td>1</td>
+            <td>3</td>
+            <td>4</td>
+            <td>1471</td>
+        </tr>
+        <tr align=center>
+            <td>135</td>
+            <td><a href="/rating/season_summer-autumn-2017/craggyhaggy">craggyhaggy</a></td>
+            <td>5</td>
+            <td>8</td>
+            <td>13</td>
+            <td>1471</td>
+        </tr>
+        <tr align=center>
+            <td>136</td>
+            <td><a href="/rating/season_summer-autumn-2017/vitalic">vitalic</a></td>
+            <td>1</td>
+            <td>4</td>
+            <td>5</td>
+            <td>1470</td>
+        </tr>
+        <tr align=center>
+            <td>136</td>
+            <td><a href="/rating/season_summer-autumn-2017/mercurydvz">mercurydvz</a></td>
+            <td>26</td>
+            <td>23</td>
+            <td>49</td>
+            <td>1470</td>
+        </tr>
+        <tr align=center>
+            <td>136</td>
+            <td><a href="/rating/season_summer-autumn-2017/nitro">nitro</a></td>
+            <td>10</td>
+            <td>13</td>
+            <td>23</td>
+            <td>1470</td>
+        </tr>
+        <tr align=center>
+            <td>136</td>
+            <td><a href="/rating/season_summer-autumn-2017/starwarsfan">starwarsfan</a></td>
+            <td>0</td>
+            <td>2</td>
+            <td>2</td>
+            <td>1470</td>
+        </tr>
+        <tr align=center>
+            <td>137</td>
+            <td><a href="/rating/season_summer-autumn-2017/alone">alone</a></td>
+            <td>1</td>
+            <td>4</td>
+            <td>5</td>
+            <td>1469</td>
+        </tr>
+        <tr align=center>
+            <td>137</td>
+            <td><a href="/rating/season_summer-autumn-2017/andabat">andabat</a></td>
+            <td>5</td>
+            <td>6</td>
+            <td>11</td>
+            <td>1469</td>
+        </tr>
+        <tr align=center>
+            <td>138</td>
+            <td><a href="/rating/season_summer-autumn-2017/егор коробейников">егор коробейников</a></td>
+            <td>7</td>
+            <td>12</td>
+            <td>19</td>
+            <td>1468</td>
+        </tr>
+        <tr align=center>
+            <td>138</td>
+            <td><a href="/rating/season_summer-autumn-2017/rayne">rayne</a></td>
+            <td>27</td>
+            <td>27</td>
+            <td>55</td>
+            <td>1468</td>
+        </tr>
+        <tr align=center>
+            <td>139</td>
+            <td><a href="/rating/season_summer-autumn-2017/dreadkn1ght">dreadkn1ght</a></td>
+            <td>0</td>
+            <td>2</td>
+            <td>2</td>
+            <td>1467</td>
+        </tr>
+        <tr align=center>
+            <td>139</td>
+            <td><a href="/rating/season_summer-autumn-2017/nikostar">nikostar</a></td>
+            <td>13</td>
+            <td>15</td>
+            <td>28</td>
+            <td>1467</td>
+        </tr>
+        <tr align=center>
+            <td>140</td>
+            <td><a href="/rating/season_summer-autumn-2017/hideyosi">hideyosi</a></td>
+            <td>1</td>
+            <td>3</td>
+            <td>4</td>
+            <td>1466</td>
+        </tr>
+        <tr align=center>
+            <td>140</td>
+            <td><a href="/rating/season_summer-autumn-2017/mkr">mkr</a></td>
+            <td>1</td>
+            <td>3</td>
+            <td>4</td>
+            <td>1466</td>
+        </tr>
+        <tr align=center>
+            <td>140</td>
+            <td><a href="/rating/season_summer-autumn-2017/mori">mori</a></td>
+            <td>8</td>
+            <td>10</td>
+            <td>18</td>
+            <td>1466</td>
+        </tr>
+        <tr align=center>
+            <td>140</td>
+            <td><a href="/rating/season_summer-autumn-2017/kadavercianin">kadavercianin</a></td>
+            <td>1</td>
+            <td>3</td>
+            <td>4</td>
+            <td>1466</td>
+        </tr>
+        <tr align=center>
+            <td>141</td>
+            <td><a href="/rating/season_summer-autumn-2017/chauok">chauok</a></td>
+            <td>1</td>
+            <td>3</td>
+            <td>4</td>
+            <td>1465</td>
+        </tr>
+        <tr align=center>
+            <td>142</td>
+            <td><a href="/rating/season_summer-autumn-2017/ambra">ambra</a></td>
+            <td>3</td>
+            <td>7</td>
+            <td>10</td>
+            <td>1464</td>
+        </tr>
+        <tr align=center>
+            <td>142</td>
+            <td><a href="/rating/season_summer-autumn-2017/mals">mals</a></td>
+            <td>35</td>
+            <td>48</td>
+            <td>83</td>
+            <td>1464</td>
+        </tr>
+        <tr align=center>
+            <td>143</td>
+            <td><a href="/rating/season_summer-autumn-2017/порфустанг">порфустанг</a></td>
+            <td>2</td>
+            <td>4</td>
+            <td>6</td>
+            <td>1463</td>
+        </tr>
+        <tr align=center>
+            <td>143</td>
+            <td><a href="/rating/season_summer-autumn-2017/yarik1987">yarik1987</a></td>
+            <td>18</td>
+            <td>20</td>
+            <td>38</td>
+            <td>1463</td>
+        </tr>
+        <tr align=center>
+            <td>144</td>
+            <td><a href="/rating/season_summer-autumn-2017/liverpool">liverpool</a></td>
+            <td>0</td>
+            <td>2</td>
+            <td>2</td>
+            <td>1462</td>
+        </tr>
+        <tr align=center>
+            <td>144</td>
+            <td><a href="/rating/season_summer-autumn-2017/magicmodjo">magicmodjo</a></td>
+            <td>0</td>
+            <td>2</td>
+            <td>2</td>
+            <td>1462</td>
+        </tr>
+        <tr align=center>
+            <td>144</td>
+            <td><a href="/rating/season_summer-autumn-2017/cuc9ctblu">cuc9ctblu</a></td>
+            <td>1</td>
+            <td>4</td>
+            <td>5</td>
+            <td>1462</td>
+        </tr>
+        <tr align=center>
+            <td>145</td>
+            <td><a href="/rating/season_summer-autumn-2017/mar">mar</a></td>
+            <td>6</td>
+            <td>8</td>
+            <td>14</td>
+            <td>1461</td>
+        </tr>
+        <tr align=center>
+            <td>146</td>
+            <td><a href="/rating/season_summer-autumn-2017/-=leon=-">-=leon=-</a></td>
+            <td>0</td>
+            <td>3</td>
+            <td>3</td>
+            <td>1459</td>
+        </tr>
+        <tr align=center>
+            <td>147</td>
+            <td><a href="/rating/season_summer-autumn-2017/rising">rising</a></td>
+            <td>0</td>
+            <td>3</td>
+            <td>3</td>
+            <td>1458</td>
+        </tr>
+        <tr align=center>
+            <td>147</td>
+            <td><a href="/rating/season_summer-autumn-2017/derbent">derbent</a></td>
+            <td>7</td>
+            <td>12</td>
+            <td>20</td>
+            <td>1458</td>
+        </tr>
+        <tr align=center>
+            <td>148</td>
+            <td><a href="/rating/season_summer-autumn-2017/norinta">norinta</a></td>
+            <td>2</td>
+            <td>5</td>
+            <td>7</td>
+            <td>1457</td>
+        </tr>
+        <tr align=center>
+            <td>148</td>
+            <td><a href="/rating/season_summer-autumn-2017/notforyou">notforyou</a></td>
+            <td>0</td>
+            <td>3</td>
+            <td>3</td>
+            <td>1457</td>
+        </tr>
+        <tr align=center>
+            <td>148</td>
+            <td><a href="/rating/season_summer-autumn-2017/zwei">zwei</a></td>
+            <td>0</td>
+            <td>3</td>
+            <td>3</td>
+            <td>1457</td>
+        </tr>
+        <tr align=center>
+            <td>148</td>
+            <td><a href="/rating/season_summer-autumn-2017/foxoni4">foxoni4</a></td>
+            <td>13</td>
+            <td>15</td>
+            <td>29</td>
+            <td>1457</td>
+        </tr>
+        <tr align=center>
+            <td>148</td>
+            <td><a href="/rating/season_summer-autumn-2017/peres3ka">peres3ka</a></td>
+            <td>0</td>
+            <td>3</td>
+            <td>3</td>
+            <td>1457</td>
+        </tr>
+        <tr align=center>
+            <td>149</td>
+            <td><a href="/rating/season_summer-autumn-2017/александр.53">александр.53</a></td>
+            <td>1</td>
+            <td>4</td>
+            <td>5</td>
+            <td>1456</td>
+        </tr>
+        <tr align=center>
+            <td>149</td>
+            <td><a href="/rating/season_summer-autumn-2017/xn1">xn1</a></td>
+            <td>1</td>
+            <td>4</td>
+            <td>5</td>
+            <td>1456</td>
+        </tr>
+        <tr align=center>
+            <td>150</td>
+            <td><a href="/rating/season_summer-autumn-2017/pyre">pyre</a></td>
+            <td>0</td>
+            <td>3</td>
+            <td>3</td>
+            <td>1455</td>
+        </tr>
+        <tr align=center>
+            <td>151</td>
+            <td><a href="/rating/season_summer-autumn-2017/frozz">frozz</a></td>
+            <td>0</td>
+            <td>3</td>
+            <td>3</td>
+            <td>1454</td>
+        </tr>
+        <tr align=center>
+            <td>152</td>
+            <td><a href="/rating/season_summer-autumn-2017/bmay">bmay</a></td>
+            <td>0</td>
+            <td>3</td>
+            <td>3</td>
+            <td>1453</td>
+        </tr>
+        <tr align=center>
+            <td>152</td>
+            <td><a href="/rating/season_summer-autumn-2017/mond96">mond96</a></td>
+            <td>0</td>
+            <td>3</td>
+            <td>3</td>
+            <td>1453</td>
+        </tr>
+        <tr align=center>
+            <td>152</td>
+            <td><a href="/rating/season_summer-autumn-2017/sumer and akkad">sumer and akkad</a></td>
+            <td>9</td>
+            <td>10</td>
+            <td>19</td>
+            <td>1453</td>
+        </tr>
+        <tr align=center>
+            <td>153</td>
+            <td><a href="/rating/season_summer-autumn-2017/deagostin">deagostin</a></td>
+            <td>0</td>
+            <td>3</td>
+            <td>3</td>
+            <td>1452</td>
+        </tr>
+        <tr align=center>
+            <td>154</td>
+            <td><a href="/rating/season_summer-autumn-2017/zerebro ss">zerebro ss</a></td>
+            <td>0</td>
+            <td>3</td>
+            <td>3</td>
+            <td>1451</td>
+        </tr>
+        <tr align=center>
+            <td>154</td>
+            <td><a href="/rating/season_summer-autumn-2017/marqadam">marqadam</a></td>
+            <td>2</td>
+            <td>4</td>
+            <td>6</td>
+            <td>1451</td>
+        </tr>
+        <tr align=center>
+            <td>155</td>
+            <td><a href="/rating/season_summer-autumn-2017/cez">cez</a></td>
+            <td>3</td>
+            <td>6</td>
+            <td>9</td>
+            <td>1450</td>
+        </tr>
+        <tr align=center>
+            <td>155</td>
+            <td><a href="/rating/season_summer-autumn-2017/lampadra">lampadra</a></td>
+            <td>0</td>
+            <td>4</td>
+            <td>4</td>
+            <td>1450</td>
+        </tr>
+        <tr align=center>
+            <td>155</td>
+            <td><a href="/rating/season_summer-autumn-2017/zodmund">zodmund</a></td>
+            <td>13</td>
+            <td>20</td>
+            <td>33</td>
+            <td>1450</td>
+        </tr>
+        <tr align=center>
+            <td>156</td>
+            <td><a href="/rating/season_summer-autumn-2017/court">court</a></td>
+            <td>19</td>
+            <td>25</td>
+            <td>44</td>
+            <td>1449</td>
+        </tr>
+        <tr align=center>
+            <td>156</td>
+            <td><a href="/rating/season_summer-autumn-2017/avangard-rom">avangard-rom</a></td>
+            <td>1</td>
+            <td>5</td>
+            <td>6</td>
+            <td>1449</td>
+        </tr>
+        <tr align=center>
+            <td>157</td>
+            <td><a href="/rating/season_summer-autumn-2017/noobass-kontrobass">noobass-kontrobass</a></td>
+            <td>14</td>
+            <td>21</td>
+            <td>35</td>
+            <td>1448</td>
+        </tr>
+        <tr align=center>
+            <td>157</td>
+            <td><a href="/rating/season_summer-autumn-2017/fas1ktv">fas1ktv</a></td>
+            <td>7</td>
+            <td>13</td>
+            <td>20</td>
+            <td>1448</td>
+        </tr>
+        <tr align=center>
+            <td>158</td>
+            <td><a href="/rating/season_summer-autumn-2017/simon5760">simon5760</a></td>
+            <td>3</td>
+            <td>7</td>
+            <td>10</td>
+            <td>1447</td>
+        </tr>
+        <tr align=center>
+            <td>159</td>
+            <td><a href="/rating/season_summer-autumn-2017/igrayukakmogy">igrayukakmogy</a></td>
+            <td>1</td>
+            <td>4</td>
+            <td>5</td>
+            <td>1444</td>
+        </tr>
+        <tr align=center>
+            <td>159</td>
+            <td><a href="/rating/season_summer-autumn-2017/jambo">jambo</a></td>
+            <td>0</td>
+            <td>4</td>
+            <td>4</td>
+            <td>1444</td>
+        </tr>
+        <tr align=center>
+            <td>159</td>
+            <td><a href="/rating/season_summer-autumn-2017/ashtray">ashtray</a></td>
+            <td>10</td>
+            <td>14</td>
+            <td>24</td>
+            <td>1444</td>
+        </tr>
+        <tr align=center>
+            <td>159</td>
+            <td><a href="/rating/season_summer-autumn-2017/alin">alin</a></td>
+            <td>72</td>
+            <td>99</td>
+            <td>173</td>
+            <td>1444</td>
+        </tr>
+        <tr align=center>
+            <td>160</td>
+            <td><a href="/rating/season_summer-autumn-2017/psyche_7">psyche_7</a></td>
+            <td>0</td>
+            <td>4</td>
+            <td>4</td>
+            <td>1442</td>
+        </tr>
+        <tr align=center>
+            <td>160</td>
+            <td><a href="/rating/season_summer-autumn-2017/punker">punker</a></td>
+            <td>0</td>
+            <td>4</td>
+            <td>4</td>
+            <td>1442</td>
+        </tr>
+        <tr align=center>
+            <td>160</td>
+            <td><a href="/rating/season_summer-autumn-2017/daoded">daoded</a></td>
+            <td>1</td>
+            <td>6</td>
+            <td>7</td>
+            <td>1442</td>
+        </tr>
+        <tr align=center>
+            <td>161</td>
+            <td><a href="/rating/season_summer-autumn-2017/ded mazai">ded mazai</a></td>
+            <td>0</td>
+            <td>4</td>
+            <td>4</td>
+            <td>1440</td>
+        </tr>
+        <tr align=center>
+            <td>161</td>
+            <td><a href="/rating/season_summer-autumn-2017/tk_fred">tk_fred</a></td>
+            <td>23</td>
+            <td>31</td>
+            <td>54</td>
+            <td>1440</td>
+        </tr>
+        <tr align=center>
+            <td>161</td>
+            <td><a href="/rating/season_summer-autumn-2017/fatal1ty">fatal1ty</a></td>
+            <td>3</td>
+            <td>8</td>
+            <td>11</td>
+            <td>1440</td>
+        </tr>
+        <tr align=center>
+            <td>162</td>
+            <td><a href="/rating/season_summer-autumn-2017/злой_романтик">злой_романтик</a></td>
+            <td>15</td>
+            <td>24</td>
+            <td>40</td>
+            <td>1439</td>
+        </tr>
+        <tr align=center>
+            <td>163</td>
+            <td><a href="/rating/season_summer-autumn-2017/ridelth">ridelth</a></td>
+            <td>1</td>
+            <td>6</td>
+            <td>7</td>
+            <td>1436</td>
+        </tr>
+        <tr align=center>
+            <td>163</td>
+            <td><a href="/rating/season_summer-autumn-2017/unfaism">unfaism</a></td>
+            <td>0</td>
+            <td>5</td>
+            <td>5</td>
+            <td>1436</td>
+        </tr>
+        <tr align=center>
+            <td>164</td>
+            <td><a href="/rating/season_summer-autumn-2017/elmidar">elmidar</a></td>
+            <td>9</td>
+            <td>15</td>
+            <td>24</td>
+            <td>1434</td>
+        </tr>
+        <tr align=center>
+            <td>164</td>
+            <td><a href="/rating/season_summer-autumn-2017/kinger">kinger</a></td>
+            <td>21</td>
+            <td>28</td>
+            <td>49</td>
+            <td>1434</td>
+        </tr>
+        <tr align=center>
+            <td>165</td>
+            <td><a href="/rating/season_summer-autumn-2017/satishe">satishe</a></td>
+            <td>5</td>
+            <td>10</td>
+            <td>15</td>
+            <td>1432</td>
+        </tr>
+        <tr align=center>
+            <td>165</td>
+            <td><a href="/rating/season_summer-autumn-2017/timbuktu">timbuktu</a></td>
+            <td>43</td>
+            <td>38</td>
+            <td>83</td>
+            <td>1432</td>
+        </tr>
+        <tr align=center>
+            <td>166</td>
+            <td><a href="/rating/season_summer-autumn-2017/korovka1987">korovka1987</a></td>
+            <td>16</td>
+            <td>19</td>
+            <td>36</td>
+            <td>1431</td>
+        </tr>
+        <tr align=center>
+            <td>166</td>
+            <td><a href="/rating/season_summer-autumn-2017/olegas227">olegas227</a></td>
+            <td>28</td>
+            <td>37</td>
+            <td>66</td>
+            <td>1431</td>
+        </tr>
+        <tr align=center>
+            <td>166</td>
+            <td><a href="/rating/season_summer-autumn-2017/canabeast">canabeast</a></td>
+            <td>49</td>
+            <td>60</td>
+            <td>109</td>
+            <td>1431</td>
+        </tr>
+        <tr align=center>
+            <td>166</td>
+            <td><a href="/rating/season_summer-autumn-2017/alkaposha">alkaposha</a></td>
+            <td>11</td>
+            <td>19</td>
+            <td>31</td>
+            <td>1431</td>
+        </tr>
+        <tr align=center>
+            <td>167</td>
+            <td><a href="/rating/season_summer-autumn-2017/petkodimitrov">petkodimitrov</a></td>
+            <td>2</td>
+            <td>6</td>
+            <td>8</td>
+            <td>1427</td>
+        </tr>
+        <tr align=center>
+            <td>167</td>
+            <td><a href="/rating/season_summer-autumn-2017/no_name">no_name</a></td>
+            <td>4</td>
+            <td>9</td>
+            <td>13</td>
+            <td>1427</td>
+        </tr>
+        <tr align=center>
+            <td>168</td>
+            <td><a href="/rating/season_summer-autumn-2017/illuy">illuy</a></td>
+            <td>5</td>
+            <td>8</td>
+            <td>13</td>
+            <td>1426</td>
+        </tr>
+        <tr align=center>
+            <td>168</td>
+            <td><a href="/rating/season_summer-autumn-2017/wlaeronn">wlaeronn</a></td>
+            <td>0</td>
+            <td>5</td>
+            <td>5</td>
+            <td>1426</td>
+        </tr>
+        <tr align=center>
+            <td>169</td>
+            <td><a href="/rating/season_summer-autumn-2017/omaha">omaha</a></td>
+            <td>0</td>
+            <td>5</td>
+            <td>5</td>
+            <td>1425</td>
+        </tr>
+        <tr align=center>
+            <td>169</td>
+            <td><a href="/rating/season_summer-autumn-2017/valwin">valwin</a></td>
+            <td>2</td>
+            <td>5</td>
+            <td>7</td>
+            <td>1425</td>
+        </tr>
+        <tr align=center>
+            <td>169</td>
+            <td><a href="/rating/season_summer-autumn-2017/aerinswift">aerinswift</a></td>
+            <td>0</td>
+            <td>6</td>
+            <td>6</td>
+            <td>1425</td>
+        </tr>
+        <tr align=center>
+            <td>169</td>
+            <td><a href="/rating/season_summer-autumn-2017/pradromalo">pradromalo</a></td>
+            <td>0</td>
+            <td>6</td>
+            <td>6</td>
+            <td>1425</td>
+        </tr>
+        <tr align=center>
+            <td>170</td>
+            <td><a href="/rating/season_summer-autumn-2017/doublew">doublew</a></td>
+            <td>26</td>
+            <td>31</td>
+            <td>58</td>
+            <td>1424</td>
+        </tr>
+        <tr align=center>
+            <td>171</td>
+            <td><a href="/rating/season_summer-autumn-2017/armageddets">armageddets</a></td>
+            <td>8</td>
+            <td>10</td>
+            <td>18</td>
+            <td>1422</td>
+        </tr>
+        <tr align=center>
+            <td>171</td>
+            <td><a href="/rating/season_summer-autumn-2017/bubuch">bubuch</a></td>
+            <td>28</td>
+            <td>35</td>
+            <td>63</td>
+            <td>1422</td>
+        </tr>
+        <tr align=center>
+            <td>172</td>
+            <td><a href="/rating/season_summer-autumn-2017/the_sonic">the_sonic</a></td>
+            <td>2</td>
+            <td>8</td>
+            <td>10</td>
+            <td>1421</td>
+        </tr>
+        <tr align=center>
+            <td>173</td>
+            <td><a href="/rating/season_summer-autumn-2017/scorpiona">scorpiona</a></td>
+            <td>16</td>
+            <td>25</td>
+            <td>41</td>
+            <td>1420</td>
+        </tr>
+        <tr align=center>
+            <td>174</td>
+            <td><a href="/rating/season_summer-autumn-2017/bayazet">bayazet</a></td>
+            <td>8</td>
+            <td>14</td>
+            <td>22</td>
+            <td>1418</td>
+        </tr>
+        <tr align=center>
+            <td>174</td>
+            <td><a href="/rating/season_summer-autumn-2017/jobstar">jobstar</a></td>
+            <td>23</td>
+            <td>37</td>
+            <td>61</td>
+            <td>1418</td>
+        </tr>
+        <tr align=center>
+            <td>175</td>
+            <td><a href="/rating/season_summer-autumn-2017/marajan">marajan</a></td>
+            <td>1</td>
+            <td>7</td>
+            <td>8</td>
+            <td>1417</td>
+        </tr>
+        <tr align=center>
+            <td>175</td>
+            <td><a href="/rating/season_summer-autumn-2017/ghiblee">ghiblee</a></td>
+            <td>3</td>
+            <td>9</td>
+            <td>12</td>
+            <td>1417</td>
+        </tr>
+        <tr align=center>
+            <td>176</td>
+            <td><a href="/rating/season_summer-autumn-2017/noangel">noangel</a></td>
+            <td>14</td>
+            <td>24</td>
+            <td>38</td>
+            <td>1415</td>
+        </tr>
+        <tr align=center>
+            <td>177</td>
+            <td><a href="/rating/season_summer-autumn-2017/heromight">heromight</a></td>
+            <td>2</td>
+            <td>9</td>
+            <td>11</td>
+            <td>1413</td>
+        </tr>
+        <tr align=center>
+            <td>178</td>
+            <td><a href="/rating/season_summer-autumn-2017/piterius">piterius</a></td>
+            <td>16</td>
+            <td>19</td>
+            <td>35</td>
+            <td>1412</td>
+        </tr>
+        <tr align=center>
+            <td>179</td>
+            <td><a href="/rating/season_summer-autumn-2017/лось">лось</a></td>
+            <td>9</td>
+            <td>17</td>
+            <td>26</td>
+            <td>1411</td>
+        </tr>
+        <tr align=center>
+            <td>180</td>
+            <td><a href="/rating/season_summer-autumn-2017/wallys">wallys</a></td>
+            <td>12</td>
+            <td>23</td>
+            <td>35</td>
+            <td>1408</td>
+        </tr>
+        <tr align=center>
+            <td>180</td>
+            <td><a href="/rating/season_summer-autumn-2017/hi-tech">hi-tech</a></td>
+            <td>12</td>
+            <td>20</td>
+            <td>32</td>
+            <td>1408</td>
+        </tr>
+        <tr align=center>
+            <td>181</td>
+            <td><a href="/rating/season_summer-autumn-2017/bloody)driver">bloody)driver</a></td>
+            <td>5</td>
+            <td>13</td>
+            <td>18</td>
+            <td>1405</td>
+        </tr>
+        <tr align=center>
+            <td>181</td>
+            <td><a href="/rating/season_summer-autumn-2017/zen">zen</a></td>
+            <td>72</td>
+            <td>66</td>
+            <td>139</td>
+            <td>1405</td>
+        </tr>
+        <tr align=center>
+            <td>182</td>
+            <td><a href="/rating/season_summer-autumn-2017/norbakk">norbakk</a></td>
+            <td>14</td>
+            <td>30</td>
+            <td>44</td>
+            <td>1403</td>
+        </tr>
+        <tr align=center>
+            <td>183</td>
+            <td><a href="/rating/season_summer-autumn-2017/browser">browser</a></td>
+            <td>17</td>
+            <td>47</td>
+            <td>65</td>
+            <td>1401</td>
+        </tr>
+        <tr align=center>
+            <td>184</td>
+            <td><a href="/rating/season_summer-autumn-2017/shved1502">shved1502</a></td>
+            <td>10</td>
+            <td>20</td>
+            <td>30</td>
+            <td>1400</td>
+        </tr>
+        <tr align=center>
+            <td>184</td>
+            <td><a href="/rating/season_summer-autumn-2017/shadowmaniac">shadowmaniac</a></td>
+            <td>5</td>
+            <td>16</td>
+            <td>21</td>
+            <td>1400</td>
+        </tr>
+        <tr align=center>
+            <td>185</td>
+            <td><a href="/rating/season_summer-autumn-2017/vovaogo">vovaogo</a></td>
+            <td>23</td>
+            <td>40</td>
+            <td>63</td>
+            <td>1399</td>
+        </tr>
+        <tr align=center>
+            <td>185</td>
+            <td><a href="/rating/season_summer-autumn-2017/be3y4uu">be3y4uu</a></td>
+            <td>1</td>
+            <td>9</td>
+            <td>10</td>
+            <td>1399</td>
+        </tr>
+        <tr align=center>
+            <td>186</td>
+            <td><a href="/rating/season_summer-autumn-2017/iryzhakov">iryzhakov</a></td>
+            <td>11</td>
+            <td>18</td>
+            <td>30</td>
+            <td>1397</td>
+        </tr>
+        <tr align=center>
+            <td>187</td>
+            <td><a href="/rating/season_summer-autumn-2017/vazelin">vazelin</a></td>
+            <td>2</td>
+            <td>10</td>
+            <td>12</td>
+            <td>1396</td>
+        </tr>
+        <tr align=center>
+            <td>188</td>
+            <td><a href="/rating/season_summer-autumn-2017/johnny the bony">johnny the bony</a></td>
+            <td>4</td>
+            <td>13</td>
+            <td>17</td>
+            <td>1393</td>
+        </tr>
+        <tr align=center>
+            <td>189</td>
+            <td><a href="/rating/season_summer-autumn-2017/pinchie">pinchie</a></td>
+            <td>6</td>
+            <td>20</td>
+            <td>26</td>
+            <td>1392</td>
+        </tr>
+        <tr align=center>
+            <td>190</td>
+            <td><a href="/rating/season_summer-autumn-2017/slayzer">slayzer</a></td>
+            <td>1</td>
+            <td>9</td>
+            <td>10</td>
+            <td>1391</td>
+        </tr>
+        <tr align=center>
+            <td>191</td>
+            <td><a href="/rating/season_summer-autumn-2017/player_">player_</a></td>
+            <td>10</td>
+            <td>22</td>
+            <td>32</td>
+            <td>1390</td>
+        </tr>
+        <tr align=center>
+            <td>192</td>
+            <td><a href="/rating/season_summer-autumn-2017/o1dboy79">o1dboy79</a></td>
+            <td>51</td>
+            <td>83</td>
+            <td>135</td>
+            <td>1389</td>
+        </tr>
+        <tr align=center>
+            <td>193</td>
+            <td><a href="/rating/season_summer-autumn-2017/surreal">surreal</a></td>
+            <td>29</td>
+            <td>56</td>
+            <td>86</td>
+            <td>1388</td>
+        </tr>
+        <tr align=center>
+            <td>193</td>
+            <td><a href="/rating/season_summer-autumn-2017/identity">identity</a></td>
+            <td>1</td>
+            <td>9</td>
+            <td>10</td>
+            <td>1388</td>
+        </tr>
+        <tr align=center>
+            <td>194</td>
+            <td><a href="/rating/season_summer-autumn-2017/moxuto">moxuto</a></td>
+            <td>26</td>
+            <td>39</td>
+            <td>65</td>
+            <td>1385</td>
+        </tr>
+        <tr align=center>
+            <td>195</td>
+            <td><a href="/rating/season_summer-autumn-2017/ominous1">ominous1</a></td>
+            <td>5</td>
+            <td>16</td>
+            <td>21</td>
+            <td>1383</td>
+        </tr>
+        <tr align=center>
+            <td>195</td>
+            <td><a href="/rating/season_summer-autumn-2017/avellimachi">avellimachi</a></td>
+            <td>64</td>
+            <td>73</td>
+            <td>137</td>
+            <td>1383</td>
+        </tr>
+        <tr align=center>
+            <td>195</td>
+            <td><a href="/rating/season_summer-autumn-2017/crewgn">crewgn</a></td>
+            <td>1</td>
+            <td>10</td>
+            <td>11</td>
+            <td>1383</td>
+        </tr>
+        <tr align=center>
+            <td>195</td>
+            <td><a href="/rating/season_summer-autumn-2017/pridu">pridu</a></td>
+            <td>47</td>
+            <td>38</td>
+            <td>85</td>
+            <td>1383</td>
+        </tr>
+        <tr align=center>
+            <td>196</td>
+            <td><a href="/rating/season_summer-autumn-2017/night troll">night troll</a></td>
+            <td>8</td>
+            <td>15</td>
+            <td>23</td>
+            <td>1379</td>
+        </tr>
+        <tr align=center>
+            <td>197</td>
+            <td><a href="/rating/season_summer-autumn-2017/s_jay_is_god">s_jay_is_god</a></td>
+            <td>11</td>
+            <td>19</td>
+            <td>30</td>
+            <td>1378</td>
+        </tr>
+        <tr align=center>
+            <td>198</td>
+            <td><a href="/rating/season_summer-autumn-2017/wariator">wariator</a></td>
+            <td>5</td>
+            <td>19</td>
+            <td>24</td>
+            <td>1377</td>
+        </tr>
+        <tr align=center>
+            <td>199</td>
+            <td><a href="/rating/season_summer-autumn-2017/chemist_hp">chemist_hp</a></td>
+            <td>35</td>
+            <td>62</td>
+            <td>97</td>
+            <td>1376</td>
+        </tr>
+        <tr align=center>
+            <td>199</td>
+            <td><a href="/rating/season_summer-autumn-2017/putinking">putinking</a></td>
+            <td>1</td>
+            <td>11</td>
+            <td>12</td>
+            <td>1376</td>
+        </tr>
+        <tr align=center>
+            <td>199</td>
+            <td><a href="/rating/season_summer-autumn-2017/yosha">yosha</a></td>
+            <td>10</td>
+            <td>23</td>
+            <td>33</td>
+            <td>1376</td>
+        </tr>
+        <tr align=center>
+            <td>199</td>
+            <td><a href="/rating/season_summer-autumn-2017/h3pro">h3pro</a></td>
+            <td>5</td>
+            <td>15</td>
+            <td>20</td>
+            <td>1376</td>
+        </tr>
+        <tr align=center>
+            <td>200</td>
+            <td><a href="/rating/season_summer-autumn-2017/9li9ht">9li9ht</a></td>
+            <td>2</td>
+            <td>11</td>
+            <td>13</td>
+            <td>1375</td>
+        </tr>
+        <tr align=center>
+            <td>200</td>
+            <td><a href="/rating/season_summer-autumn-2017/дау">дау</a></td>
+            <td>0</td>
+            <td>10</td>
+            <td>10</td>
+            <td>1375</td>
+        </tr>
+        <tr align=center>
+            <td>201</td>
+            <td><a href="/rating/season_summer-autumn-2017/cosmic magician">cosmic magician</a></td>
+            <td>20</td>
+            <td>33</td>
+            <td>54</td>
+            <td>1374</td>
+        </tr>
+        <tr align=center>
+            <td>201</td>
+            <td><a href="/rating/season_summer-autumn-2017/zuro007">zuro007</a></td>
+            <td>6</td>
+            <td>19</td>
+            <td>25</td>
+            <td>1374</td>
+        </tr>
+        <tr align=center>
+            <td>202</td>
+            <td><a href="/rating/season_summer-autumn-2017/darksavant94">darksavant94</a></td>
+            <td>1</td>
+            <td>10</td>
+            <td>11</td>
+            <td>1372</td>
+        </tr>
+        <tr align=center>
+            <td>203</td>
+            <td><a href="/rating/season_summer-autumn-2017/blblbl">blblbl</a></td>
+            <td>9</td>
+            <td>25</td>
+            <td>34</td>
+            <td>1368</td>
+        </tr>
+        <tr align=center>
+            <td>204</td>
+            <td><a href="/rating/season_summer-autumn-2017/madspirit">madspirit</a></td>
+            <td>60</td>
+            <td>90</td>
+            <td>150</td>
+            <td>1367</td>
+        </tr>
+        <tr align=center>
+            <td>204</td>
+            <td><a href="/rating/season_summer-autumn-2017/tamior">tamior</a></td>
+            <td>2</td>
+            <td>14</td>
+            <td>16</td>
+            <td>1367</td>
+        </tr>
+        <tr align=center>
+            <td>205</td>
+            <td><a href="/rating/season_summer-autumn-2017/dark30">dark30</a></td>
+            <td>16</td>
+            <td>24</td>
+            <td>41</td>
+            <td>1364</td>
+        </tr>
+        <tr align=center>
+            <td>206</td>
+            <td><a href="/rating/season_summer-autumn-2017/izgoy">izgoy</a></td>
+            <td>33</td>
+            <td>38</td>
+            <td>72</td>
+            <td>1361</td>
+        </tr>
+        <tr align=center>
+            <td>206</td>
+            <td><a href="/rating/season_summer-autumn-2017/astroinferon">astroinferon</a></td>
+            <td>1</td>
+            <td>11</td>
+            <td>12</td>
+            <td>1361</td>
+        </tr>
+        <tr align=center>
+            <td>207</td>
+            <td><a href="/rating/season_summer-autumn-2017/volland">volland</a></td>
+            <td>21</td>
+            <td>39</td>
+            <td>60</td>
+            <td>1359</td>
+        </tr>
+        <tr align=center>
+            <td>208</td>
+            <td><a href="/rating/season_summer-autumn-2017/dan_choi">dan_choi</a></td>
+            <td>34</td>
+            <td>43</td>
+            <td>77</td>
+            <td>1354</td>
+        </tr>
+        <tr align=center>
+            <td>208</td>
+            <td><a href="/rating/season_summer-autumn-2017/iluzzionist">iluzzionist</a></td>
+            <td>0</td>
+            <td>11</td>
+            <td>11</td>
+            <td>1354</td>
+        </tr>
+        <tr align=center>
+            <td>209</td>
+            <td><a href="/rating/season_summer-autumn-2017/denspb">denspb</a></td>
+            <td>0</td>
+            <td>11</td>
+            <td>11</td>
+            <td>1352</td>
+        </tr>
+        <tr align=center>
+            <td>210</td>
+            <td><a href="/rating/season_summer-autumn-2017/krag">krag</a></td>
+            <td>4</td>
+            <td>15</td>
+            <td>19</td>
+            <td>1345</td>
+        </tr>
+        <tr align=center>
+            <td>211</td>
+            <td><a href="/rating/season_summer-autumn-2017/suicid_pe.iarba">suicid_pe.iarba</a></td>
+            <td>32</td>
+            <td>47</td>
+            <td>79</td>
+            <td>1341</td>
+        </tr>
+        <tr align=center>
+            <td>211</td>
+            <td><a href="/rating/season_summer-autumn-2017/maxgor">maxgor</a></td>
+            <td>13</td>
+            <td>34</td>
+            <td>47</td>
+            <td>1341</td>
+        </tr>
+        <tr align=center>
+            <td>212</td>
+            <td><a href="/rating/season_summer-autumn-2017/zillot">zillot</a></td>
+            <td>26</td>
+            <td>84</td>
+            <td>110</td>
+            <td>1335</td>
+        </tr>
+        <tr align=center>
+            <td>213</td>
+            <td><a href="/rating/season_summer-autumn-2017/samuils">samuils</a></td>
+            <td>10</td>
+            <td>24</td>
+            <td>34</td>
+            <td>1327</td>
+        </tr>
+        <tr align=center>
+            <td>214</td>
+            <td><a href="/rating/season_summer-autumn-2017/odessit1991">odessit1991</a></td>
+            <td>17</td>
+            <td>51</td>
+            <td>68</td>
+            <td>1319</td>
+        </tr>
+        <tr align=center>
+            <td>215</td>
+            <td><a href="/rating/season_summer-autumn-2017/gee">gee</a></td>
+            <td>88</td>
+            <td>136</td>
+            <td>226</td>
+            <td>1316</td>
+        </tr>
+        <tr align=center>
+            <td>216</td>
+            <td><a href="/rating/season_summer-autumn-2017/limar_rikon">limar_rikon</a></td>
+            <td>7</td>
+            <td>22</td>
+            <td>29</td>
+            <td>1310</td>
+        </tr>
+        <tr align=center>
+            <td>217</td>
+            <td><a href="/rating/season_summer-autumn-2017/st_klaus">st_klaus</a></td>
+            <td>14</td>
+            <td>36</td>
+            <td>51</td>
+            <td>1300</td>
+        </tr>
+        <tr align=center>
+            <td>218</td>
+            <td><a href="/rating/season_summer-autumn-2017/shanti">shanti</a></td>
+            <td>9</td>
+            <td>37</td>
+            <td>46</td>
+            <td>1297</td>
+        </tr>
+        <tr align=center>
+            <td>218</td>
+            <td><a href="/rating/season_summer-autumn-2017/zoog">zoog</a></td>
+            <td>23</td>
+            <td>83</td>
+            <td>108</td>
+            <td>1297</td>
+        </tr>
+        <tr align=center>
+            <td>219</td>
+            <td><a href="/rating/season_summer-autumn-2017/fill-ua">fill-ua</a></td>
+            <td>24</td>
+            <td>56</td>
+            <td>80</td>
+            <td>1296</td>
+        </tr>
+        <tr align=center>
+            <td>220</td>
+            <td><a href="/rating/season_summer-autumn-2017/iamsamstan">iamsamstan</a></td>
+            <td>22</td>
+            <td>61</td>
+            <td>83</td>
+            <td>1287</td>
+        </tr>
+        <tr align=center>
+            <td>221</td>
+            <td><a href="/rating/season_summer-autumn-2017/muunis">muunis</a></td>
+            <td>13</td>
+            <td>30</td>
+            <td>43</td>
+            <td>1276</td>
+        </tr>
+        <tr align=center>
+            <td>222</td>
+            <td><a href="/rating/season_summer-autumn-2017/dorsaj">dorsaj</a></td>
+            <td>32</td>
+            <td>76</td>
+            <td>109</td>
+            <td>1274</td>
+        </tr>
+        <tr align=center>
+            <td>222</td>
+            <td><a href="/rating/season_summer-autumn-2017/rockmachine">rockmachine</a></td>
+            <td>1</td>
+            <td>21</td>
+            <td>22</td>
+            <td>1274</td>
+        </tr>
+        <tr align=center>
+            <td>223</td>
+            <td><a href="/rating/season_summer-autumn-2017/vigo">vigo</a></td>
+            <td>4</td>
+            <td>34</td>
+            <td>39</td>
+            <td>1252</td>
+        </tr>
+        <tr align=center>
+            <td>224</td>
+            <td><a href="/rating/season_summer-autumn-2017/sevan_80">sevan_80</a></td>
+            <td>31</td>
+            <td>111</td>
+            <td>142</td>
+            <td>1220</td>
+        </tr>
+    </table>
+</td>
+<td valign="top">
+    <table border=2>
+        <tr align=center>
+            <td colspan=8> Winter-Spring-2017 (last)</td>
+        </tr>
+        <tr align=center>
+            <td>№</td>
+            <td>Nickname</td>
+            <td>Wins</td>
+            <td>Losses</td>
+            <td>Total<br>games</td>
+            <td>Seasons<br>rating</td>
+        </tr>
+        <tr align=center>
+            <td>1</td>
+            <td><a href="/rating/season-winter-spring-2017/de_luxe">de_luxe</a></td>
+            <td>44</td>
+            <td>19</td>
+            <td>63</td>
+            <td>1760</td>
+        </tr>
+        <tr align=center>
+            <td>2</td>
+            <td><a href="/rating/season-winter-spring-2017/herolwy">herolwy</a></td>
+            <td>54</td>
+            <td>16</td>
+            <td>70</td>
+            <td>1734</td>
+        </tr>
+        <tr align=center>
+            <td>3</td>
+            <td><a href="/rating/season-winter-spring-2017/vinceras">vinceras</a></td>
+            <td>38</td>
+            <td>23</td>
+            <td>61</td>
+            <td>1728</td>
+        </tr>
+        <tr align=center>
+            <td>4</td>
+            <td><a href="/rating/season-winter-spring-2017/antiplayer">antiplayer</a></td>
+            <td>21</td>
+            <td>5</td>
+            <td>26</td>
+            <td>1722</td>
+        </tr>
+        <tr align=center>
+            <td>5</td>
+            <td><a href="/rating/season-winter-spring-2017/=lizard=">=lizard=</a></td>
+            <td>48</td>
+            <td>30</td>
+            <td>79</td>
+            <td>1718</td>
+        </tr>
+        <tr align=center>
+            <td>6</td>
+            <td><a href="/rating/season-winter-spring-2017/boovli">boovli</a></td>
+            <td>31</td>
+            <td>8</td>
+            <td>39</td>
+            <td>1712</td>
+        </tr>
+        <tr align=center>
+            <td>7</td>
+            <td><a href="/rating/season-winter-spring-2017/jaris">jaris</a></td>
+            <td>46</td>
+            <td>20</td>
+            <td>66</td>
+            <td>1707</td>
+        </tr>
+        <tr align=center>
+            <td>8</td>
+            <td><a href="/rating/season-winter-spring-2017/dawidu91">dawidu91</a></td>
+            <td>31</td>
+            <td>11</td>
+            <td>42</td>
+            <td>1689</td>
+        </tr>
+        <tr align=center>
+            <td>9</td>
+            <td><a href="/rating/season-winter-spring-2017/bahan">bahan</a></td>
+            <td>44</td>
+            <td>14</td>
+            <td>58</td>
+            <td>1683</td>
+        </tr>
+        <tr align=center>
+            <td>10</td>
+            <td><a href="/rating/season-winter-spring-2017/redwhait">redwhait</a></td>
+            <td>31</td>
+            <td>16</td>
+            <td>47</td>
+            <td>1680</td>
+        </tr>
+        <tr align=center>
+            <td>11</td>
+            <td><a href="/rating/season-winter-spring-2017/twaryna">twaryna</a></td>
+            <td>31</td>
+            <td>13</td>
+            <td>44</td>
+            <td>1675</td>
+        </tr>
+        <tr align=center>
+            <td>11</td>
+            <td><a href="/rating/season-winter-spring-2017/silence-">silence-</a></td>
+            <td>36</td>
+            <td>14</td>
+            <td>50</td>
+            <td>1675</td>
+        </tr>
+        <tr align=center>
+            <td>12</td>
+            <td><a href="/rating/season-winter-spring-2017/xenofex">xenofex</a></td>
+            <td>19</td>
+            <td>2</td>
+            <td>21</td>
+            <td>1674</td>
+        </tr>
+        <tr align=center>
+            <td>13</td>
+            <td><a href="/rating/season-winter-spring-2017/dom2">dom2</a></td>
+            <td>57</td>
+            <td>24</td>
+            <td>83</td>
+            <td>1669</td>
+        </tr>
+        <tr align=center>
+            <td>14</td>
+            <td><a href="/rating/season-winter-spring-2017/sanin">sanin</a></td>
+            <td>30</td>
+            <td>25</td>
+            <td>56</td>
+            <td>1664</td>
+        </tr>
+        <tr align=center>
+            <td>15</td>
+            <td><a href="/rating/season-winter-spring-2017/helllight">helllight</a></td>
+            <td>32</td>
+            <td>18</td>
+            <td>51</td>
+            <td>1652</td>
+        </tr>
+        <tr align=center>
+            <td>16</td>
+            <td><a href="/rating/season-winter-spring-2017/matador99">matador99</a></td>
+            <td>35</td>
+            <td>20</td>
+            <td>55</td>
+            <td>1648</td>
+        </tr>
+        <tr align=center>
+            <td>17</td>
+            <td><a href="/rating/season-winter-spring-2017/dave_hun">dave_hun</a></td>
+            <td>16</td>
+            <td>5</td>
+            <td>21</td>
+            <td>1638</td>
+        </tr>
+        <tr align=center>
+            <td>17</td>
+            <td><a href="/rating/season-winter-spring-2017/battanas">battanas</a></td>
+            <td>34</td>
+            <td>16</td>
+            <td>50</td>
+            <td>1638</td>
+        </tr>
+        <tr align=center>
+            <td>18</td>
+            <td><a href="/rating/season-winter-spring-2017/ihromant">ihromant</a></td>
+            <td>89</td>
+            <td>50</td>
+            <td>139</td>
+            <td>1637</td>
+        </tr>
+        <tr align=center>
+            <td>19</td>
+            <td><a href="/rating/season-winter-spring-2017/diabler">diabler</a></td>
+            <td>32</td>
+            <td>15</td>
+            <td>47</td>
+            <td>1636</td>
+        </tr>
+        <tr align=center>
+            <td>20</td>
+            <td><a href="/rating/season-winter-spring-2017/firetosky">firetosky</a></td>
+            <td>37</td>
+            <td>18</td>
+            <td>55</td>
+            <td>1634</td>
+        </tr>
+        <tr align=center>
+            <td>21</td>
+            <td><a href="/rating/season-winter-spring-2017/joker2k">joker2k</a></td>
+            <td>10</td>
+            <td>1</td>
+            <td>11</td>
+            <td>1631</td>
+        </tr>
+        <tr align=center>
+            <td>22</td>
+            <td><a href="/rating/season-winter-spring-2017/ckotuha">ckotuha</a></td>
+            <td>34</td>
+            <td>18</td>
+            <td>52</td>
+            <td>1630</td>
+        </tr>
+        <tr align=center>
+            <td>23</td>
+            <td><a href="/rating/season-winter-spring-2017/tofsla">tofsla</a></td>
+            <td>16</td>
+            <td>6</td>
+            <td>22</td>
+            <td>1628</td>
+        </tr>
+        <tr align=center>
+            <td>24</td>
+            <td><a href="/rating/season-winter-spring-2017/antal_rr">antal_rr</a></td>
+            <td>32</td>
+            <td>17</td>
+            <td>49</td>
+            <td>1626</td>
+        </tr>
+        <tr align=center>
+            <td>25</td>
+            <td><a href="/rating/season-winter-spring-2017/sevensan">sevensan</a></td>
+            <td>29</td>
+            <td>14</td>
+            <td>43</td>
+            <td>1624</td>
+        </tr>
+        <tr align=center>
+            <td>26</td>
+            <td><a href="/rating/season-winter-spring-2017/yostairs">yostairs</a></td>
+            <td>22</td>
+            <td>13</td>
+            <td>35</td>
+            <td>1622</td>
+        </tr>
+        <tr align=center>
+            <td>26</td>
+            <td><a href="/rating/season-winter-spring-2017/ominous1">ominous1</a></td>
+            <td>10</td>
+            <td>0</td>
+            <td>10</td>
+            <td>1622</td>
+        </tr>
+        <tr align=center>
+            <td>27</td>
+            <td><a href="/rating/season-winter-spring-2017/rozenkran">rozenkran</a></td>
+            <td>12</td>
+            <td>7</td>
+            <td>20</td>
+            <td>1621</td>
+        </tr>
+        <tr align=center>
+            <td>28</td>
+            <td><a href="/rating/season-winter-spring-2017/kenben">kenben</a></td>
+            <td>10</td>
+            <td>0</td>
+            <td>10</td>
+            <td>1620</td>
+        </tr>
+        <tr align=center>
+            <td>29</td>
+            <td><a href="/rating/season-winter-spring-2017/getto">getto</a></td>
+            <td>18</td>
+            <td>6</td>
+            <td>24</td>
+            <td>1617</td>
+        </tr>
+        <tr align=center>
+            <td>30</td>
+            <td><a href="/rating/season-winter-spring-2017/mda">mda</a></td>
+            <td>30</td>
+            <td>13</td>
+            <td>43</td>
+            <td>1615</td>
+        </tr>
+        <tr align=center>
+            <td>30</td>
+            <td><a href="/rating/season-winter-spring-2017/lucky george">lucky george</a></td>
+            <td>19</td>
+            <td>8</td>
+            <td>28</td>
+            <td>1615</td>
+        </tr>
+        <tr align=center>
+            <td>31</td>
+            <td><a href="/rating/season-winter-spring-2017/yan_vas">yan_vas</a></td>
+            <td>34</td>
+            <td>18</td>
+            <td>52</td>
+            <td>1614</td>
+        </tr>
+        <tr align=center>
+            <td>32</td>
+            <td><a href="/rating/season-winter-spring-2017/grizvald">grizvald</a></td>
+            <td>21</td>
+            <td>15</td>
+            <td>36</td>
+            <td>1609</td>
+        </tr>
+        <tr align=center>
+            <td>33</td>
+            <td><a href="/rating/season-winter-spring-2017/loinz">loinz</a></td>
+            <td>17</td>
+            <td>18</td>
+            <td>35</td>
+            <td>1602</td>
+        </tr>
+        <tr align=center>
+            <td>33</td>
+            <td><a href="/rating/season-winter-spring-2017/al feyn">al feyn</a></td>
+            <td>30</td>
+            <td>21</td>
+            <td>51</td>
+            <td>1602</td>
+        </tr>
+        <tr align=center>
+            <td>34</td>
+            <td><a href="/rating/season-winter-spring-2017/surreal">surreal</a></td>
+            <td>11</td>
+            <td>2</td>
+            <td>13</td>
+            <td>1600</td>
+        </tr>
+        <tr align=center>
+            <td>35</td>
+            <td><a href="/rating/season-winter-spring-2017/socola">socola</a></td>
+            <td>31</td>
+            <td>23</td>
+            <td>54</td>
+            <td>1599</td>
+        </tr>
+        <tr align=center>
+            <td>36</td>
+            <td><a href="/rating/season-winter-spring-2017/caliban">caliban</a></td>
+            <td>28</td>
+            <td>23</td>
+            <td>52</td>
+            <td>1596</td>
+        </tr>
+        <tr align=center>
+            <td>37</td>
+            <td><a href="/rating/season-winter-spring-2017/bishop">bishop</a></td>
+            <td>29</td>
+            <td>22</td>
+            <td>51</td>
+            <td>1595</td>
+        </tr>
+        <tr align=center>
+            <td>38</td>
+            <td><a href="/rating/season-winter-spring-2017/nitro">nitro</a></td>
+            <td>23</td>
+            <td>21</td>
+            <td>44</td>
+            <td>1589</td>
+        </tr>
+        <tr align=center>
+            <td>39</td>
+            <td><a href="/rating/season-winter-spring-2017/vespalover">vespalover</a></td>
+            <td>9</td>
+            <td>1</td>
+            <td>10</td>
+            <td>1587</td>
+        </tr>
+        <tr align=center>
+            <td>40</td>
+            <td><a href="/rating/season-winter-spring-2017/dark">dark</a></td>
+            <td>19</td>
+            <td>12</td>
+            <td>31</td>
+            <td>1585</td>
+        </tr>
+        <tr align=center>
+            <td>41</td>
+            <td><a href="/rating/season-winter-spring-2017/xiii">xiii</a></td>
+            <td>17</td>
+            <td>8</td>
+            <td>25</td>
+            <td>1583</td>
+        </tr>
+        <tr align=center>
+            <td>42</td>
+            <td><a href="/rating/season-winter-spring-2017/sonic111">sonic111</a></td>
+            <td>17</td>
+            <td>11</td>
+            <td>28</td>
+            <td>1577</td>
+        </tr>
+        <tr align=center>
+            <td>42</td>
+            <td><a href="/rating/season-winter-spring-2017/flate">flate</a></td>
+            <td>20</td>
+            <td>14</td>
+            <td>34</td>
+            <td>1577</td>
+        </tr>
+        <tr align=center>
+            <td>42</td>
+            <td><a href="/rating/season-winter-spring-2017/russel_ldhl">russel_ldhl</a></td>
+            <td>16</td>
+            <td>8</td>
+            <td>25</td>
+            <td>1577</td>
+        </tr>
+        <tr align=center>
+            <td>43</td>
+            <td><a href="/rating/season-winter-spring-2017/andres">andres</a></td>
+            <td>11</td>
+            <td>8</td>
+            <td>19</td>
+            <td>1576</td>
+        </tr>
+        <tr align=center>
+            <td>44</td>
+            <td><a href="/rating/season-winter-spring-2017/mikem">mikem</a></td>
+            <td>5</td>
+            <td>0</td>
+            <td>5</td>
+            <td>1574</td>
+        </tr>
+        <tr align=center>
+            <td>45</td>
+            <td><a href="/rating/season-winter-spring-2017/silenthill">silenthill</a></td>
+            <td>20</td>
+            <td>15</td>
+            <td>35</td>
+            <td>1573</td>
+        </tr>
+        <tr align=center>
+            <td>46</td>
+            <td><a href="/rating/season-winter-spring-2017/graalzzz">graalzzz</a></td>
+            <td>30</td>
+            <td>26</td>
+            <td>57</td>
+            <td>1570</td>
+        </tr>
+        <tr align=center>
+            <td>47</td>
+            <td><a href="/rating/season-winter-spring-2017/pridu">pridu</a></td>
+            <td>45</td>
+            <td>36</td>
+            <td>81</td>
+            <td>1569</td>
+        </tr>
+        <tr align=center>
+            <td>48</td>
+            <td><a href="/rating/season-winter-spring-2017/егор коробейников">егор коробейников</a></td>
+            <td>6</td>
+            <td>1</td>
+            <td>7</td>
+            <td>1566</td>
+        </tr>
+        <tr align=center>
+            <td>48</td>
+            <td><a href="/rating/season-winter-spring-2017/яr">яr</a></td>
+            <td>14</td>
+            <td>9</td>
+            <td>23</td>
+            <td>1566</td>
+        </tr>
+        <tr align=center>
+            <td>49</td>
+            <td><a href="/rating/season-winter-spring-2017/kobra_rr">kobra_rr</a></td>
+            <td>11</td>
+            <td>8</td>
+            <td>19</td>
+            <td>1563</td>
+        </tr>
+        <tr align=center>
+            <td>50</td>
+            <td><a href="/rating/season-winter-spring-2017/izgoy">izgoy</a></td>
+            <td>92</td>
+            <td>42</td>
+            <td>134</td>
+            <td>1562</td>
+        </tr>
+        <tr align=center>
+            <td>51</td>
+            <td><a href="/rating/season-winter-spring-2017/luckyf">luckyf</a></td>
+            <td>27</td>
+            <td>27</td>
+            <td>54</td>
+            <td>1561</td>
+        </tr>
+        <tr align=center>
+            <td>51</td>
+            <td><a href="/rating/season-winter-spring-2017/pahanidze">pahanidze</a></td>
+            <td>9</td>
+            <td>3</td>
+            <td>12</td>
+            <td>1561</td>
+        </tr>
+        <tr align=center>
+            <td>52</td>
+            <td><a href="/rating/season-winter-spring-2017/wizardx_576">wizardx_576</a></td>
+            <td>4</td>
+            <td>0</td>
+            <td>4</td>
+            <td>1560</td>
+        </tr>
+        <tr align=center>
+            <td>53</td>
+            <td><a href="/rating/season-winter-spring-2017/identity">identity</a></td>
+            <td>11</td>
+            <td>7</td>
+            <td>18</td>
+            <td>1559</td>
+        </tr>
+        <tr align=center>
+            <td>54</td>
+            <td><a href="/rating/season-winter-spring-2017/dirty_player">dirty_player</a></td>
+            <td>7</td>
+            <td>3</td>
+            <td>10</td>
+            <td>1558</td>
+        </tr>
+        <tr align=center>
+            <td>55</td>
+            <td><a href="/rating/season-winter-spring-2017/toganash">toganash</a></td>
+            <td>28</td>
+            <td>28</td>
+            <td>56</td>
+            <td>1557</td>
+        </tr>
+        <tr align=center>
+            <td>56</td>
+            <td><a href="/rating/season-winter-spring-2017/medium_hp">medium_hp</a></td>
+            <td>7</td>
+            <td>4</td>
+            <td>11</td>
+            <td>1555</td>
+        </tr>
+        <tr align=center>
+            <td>57</td>
+            <td><a href="/rating/season-winter-spring-2017/cuc9ctblu">cuc9ctblu</a></td>
+            <td>4</td>
+            <td>0</td>
+            <td>4</td>
+            <td>1551</td>
+        </tr>
+        <tr align=center>
+            <td>57</td>
+            <td><a href="/rating/season-winter-spring-2017/positive">positive</a></td>
+            <td>52</td>
+            <td>44</td>
+            <td>96</td>
+            <td>1551</td>
+        </tr>
+        <tr align=center>
+            <td>58</td>
+            <td><a href="/rating/season-winter-spring-2017/protosarchon">protosarchon</a></td>
+            <td>4</td>
+            <td>1</td>
+            <td>5</td>
+            <td>1549</td>
+        </tr>
+        <tr align=center>
+            <td>59</td>
+            <td><a href="/rating/season-winter-spring-2017/wowa">wowa</a></td>
+            <td>14</td>
+            <td>9</td>
+            <td>23</td>
+            <td>1547</td>
+        </tr>
+        <tr align=center>
+            <td>60</td>
+            <td><a href="/rating/season-winter-spring-2017/tun7gus7">tun7gus7</a></td>
+            <td>17</td>
+            <td>16</td>
+            <td>33</td>
+            <td>1546</td>
+        </tr>
+        <tr align=center>
+            <td>61</td>
+            <td><a href="/rating/season-winter-spring-2017/blitz">blitz</a></td>
+            <td>12</td>
+            <td>7</td>
+            <td>19</td>
+            <td>1545</td>
+        </tr>
+        <tr align=center>
+            <td>61</td>
+            <td><a href="/rating/season-winter-spring-2017/amster">amster</a></td>
+            <td>11</td>
+            <td>8</td>
+            <td>19</td>
+            <td>1545</td>
+        </tr>
+        <tr align=center>
+            <td>62</td>
+            <td><a href="/rating/season-winter-spring-2017/sasapessx">sasapessx</a></td>
+            <td>4</td>
+            <td>1</td>
+            <td>5</td>
+            <td>1544</td>
+        </tr>
+        <tr align=center>
+            <td>63</td>
+            <td><a href="/rating/season-winter-spring-2017/patriot">patriot</a></td>
+            <td>43</td>
+            <td>48</td>
+            <td>91</td>
+            <td>1543</td>
+        </tr>
+        <tr align=center>
+            <td>64</td>
+            <td><a href="/rating/season-winter-spring-2017/telder54">telder54</a></td>
+            <td>3</td>
+            <td>0</td>
+            <td>3</td>
+            <td>1542</td>
+        </tr>
+        <tr align=center>
+            <td>65</td>
+            <td><a href="/rating/season-winter-spring-2017/hudzin">hudzin</a></td>
+            <td>10</td>
+            <td>6</td>
+            <td>16</td>
+            <td>1541</td>
+        </tr>
+        <tr align=center>
+            <td>66</td>
+            <td><a href="/rating/season-winter-spring-2017/ambra">ambra</a></td>
+            <td>23</td>
+            <td>16</td>
+            <td>39</td>
+            <td>1540</td>
+        </tr>
+        <tr align=center>
+            <td>66</td>
+            <td><a href="/rating/season-winter-spring-2017/ayman">ayman</a></td>
+            <td>3</td>
+            <td>0</td>
+            <td>3</td>
+            <td>1540</td>
+        </tr>
+        <tr align=center>
+            <td>67</td>
+            <td><a href="/rating/season-winter-spring-2017/gomunguls">gomunguls</a></td>
+            <td>12</td>
+            <td>10</td>
+            <td>22</td>
+            <td>1538</td>
+        </tr>
+        <tr align=center>
+            <td>68</td>
+            <td><a href="/rating/season-winter-spring-2017/socrat">socrat</a></td>
+            <td>8</td>
+            <td>6</td>
+            <td>14</td>
+            <td>1536</td>
+        </tr>
+        <tr align=center>
+            <td>69</td>
+            <td><a href="/rating/season-winter-spring-2017/georg_">georg_</a></td>
+            <td>18</td>
+            <td>14</td>
+            <td>32</td>
+            <td>1534</td>
+        </tr>
+        <tr align=center>
+            <td>70</td>
+            <td><a href="/rating/season-winter-spring-2017/nubasik">nubasik</a></td>
+            <td>29</td>
+            <td>23</td>
+            <td>52</td>
+            <td>1533</td>
+        </tr>
+        <tr align=center>
+            <td>71</td>
+            <td><a href="/rating/season-winter-spring-2017/asd1978">asd1978</a></td>
+            <td>30</td>
+            <td>19</td>
+            <td>49</td>
+            <td>1531</td>
+        </tr>
+        <tr align=center>
+            <td>72</td>
+            <td><a href="/rating/season-winter-spring-2017/derbent">derbent</a></td>
+            <td>27</td>
+            <td>19</td>
+            <td>46</td>
+            <td>1530</td>
+        </tr>
+        <tr align=center>
+            <td>73</td>
+            <td><a href="/rating/season-winter-spring-2017/eztujke">eztujke</a></td>
+            <td>3</td>
+            <td>1</td>
+            <td>4</td>
+            <td>1529</td>
+        </tr>
+        <tr align=center>
+            <td>74</td>
+            <td><a href="/rating/season-winter-spring-2017/nikolaev">nikolaev</a></td>
+            <td>45</td>
+            <td>33</td>
+            <td>78</td>
+            <td>1528</td>
+        </tr>
+        <tr align=center>
+            <td>75</td>
+            <td><a href="/rating/season-winter-spring-2017/законопослушный гражданин">законопослушный гражданин</a></td>
+            <td>4</td>
+            <td>2</td>
+            <td>6</td>
+            <td>1526</td>
+        </tr>
+        <tr align=center>
+            <td>75</td>
+            <td><a href="/rating/season-winter-spring-2017/roger-ua">roger-ua</a></td>
+            <td>13</td>
+            <td>9</td>
+            <td>22</td>
+            <td>1526</td>
+        </tr>
+        <tr align=center>
+            <td>76</td>
+            <td><a href="/rating/season-winter-spring-2017/mizrael">mizrael</a></td>
+            <td>17</td>
+            <td>17</td>
+            <td>35</td>
+            <td>1524</td>
+        </tr>
+        <tr align=center>
+            <td>77</td>
+            <td><a href="/rating/season-winter-spring-2017/r@sim">r@sim</a></td>
+            <td>9</td>
+            <td>6</td>
+            <td>15</td>
+            <td>1523</td>
+        </tr>
+        <tr align=center>
+            <td>78</td>
+            <td><a href="/rating/season-winter-spring-2017/skd">skd</a></td>
+            <td>8</td>
+            <td>7</td>
+            <td>15</td>
+            <td>1521</td>
+        </tr>
+        <tr align=center>
+            <td>78</td>
+            <td><a href="/rating/season-winter-spring-2017/butajiuk">butajiuk</a></td>
+            <td>12</td>
+            <td>10</td>
+            <td>22</td>
+            <td>1521</td>
+        </tr>
+        <tr align=center>
+            <td>79</td>
+            <td><a href="/rating/season-winter-spring-2017/vladonof">vladonof</a></td>
+            <td>3</td>
+            <td>1</td>
+            <td>4</td>
+            <td>1520</td>
+        </tr>
+        <tr align=center>
+            <td>79</td>
+            <td><a href="/rating/season-winter-spring-2017/bul">bul</a></td>
+            <td>4</td>
+            <td>3</td>
+            <td>7</td>
+            <td>1520</td>
+        </tr>
+        <tr align=center>
+            <td>80</td>
+            <td><a href="/rating/season-winter-spring-2017/mulliyta">mulliyta</a></td>
+            <td>3</td>
+            <td>2</td>
+            <td>5</td>
+            <td>1517</td>
+        </tr>
+        <tr align=center>
+            <td>81</td>
+            <td><a href="/rating/season-winter-spring-2017/amiloo">amiloo</a></td>
+            <td>15</td>
+            <td>21</td>
+            <td>36</td>
+            <td>1516</td>
+        </tr>
+        <tr align=center>
+            <td>82</td>
+            <td><a href="/rating/season-winter-spring-2017/xocenk">xocenk</a></td>
+            <td>12</td>
+            <td>13</td>
+            <td>25</td>
+            <td>1515</td>
+        </tr>
+        <tr align=center>
+            <td>82</td>
+            <td><a href="/rating/season-winter-spring-2017/vitalic">vitalic</a></td>
+            <td>2</td>
+            <td>1</td>
+            <td>3</td>
+            <td>1515</td>
+        </tr>
+        <tr align=center>
+            <td>82</td>
+            <td><a href="/rating/season-winter-spring-2017/mrgoo">mrgoo</a></td>
+            <td>6</td>
+            <td>6</td>
+            <td>12</td>
+            <td>1515</td>
+        </tr>
+        <tr align=center>
+            <td>83</td>
+            <td><a href="/rating/season-winter-spring-2017/=napalm=">=napalm=</a></td>
+            <td>3</td>
+            <td>2</td>
+            <td>5</td>
+            <td>1514</td>
+        </tr>
+        <tr align=center>
+            <td>83</td>
+            <td><a href="/rating/season-winter-spring-2017/nodtin">nodtin</a></td>
+            <td>1</td>
+            <td>0</td>
+            <td>1</td>
+            <td>1514</td>
+        </tr>
+        <tr align=center>
+            <td>84</td>
+            <td><a href="/rating/season-winter-spring-2017/yarik1987">yarik1987</a></td>
+            <td>15</td>
+            <td>14</td>
+            <td>29</td>
+            <td>1513</td>
+        </tr>
+        <tr align=center>
+            <td>85</td>
+            <td><a href="/rating/season-winter-spring-2017/vilco">vilco</a></td>
+            <td>1</td>
+            <td>0</td>
+            <td>1</td>
+            <td>1512</td>
+        </tr>
+        <tr align=center>
+            <td>86</td>
+            <td><a href="/rating/season-winter-spring-2017/theshevanesian">theshevanesian</a></td>
+            <td>13</td>
+            <td>9</td>
+            <td>22</td>
+            <td>1511</td>
+        </tr>
+        <tr align=center>
+            <td>87</td>
+            <td><a href="/rating/season-winter-spring-2017/_neo_">_neo_</a></td>
+            <td>8</td>
+            <td>6</td>
+            <td>14</td>
+            <td>1510</td>
+        </tr>
+        <tr align=center>
+            <td>87</td>
+            <td><a href="/rating/season-winter-spring-2017/shpilenger">shpilenger</a></td>
+            <td>1</td>
+            <td>0</td>
+            <td>1</td>
+            <td>1510</td>
+        </tr>
+        <tr align=center>
+            <td>87</td>
+            <td><a href="/rating/season-winter-spring-2017/mori">mori</a></td>
+            <td>11</td>
+            <td>9</td>
+            <td>20</td>
+            <td>1510</td>
+        </tr>
+        <tr align=center>
+            <td>87</td>
+            <td><a href="/rating/season-winter-spring-2017/fas1ktv">fas1ktv</a></td>
+            <td>5</td>
+            <td>4</td>
+            <td>9</td>
+            <td>1510</td>
+        </tr>
+        <tr align=center>
+            <td>88</td>
+            <td><a href="/rating/season-winter-spring-2017/proger">proger</a></td>
+            <td>14</td>
+            <td>12</td>
+            <td>27</td>
+            <td>1509</td>
+        </tr>
+        <tr align=center>
+            <td>89</td>
+            <td><a href="/rating/season-winter-spring-2017/javdet">javdet</a></td>
+            <td>19</td>
+            <td>17</td>
+            <td>36</td>
+            <td>1508</td>
+        </tr>
+        <tr align=center>
+            <td>89</td>
+            <td><a href="/rating/season-winter-spring-2017/sir davos seaworth">sir davos seaworth</a></td>
+            <td>2</td>
+            <td>1</td>
+            <td>3</td>
+            <td>1508</td>
+        </tr>
+        <tr align=center>
+            <td>90</td>
+            <td><a href="/rating/season-winter-spring-2017/spl1nter">spl1nter</a></td>
+            <td>5</td>
+            <td>4</td>
+            <td>9</td>
+            <td>1506</td>
+        </tr>
+        <tr align=center>
+            <td>91</td>
+            <td><a href="/rating/season-winter-spring-2017/putinking">putinking</a></td>
+            <td>45</td>
+            <td>45</td>
+            <td>90</td>
+            <td>1504</td>
+        </tr>
+        <tr align=center>
+            <td>92</td>
+            <td><a href="/rating/season-winter-spring-2017/britvo4ka">britvo4ka</a></td>
+            <td>6</td>
+            <td>6</td>
+            <td>12</td>
+            <td>1500</td>
+        </tr>
+        <tr align=center>
+            <td>92</td>
+            <td><a href="/rating/season-winter-spring-2017/huanito">huanito</a></td>
+            <td>16</td>
+            <td>15</td>
+            <td>31</td>
+            <td>1500</td>
+        </tr>
+        <tr align=center>
+            <td>93</td>
+            <td><a href="/rating/season-winter-spring-2017/starwarsfan">starwarsfan</a></td>
+            <td>6</td>
+            <td>6</td>
+            <td>12</td>
+            <td>1498</td>
+        </tr>
+        <tr align=center>
+            <td>94</td>
+            <td><a href="/rating/season-winter-spring-2017/tt_hnk">tt_hnk</a></td>
+            <td>9</td>
+            <td>11</td>
+            <td>20</td>
+            <td>1497</td>
+        </tr>
+        <tr align=center>
+            <td>94</td>
+            <td><a href="/rating/season-winter-spring-2017/godofwrcrft">godofwrcrft</a></td>
+            <td>8</td>
+            <td>7</td>
+            <td>16</td>
+            <td>1497</td>
+        </tr>
+        <tr align=center>
+            <td>94</td>
+            <td><a href="/rating/season-winter-spring-2017/высокий">высокий</a></td>
+            <td>3</td>
+            <td>3</td>
+            <td>6</td>
+            <td>1497</td>
+        </tr>
+        <tr align=center>
+            <td>95</td>
+            <td><a href="/rating/season-winter-spring-2017/aiwe">aiwe</a></td>
+            <td>4</td>
+            <td>5</td>
+            <td>9</td>
+            <td>1496</td>
+        </tr>
+        <tr align=center>
+            <td>96</td>
+            <td><a href="/rating/season-winter-spring-2017/dima surmay">dima surmay</a></td>
+            <td>36</td>
+            <td>33</td>
+            <td>70</td>
+            <td>1495</td>
+        </tr>
+        <tr align=center>
+            <td>96</td>
+            <td><a href="/rating/season-winter-spring-2017/rebellious">rebellious</a></td>
+            <td>9</td>
+            <td>9</td>
+            <td>18</td>
+            <td>1495</td>
+        </tr>
+        <tr align=center>
+            <td>96</td>
+            <td><a href="/rating/season-winter-spring-2017/nickolos393">nickolos393</a></td>
+            <td>2</td>
+            <td>2</td>
+            <td>4</td>
+            <td>1495</td>
+        </tr>
+        <tr align=center>
+            <td>96</td>
+            <td><a href="/rating/season-winter-spring-2017/turkish">turkish</a></td>
+            <td>7</td>
+            <td>7</td>
+            <td>14</td>
+            <td>1495</td>
+        </tr>
+        <tr align=center>
+            <td>97</td>
+            <td><a href="/rating/season-winter-spring-2017/norbakk">norbakk</a></td>
+            <td>13</td>
+            <td>14</td>
+            <td>28</td>
+            <td>1494</td>
+        </tr>
+        <tr align=center>
+            <td>97</td>
+            <td><a href="/rating/season-winter-spring-2017/piterius">piterius</a></td>
+            <td>9</td>
+            <td>9</td>
+            <td>18</td>
+            <td>1494</td>
+        </tr>
+        <tr align=center>
+            <td>98</td>
+            <td><a href="/rating/season-winter-spring-2017/bubuch">bubuch</a></td>
+            <td>18</td>
+            <td>16</td>
+            <td>34</td>
+            <td>1492</td>
+        </tr>
+        <tr align=center>
+            <td>99</td>
+            <td><a href="/rating/season-winter-spring-2017/chingis">chingis</a></td>
+            <td>0</td>
+            <td>1</td>
+            <td>1</td>
+            <td>1491</td>
+        </tr>
+        <tr align=center>
+            <td>100</td>
+            <td><a href="/rating/season-winter-spring-2017/browser">browser</a></td>
+            <td>1</td>
+            <td>2</td>
+            <td>3</td>
+            <td>1490</td>
+        </tr>
+        <tr align=center>
+            <td>100</td>
+            <td><a href="/rating/season-winter-spring-2017/stryfe">stryfe</a></td>
+            <td>1</td>
+            <td>2</td>
+            <td>3</td>
+            <td>1490</td>
+        </tr>
+        <tr align=center>
+            <td>101</td>
+            <td><a href="/rating/season-winter-spring-2017/сатир">сатир</a></td>
+            <td>0</td>
+            <td>1</td>
+            <td>1</td>
+            <td>1488</td>
+        </tr>
+        <tr align=center>
+            <td>102</td>
+            <td><a href="/rating/season-winter-spring-2017/shadowmaniac">shadowmaniac</a></td>
+            <td>8</td>
+            <td>10</td>
+            <td>18</td>
+            <td>1486</td>
+        </tr>
+        <tr align=center>
+            <td>102</td>
+            <td><a href="/rating/season-winter-spring-2017/shameonyou">shameonyou</a></td>
+            <td>0</td>
+            <td>1</td>
+            <td>1</td>
+            <td>1486</td>
+        </tr>
+        <tr align=center>
+            <td>102</td>
+            <td><a href="/rating/season-winter-spring-2017/joanfo">joanfo</a></td>
+            <td>7</td>
+            <td>9</td>
+            <td>16</td>
+            <td>1486</td>
+        </tr>
+        <tr align=center>
+            <td>102</td>
+            <td><a href="/rating/season-winter-spring-2017/lth">lth</a></td>
+            <td>0</td>
+            <td>1</td>
+            <td>1</td>
+            <td>1486</td>
+        </tr>
+        <tr align=center>
+            <td>103</td>
+            <td><a href="/rating/season-winter-spring-2017/deadshot">deadshot</a></td>
+            <td>1</td>
+            <td>2</td>
+            <td>3</td>
+            <td>1485</td>
+        </tr>
+        <tr align=center>
+            <td>103</td>
+            <td><a href="/rating/season-winter-spring-2017/deferatto">deferatto</a></td>
+            <td>0</td>
+            <td>1</td>
+            <td>1</td>
+            <td>1485</td>
+        </tr>
+        <tr align=center>
+            <td>103</td>
+            <td><a href="/rating/season-winter-spring-2017/emett">emett</a></td>
+            <td>0</td>
+            <td>1</td>
+            <td>1</td>
+            <td>1485</td>
+        </tr>
+        <tr align=center>
+            <td>103</td>
+            <td><a href="/rating/season-winter-spring-2017/kashchei">kashchei</a></td>
+            <td>21</td>
+            <td>19</td>
+            <td>40</td>
+            <td>1485</td>
+        </tr>
+        <tr align=center>
+            <td>103</td>
+            <td><a href="/rating/season-winter-spring-2017/elmidar">elmidar</a></td>
+            <td>2</td>
+            <td>3</td>
+            <td>5</td>
+            <td>1485</td>
+        </tr>
+        <tr align=center>
+            <td>104</td>
+            <td><a href="/rating/season-winter-spring-2017/odessit1991">odessit1991</a></td>
+            <td>0</td>
+            <td>1</td>
+            <td>1</td>
+            <td>1484</td>
+        </tr>
+        <tr align=center>
+            <td>104</td>
+            <td><a href="/rating/season-winter-spring-2017/bmay">bmay</a></td>
+            <td>16</td>
+            <td>16</td>
+            <td>32</td>
+            <td>1484</td>
+        </tr>
+        <tr align=center>
+            <td>104</td>
+            <td><a href="/rating/season-winter-spring-2017/karma">karma</a></td>
+            <td>0</td>
+            <td>1</td>
+            <td>1</td>
+            <td>1484</td>
+        </tr>
+        <tr align=center>
+            <td>105</td>
+            <td><a href="/rating/season-winter-spring-2017/bloody)driver">bloody)driver</a></td>
+            <td>4</td>
+            <td>6</td>
+            <td>10</td>
+            <td>1483</td>
+        </tr>
+        <tr align=center>
+            <td>106</td>
+            <td><a href="/rating/season-winter-spring-2017/stekattack">stekattack</a></td>
+            <td>10</td>
+            <td>11</td>
+            <td>21</td>
+            <td>1482</td>
+        </tr>
+        <tr align=center>
+            <td>107</td>
+            <td><a href="/rating/season-winter-spring-2017/akitsu">akitsu</a></td>
+            <td>2</td>
+            <td>3</td>
+            <td>6</td>
+            <td>1481</td>
+        </tr>
+        <tr align=center>
+            <td>107</td>
+            <td><a href="/rating/season-winter-spring-2017/andabat">andabat</a></td>
+            <td>0</td>
+            <td>1</td>
+            <td>1</td>
+            <td>1481</td>
+        </tr>
+        <tr align=center>
+            <td>108</td>
+            <td><a href="/rating/season-winter-spring-2017/mrp1nchy">mrp1nchy</a></td>
+            <td>2</td>
+            <td>4</td>
+            <td>6</td>
+            <td>1480</td>
+        </tr>
+        <tr align=center>
+            <td>109</td>
+            <td><a href="/rating/season-winter-spring-2017/xboct">xboct</a></td>
+            <td>6</td>
+            <td>7</td>
+            <td>13</td>
+            <td>1479</td>
+        </tr>
+        <tr align=center>
+            <td>109</td>
+            <td><a href="/rating/season-winter-spring-2017/marajan">marajan</a></td>
+            <td>3</td>
+            <td>4</td>
+            <td>7</td>
+            <td>1479</td>
+        </tr>
+        <tr align=center>
+            <td>110</td>
+            <td><a href="/rating/season-winter-spring-2017/cost">cost</a></td>
+            <td>10</td>
+            <td>13</td>
+            <td>23</td>
+            <td>1478</td>
+        </tr>
+        <tr align=center>
+            <td>111</td>
+            <td><a href="/rating/season-winter-spring-2017/jubi-juby">jubi-juby</a></td>
+            <td>3</td>
+            <td>6</td>
+            <td>10</td>
+            <td>1477</td>
+        </tr>
+        <tr align=center>
+            <td>111</td>
+            <td><a href="/rating/season-winter-spring-2017/rep1sk">rep1sk</a></td>
+            <td>4</td>
+            <td>5</td>
+            <td>9</td>
+            <td>1477</td>
+        </tr>
+        <tr align=center>
+            <td>111</td>
+            <td><a href="/rating/season-winter-spring-2017/korvet">korvet</a></td>
+            <td>3</td>
+            <td>5</td>
+            <td>9</td>
+            <td>1477</td>
+        </tr>
+        <tr align=center>
+            <td>112</td>
+            <td><a href="/rating/season-winter-spring-2017/daoded">daoded</a></td>
+            <td>0</td>
+            <td>2</td>
+            <td>2</td>
+            <td>1475</td>
+        </tr>
+        <tr align=center>
+            <td>113</td>
+            <td><a href="/rating/season-winter-spring-2017/easywtf">easywtf</a></td>
+            <td>1</td>
+            <td>3</td>
+            <td>4</td>
+            <td>1474</td>
+        </tr>
+        <tr align=center>
+            <td>114</td>
+            <td><a href="/rating/season-winter-spring-2017/churik">churik</a></td>
+            <td>1</td>
+            <td>3</td>
+            <td>4</td>
+            <td>1473</td>
+        </tr>
+        <tr align=center>
+            <td>114</td>
+            <td><a href="/rating/season-winter-spring-2017/mals">mals</a></td>
+            <td>25</td>
+            <td>25</td>
+            <td>51</td>
+            <td>1473</td>
+        </tr>
+        <tr align=center>
+            <td>115</td>
+            <td><a href="/rating/season-winter-spring-2017/just_richard">just_richard</a></td>
+            <td>0</td>
+            <td>2</td>
+            <td>2</td>
+            <td>1472</td>
+        </tr>
+        <tr align=center>
+            <td>115</td>
+            <td><a href="/rating/season-winter-spring-2017/taso">taso</a></td>
+            <td>2</td>
+            <td>4</td>
+            <td>6</td>
+            <td>1472</td>
+        </tr>
+        <tr align=center>
+            <td>116</td>
+            <td><a href="/rating/season-winter-spring-2017/bradrok">bradrok</a></td>
+            <td>1</td>
+            <td>3</td>
+            <td>4</td>
+            <td>1470</td>
+        </tr>
+        <tr align=center>
+            <td>116</td>
+            <td><a href="/rating/season-winter-spring-2017/alone">alone</a></td>
+            <td>0</td>
+            <td>2</td>
+            <td>2</td>
+            <td>1470</td>
+        </tr>
+        <tr align=center>
+            <td>117</td>
+            <td><a href="/rating/season-winter-spring-2017/alkaposha">alkaposha</a></td>
+            <td>13</td>
+            <td>15</td>
+            <td>28</td>
+            <td>1469</td>
+        </tr>
+        <tr align=center>
+            <td>117</td>
+            <td><a href="/rating/season-winter-spring-2017/noangel">noangel</a></td>
+            <td>0</td>
+            <td>2</td>
+            <td>2</td>
+            <td>1469</td>
+        </tr>
+        <tr align=center>
+            <td>117</td>
+            <td><a href="/rating/season-winter-spring-2017/max144">max144</a></td>
+            <td>0</td>
+            <td>2</td>
+            <td>2</td>
+            <td>1469</td>
+        </tr>
+        <tr align=center>
+            <td>118</td>
+            <td><a href="/rating/season-winter-spring-2017/kirill samoylenko">kirill samoylenko</a></td>
+            <td>0</td>
+            <td>2</td>
+            <td>2</td>
+            <td>1467</td>
+        </tr>
+        <tr align=center>
+            <td>118</td>
+            <td><a href="/rating/season-winter-spring-2017/wyndoc">wyndoc</a></td>
+            <td>7</td>
+            <td>10</td>
+            <td>17</td>
+            <td>1467</td>
+        </tr>
+        <tr align=center>
+            <td>119</td>
+            <td><a href="/rating/season-winter-spring-2017/k_shadow">k_shadow</a></td>
+            <td>1</td>
+            <td>4</td>
+            <td>5</td>
+            <td>1466</td>
+        </tr>
+        <tr align=center>
+            <td>119</td>
+            <td><a href="/rating/season-winter-spring-2017/kilgor">kilgor</a></td>
+            <td>1</td>
+            <td>4</td>
+            <td>6</td>
+            <td>1466</td>
+        </tr>
+        <tr align=center>
+            <td>120</td>
+            <td><a href="/rating/season-winter-spring-2017/jonny">jonny</a></td>
+            <td>2</td>
+            <td>3</td>
+            <td>5</td>
+            <td>1465</td>
+        </tr>
+        <tr align=center>
+            <td>120</td>
+            <td><a href="/rating/season-winter-spring-2017/убитый">убитый</a></td>
+            <td>3</td>
+            <td>5</td>
+            <td>8</td>
+            <td>1465</td>
+        </tr>
+        <tr align=center>
+            <td>121</td>
+            <td><a href="/rating/season-winter-spring-2017/śċöŗpïůś">śċöŗpïůś</a></td>
+            <td>2</td>
+            <td>4</td>
+            <td>6</td>
+            <td>1463</td>
+        </tr>
+        <tr align=center>
+            <td>121</td>
+            <td><a href="/rating/season-winter-spring-2017/sshreks">sshreks</a></td>
+            <td>7</td>
+            <td>9</td>
+            <td>16</td>
+            <td>1463</td>
+        </tr>
+        <tr align=center>
+            <td>122</td>
+            <td><a href="/rating/season-winter-spring-2017/alin">alin</a></td>
+            <td>14</td>
+            <td>19</td>
+            <td>33</td>
+            <td>1462</td>
+        </tr>
+        <tr align=center>
+            <td>122</td>
+            <td><a href="/rating/season-winter-spring-2017/=stinger=">=stinger=</a></td>
+            <td>0</td>
+            <td>3</td>
+            <td>3</td>
+            <td>1462</td>
+        </tr>
+        <tr align=center>
+            <td>123</td>
+            <td><a href="/rating/season-winter-spring-2017/fidesxfx">fidesxfx</a></td>
+            <td>2</td>
+            <td>6</td>
+            <td>8</td>
+            <td>1461</td>
+        </tr>
+        <tr align=center>
+            <td>124</td>
+            <td><a href="/rating/season-winter-spring-2017/blblbl">blblbl</a></td>
+            <td>17</td>
+            <td>16</td>
+            <td>33</td>
+            <td>1460</td>
+        </tr>
+        <tr align=center>
+            <td>125</td>
+            <td><a href="/rating/season-winter-spring-2017/denspb">denspb</a></td>
+            <td>0</td>
+            <td>3</td>
+            <td>3</td>
+            <td>1459</td>
+        </tr>
+        <tr align=center>
+            <td>126</td>
+            <td><a href="/rating/season-winter-spring-2017/olegas227">olegas227</a></td>
+            <td>2</td>
+            <td>4</td>
+            <td>6</td>
+            <td>1457</td>
+        </tr>
+        <tr align=center>
+            <td>126</td>
+            <td><a href="/rating/season-winter-spring-2017/s_jay_is_god">s_jay_is_god</a></td>
+            <td>4</td>
+            <td>6</td>
+            <td>10</td>
+            <td>1457</td>
+        </tr>
+        <tr align=center>
+            <td>127</td>
+            <td><a href="/rating/season-winter-spring-2017/u2noob">u2noob</a></td>
+            <td>5</td>
+            <td>9</td>
+            <td>14</td>
+            <td>1456</td>
+        </tr>
+        <tr align=center>
+            <td>127</td>
+            <td><a href="/rating/season-winter-spring-2017/iamsamstan">iamsamstan</a></td>
+            <td>17</td>
+            <td>28</td>
+            <td>45</td>
+            <td>1456</td>
+        </tr>
+        <tr align=center>
+            <td>127</td>
+            <td><a href="/rating/season-winter-spring-2017/underwood">underwood</a></td>
+            <td>11</td>
+            <td>16</td>
+            <td>28</td>
+            <td>1456</td>
+        </tr>
+        <tr align=center>
+            <td>128</td>
+            <td><a href="/rating/season-winter-spring-2017/falcone">falcone</a></td>
+            <td>22</td>
+            <td>26</td>
+            <td>48</td>
+            <td>1455</td>
+        </tr>
+        <tr align=center>
+            <td>129</td>
+            <td><a href="/rating/season-winter-spring-2017/beerwarrior">beerwarrior</a></td>
+            <td>1</td>
+            <td>5</td>
+            <td>6</td>
+            <td>1454</td>
+        </tr>
+        <tr align=center>
+            <td>129</td>
+            <td><a href="/rating/season-winter-spring-2017/puzzz0">puzzz0</a></td>
+            <td>0</td>
+            <td>3</td>
+            <td>3</td>
+            <td>1454</td>
+        </tr>
+        <tr align=center>
+            <td>130</td>
+            <td><a href="/rating/season-winter-spring-2017/krag">krag</a></td>
+            <td>10</td>
+            <td>19</td>
+            <td>29</td>
+            <td>1453</td>
+        </tr>
+        <tr align=center>
+            <td>130</td>
+            <td><a href="/rating/season-winter-spring-2017/psyche_7">psyche_7</a></td>
+            <td>7</td>
+            <td>12</td>
+            <td>19</td>
+            <td>1453</td>
+        </tr>
+        <tr align=center>
+            <td>130</td>
+            <td><a href="/rating/season-winter-spring-2017/pyre">pyre</a></td>
+            <td>4</td>
+            <td>8</td>
+            <td>12</td>
+            <td>1453</td>
+        </tr>
+        <tr align=center>
+            <td>131</td>
+            <td><a href="/rating/season-winter-spring-2017/aka.ward3n">aka.ward3n</a></td>
+            <td>21</td>
+            <td>37</td>
+            <td>59</td>
+            <td>1452</td>
+        </tr>
+        <tr align=center>
+            <td>131</td>
+            <td><a href="/rating/season-winter-spring-2017/vatya">vatya</a></td>
+            <td>17</td>
+            <td>19</td>
+            <td>36</td>
+            <td>1452</td>
+        </tr>
+        <tr align=center>
+            <td>131</td>
+            <td><a href="/rating/season-winter-spring-2017/stickyfingaz">stickyfingaz</a></td>
+            <td>4</td>
+            <td>8</td>
+            <td>12</td>
+            <td>1452</td>
+        </tr>
+        <tr align=center>
+            <td>132</td>
+            <td><a href="/rating/season-winter-spring-2017/barracuda">barracuda</a></td>
+            <td>3</td>
+            <td>6</td>
+            <td>9</td>
+            <td>1450</td>
+        </tr>
+        <tr align=center>
+            <td>132</td>
+            <td><a href="/rating/season-winter-spring-2017/dark30">dark30</a></td>
+            <td>25</td>
+            <td>37</td>
+            <td>62</td>
+            <td>1450</td>
+        </tr>
+        <tr align=center>
+            <td>133</td>
+            <td><a href="/rating/season-winter-spring-2017/meo">meo</a></td>
+            <td>22</td>
+            <td>25</td>
+            <td>50</td>
+            <td>1447</td>
+        </tr>
+        <tr align=center>
+            <td>134</td>
+            <td><a href="/rating/season-winter-spring-2017/yosha">yosha</a></td>
+            <td>22</td>
+            <td>41</td>
+            <td>63</td>
+            <td>1446</td>
+        </tr>
+        <tr align=center>
+            <td>135</td>
+            <td><a href="/rating/season-winter-spring-2017/hi-tech">hi-tech</a></td>
+            <td>12</td>
+            <td>25</td>
+            <td>37</td>
+            <td>1445</td>
+        </tr>
+        <tr align=center>
+            <td>135</td>
+            <td><a href="/rating/season-winter-spring-2017/volland">volland</a></td>
+            <td>0</td>
+            <td>4</td>
+            <td>4</td>
+            <td>1445</td>
+        </tr>
+        <tr align=center>
+            <td>136</td>
+            <td><a href="/rating/season-winter-spring-2017/shkent">shkent</a></td>
+            <td>5</td>
+            <td>10</td>
+            <td>16</td>
+            <td>1443</td>
+        </tr>
+        <tr align=center>
+            <td>136</td>
+            <td><a href="/rating/season-winter-spring-2017/palach hp">palach hp</a></td>
+            <td>5</td>
+            <td>10</td>
+            <td>15</td>
+            <td>1443</td>
+        </tr>
+        <tr align=center>
+            <td>136</td>
+            <td><a href="/rating/season-winter-spring-2017/canabeast">canabeast</a></td>
+            <td>6</td>
+            <td>10</td>
+            <td>16</td>
+            <td>1443</td>
+        </tr>
+        <tr align=center>
+            <td>137</td>
+            <td><a href="/rating/season-winter-spring-2017/aldegir">aldegir</a></td>
+            <td>1</td>
+            <td>5</td>
+            <td>6</td>
+            <td>1442</td>
+        </tr>
+        <tr align=center>
+            <td>138</td>
+            <td><a href="/rating/season-winter-spring-2017/kinger">kinger</a></td>
+            <td>1</td>
+            <td>5</td>
+            <td>6</td>
+            <td>1441</td>
+        </tr>
+        <tr align=center>
+            <td>138</td>
+            <td><a href="/rating/season-winter-spring-2017/maxgor">maxgor</a></td>
+            <td>2</td>
+            <td>7</td>
+            <td>9</td>
+            <td>1441</td>
+        </tr>
+        <tr align=center>
+            <td>139</td>
+            <td><a href="/rating/season-winter-spring-2017/zen">zen</a></td>
+            <td>18</td>
+            <td>21</td>
+            <td>39</td>
+            <td>1440</td>
+        </tr>
+        <tr align=center>
+            <td>139</td>
+            <td><a href="/rating/season-winter-spring-2017/iryzhakov">iryzhakov</a></td>
+            <td>2</td>
+            <td>6</td>
+            <td>8</td>
+            <td>1440</td>
+        </tr>
+        <tr align=center>
+            <td>140</td>
+            <td><a href="/rating/season-winter-spring-2017/kalcefar">kalcefar</a></td>
+            <td>2</td>
+            <td>7</td>
+            <td>9</td>
+            <td>1438</td>
+        </tr>
+        <tr align=center>
+            <td>141</td>
+            <td><a href="/rating/season-winter-spring-2017/злой_романтик">злой_романтик</a></td>
+            <td>7</td>
+            <td>13</td>
+            <td>20</td>
+            <td>1437</td>
+        </tr>
+        <tr align=center>
+            <td>142</td>
+            <td><a href="/rating/season-winter-spring-2017/ritosux">ritosux</a></td>
+            <td>6</td>
+            <td>10</td>
+            <td>16</td>
+            <td>1436</td>
+        </tr>
+        <tr align=center>
+            <td>143</td>
+            <td><a href="/rating/season-winter-spring-2017/slayzer">slayzer</a></td>
+            <td>4</td>
+            <td>9</td>
+            <td>13</td>
+            <td>1435</td>
+        </tr>
+        <tr align=center>
+            <td>143</td>
+            <td><a href="/rating/season-winter-spring-2017/zuro007">zuro007</a></td>
+            <td>15</td>
+            <td>17</td>
+            <td>32</td>
+            <td>1435</td>
+        </tr>
+        <tr align=center>
+            <td>143</td>
+            <td><a href="/rating/season-winter-spring-2017/svarog">svarog</a></td>
+            <td>2</td>
+            <td>8</td>
+            <td>10</td>
+            <td>1435</td>
+        </tr>
+        <tr align=center>
+            <td>144</td>
+            <td><a href="/rating/season-winter-spring-2017/shanti">shanti</a></td>
+            <td>8</td>
+            <td>12</td>
+            <td>20</td>
+            <td>1432</td>
+        </tr>
+        <tr align=center>
+            <td>145</td>
+            <td><a href="/rating/season-winter-spring-2017/mar">mar</a></td>
+            <td>18</td>
+            <td>26</td>
+            <td>44</td>
+            <td>1431</td>
+        </tr>
+        <tr align=center>
+            <td>146</td>
+            <td><a href="/rating/season-winter-spring-2017/court">court</a></td>
+            <td>5</td>
+            <td>10</td>
+            <td>15</td>
+            <td>1429</td>
+        </tr>
+        <tr align=center>
+            <td>147</td>
+            <td><a href="/rating/season-winter-spring-2017/alihes">alihes</a></td>
+            <td>0</td>
+            <td>5</td>
+            <td>5</td>
+            <td>1428</td>
+        </tr>
+        <tr align=center>
+            <td>148</td>
+            <td><a href="/rating/season-winter-spring-2017/wariator">wariator</a></td>
+            <td>11</td>
+            <td>19</td>
+            <td>30</td>
+            <td>1426</td>
+        </tr>
+        <tr align=center>
+            <td>148</td>
+            <td><a href="/rating/season-winter-spring-2017/chemist_hp">chemist_hp</a></td>
+            <td>9</td>
+            <td>17</td>
+            <td>26</td>
+            <td>1426</td>
+        </tr>
+        <tr align=center>
+            <td>149</td>
+            <td><a href="/rating/season-winter-spring-2017/dorsaj">dorsaj</a></td>
+            <td>18</td>
+            <td>25</td>
+            <td>43</td>
+            <td>1424</td>
+        </tr>
+        <tr align=center>
+            <td>150</td>
+            <td><a href="/rating/season-winter-spring-2017/iluzzionist">iluzzionist</a></td>
+            <td>2</td>
+            <td>8</td>
+            <td>10</td>
+            <td>1422</td>
+        </tr>
+        <tr align=center>
+            <td>150</td>
+            <td><a href="/rating/season-winter-spring-2017/montt">montt</a></td>
+            <td>2</td>
+            <td>9</td>
+            <td>11</td>
+            <td>1422</td>
+        </tr>
+        <tr align=center>
+            <td>150</td>
+            <td><a href="/rating/season-winter-spring-2017/armageddets">armageddets</a></td>
+            <td>1</td>
+            <td>5</td>
+            <td>6</td>
+            <td>1422</td>
+        </tr>
+        <tr align=center>
+            <td>151</td>
+            <td><a href="/rating/season-winter-spring-2017/night troll">night troll</a></td>
+            <td>11</td>
+            <td>16</td>
+            <td>27</td>
+            <td>1421</td>
+        </tr>
+        <tr align=center>
+            <td>152</td>
+            <td><a href="/rating/season-winter-spring-2017/hideyosi">hideyosi</a></td>
+            <td>1</td>
+            <td>7</td>
+            <td>8</td>
+            <td>1419</td>
+        </tr>
+        <tr align=center>
+            <td>152</td>
+            <td><a href="/rating/season-winter-spring-2017/outlaw">outlaw</a></td>
+            <td>14</td>
+            <td>20</td>
+            <td>34</td>
+            <td>1419</td>
+        </tr>
+        <tr align=center>
+            <td>153</td>
+            <td><a href="/rating/season-winter-spring-2017/punker">punker</a></td>
+            <td>0</td>
+            <td>6</td>
+            <td>6</td>
+            <td>1418</td>
+        </tr>
+        <tr align=center>
+            <td>153</td>
+            <td><a href="/rating/season-winter-spring-2017/wladysha">wladysha</a></td>
+            <td>0</td>
+            <td>7</td>
+            <td>7</td>
+            <td>1418</td>
+        </tr>
+        <tr align=center>
+            <td>154</td>
+            <td><a href="/rating/season-winter-spring-2017/fckreckless">fckreckless</a></td>
+            <td>2</td>
+            <td>8</td>
+            <td>10</td>
+            <td>1417</td>
+        </tr>
+        <tr align=center>
+            <td>155</td>
+            <td><a href="/rating/season-winter-spring-2017/minasmorgul">minasmorgul</a></td>
+            <td>18</td>
+            <td>32</td>
+            <td>50</td>
+            <td>1415</td>
+        </tr>
+        <tr align=center>
+            <td>156</td>
+            <td><a href="/rating/season-winter-spring-2017/клавиус">клавиус</a></td>
+            <td>0</td>
+            <td>6</td>
+            <td>6</td>
+            <td>1413</td>
+        </tr>
+        <tr align=center>
+            <td>156</td>
+            <td><a href="/rating/season-winter-spring-2017/avellimachi">avellimachi</a></td>
+            <td>36</td>
+            <td>46</td>
+            <td>82</td>
+            <td>1413</td>
+        </tr>
+        <tr align=center>
+            <td>157</td>
+            <td><a href="/rating/season-winter-spring-2017/timbuktu">timbuktu</a></td>
+            <td>8</td>
+            <td>19</td>
+            <td>27</td>
+            <td>1406</td>
+        </tr>
+        <tr align=center>
+            <td>158</td>
+            <td><a href="/rating/season-winter-spring-2017/freesha">freesha</a></td>
+            <td>15</td>
+            <td>24</td>
+            <td>40</td>
+            <td>1405</td>
+        </tr>
+        <tr align=center>
+            <td>159</td>
+            <td><a href="/rating/season-winter-spring-2017/moxuto">moxuto</a></td>
+            <td>15</td>
+            <td>23</td>
+            <td>39</td>
+            <td>1404</td>
+        </tr>
+        <tr align=center>
+            <td>160</td>
+            <td><a href="/rating/season-winter-spring-2017/lampadra">lampadra</a></td>
+            <td>4</td>
+            <td>9</td>
+            <td>13</td>
+            <td>1399</td>
+        </tr>
+        <tr align=center>
+            <td>160</td>
+            <td><a href="/rating/season-winter-spring-2017/osfaraon">osfaraon</a></td>
+            <td>2</td>
+            <td>11</td>
+            <td>13</td>
+            <td>1399</td>
+        </tr>
+        <tr align=center>
+            <td>160</td>
+            <td><a href="/rating/season-winter-spring-2017/dandy">dandy</a></td>
+            <td>3</td>
+            <td>12</td>
+            <td>15</td>
+            <td>1399</td>
+        </tr>
+        <tr align=center>
+            <td>161</td>
+            <td><a href="/rating/season-winter-spring-2017/gunar">gunar</a></td>
+            <td>15</td>
+            <td>32</td>
+            <td>48</td>
+            <td>1394</td>
+        </tr>
+        <tr align=center>
+            <td>162</td>
+            <td><a href="/rating/season-winter-spring-2017/denast">denast</a></td>
+            <td>18</td>
+            <td>28</td>
+            <td>46</td>
+            <td>1392</td>
+        </tr>
+        <tr align=center>
+            <td>162</td>
+            <td><a href="/rating/season-winter-spring-2017/mercurydvz">mercurydvz</a></td>
+            <td>13</td>
+            <td>23</td>
+            <td>36</td>
+            <td>1392</td>
+        </tr>
+        <tr align=center>
+            <td>163</td>
+            <td><a href="/rating/season-winter-spring-2017/muunis">muunis</a></td>
+            <td>12</td>
+            <td>27</td>
+            <td>39</td>
+            <td>1391</td>
+        </tr>
+        <tr align=center>
+            <td>164</td>
+            <td><a href="/rating/season-winter-spring-2017/little">little</a></td>
+            <td>5</td>
+            <td>14</td>
+            <td>19</td>
+            <td>1390</td>
+        </tr>
+        <tr align=center>
+            <td>165</td>
+            <td><a href="/rating/season-winter-spring-2017/scorpiona">scorpiona</a></td>
+            <td>7</td>
+            <td>21</td>
+            <td>28</td>
+            <td>1387</td>
+        </tr>
+        <tr align=center>
+            <td>166</td>
+            <td><a href="/rating/season-winter-spring-2017/sevan_80">sevan_80</a></td>
+            <td>24</td>
+            <td>52</td>
+            <td>77</td>
+            <td>1382</td>
+        </tr>
+        <tr align=center>
+            <td>167</td>
+            <td><a href="/rating/season-winter-spring-2017/zodmund">zodmund</a></td>
+            <td>8</td>
+            <td>18</td>
+            <td>26</td>
+            <td>1380</td>
+        </tr>
+        <tr align=center>
+            <td>167</td>
+            <td><a href="/rating/season-winter-spring-2017/notforyou">notforyou</a></td>
+            <td>5</td>
+            <td>18</td>
+            <td>23</td>
+            <td>1380</td>
+        </tr>
+        <tr align=center>
+            <td>168</td>
+            <td><a href="/rating/season-winter-spring-2017/дау">дау</a></td>
+            <td>6</td>
+            <td>16</td>
+            <td>22</td>
+            <td>1374</td>
+        </tr>
+        <tr align=center>
+            <td>169</td>
+            <td><a href="/rating/season-winter-spring-2017/suicid_pe.iarba">suicid_pe.iarba</a></td>
+            <td>19</td>
+            <td>37</td>
+            <td>56</td>
+            <td>1368</td>
+        </tr>
+        <tr align=center>
+            <td>170</td>
+            <td><a href="/rating/season-winter-spring-2017/benis_xdd">benis_xdd</a></td>
+            <td>19</td>
+            <td>35</td>
+            <td>54</td>
+            <td>1366</td>
+        </tr>
+        <tr align=center>
+            <td>171</td>
+            <td><a href="/rating/season-winter-spring-2017/ca5per">ca5per</a></td>
+            <td>7</td>
+            <td>17</td>
+            <td>24</td>
+            <td>1362</td>
+        </tr>
+        <tr align=center>
+            <td>172</td>
+            <td><a href="/rating/season-winter-spring-2017/be3y4uu">be3y4uu</a></td>
+            <td>0</td>
+            <td>10</td>
+            <td>10</td>
+            <td>1359</td>
+        </tr>
+        <tr align=center>
+            <td>172</td>
+            <td><a href="/rating/season-winter-spring-2017/kabzonn">kabzonn</a></td>
+            <td>5</td>
+            <td>18</td>
+            <td>23</td>
+            <td>1359</td>
+        </tr>
+        <tr align=center>
+            <td>173</td>
+            <td><a href="/rating/season-winter-spring-2017/gee">gee</a></td>
+            <td>46</td>
+            <td>81</td>
+            <td>128</td>
+            <td>1351</td>
+        </tr>
+        <tr align=center>
+            <td>174</td>
+            <td><a href="/rating/season-winter-spring-2017/o1dboy79">o1dboy79</a></td>
+            <td>14</td>
+            <td>32</td>
+            <td>46</td>
+            <td>1350</td>
+        </tr>
+        <tr align=center>
+            <td>175</td>
+            <td><a href="/rating/season-winter-spring-2017/pusher">pusher</a></td>
+            <td>10</td>
+            <td>26</td>
+            <td>36</td>
+            <td>1349</td>
+        </tr>
+        <tr align=center>
+            <td>176</td>
+            <td><a href="/rating/season-winter-spring-2017/fill-ua">fill-ua</a></td>
+            <td>20</td>
+            <td>38</td>
+            <td>59</td>
+            <td>1344</td>
+        </tr>
+        <tr align=center>
+            <td>177</td>
+            <td><a href="/rating/season-winter-spring-2017/rockmachine">rockmachine</a></td>
+            <td>1</td>
+            <td>14</td>
+            <td>15</td>
+            <td>1341</td>
+        </tr>
+        <tr align=center>
+            <td>178</td>
+            <td><a href="/rating/season-winter-spring-2017/dan_choi">dan_choi</a></td>
+            <td>20</td>
+            <td>40</td>
+            <td>60</td>
+            <td>1334</td>
+        </tr>
+        <tr align=center>
+            <td>179</td>
+            <td><a href="/rating/season-winter-spring-2017/h3pro">h3pro</a></td>
+            <td>20</td>
+            <td>48</td>
+            <td>69</td>
+            <td>1329</td>
+        </tr>
+        <tr align=center>
+            <td>180</td>
+            <td><a href="/rating/season-winter-spring-2017/dreadkn1ght">dreadkn1ght</a></td>
+            <td>9</td>
+            <td>30</td>
+            <td>39</td>
+            <td>1324</td>
+        </tr>
+        <tr align=center>
+            <td>181</td>
+            <td><a href="/rating/season-winter-spring-2017/st_klaus">st_klaus</a></td>
+            <td>5</td>
+            <td>21</td>
+            <td>26</td>
+            <td>1317</td>
+        </tr>
+        <tr align=center>
+            <td>182</td>
+            <td><a href="/rating/season-winter-spring-2017/9li9ht">9li9ht</a></td>
+            <td>19</td>
+            <td>63</td>
+            <td>82</td>
+            <td>1298</td>
+        </tr>
+        <tr align=center>
+            <td>183</td>
+            <td><a href="/rating/season-winter-spring-2017/happy orange">happy orange</a></td>
+            <td>10</td>
+            <td>34</td>
+            <td>44</td>
+            <td>1288</td>
+        </tr>
+        <tr align=center>
+            <td>184</td>
+            <td><a href="/rating/season-winter-spring-2017/zoog">zoog</a></td>
+            <td>9</td>
+            <td>31</td>
+            <td>41</td>
+            <td>1278</td>
+        </tr>
+    </table>
+</td>
+</tr>
+</table>
+</body>
+</html>

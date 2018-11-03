@@ -21,7 +21,7 @@ public class RatingCalculator {
 
     public static void main(String[] args) throws IOException {
         List<StatisticsItem> items = new RatingCalculator().calculate(
-                mapper.readValue(RatingCalculator.class.getResourceAsStream("/results1.json"),
+                mapper.readValue(RatingCalculator.class.getResourceAsStream("/source/results1.json"),
                 new TypeReference<List<GameResult>>() {
                 }));
         mapper.writeValue(new FileOutputStream("/home/ihromant/statistics.json"), items);
