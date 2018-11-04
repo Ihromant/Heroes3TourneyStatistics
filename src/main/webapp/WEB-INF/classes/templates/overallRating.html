@@ -20,7 +20,7 @@
                     <span class="old5">(Total players statistics)</span></p>
             </div>
         </td>
-        <td><a href="/unconfirmed/"><img src="/img/att.gif" alt="Unconfirmed reports" width="341" height="133"
+        <td><a href="/unconfirmed"><img src="/img/att.gif" alt="Unconfirmed reports" width="341" height="133"
                                          border="0"/></a></td>
     </tr>
     <tr>
@@ -58,6 +58,8 @@
         </p2>
         <td>
     </tr>
+    <p th:text="${overall}">
+    </p>
     <tr>
         <td valign="top">
             <table border=2>
@@ -72,16 +74,14 @@
                     <td>Total<br>games</td>
                     <td>Overall<br>rating</td>
                 </tr>
-                <#list overall.items as item>
-                <tr align=center>
-                    <td>${item?counter}</td>
-                    <td><a href="/rating/season_summer-autumn-2017/luckyf">${item.name}</a></td>
-                    <td>${item.wins}</td>
-                    <td>${item.loses}</td>
-                    <td>${item.totalGames}</td>
-                    <td>${item.rating}</td>
+                <tr th:each="e,iter : ${overall.items}" align=center>
+                    <td th:text="${iter.count}">$foreach.count</td>
+                    <td><a th:href="'/rating/overall/' + ${e.key}" th:text="${e.value.name}">$e.value.name</a></td>
+                    <td th:text="${e.value.wins}">$e.value.wins</td>
+                    <td th:text="${e.value.loses}">$e.value.loses</td>
+                    <td th:text="${e.value.totalGames}">$e.value.totalGames</td>
+                    <td th:text="${e.value.rating}">$e.value.rating</td>
                 </tr>
-                </#list>
             </table>
         </td>
 <td valign="top">

@@ -73,4 +73,18 @@ public class PlayerInfo {
     public void setFinalH(String finalH) {
         this.finalH = finalH;
     }
+
+    @Override
+    public String toString() {
+        return "PlayerInfo{" +
+                "name='" + name + '\'' +
+                ", reportLink='" + reportLink + '\'' +
+                ", color=" + color +
+                ", castle=" + castle +
+                ", startingHero=" + startingHero +
+                ", startH='" + startH + '\'' +
+                ", finalHero=" + finalHero +
+                ", finalH='" + finalH + '\'' +
+                '}';
+    }
 }

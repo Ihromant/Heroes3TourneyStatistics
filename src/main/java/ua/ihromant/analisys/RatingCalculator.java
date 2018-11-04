@@ -1,14 +1,10 @@
 package ua.ihromant.analisys;
 
-import com.fasterxml.jackson.core.type.TypeReference;
-import com.fasterxml.jackson.databind.ObjectMapper;
-import com.fasterxml.jackson.datatype.jsr310.JavaTimeModule;
 import ua.ihromant.data.GameResult;
 import ua.ihromant.data.StatisticsItem;
 
-import java.io.FileOutputStream;
-import java.io.IOException;
 import java.util.Comparator;
+import java.util.LinkedHashMap;
 import java.util.List;
 import java.util.Map;
 import java.util.function.Function;
@@ -16,18 +12,8 @@ import java.util.stream.Collectors;
 import java.util.stream.Stream;
 
 public class RatingCalculator {
-    private static final ObjectMapper mapper = new ObjectMapper()
-            .registerModule(new JavaTimeModule());
 
-    public static void main(String[] args) throws IOException {
-        List<StatisticsItem> items = new RatingCalculator().calculate(
-                mapper.readValue(RatingCalculator.class.getResourceAsStream("/source/results1.json"),
-                new TypeReference<List<GameResult>>() {
-                }));
-        mapper.writeValue(new FileOutputStream("/home/ihromant/statistics.json"), items);
-    }
-
-    public List<StatisticsItem> calculate(List<GameResult> results) {
+    public Map<String, StatisticsItem> calculateOverall(List<GameResult> results) {
         Map<String, StatisticsItem> statistics = results.stream()
                 .flatMap(res -> Stream.of(res.getConfirmer().getName(), res.getReporter().getName()))
                 .distinct().collect(Collectors.toMap(Function.identity(), name -> {
@@ -54,7 +40,13 @@ public class RatingCalculator {
                             break;
                     }
                 });
-        return statistics.values().stream().sorted(Comparator.comparing(StatisticsItem::getRating).reversed()).collect(Collectors.toList());
+        return statistics.entrySet().stream()
+                .sorted(Comparator.<Map.Entry<String, StatisticsItem>, Integer>comparing(e1 -> e1.getValue().getRating())
+                        .reversed())
+                .collect(Collectors.toMap(e -> e.getKey().toLowerCase(),
+                        Map.Entry::getValue,
+                        (u,v) -> { throw new IllegalStateException(String.format("Duplicate key %s", u)); },
+                        LinkedHashMap::new));
     }
 
     private void recalculateWin(StatisticsItem winner, StatisticsItem loser, GameResult result) {
@@ -71,11 +63,11 @@ public class RatingCalculator {
 
         winner.setRating(winner.getRating() + result.getReporterChange());
         winner.setWins(winner.getWins() + 1);
-        winner.getPlayersResults().add(result);
+        winner.getResults().add(0, result);
 
         loser.setRating(loser.getRating() + result.getConfirmerChange());
         loser.setLoses(loser.getLoses() + 1);
-        loser.getPlayersResults().add(result.reversed());
+        loser.getResults().add(0, result.reversed());
     }
 
     private void recalculateDraw(StatisticsItem first, StatisticsItem second, GameResult result) {
@@ -92,10 +84,10 @@ public class RatingCalculator {
 
         first.setRating(first.getRating() + result.getConfirmerChange());
         first.setDraws(first.getDraws() + 1);
-        first.getPlayersResults().add(result);
+        first.getResults().add(0, result);
 
         second.setRating(second.getRating() + result.getConfirmerChange());
         second.setDraws(second.getDraws() + 1);
-        second.getPlayersResults().add(result.reversed());
+        second.getResults().add(0, result.reversed());
     }
 }

@@ -4,22 +4,22 @@ import java.util.List;
 import java.util.Map;
 
 public class Unconfirmed {
-    private List<StatisticsItem> unconfirmed;
-    private Map<String, Integer> lazybones;
+    private List<GameResult> games;
+    private Map<String, Long> lazybones;
 
-    public List<StatisticsItem> getUnconfirmed() {
-        return unconfirmed;
+    public List<GameResult> getGames() {
+        return games;
     }
 
-    public void setUnconfirmed(List<StatisticsItem> unconfirmed) {
-        this.unconfirmed = unconfirmed;
+    public void setGames(List<GameResult> games) {
+        this.games = games;
     }
 
-    public Map<String, Integer> getLazybones() {
+    public Map<String, Long> getLazybones() {
         return lazybones;
     }
 
-    public void setLazybones(Map<String, Integer> lazybones) {
+    public void setLazybones(Map<String, Long> lazybones) {
         this.lazybones = lazybones;
     }
 }

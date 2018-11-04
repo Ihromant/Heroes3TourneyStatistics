@@ -12,7 +12,7 @@ public class StatisticsItem {
     private int loses;
     private int draws;
     @JsonIgnore
-    private List<GameResult> playersResults = new ArrayList<>();
+    private List<GameResult> results = new ArrayList<>();
 
     public String getName() {
         return name;
@@ -54,12 +54,12 @@ public class StatisticsItem {
         this.draws = draws;
     }
 
-    public List<GameResult> getPlayersResults() {
-        return playersResults;
+    public List<GameResult> getResults() {
+        return results;
     }
 
-    public void setPlayersResults(List<GameResult> playersResults) {
-        this.playersResults = playersResults;
+    public void setResults(List<GameResult> results) {
+        this.results = results;
     }
 
     @JsonIgnore

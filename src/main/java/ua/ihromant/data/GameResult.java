@@ -130,4 +130,21 @@ public class GameResult implements Cloneable {
     public void setConfirmerChange(int confirmerChange) {
         this.confirmerChange = confirmerChange;
     }
+
+    @Override
+    public String toString() {
+        return "GameResult{" +
+                "date=" + date +
+                ", tourneyLink='" + tourneyLink + '\'' +
+                ", reporter=" + reporter +
+                ", confirmer=" + confirmer +
+                ", template=" + template +
+                ", result=" + result +
+                ", timing='" + timing + '\'' +
+                ", previousReporter=" + previousReporter +
+                ", reporterChange=" + reporterChange +
+                ", previousConfirmer=" + previousConfirmer +
+                ", confirmerChange=" + confirmerChange +
+                '}';
+    }
 }

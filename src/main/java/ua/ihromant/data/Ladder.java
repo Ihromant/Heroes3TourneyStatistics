@@ -1,10 +1,10 @@
 package ua.ihromant.data;
 
-import java.util.List;
+import java.util.Map;
 
 public class Ladder {
     private String name;
-    private List<StatisticsItem> items;
+    private Map<String, StatisticsItem> items;
 
     public String getName() {
         return name;
@@ -14,11 +14,11 @@ public class Ladder {
         this.name = name;
     }
 
-    public List<StatisticsItem> getItems() {
+    public Map<String, StatisticsItem> getItems() {
         return items;
     }
 
-    public void setItems(List<StatisticsItem> items) {
+    public void setItems(Map<String, StatisticsItem> items) {
         this.items = items;
     }
 }
