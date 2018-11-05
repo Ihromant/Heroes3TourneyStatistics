@@ -9,12 +9,14 @@ import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 import java.io.IOException;
+import java.nio.charset.StandardCharsets;
 import java.util.Locale;
 
 @WebServlet(name = "overallPlayerServlet", value = "/rating/overall/*")
 public class OverallPlayerServlet extends HttpServlet {
     @Override
     public void doGet(HttpServletRequest request, HttpServletResponse response) throws IOException {
+        response.setCharacterEncoding(StandardCharsets.UTF_8.name());
         String player = request.getPathInfo().split("/")[1].toLowerCase();
 
         Context context = new Context(Locale.ENGLISH);

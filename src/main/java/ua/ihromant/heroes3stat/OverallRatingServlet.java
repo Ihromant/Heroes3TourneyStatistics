@@ -6,6 +6,7 @@ import ua.ihromant.data.GlobalStatistics;
 import ua.ihromant.parser.GlobalStatisticsRetriever;
 
 import java.io.IOException;
+import java.nio.charset.StandardCharsets;
 import java.util.Locale;
 
 import javax.servlet.annotation.WebServlet;
@@ -20,7 +21,7 @@ public class OverallRatingServlet extends HttpServlet {
         Thread t = new Thread(() -> {
             while (true) {
                 try {
-                    Thread.sleep(180000);
+                    Thread.sleep(3600000);
                     GlobalStatistics.setInstance(GlobalStatisticsRetriever.retrieve());
                 } catch (Exception e) {
                     e.printStackTrace();
@@ -33,6 +34,7 @@ public class OverallRatingServlet extends HttpServlet {
 
     @Override
     public void doGet(HttpServletRequest request, HttpServletResponse response) throws IOException {
+        response.setCharacterEncoding(StandardCharsets.UTF_8.name());
         Context context = new Context(Locale.ENGLISH);
         context.setVariable("overall", GlobalStatistics.getInstance().getOverall());
         context.setVariable("lastUpdate", GlobalStatistics.getInstance().getLastUpdate());
