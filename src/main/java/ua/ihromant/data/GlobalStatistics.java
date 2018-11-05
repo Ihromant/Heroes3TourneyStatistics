@@ -1,21 +1,9 @@
 package ua.ihromant.data;
 
-import com.fasterxml.jackson.core.type.TypeReference;
-import com.fasterxml.jackson.databind.ObjectMapper;
-import com.fasterxml.jackson.datatype.jsr310.JavaTimeModule;
-import ua.ihromant.analisys.RatingCalculator;
-import ua.ihromant.analisys.UnconfirmedCollector;
-
-import java.io.IOException;
-import java.util.List;
+import java.time.ZonedDateTime;
 
 public class GlobalStatistics {
-    private static final ObjectMapper mapper = new ObjectMapper()
-            .registerModule(new JavaTimeModule());
-    private static GlobalStatistics statistics;
-
-    private static RatingCalculator calculator = new RatingCalculator();
-    private static UnconfirmedCollector uncCollector = new UnconfirmedCollector();
+    private static GlobalStatistics instance;
 
     private Ladder overall;
     private Ladder currentSeason;
@@ -23,23 +11,14 @@ public class GlobalStatistics {
 
     private Unconfirmed unconfirmed;
 
-    public static GlobalStatistics instance() {
-        if (statistics == null) {
-            statistics = new GlobalStatistics();
-            Ladder overall = new Ladder();
-            overall.setName("Overall rating");
-            List<GameResult> items = null;
-            try {
-                items = mapper.readValue(GlobalStatistics.class.getResourceAsStream("/source/results1.json"),
-                        new TypeReference<List<GameResult>>() {});
-            } catch (IOException e) {
-                e.printStackTrace();
-            }
-            overall.setItems(calculator.calculateOverall(items));
-            statistics.setOverall(overall);
-            statistics.setUnconfirmed(uncCollector.unconfirmed(items));
-        }
-        return statistics;
+    private ZonedDateTime lastUpdate;
+
+    public static GlobalStatistics getInstance() {
+        return instance;
+    }
+
+    public static void setInstance(GlobalStatistics newStat) {
+        instance = newStat;
     }
 
     public Ladder getOverall() {
@@ -72,5 +51,13 @@ public class GlobalStatistics {
 
     public void setUnconfirmed(Unconfirmed unconfirmed) {
         this.unconfirmed = unconfirmed;
+    }
+
+    public ZonedDateTime getLastUpdate() {
+        return lastUpdate;
+    }
+
+    public void setLastUpdate(ZonedDateTime lastUpdate) {
+        this.lastUpdate = lastUpdate;
     }
 }

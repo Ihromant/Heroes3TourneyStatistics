@@ -17,7 +17,8 @@ public class UnconfigmedServlet extends HttpServlet {
     public void doGet(HttpServletRequest request, HttpServletResponse response) throws IOException {
 
         Context context = new Context(Locale.ENGLISH);
-        context.setVariable("unconfirmed", GlobalStatistics.instance().getUnconfirmed());
+        context.setVariable("unconfirmed", GlobalStatistics.getInstance().getUnconfirmed());
+        context.setVariable("lastUpdate", GlobalStatistics.getInstance().getLastUpdate());
         Config.THYMELEAF.process("/templates/unconfirmed.html", context, response.getWriter());
     }
 }

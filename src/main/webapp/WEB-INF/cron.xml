@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<cronentries>
+    <cron>
+        <url>/cron/rating</url>
+        <description>hourly rating update</description>
+        <schedule>every 45 minutes</schedule>
+    </cron>
+</cronentries>

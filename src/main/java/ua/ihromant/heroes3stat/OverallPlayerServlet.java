@@ -18,7 +18,8 @@ public class OverallPlayerServlet extends HttpServlet {
         String player = request.getPathInfo().split("/")[1].toLowerCase();
 
         Context context = new Context(Locale.ENGLISH);
-        context.setVariable("player", GlobalStatistics.instance().getOverall().getItems().get(player));
+        context.setVariable("player", GlobalStatistics.getInstance().getOverall().getItems().get(player));
+        context.setVariable("lastUpdate", GlobalStatistics.getInstance().getLastUpdate());
         Config.THYMELEAF.process("/templates/playerGames.html", context, response.getWriter());
     }
 }

@@ -17,7 +17,8 @@ public class OverallRatingServlet extends HttpServlet {
     @Override
     public void doGet(HttpServletRequest request, HttpServletResponse response) throws IOException {
         Context context = new Context(Locale.ENGLISH);
-        context.setVariable("overall", GlobalStatistics.instance().getOverall());
+        context.setVariable("overall", GlobalStatistics.getInstance().getOverall());
+        context.setVariable("lastUpdate", GlobalStatistics.getInstance().getLastUpdate());
         Config.THYMELEAF.process("/templates/overallRating.html", context, response.getWriter());
     }
 

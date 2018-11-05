@@ -4,11 +4,13 @@ import org.thymeleaf.ITemplateEngine;
 import org.thymeleaf.TemplateEngine;
 import org.thymeleaf.templatemode.TemplateMode;
 import org.thymeleaf.templateresolver.ClassLoaderTemplateResolver;
+import ua.ihromant.parser.StatisticsCollector;
 
 import java.nio.charset.StandardCharsets;
 
 public class Config {
     public static final ITemplateEngine THYMELEAF = thymeleaf();
+    public static final StatisticsCollector COLLECTOR = new StatisticsCollector();
 
     private static ITemplateEngine thymeleaf() {
         ClassLoaderTemplateResolver templateResolver = new ClassLoaderTemplateResolver();
