@@ -1,5 +1,7 @@
 package ua.ihromant.parser;
 
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
 import ua.ihromant.analisys.RatingCalculator;
 import ua.ihromant.analisys.UnconfirmedCollector;
 import ua.ihromant.config.Config;
@@ -12,21 +14,21 @@ import java.time.ZonedDateTime;
 import java.util.List;
 
 public class GlobalStatisticsRetriever {
+    private static final Logger LOGGER = LoggerFactory.getLogger(GlobalStatisticsRetriever.class);
     private static RatingCalculator calculator = new RatingCalculator();
     private static UnconfirmedCollector uncCollector = new UnconfirmedCollector();
 
     public static GlobalStatistics retrieve() {
         long time = System.currentTimeMillis();
-        System.out.println("Collecting statistics...");
+        LOGGER.info("Collecting statistics...");
         List<GameResult> results;
         try {
             results = Config.COLLECTOR.collect();
         } catch (IOException e) {
-            System.out.println("Was unable to collect statistics. See reason below: ");
-            e.printStackTrace();
+            LOGGER.error("Was unable to collect statistics. See reason below: ", e);
             return null;
         }
-        System.out.println("Statistics collected. " + results.size()
+        LOGGER.info("Statistics collected. " + results.size()
                 + " game records parsed. Time spent " + (System.currentTimeMillis() - time) + " ms.");
         return calculate(results);
     }

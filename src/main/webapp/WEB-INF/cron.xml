@@ -3,6 +3,6 @@
     <cron>
         <url>/cron/rating</url>
         <description>hourly rating update</description>
-        <schedule>every 45 minutes</schedule>
+        <schedule>every 15 minutes</schedule>
     </cron>
 </cronentries>
