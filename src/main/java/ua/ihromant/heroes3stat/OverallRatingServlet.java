@@ -3,6 +3,7 @@ package ua.ihromant.heroes3stat;
 import org.thymeleaf.context.Context;
 import ua.ihromant.config.Config;
 import ua.ihromant.data.GlobalStatistics;
+import ua.ihromant.parser.GlobalStatisticsRetriever;
 
 import java.io.IOException;
 import java.util.Locale;
@@ -14,6 +15,22 @@ import javax.servlet.http.HttpServletResponse;
 
 @WebServlet(name = "overallRatingServlet", value = "/rating")
 public class OverallRatingServlet extends HttpServlet {
+    @Override
+    public void init() {
+        Thread t = new Thread(() -> {
+            while (true) {
+                try {
+                    Thread.sleep(180000);
+                    GlobalStatistics.setInstance(GlobalStatisticsRetriever.retrieve());
+                } catch (Exception e) {
+                    e.printStackTrace();
+                }
+            }
+        });
+
+        t.start();
+    }
+
     @Override
     public void doGet(HttpServletRequest request, HttpServletResponse response) throws IOException {
         Context context = new Context(Locale.ENGLISH);
