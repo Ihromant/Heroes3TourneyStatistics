@@ -82,20 +82,42 @@
                                     <td><span class="old9" th:text="${game.date}">2015-05-05</span></td>
                                     <td><strong><font th:color="${game.reporter.color}" th:text="${game.reporter.name}">злой_романтик</font></strong>
                                     </td>
-                                    <td th:text="${game.reporter.castle}"></td>
-
-                                    <td width="46" th:text="${game.reporter.startH}"></td>
-
-                                    <td th:text="${game.reporter.finalH}"></td>
-
-                                    <td class="old13" th:text="${game.result}">def</td>
+                                    <td width="46" th:if="${game.reporter.randomInfo.name() == 'CASTLE'}" th:background="'/icons/' + ${#strings.capitalize(game.reporter.castle.name().toLowerCase())} + '.png'">
+                                        <img src="/icons/ran.png" width="46" height="32">
+                                    </td>
+                                    <td th:if="${game.reporter.randomInfo.name() != 'CASTLE'}">
+                                        <img width="46" height="32" border="0" th:src="'/icons/' + ${#strings.capitalize(game.reporter.castle.name().toLowerCase())} + '.png'">
+                                    </td>
+                                    <td th:if="${game.reporter.randomInfo.name() == 'NO'}">
+                                        <img width="46" height="32" border="0" th:src="'/icons/' + ${#strings.capitalize(game.reporter.startHero.name().toLowerCase())} + '.png'">
+                                    </td>
+                                    <td width="46" th:if="${game.reporter.randomInfo.name() != 'NO'}" th:background="'/icons/' + ${#strings.capitalize(game.reporter.startHero.name().toLowerCase())} + '.png'">
+                                        <img src="/icons/ran.png" width="46" height="32">
+                                    </td>
+                                    <td>
+                                        <img width="46" height="32" border="0" th:src="'/icons/' + ${#strings.capitalize(game.reporter.finalHero.name().toLowerCase())} + '.png'">
+                                    </td>
+                                    <td th:if="${game.result.name() == 'LOSE'}" class="old12">lose</td>
+                                    <td th:if="${game.result.name() == 'DEF'}" class="old13">def</td>
+                                    <td th:if="${game.result.name() == 'DRAW'}" class="old14">draw</td>
 
                                     <td><strong><font th:color="${game.confirmer.color}"
                                                       th:text="${game.confirmer.name}">chemist_hp</font></strong></td>
-                                    <td th:text="${game.confirmer.castle}"></td>
-
-                                    <td width="46" th:text="${game.confirmer.startH}"></td>
-                                    <td th:text="${game.confirmer.finalH}"></td>
+                                    <td width="46" th:if="${game.confirmer.randomInfo.name() == 'CASTLE'}" th:background="'/icons/' + ${#strings.capitalize(game.confirmer.castle.name().toLowerCase())} + '.png'">
+                                        <img src="/icons/ran.png" width="46" height="32">
+                                    </td>
+                                    <td th:if="${game.confirmer.randomInfo.name() != 'CASTLE'}">
+                                        <img width="46" height="32" border="0" th:src="'/icons/' + ${#strings.capitalize(game.confirmer.castle.name().toLowerCase())} + '.png'">
+                                    </td>
+                                    <td th:if="${game.confirmer.randomInfo.name() == 'NO'}">
+                                        <img width="46" height="32" border="0" th:src="'/icons/' + ${#strings.capitalize(game.confirmer.startHero.name().toLowerCase())} + '.png'">
+                                    </td>
+                                    <td width="46" th:if="${game.confirmer.randomInfo.name() != 'NO'}" th:background="'/icons/' + ${#strings.capitalize(game.confirmer.startHero.name().toLowerCase())} + '.png'">
+                                        <img src="/icons/ran.png" width="46" height="32">
+                                    </td>
+                                    <td>
+                                        <img width="46" height="32" border="0" th:src="'/icons/' + ${#strings.capitalize(game.confirmer.finalHero.name().toLowerCase())} + '.png'">
+                                    </td>
                                     <td><span class="old9" th:text="${game.template}">Mini-Nostalgia</span></td>
                                     <td><span class="old9" th:text="${game.timing}">217</span></td>
                                     <td><span class="old9"><a

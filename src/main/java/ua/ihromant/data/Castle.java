@@ -7,8 +7,9 @@ import java.util.stream.Stream;
 
 public enum Castle {
     CASTLE("Замок"), RAMPART("Оплот"), TOWER("Башня"),
-    CITADEL("Цитадель"), FORTRESS("Крепость"), CONFLUX("Сопряжение"),
-    DUNGEON("Подземелье"), INFERNO("Инферно"), NECROPOLIS("Некрополь");
+    STRONGHOLD("Цитадель"), FORTRESS("Крепость"), CONFLUX("Сопряжение"),
+    DUNGEON("Подземелье"), INFERNO("Инферно"), NECROPOLIS("Некрополь"),
+    COVE("Причал");
 
     private final String russian;
 

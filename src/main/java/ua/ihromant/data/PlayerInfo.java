@@ -5,7 +5,8 @@ public class PlayerInfo {
     private String reportLink;
     private Color color;
     private Castle castle;
-    private Hero startingHero;
+    private RandomInfo randomInfo;
+    private Hero startHero;
     private String startH;
     private Hero finalHero;
     private String finalH;
@@ -42,12 +43,20 @@ public class PlayerInfo {
         this.castle = castle;
     }
 
-    public Hero getStartingHero() {
-        return startingHero;
+    public RandomInfo getRandomInfo() {
+        return randomInfo;
     }
 
-    public void setStartingHero(Hero startingHero) {
-        this.startingHero = startingHero;
+    public void setRandomInfo(RandomInfo randomInfo) {
+        this.randomInfo = randomInfo;
+    }
+
+    public Hero getStartHero() {
+        return startHero;
+    }
+
+    public void setStartHero(Hero startHero) {
+        this.startHero = startHero;
     }
 
     public String getStartH() {
@@ -81,7 +90,7 @@ public class PlayerInfo {
                 ", reportLink='" + reportLink + '\'' +
                 ", color=" + color +
                 ", castle=" + castle +
-                ", startingHero=" + startingHero +
+                ", startHero=" + startHero +
                 ", startH='" + startH + '\'' +
                 ", finalHero=" + finalHero +
                 ", finalH='" + finalH + '\'' +

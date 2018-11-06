@@ -22,7 +22,10 @@ public class OverallRatingServlet extends HttpServlet {
             while (true) {
                 try {
                     Thread.sleep(3600000);
-                    GlobalStatistics.setInstance(GlobalStatisticsRetriever.retrieve());
+                    GlobalStatistics stat = GlobalStatisticsRetriever.retrieve();
+                    if (stat != null) {
+                        GlobalStatistics.setInstance(stat);
+                    }
                 } catch (Exception e) {
                     e.printStackTrace();
                 }

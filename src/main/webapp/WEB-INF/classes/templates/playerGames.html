@@ -3,7 +3,7 @@
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
-    <title>Player &lt;luckyf&gt;</title>
+    <title th:text="'Player <' + ${player.name} + '>'">Player &lt;luckyf&gt;</title>
     <link href="/css/main.css" rel="stylesheet" type="text/css"/>
 </head>
 
@@ -16,7 +16,7 @@
         <td width="90%" height="100">
             <div align="center" class="old1 old3">
                 <p>Heroes III Stat Engine<br/>
-                    <span class="old5">(&lt;luckyf&gt;'s page) </span></p>
+                    <span class="old5" th:text="'(<' + ${player.name} + '>\'s page)'">(&lt;luckyf&gt;'s page) </span></p>
             </div>
         </td>
         <td><a href="/unconfirmed"><img src="/img/att.gif" alt="Unconfirmed reports" width="341" height="133"
@@ -71,31 +71,53 @@
 
                     <td bgcolor="#FFFFFF"><span class="old8">p1&nbsp;Overall&nbsp;rating</span></td>
                     <td bgcolor="#FFFFFF"><span class="old8">p2&nbsp;Overall&nbsp;rating</span></td>
-                    <td bgcolor="#FFFFFF"><span class="old8">p1 Season rating</span></td>
-                    <td bgcolor="#FFFFFF"><span class="old8">p2 Season rating</span></td>
                     <td bgcolor="#FFFFFF"><span class="old8">link1</span></td>
                     <td bgcolor="#FFFFFF"><span class="old8">link2</span></td>
                 </tr>
                 <tr th:each="result : ${player.results}" align=center>
                     <td><span class="old9" th:text="${result.date}">${result.date}</span></td>
                     <td class="old10"><font th:color="${result.reporter.color}" th:text="${result.reporter.name}">${result.reporter.name}</font></td>
-                    <td th:text="${result.reporter.castle}">${result.reporter.castle!'--'}</td>
-                    <td th:text="${result.reporter.startH}">${result.reporter.startH}</td>
-                    <td th:text="${result.reporter.finalH}">${result.reporter.finalH}</td>
-                    <td class="old13" th:text="${result.result}">${result.result}</td>
+                    <td width="46" th:if="${result.reporter.randomInfo.name() == 'CASTLE'}" th:background="'/icons/' + ${#strings.capitalize(result.reporter.castle.name().toLowerCase())} + '.png'">
+                        <img src="/icons/ran.png" width="46" height="32">
+                    </td>
+                    <td th:if="${result.reporter.randomInfo.name() != 'CASTLE'}">
+                        <img width="46" height="32" border="0" th:src="'/icons/' + ${#strings.capitalize(result.reporter.castle.name().toLowerCase())} + '.png'">
+                    </td>
+                    <td th:if="${result.reporter.randomInfo.name() == 'NO'}">
+                        <img width="46" height="32" border="0" th:src="'/icons/' + ${#strings.capitalize(result.reporter.startHero.name().toLowerCase())} + '.png'">
+                    </td>
+                    <td width="46" th:if="${result.reporter.randomInfo.name() != 'NO'}" th:background="'/icons/' + ${#strings.capitalize(result.reporter.startHero.name().toLowerCase())} + '.png'">
+                        <img src="/icons/ran.png" width="46" height="32">
+                    </td>
+                    <td>
+                        <img width="46" height="32" border="0" th:src="'/icons/' + ${#strings.capitalize(result.reporter.finalHero.name().toLowerCase())} + '.png'">
+                    </td>
+                    <td th:if="${result.result.name() == 'LOSE'}" class="old12">lose</td>
+                    <td th:if="${result.result.name() == 'DEF'}" class="old13">def</td>
+                    <td th:if="${result.result.name() == 'DRAW'}" class="old14">draw</td>
 
                     <td class="old11"><font th:color="${result.confirmer.color}" th:text="${result.confirmer.name}">${result.confirmer.name}</font></td>
-                    <td th:text="${result.confirmer.castle}">${result.confirmer.castle!'--'}</td>
-                    <td th:text="${result.confirmer.startH}">${result.confirmer.startH}</td>
-                    <td th:text="${result.confirmer.finalH}">${result.confirmer.finalH}</td>
-                    <td th:text="${result.template}">${result.template!'--'}</td>
+                    <td width="46" th:if="${result.confirmer.randomInfo.name() == 'CASTLE'}" th:background="'/icons/' + ${#strings.capitalize(result.confirmer.castle.name().toLowerCase())} + '.png'">
+                        <img src="/icons/ran.png" width="46" height="32">
+                    </td>
+                    <td th:if="${result.confirmer.randomInfo.name() != 'CASTLE'}">
+                        <img width="46" height="32" border="0" th:src="'/icons/' + ${#strings.capitalize(result.confirmer.castle.name().toLowerCase())} + '.png'">
+                    </td>
+                    <td th:if="${result.confirmer.randomInfo.name() == 'NO'}">
+                        <img width="46" height="32" border="0" th:src="'/icons/' + ${#strings.capitalize(result.confirmer.startHero.name().toLowerCase())} + '.png'">
+                    </td>
+                    <td width="46" th:if="${result.confirmer.randomInfo.name() != 'NO'}" th:background="'/icons/' + ${#strings.capitalize(result.confirmer.startHero.name().toLowerCase())} + '.png'">
+                        <img src="/icons/ran.png" width="46" height="32">
+                    </td>
+                    <td>
+                        <img width="46" height="32" border="0" th:src="'/icons/' + ${#strings.capitalize(result.confirmer.finalHero.name().toLowerCase())} + '.png'">
+                    </td>
+                    <td th:text="${result.template.templateName}">${result.template}</td>
                     <td><span class="old9" th:text="${result.timing}">${result.timing}</span></td>
                     <td><span class="old9" th:text="${result.previousReporter} + ' -> ' + ${result.previousReporter + result.reporterChange} + '(' + ${result.reporterChange}+ ')'">${result.previousReporter + result.reporterChange} -&gt; ${result.previousConfirmer}(${result.reporterChange})</span>
                     </td>
                     <td><span class="old9" th:text="${result.previousConfirmer} + ' -> ' + ${result.previousConfirmer + result.confirmerChange} + '( ' + ${result.confirmerChange} + ')'">${result.previousConfirmer + result.confirmerChange} -&gt; ${result.previousConfirmer}(${result.confirmerChange})</span>
                     </td>
-                    <td><span class="old9" th:text="'--'">--</span></td>
-                    <td><span class="old9" th:text="'--'">--</span></td>
                     <td><span class="old9"><a th:href="'http://forum.heroesworld.ru/' + ${result.reporter.reportLink}">link1</a></span></td>
                     <td><span class="old9"><a th:href="'http://forum.heroesworld.ru/' + ${result.confirmer.reportLink}">link2</a></span></td>
                 </tr>

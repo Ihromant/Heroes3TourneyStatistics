@@ -147,21 +147,30 @@ public class StatisticsCollector {
         String[] parts = chunk.split(", ");
         if ("Random".equals(parts[1])) {
             info.setCastle(Castle.parse(parts[2]));
+            info.setStartHero(Hero.parse(parts[3]));
             info.setStartH(parts[3]);
+            info.setFinalHero(Hero.parse(parts[4]));
             info.setFinalH(parts[4]);
+            info.setRandomInfo(RandomInfo.CASTLE);
             return;
         }
 
         if ("Random".equals(parts[2])) {
             info.setCastle(Castle.parse(parts[1]));
+            info.setStartHero(Hero.parse(parts[3]));
             info.setStartH(parts[3]);
+            info.setFinalHero(Hero.parse(parts[4]));
             info.setFinalH(parts[4]);
+            info.setRandomInfo(RandomInfo.HERO);
             return;
         }
 
         info.setCastle(Castle.parse(parts[1]));
+        info.setStartHero(Hero.parse(parts[2]));
         info.setStartH(parts[2]);
+        info.setFinalHero(Hero.parse(parts[3]));
         info.setFinalH(parts[3]);
+        info.setRandomInfo(RandomInfo.NO);
     }
 
     private static GameResult parseUnconfirmed(List<Node> nodes) {
