@@ -4,6 +4,9 @@ import ua.ihromant.data.GameResult;
 import ua.ihromant.data.Ladder;
 import ua.ihromant.data.StatisticsItem;
 
+import java.time.LocalDate;
+import java.time.Month;
+import java.time.temporal.TemporalAdjusters;
 import java.util.Comparator;
 import java.util.LinkedHashMap;
 import java.util.List;
@@ -25,12 +28,34 @@ public class RatingCalculator {
         };
     }
 
-    public static RatingCalculator forTheme(String name, int id) {
-        return new RatingCalculator(name, themeFilter(String.valueOf(id)));
+    public static RatingCalculator overall() {
+        return new RatingCalculator("Overall rating", r -> true);
     }
 
-    public RatingCalculator() {
-        this("Overall rating", r -> true);
+    public static RatingCalculator inSeason(LocalDate at) {
+        LocalDate from;
+        LocalDate to;
+        String name;
+        if (at.getMonth().ordinal() >= Month.JUNE.ordinal() && at.getMonth().ordinal() <= Month.NOVEMBER.ordinal()) {
+            from = at.withMonth(Month.JUNE.getValue()).with(TemporalAdjusters.firstDayOfMonth());
+            to = at.withMonth(Month.NOVEMBER.getValue()).with(TemporalAdjusters.lastDayOfMonth());
+            name = "Summer-Autumn-" + at.getYear();
+        } else {
+            if (at.getMonth() == Month.DECEMBER) {
+                from = at.with(TemporalAdjusters.firstDayOfMonth());
+                to = at.withYear(at.getYear() + 1).withMonth(Month.MAY.getValue()).with(TemporalAdjusters.lastDayOfMonth());
+                name = "Winter-Spring-" + (at.getYear() + 1);
+            } else {
+                from = at.withYear(at.getYear() - 1).withMonth(Month.DECEMBER.getValue()).with(TemporalAdjusters.firstDayOfMonth());
+                to = at.withMonth(Month.MAY.getValue()).with(TemporalAdjusters.lastDayOfMonth());
+                name = "Winter-Spring-" + at.getYear();
+            }
+        }
+        return new RatingCalculator(name, res -> !res.getDate().isBefore(from) && !res.getDate().isAfter(to));
+    }
+
+    public static RatingCalculator forTheme(String name, int id) {
+        return new RatingCalculator(name, themeFilter(String.valueOf(id)));
     }
 
     public RatingCalculator(String name, Predicate<GameResult> filter) {

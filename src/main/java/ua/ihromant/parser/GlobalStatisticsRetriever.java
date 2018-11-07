@@ -9,6 +9,7 @@ import ua.ihromant.data.GameResult;
 import ua.ihromant.data.GlobalStatistics;
 
 import java.io.IOException;
+import java.time.LocalDate;
 import java.time.ZonedDateTime;
 import java.util.List;
 
@@ -33,11 +34,12 @@ public class GlobalStatisticsRetriever {
 
     public static GlobalStatistics calculate(List<GameResult> results) {
         GlobalStatistics statistics = new GlobalStatistics();
-        statistics.setOverall(new RatingCalculator().calculate(results));
-        statistics.setCurrentSeason(RatingCalculator.forTheme("Summer-Autumn-2018", 14259).calculate(results));
-        statistics.setPreviousSeason(RatingCalculator.forTheme("Winter-Spring-2018", 12859).calculate(results));
+        statistics.setOverall(RatingCalculator.overall().calculate(results));
+        ZonedDateTime now = ZonedDateTime.now();
+        statistics.setCurrentSeason(RatingCalculator.inSeason(now.toLocalDate()).calculate(results));
+        statistics.setPreviousSeason(RatingCalculator.inSeason(now.toLocalDate().minusMonths(6)).calculate(results));
         statistics.setUnconfirmed(uncCollector.unconfirmed(results));
-        statistics.setLastUpdate(ZonedDateTime.now());
+        statistics.setLastUpdate(now);
         return statistics;
     }
 }
