@@ -1,6 +1,7 @@
 package ua.ihromant.analisys;
 
 import ua.ihromant.data.GameResult;
+import ua.ihromant.data.Ladder;
 import ua.ihromant.data.StatisticsItem;
 
 import java.util.Comparator;
@@ -8,13 +9,40 @@ import java.util.LinkedHashMap;
 import java.util.List;
 import java.util.Map;
 import java.util.function.Function;
+import java.util.function.Predicate;
 import java.util.stream.Collectors;
 import java.util.stream.Stream;
 
 public class RatingCalculator {
+    private static final Predicate<GameResult> CONFIRMED = res -> res.getConfirmer().getReportLink() != null;
+    private final String name;
+    private final Predicate<GameResult> filter;
 
-    public Map<String, StatisticsItem> calculateOverall(List<GameResult> results) {
+    private static Predicate<GameResult> themeFilter(String topicId) {
+        return res -> {
+            int counter = res.getTourneyLink().lastIndexOf('=');
+            return topicId.equals(res.getTourneyLink().substring(counter + 1));
+        };
+    }
+
+    public static RatingCalculator forTheme(String name, int id) {
+        return new RatingCalculator(name, themeFilter(String.valueOf(id)));
+    }
+
+    public RatingCalculator() {
+        this("Overall rating", r -> true);
+    }
+
+    public RatingCalculator(String name, Predicate<GameResult> filter) {
+        this.name = name;
+        this.filter = filter;
+    }
+
+    public Ladder calculate(List<GameResult> results) {
+        Ladder ladder = new Ladder();
+        ladder.setName(name);
         Map<String, StatisticsItem> statistics = results.stream()
+                .filter(CONFIRMED.and(filter))
                 .flatMap(res -> Stream.of(res.getConfirmer().getName(), res.getReporter().getName()))
                 .distinct().collect(Collectors.toMap(Function.identity(), name -> {
                     StatisticsItem it = new StatisticsItem();
@@ -23,7 +51,7 @@ public class RatingCalculator {
                     return it;
                 }));
         results.stream()
-                .filter(res -> res.getConfirmer().getReportLink() != null)
+                .filter(CONFIRMED.and(filter))
                 .sorted(Comparator.comparing(GameResult::getDate))
                 .forEach(res -> {
                     StatisticsItem reporterStats = statistics.get(res.getReporter().getName());
@@ -40,13 +68,14 @@ public class RatingCalculator {
                             break;
                     }
                 });
-        return statistics.entrySet().stream()
+        ladder.setItems(statistics.entrySet().stream()
                 .sorted(Comparator.<Map.Entry<String, StatisticsItem>, Integer>comparing(e1 -> e1.getValue().getRating())
                         .reversed())
                 .collect(Collectors.toMap(e -> e.getKey().toLowerCase(),
                         Map.Entry::getValue,
                         (u,v) -> { throw new IllegalStateException(String.format("Duplicate key %s", u)); },
-                        LinkedHashMap::new));
+                        LinkedHashMap::new)));
+        return ladder;
     }
 
     private void recalculateWin(StatisticsItem winner, StatisticsItem loser, GameResult result) {

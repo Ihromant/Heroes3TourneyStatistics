@@ -40,6 +40,8 @@ public class OverallRatingServlet extends HttpServlet {
         response.setCharacterEncoding(StandardCharsets.UTF_8.name());
         Context context = new Context(Locale.ENGLISH);
         context.setVariable("overall", GlobalStatistics.getInstance().getOverall());
+        context.setVariable("currentSeason", GlobalStatistics.getInstance().getCurrentSeason());
+        context.setVariable("previousSeason", GlobalStatistics.getInstance().getPreviousSeason());
         context.setVariable("lastUpdate", GlobalStatistics.getInstance().getLastUpdate());
         Config.THYMELEAF.process("/templates/overallRating.html", context, response.getWriter());
     }

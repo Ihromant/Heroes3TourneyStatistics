@@ -118,7 +118,7 @@
                                     <td>
                                         <img width="46" height="32" border="0" th:src="'/icons/' + ${#strings.capitalize(game.confirmer.finalHero.name().toLowerCase())} + '.png'">
                                     </td>
-                                    <td><span class="old9" th:text="${game.template}">Mini-Nostalgia</span></td>
+                                    <td><span class="old9" th:text="${game.template.templateName}">Mini-Nostalgia</span></td>
                                     <td><span class="old9" th:text="${game.timing}">217</span></td>
                                     <td><span class="old9"><a
                                             th:href="'http://forum.heroesworld.ru/' + ${game.reporter.reportLink}">click to confirm</a></span>
@@ -137,9 +137,9 @@
                 <p class="old4">The top 20 lazybones</p>
                 <p>
                 <ul>
-                    <li th:each="e, iter : ${unconfirmed.lazybones}" th:if="${iter.index < 20}" th:text="${e.key}">
+                    <li th:each="e, iter : ${unconfirmed.lazybones}" th:if="${iter.index < 20}">
                         <a th:href="'/unconfirmed/' + ${e.key}" th:text="${e.key}">u2noob</a>
-                        <span th:text="'(' + ${e.value} + ')"></span>
+                        <span th:text="'(' + ${e.value} + ')'"></span>
                     </li>
                 </ul>
                 </p>
