@@ -72,7 +72,7 @@ public class StatisticsCollector {
     }
 
     private List<GameResult> parseResults(String url) throws IOException {
-        Document doc = Jsoup.parse(new URL(url), 10000);
+        Document doc = Jsoup.parse(new URL(url).openStream(), "windows-1251", url);
         Element statsTable = doc.body().getElementById("collapseobj_tournament_reports");
         if (statsTable == null) {
             return Collections.emptyList();
@@ -81,17 +81,7 @@ public class StatisticsCollector {
         Elements records = statsTable.child(1).child(0).child(0).child(0).child(1).child(0).children();
         List<GameResult> results = new ArrayList<>();
         for (Element el : records) {
-            if (el.children().size() < 2) {
-                System.out.println("WTF???"); // TODO
-                continue;
-            }
-
             ReportStatus status = ReportStatus.parse(el.child(1).text());
-
-            if (status == null) {
-                System.out.println("Second WTF???"); // TODO
-            }
-
             List<Node> nodes = el.child(0).childNodes();
 
             if (status == ReportStatus.CONFIRMED
