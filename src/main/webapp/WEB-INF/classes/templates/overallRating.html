@@ -74,7 +74,7 @@
                     <td>Overall<br>rating</td>
                 </tr>
                 <tr th:each="e,iter : ${overall.items}" align=center>
-                    <td th:text="${iter.count}">$foreach.count</td>
+                    <td th:text="${e.value.rank}">$foreach.count</td>
                     <td><a th:href="'/rating/overall/' + ${e.key}" th:text="${e.value.name}">$e.value.name</a></td>
                     <td th:text="${e.value.wins}">$e.value.wins</td>
                     <td th:text="${e.value.loses}">$e.value.loses</td>
@@ -97,7 +97,7 @@
             <td>Overall<br>rating</td>
         </tr>
         <tr th:each="e,iter : ${currentSeason.items}" align=center>
-            <td th:text="${iter.count}">$foreach.count</td>
+            <td th:text="${e.value.rank}">$foreach.count</td>
             <td><a th:href="'/rating/current/' + ${e.key}" th:text="${e.value.name}">$e.value.name</a></td>
             <td th:text="${e.value.wins}">$e.value.wins</td>
             <td th:text="${e.value.loses}">$e.value.loses</td>
@@ -120,7 +120,7 @@
             <td>Seasons<br>rating</td>
         </tr>
         <tr th:each="e,iter : ${previousSeason.items}" align=center>
-            <td th:text="${iter.count}">$foreach.count</td>
+            <td th:text="${e.value.rank}">$foreach.count</td>
             <td><a th:href="'/rating/previous/' + ${e.key}" th:text="${e.value.name}">$e.value.name</a></td>
             <td th:text="${e.value.wins}">$e.value.wins</td>
             <td th:text="${e.value.loses}">$e.value.loses</td>

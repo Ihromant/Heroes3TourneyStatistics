@@ -9,7 +9,6 @@ import ua.ihromant.data.GameResult;
 import ua.ihromant.data.GlobalStatistics;
 
 import java.io.IOException;
-import java.time.LocalDate;
 import java.time.ZonedDateTime;
 import java.util.List;
 

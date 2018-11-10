@@ -14,6 +14,7 @@ import java.util.Map;
 import java.util.function.Function;
 import java.util.function.Predicate;
 import java.util.stream.Collectors;
+import java.util.stream.IntStream;
 import java.util.stream.Stream;
 
 public class RatingCalculator {
@@ -93,11 +94,18 @@ public class RatingCalculator {
                             break;
                     }
                 });
-        ladder.setItems(statistics.entrySet().stream()
-                .sorted(Comparator.<Map.Entry<String, StatisticsItem>, Integer>comparing(e1 -> e1.getValue().getRating())
-                        .reversed())
-                .collect(Collectors.toMap(e -> e.getKey().toLowerCase(),
-                        Map.Entry::getValue,
+        List<StatisticsItem> ordered = statistics.entrySet().stream()
+                .map(Map.Entry::getValue)
+                .sorted(Comparator.comparing(StatisticsItem::getRating).reversed())
+                .collect(Collectors.toList());
+        ladder.setItems(IntStream.range(0, ordered.size())
+                .mapToObj(i -> {
+                    StatisticsItem item = ordered.get(i);
+                    item.setRank(i + 1);
+                    return item;
+                })
+                .collect(Collectors.toMap(it -> it.getName().toLowerCase(),
+                        Function.identity(),
                         (u,v) -> { throw new IllegalStateException(String.format("Duplicate key %s", u)); },
                         LinkedHashMap::new)));
         return ladder;

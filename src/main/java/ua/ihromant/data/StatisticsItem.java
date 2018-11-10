@@ -8,6 +8,7 @@ import java.util.List;
 public class StatisticsItem {
     private String name;
     private int rating;
+    private int rank;
     private int wins;
     private int loses;
     private int draws;
@@ -28,6 +29,14 @@ public class StatisticsItem {
 
     public void setRating(int rating) {
         this.rating = rating;
+    }
+
+    public int getRank() {
+        return rank;
+    }
+
+    public void setRank(int rank) {
+        this.rank = rank;
     }
 
     public int getWins() {
