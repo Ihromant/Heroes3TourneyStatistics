@@ -14,7 +14,7 @@ public class RatingUpdateServlet extends HttpServlet {
     public void doGet(HttpServletRequest request, HttpServletResponse response) {
         GlobalStatistics stat = GlobalStatisticsRetriever.retrieve();
         if (stat != null) {
-            GlobalStatistics.setInstance(GlobalStatisticsRetriever.retrieve());
+            GlobalStatistics.setInstance(stat);
         }
     }
 }
