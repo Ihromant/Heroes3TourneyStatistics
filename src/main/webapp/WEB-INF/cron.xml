@@ -3,6 +3,11 @@
     <cron>
         <url>/cron/rating</url>
         <description>hourly rating update</description>
-        <schedule>every 15 minutes</schedule>
+        <schedule>every 45 minutes</schedule>
+    </cron>
+    <cron>
+        <url>/cron/banners</url>
+        <description>banners update servlet</description>
+        <schedule>every 20 hours</schedule>
     </cron>
 </cronentries>

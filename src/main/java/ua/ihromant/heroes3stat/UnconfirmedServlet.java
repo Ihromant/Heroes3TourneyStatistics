@@ -13,7 +13,7 @@ import java.nio.charset.StandardCharsets;
 import java.util.Locale;
 
 @WebServlet(name = "unconfirmedServlet", value = "/unconfirmed")
-public class UnconfigmedServlet extends HttpServlet {
+public class UnconfirmedServlet extends HttpServlet {
     @Override
     public void doGet(HttpServletRequest request, HttpServletResponse response) throws IOException {
         response.setCharacterEncoding(StandardCharsets.UTF_8.name());

@@ -12,6 +12,9 @@ import javax.servlet.http.HttpServletResponse;
 public class RatingUpdateServlet extends HttpServlet {
     @Override
     public void doGet(HttpServletRequest request, HttpServletResponse response) {
-        GlobalStatistics.setInstance(GlobalStatisticsRetriever.retrieve());
+        GlobalStatistics stat = GlobalStatisticsRetriever.retrieve();
+        if (stat != null) {
+            GlobalStatistics.setInstance(GlobalStatisticsRetriever.retrieve());
+        }
     }
 }
