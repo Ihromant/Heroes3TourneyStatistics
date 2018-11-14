@@ -179,11 +179,12 @@ public enum Hero {
     ADRIENNE("Адриана"),
     BEATRICE("Беатрис"),
     RANLOO("Ранлу"),
-    KINKERIA("Кинкерия");
+    KINKERIA("Кинкерия"),
+    UNKNOWN("Unknown");
 
     private final String russian;
 
-    private static Map<String, Hero> TRANSLATION_TO_COLOR = Stream.of(Hero.values()).collect(Collectors.toMap(Hero::getRussian, Function.identity()));
+    private static Map<String, Hero> TRANSLATION_TO_HERO = Stream.of(Hero.values()).collect(Collectors.toMap(Hero::getRussian, Function.identity()));
 
     Hero(String russian) {
         this.russian = russian;
@@ -194,6 +195,6 @@ public enum Hero {
     }
 
     public static Hero parse(String from) {
-        return TRANSLATION_TO_COLOR.get(from);
+        return TRANSLATION_TO_HERO.getOrDefault(from, UNKNOWN);
     }
 }

@@ -38,8 +38,12 @@ public abstract class PlayerGamesServlet extends HttpServlet {
     }
 
     private String getServingUrl(String player) {
-        String filename = String.format("/gs/%s/%s", "heroes3stat.appspot.com", "banners/" + player + ".png");
-        return is.getServingUrl(ServingUrlOptions.Builder.withGoogleStorageFileName(filename));
+        try {
+            String filename = String.format("/gs/%s/%s", "heroes3stat.appspot.com", "banners/" + player + ".png");
+            return is.getServingUrl(ServingUrlOptions.Builder.withGoogleStorageFileName(filename));
+        } catch (Exception e) {
+            return null; // for running locally
+        }
     }
 
     @WebServlet(name = "overallPlayerServlet", value = "/rating/overall/*")
