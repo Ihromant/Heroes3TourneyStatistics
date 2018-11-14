@@ -3,9 +3,9 @@
     <runtime>java8</runtime>
     <threadsafe>true</threadsafe>
     <static-files>
-        <include path="/img/**.png" expiration="30d" />
-        <include path="/icons/**.png" expiration="30d" />
-        <include path="/css/**.css" expiration="30d" />
+        <include path="/img/**" expiration="30d" />
+        <include path="/icons/**" expiration="30d" />
+        <include path="/css/**" expiration="30d" />
     </static-files>
     <system-properties>
         <property name="java.util.logging.config.file" value="WEB-INF/logging.properties"/>
