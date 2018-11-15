@@ -11,7 +11,10 @@ import javax.servlet.annotation.WebListener;
 public class StartupListener implements ServletContextListener {
     @Override
     public void contextInitialized(ServletContextEvent servletContextEvent) {
-        GlobalStatistics.setInstance(GlobalStatisticsRetriever.retrieve());
+        GlobalStatistics stat = GlobalStatisticsRetriever.retrieve();
+        if (stat != null) {
+            GlobalStatistics.setInstance(stat);
+        }
     }
 
     @Override

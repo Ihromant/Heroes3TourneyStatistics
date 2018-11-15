@@ -20,39 +20,32 @@ import java.net.URL;
 import java.net.URLEncoder;
 import java.nio.ByteBuffer;
 import java.nio.charset.StandardCharsets;
-import java.util.Arrays;
-import java.util.Comparator;
-import java.util.List;
-import java.util.Map;
+import java.util.*;
 import java.util.stream.Collectors;
 
 @WebServlet(name = "bannerUpdateServlet", value = "/cron/banners")
 public class RefreshBannerServlet extends HttpServlet {
     private static final Logger LOG = LoggerFactory.getLogger(RefreshBannerServlet.class);
-    private List<String> monsters;
+    private NavigableMap<Integer, String> monsters;
     private static final String OVERALL = "Overall rating";
     private static final String SEASON = "Season rating";
     private final GcsService gcsService = GcsServiceFactory.createGcsService();
 
     @Override
     public void init() {
-        try (InputStream is = getClass().getResourceAsStream("/monsterList.txt");
+        try (InputStream is = getClass().getResourceAsStream("/monsters.csv");
              InputStreamReader ir = new InputStreamReader(is);
              BufferedReader br = new BufferedReader(ir)) {
             this.monsters = br.lines()
-                    .peek(System.out::println)
-                    .map(line -> line.split("\\s"))
-                    .filter(it -> it.length == 2)
-                    .sorted(Comparator.<String[], Integer>comparing(it1 -> Integer.parseInt(it1[1])).reversed())
-                    .map(it -> it[0])
-                    .collect(Collectors.toList());
+                    .map(line -> line.split(","))
+                    .collect(Collectors.toMap(arr -> Integer.parseInt(arr[3]), arr -> arr[0], (a, b) -> a, TreeMap::new));
         } catch (IOException e) {
             throw new RuntimeException("Something went wrong", e);
         }
     }
 
     @Override
-    public void doGet(HttpServletRequest request, HttpServletResponse response) throws IOException {
+    public void doGet(HttpServletRequest request, HttpServletResponse response) {
         for (Map.Entry<String, StatisticsItem> e : GlobalStatistics.getInstance().getOverall().getItems().entrySet()) {
             try {
                 LOG.info("Generating banner for " + e.getKey());
@@ -67,8 +60,16 @@ public class RefreshBannerServlet extends HttpServlet {
         }
     }
 
+    private String getMonster(StatisticsItem global) {
+        if (global.getTotalGames() <= 20) {
+            return "021";
+        }
+
+        Map.Entry<Integer, String> floor = this.monsters.floorEntry(global.getRating());
+        return floor != null ? floor.getValue() : "011";
+    }
+
     private Image generateImage(String player, StatisticsItem global, StatisticsItem current) throws IOException {
-        int monsterIndex = (global.getRank() - 1) * this.monsters.size() / GlobalStatistics.getInstance().getOverall().getItems().size();
         int nickSize = 22;
         int textSize = 12;
 
@@ -84,7 +85,7 @@ public class RefreshBannerServlet extends HttpServlet {
         Image back = ImagesServiceFactory.makeImage(IOUtils.toByteArray(
                 getClass().getResourceAsStream("/imageParts/Back.png")));
         Image bird = ImagesServiceFactory.makeImage(IOUtils.toByteArray(
-                getClass().getResourceAsStream("/imageParts/" + this.monsters.get(monsterIndex) + ".png")));
+                getClass().getResourceAsStream("/imageParts/" + getMonster(global) + ".png")));
 
         return ImagesServiceFactory.getImagesService()
                 .composite(Arrays.asList(

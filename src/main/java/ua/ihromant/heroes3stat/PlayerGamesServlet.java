@@ -1,8 +1,5 @@
 package ua.ihromant.heroes3stat;
 
-import com.google.appengine.api.images.ImagesService;
-import com.google.appengine.api.images.ImagesServiceFactory;
-import com.google.appengine.api.images.ServingUrlOptions;
 import org.thymeleaf.context.Context;
 import ua.ihromant.config.Config;
 import ua.ihromant.data.GlobalStatistics;
@@ -19,7 +16,6 @@ import java.util.function.BiFunction;
 
 public abstract class PlayerGamesServlet extends HttpServlet {
     private final BiFunction<GlobalStatistics, String, StatisticsItem> gamesExtractor;
-    private final ImagesService is = ImagesServiceFactory.getImagesService();
 
     public PlayerGamesServlet(BiFunction<GlobalStatistics, String, StatisticsItem> gamesExtractor) {
         this.gamesExtractor = gamesExtractor;
@@ -33,17 +29,8 @@ public abstract class PlayerGamesServlet extends HttpServlet {
         Context context = new Context(Locale.ENGLISH);
         context.setVariable("player", gamesExtractor.apply(GlobalStatistics.getInstance(), player));
         context.setVariable("lastUpdate", GlobalStatistics.getInstance().getLastUpdate());
-        context.setVariable("bannerServingUrl", getServingUrl(player));
+        context.setVariable("bannerServingUrl", String.format("[IMG]http://storage.googleapis.com/heroes3stat.appspot.com/banners/%s.png[/IMG]", player));
         Config.THYMELEAF.process("/templates/playerGames.html", context, response.getWriter());
-    }
-
-    private String getServingUrl(String player) {
-        try {
-            String filename = String.format("/gs/%s/%s", "heroes3stat.appspot.com", "banners/" + player + ".png");
-            return is.getServingUrl(ServingUrlOptions.Builder.withGoogleStorageFileName(filename));
-        } catch (Exception e) {
-            return null; // for running locally
-        }
     }
 
     @WebServlet(name = "overallPlayerServlet", value = "/rating/overall/*")
