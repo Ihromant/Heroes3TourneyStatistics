@@ -1,40 +1,46 @@
 package ua.ihromant.parser;
 
-import com.fasterxml.jackson.databind.ObjectMapper;
-import com.fasterxml.jackson.datatype.jsr310.JavaTimeModule;
 import org.jsoup.Jsoup;
 import org.jsoup.nodes.Document;
 import org.jsoup.nodes.Element;
 import org.jsoup.nodes.Node;
 import org.jsoup.nodes.TextNode;
 import org.jsoup.select.Elements;
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
 import ua.ihromant.data.*;
 
-import java.io.FileOutputStream;
-import java.io.IOException;
 import java.net.URL;
 import java.time.LocalDate;
 import java.time.format.DateTimeFormatter;
 import java.util.*;
 import java.util.stream.Collectors;
+import java.util.stream.IntStream;
+import java.util.stream.Stream;
 
 public class StatisticsCollector {
-    private static ObjectMapper mapper = new ObjectMapper()
-            .registerModule(new JavaTimeModule());
+    private static final Logger LOG = LoggerFactory.getLogger(StatisticsCollector.class);
 
     private static DateTimeFormatter DATE_FORMATTER = DateTimeFormatter.ofPattern("dd.MM.yyyy");
     private static final String NEW_TOURNAMENTS = "http://forum.heroesworld.ru/forumdisplay.php?f=62";
     private static final String OLD_TOURNAMENTS = "http://forum.heroesworld.ru/forumdisplay.php?f=143";
 
-    public List<GameResult> collect() throws IOException {
-        Set<String> alreadyVisited = new HashSet<>();
-        return parsePages(alreadyVisited, NEW_TOURNAMENTS, OLD_TOURNAMENTS);
+    public static List<GameResult> collect() {
+        List<String> pages = Arrays.stream(new String[] {NEW_TOURNAMENTS, OLD_TOURNAMENTS})
+                .parallel()
+                .flatMap(StatisticsCollector::parsePages).collect(Collectors.toList());
+        List<String> themes = pages.parallelStream()
+                .flatMap(StatisticsCollector::parseThemes)
+                .distinct()
+                .collect(Collectors.toList());
+
+        return themes.parallelStream()
+                .flatMap(StatisticsCollector::parseResults1)
+                .collect(Collectors.toList());
     }
 
-    public List<GameResult> parsePages(Set<String> alreadyVisited, String... links) throws IOException {
-        List<GameResult> result = new ArrayList<>();
-
-        for (String link : links) {
+    private static Stream<String> parsePages(String link) {
+        try {
             Document oldTourneys = Jsoup.parse(new URL(link), 10000);
             String pagesCaption = oldTourneys.select("td.vbmenu_control").stream()
                     .map(Element::text)
@@ -45,57 +51,54 @@ public class StatisticsCollector {
                 String[] caption = pagesCaption.split(" ");
                 pages = Integer.parseInt(caption[caption.length - 1]);
             }
-
-            for (int i = 0; i < pages; i++) {
-                result.addAll(parseThemes(alreadyVisited, link + String.format("&page=%s&order=desc", i + 1)));
-            }
+            return IntStream.range(0, pages).mapToObj(page -> link + String.format("&page=%s&order=desc", page + 1));
+        } catch (Exception e) {
+            LOG.error("Error during parsing pages of " + link, e);
+            return Stream.empty();
         }
-
-        return result;
     }
 
-    public List<GameResult> parseThemes(Set<String> alreadyVisited, String link) throws IOException {
-        List<GameResult> result = new ArrayList<>();
-        Document page = Jsoup.parse(new URL(link), 10000);
-        List<String> themes = page.select("td.alt1").stream()
-                .filter(el -> el.id() != null && el.id().startsWith("td_title"))
-                .map(el -> el.child(0).child(1).attr("href")).collect(Collectors.toList());
-
-        for (String theme : themes) {
-            if (!alreadyVisited.contains(theme)) {
-                result.addAll(parseResults("http://forum.heroesworld.ru/" + theme));
-                alreadyVisited.add(theme);
-            }
+    private static Stream<String> parseThemes(String link) {
+        try {
+            Document page = Jsoup.parse(new URL(link), 10000);
+            return page.select("td.alt1").stream()
+                    .filter(el -> el.id() != null && el.id().startsWith("td_title"))
+                    .map(el -> "http://forum.heroesworld.ru/" + el.child(0).child(1).attr("href"));
+        } catch (Exception e) {
+            LOG.error("Error during parsing themes of " + link, e);
+            return Stream.empty();
         }
-
-        return result;
     }
 
-    private List<GameResult> parseResults(String url) throws IOException {
-        Document doc = Jsoup.parse(new URL(url).openStream(), "windows-1251", url);
-        Element statsTable = doc.body().getElementById("collapseobj_tournament_reports");
-        if (statsTable == null) {
-            return Collections.emptyList();
-        }
-
-        Elements records = statsTable.child(1).child(0).child(0).child(0).child(1).child(0).children();
-        List<GameResult> results = new ArrayList<>();
-        for (Element el : records) {
-            ReportStatus status = ReportStatus.parse(el.child(1).text());
-            List<Node> nodes = el.child(0).childNodes();
-
-            if (status == ReportStatus.CONFIRMED
-                    && validateNicknamePresent(((TextNode) nodes.get(4)).text())) { // sometimes happens on forum
-                results.add(parseConfirmed(nodes));
+    private static Stream<GameResult> parseResults1(String url) {
+        try {
+            Document doc = Jsoup.parse(new URL(url).openStream(), "windows-1251", url);
+            Element statsTable = doc.body().getElementById("collapseobj_tournament_reports");
+            if (statsTable == null) {
+                return Stream.empty();
             }
 
-            if (status == ReportStatus.UNCONFIRMED
-                    && validateNicknamePresent(((TextNode) nodes.get(4)).text())) { // sometimes happens on forum
-                results.add(parseUnconfirmed(nodes));
-            }
+            Elements records = statsTable.child(1).child(0).child(0).child(0).child(1).child(0).children();
+            return records.stream().flatMap(el -> {
+                ReportStatus status = ReportStatus.parse(el.child(1).text());
+                List<Node> nodes = el.child(0).childNodes();
+
+                if (status == ReportStatus.CONFIRMED
+                        && validateNicknamePresent(((TextNode) nodes.get(4)).text())) { // sometimes happens on forum
+                    return Stream.of(parseConfirmed(nodes));
+                }
+
+                if (status == ReportStatus.UNCONFIRMED
+                        && validateNicknamePresent(((TextNode) nodes.get(4)).text())) { // sometimes happens on forum
+                    return Stream.of(parseUnconfirmed(nodes));
+                }
+
+                return Stream.empty();
+            }).peek(res -> res.setTourneyLink(url));
+        } catch (Exception e) {
+            LOG.error("Error during parsing theme " + url, e);
+            return Stream.empty();
         }
-        results.forEach(res -> res.setTourneyLink(url));
-        return results;
     }
 
     private static boolean validateNicknamePresent(String text) {
@@ -190,9 +193,5 @@ public class StatisticsCollector {
         result.setReporter(firstInfo);
         result.setConfirmer(secondInfo);
         return result;
-    }
-
-    public static void main(String[] args) throws IOException {
-        mapper.writeValue(new FileOutputStream("/home/ihromant/results.json"), new StatisticsCollector().collect());
     }
 }

@@ -10,7 +10,6 @@ import java.nio.charset.StandardCharsets;
 
 public class Config {
     public static final ITemplateEngine THYMELEAF = thymeleaf();
-    public static final StatisticsCollector COLLECTOR = new StatisticsCollector();
 
     private static ITemplateEngine thymeleaf() {
         ClassLoaderTemplateResolver templateResolver = new ClassLoaderTemplateResolver();

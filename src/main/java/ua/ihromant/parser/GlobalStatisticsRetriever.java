@@ -19,13 +19,7 @@ public class GlobalStatisticsRetriever {
     public static GlobalStatistics retrieve() {
         long time = System.currentTimeMillis();
         LOGGER.info("Collecting statistics...");
-        List<GameResult> results;
-        try {
-            results = Config.COLLECTOR.collect();
-        } catch (IOException e) {
-            LOGGER.error("Was unable to collect statistics. See reason below: ", e);
-            return null;
-        }
+        List<GameResult> results = StatisticsCollector.collect();
         LOGGER.info("Statistics collected. " + results.size()
                 + " game records parsed. Time spent " + (System.currentTimeMillis() - time) + " ms.");
         return calculate(results);
