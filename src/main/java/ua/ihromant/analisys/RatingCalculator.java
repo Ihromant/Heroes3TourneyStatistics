@@ -20,17 +20,11 @@ import java.util.stream.Stream;
 public class RatingCalculator {
     private static final Predicate<GameResult> CONFIRMED = res -> res.getConfirmer().getReportLink() != null;
     private final String name;
-    private final Predicate<GameResult> filter;
-
-    private static Predicate<GameResult> themeFilter(String topicId) {
-        return res -> {
-            int counter = res.getTourneyLink().lastIndexOf('=');
-            return topicId.equals(res.getTourneyLink().substring(counter + 1));
-        };
-    }
+    private final Predicate<GameResult> gameFilter;
+    private final Predicate<StatisticsItem> playersFilter;
 
     public static RatingCalculator overall() {
-        return new RatingCalculator("Overall rating", r -> true);
+        return new RatingCalculator("Overall rating", r -> true, pl -> pl.getTotalGames() > 20);
     }
 
     public static RatingCalculator inSeason(LocalDate at) {
@@ -52,23 +46,20 @@ public class RatingCalculator {
                 name = "Winter-Spring-" + at.getYear();
             }
         }
-        return new RatingCalculator(name, res -> !res.getDate().isBefore(from) && !res.getDate().isAfter(to));
+        return new RatingCalculator(name, res -> !res.getDate().isBefore(from) && !res.getDate().isAfter(to), pl -> true);
     }
 
-    public static RatingCalculator forTheme(String name, int id) {
-        return new RatingCalculator(name, themeFilter(String.valueOf(id)));
-    }
-
-    public RatingCalculator(String name, Predicate<GameResult> filter) {
+    private RatingCalculator(String name, Predicate<GameResult> gameFilter, Predicate<StatisticsItem> playersFilter) {
         this.name = name;
-        this.filter = filter;
+        this.gameFilter = gameFilter;
+        this.playersFilter = playersFilter;
     }
 
     public Ladder calculate(List<GameResult> results) {
         Ladder ladder = new Ladder();
         ladder.setName(name);
         Map<String, StatisticsItem> statistics = results.stream()
-                .filter(CONFIRMED.and(filter))
+                .filter(CONFIRMED.and(gameFilter))
                 .flatMap(res -> Stream.of(res.getConfirmer().getName(), res.getReporter().getName()))
                 .distinct().collect(Collectors.toMap(Function.identity(), name -> {
                     StatisticsItem it = new StatisticsItem();
@@ -77,7 +68,7 @@ public class RatingCalculator {
                     return it;
                 }));
         results.stream()
-                .filter(CONFIRMED.and(filter))
+                .filter(CONFIRMED.and(gameFilter))
                 .sorted(Comparator.comparing(GameResult::getDate))
                 .forEach(res -> {
                     StatisticsItem reporterStats = statistics.get(res.getReporter().getName());
@@ -96,6 +87,7 @@ public class RatingCalculator {
                 });
         List<StatisticsItem> ordered = statistics.entrySet().stream()
                 .map(Map.Entry::getValue)
+                .filter(playersFilter)
                 .sorted(Comparator.comparing(StatisticsItem::getRating).reversed())
                 .collect(Collectors.toList());
         ladder.setItems(IntStream.range(0, ordered.size())

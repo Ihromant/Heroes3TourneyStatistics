@@ -89,7 +89,6 @@ public class RefreshBannerServlet extends HttpServlet {
 
         return ImagesServiceFactory.getImagesService()
                 .composite(Arrays.asList(
-                        ImagesServiceFactory.makeComposite(border, 0, 0, 1, Composite.Anchor.TOP_LEFT),
                         ImagesServiceFactory.makeComposite(back, 0, 0, 1, Composite.Anchor.TOP_LEFT),
                         ImagesServiceFactory.makeComposite(getImageWithText(global.getName(), nickSize, "FCE883"),
                                 - player.length() * nickSize / 4, 0, 1, Composite.Anchor.TOP_CENTER),
@@ -109,7 +108,8 @@ public class RefreshBannerServlet extends HttpServlet {
                                 textSize, "FF0000"), losesxOff, overallyOff, 1, Composite.Anchor.CENTER_CENTER),
                         ImagesServiceFactory.makeComposite(getImageWithText(String.valueOf((current != null ? current.getLoses() : "--")),
                                 textSize, "FF0000"), losesxOff, seasonyOff, 1, Composite.Anchor.CENTER_CENTER),
-                        ImagesServiceFactory.makeComposite(bird, 0, 0, 1, Composite.Anchor.TOP_LEFT)),
+                        ImagesServiceFactory.makeComposite(bird, 0, 0, 1, Composite.Anchor.TOP_LEFT),
+                        ImagesServiceFactory.makeComposite(border, 0, 0, 1, Composite.Anchor.TOP_LEFT)),
                         back.getWidth(), back.getHeight(), 0x00FFFFFFL, ImagesService.OutputEncoding.PNG);
     }
 
