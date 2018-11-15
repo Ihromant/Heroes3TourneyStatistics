@@ -2,6 +2,7 @@ package ua.ihromant.parser;
 
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
+import ua.ihromant.analisys.ActivityCalculator;
 import ua.ihromant.analisys.RatingCalculator;
 import ua.ihromant.analisys.UnconfirmedCollector;
 import ua.ihromant.config.Config;
@@ -15,6 +16,7 @@ import java.util.List;
 public class GlobalStatisticsRetriever {
     private static final Logger LOGGER = LoggerFactory.getLogger(GlobalStatisticsRetriever.class);
     private static UnconfirmedCollector uncCollector = new UnconfirmedCollector();
+    private static ActivityCalculator actCalculator = new ActivityCalculator();
 
     public static GlobalStatistics retrieve() {
         long time = System.currentTimeMillis();
@@ -39,6 +41,7 @@ public class GlobalStatisticsRetriever {
         statistics.setPreviousSeason(RatingCalculator.inSeason(now.toLocalDate().minusMonths(6)).calculate(results));
         statistics.setUnconfirmed(uncCollector.unconfirmed(results));
         statistics.setLastUpdate(now);
+        statistics.setFrequencies(actCalculator.frequencies(results));
         return statistics;
     }
 }

@@ -115,11 +115,11 @@ public class RatingCalculator {
         result.setReporterChange(wp2);
         result.setConfirmerChange(lp1);
 
-        winner.setRating(winner.getRating() + result.getReporterChange());
+        winner.setRating(winner.getRating() + wp2);
         winner.setWins(winner.getWins() + 1);
         winner.getResults().add(0, result);
 
-        loser.setRating(loser.getRating() + result.getConfirmerChange());
+        loser.setRating(loser.getRating() + lp1);
         loser.setLoses(loser.getLoses() + 1);
         loser.getResults().add(0, result.reversed());
     }
@@ -136,7 +136,7 @@ public class RatingCalculator {
         result.setPreviousReporter(first.getRating());
         result.setPreviousConfirmer(second.getRating());
 
-        first.setRating(first.getRating() + result.getConfirmerChange());
+        first.setRating(first.getRating() + result.getReporterChange());
         first.setDraws(first.getDraws() + 1);
         first.getResults().add(0, result);
 

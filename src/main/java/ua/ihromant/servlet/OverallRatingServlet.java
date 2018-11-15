@@ -1,4 +1,4 @@
-package ua.ihromant.heroes3stat;
+package ua.ihromant.servlet;
 
 import org.thymeleaf.context.Context;
 import ua.ihromant.config.Config;

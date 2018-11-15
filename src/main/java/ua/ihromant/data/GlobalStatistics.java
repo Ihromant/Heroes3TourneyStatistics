@@ -1,6 +1,8 @@
 package ua.ihromant.data;
 
+import java.time.LocalDate;
 import java.time.ZonedDateTime;
+import java.util.Map;
 
 public class GlobalStatistics {
     private static GlobalStatistics instance;
@@ -8,6 +10,8 @@ public class GlobalStatistics {
     private Ladder overall;
     private Ladder currentSeason;
     private Ladder previousSeason;
+
+    private Map<LocalDate, Long> frequencies;
 
     private Unconfirmed unconfirmed;
 
@@ -43,6 +47,14 @@ public class GlobalStatistics {
 
     public void setPreviousSeason(Ladder previousSeason) {
         this.previousSeason = previousSeason;
+    }
+
+    public Map<LocalDate, Long> getFrequencies() {
+        return frequencies;
+    }
+
+    public void setFrequencies(Map<LocalDate, Long> frequencies) {
+        this.frequencies = frequencies;
     }
 
     public Unconfirmed getUnconfirmed() {
