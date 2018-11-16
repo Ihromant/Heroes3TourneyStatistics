@@ -3,6 +3,7 @@ package ua.ihromant.analisys;
 import ua.ihromant.data.GameResult;
 import ua.ihromant.data.Ladder;
 import ua.ihromant.data.StatisticsItem;
+import ua.ihromant.data.Template;
 
 import java.time.LocalDate;
 import java.time.Month;
@@ -17,14 +18,13 @@ import java.util.stream.Collectors;
 import java.util.stream.IntStream;
 import java.util.stream.Stream;
 
-public class RatingCalculator {
+public class RatingCalculator implements Function<List<GameResult>, Ladder> {
     private static final Predicate<GameResult> CONFIRMED = res -> res.getConfirmer().getReportLink() != null;
     private final String name;
     private final Predicate<GameResult> gameFilter;
-    private final Predicate<StatisticsItem> playersFilter;
 
     public static RatingCalculator overall() {
-        return new RatingCalculator("Overall rating", r -> true, pl -> pl.getTotalGames() > 20);
+        return new RatingCalculator("Overall rating", r -> true);
     }
 
     public static RatingCalculator inSeason(LocalDate at) {
@@ -46,16 +46,20 @@ public class RatingCalculator {
                 name = "Winter-Spring-" + at.getYear();
             }
         }
-        return new RatingCalculator(name, res -> !res.getDate().isBefore(from) && !res.getDate().isAfter(to), pl -> true);
+        return new RatingCalculator(name, res -> !res.getDate().isBefore(from) && !res.getDate().isAfter(to));
     }
 
-    private RatingCalculator(String name, Predicate<GameResult> gameFilter, Predicate<StatisticsItem> playersFilter) {
+    public static RatingCalculator templateCalculator(Template template) {
+        return new RatingCalculator(template.getTemplateName() + " template rating", r -> r.getTemplate() == template);
+    }
+
+    private RatingCalculator(String name, Predicate<GameResult> gameFilter) {
         this.name = name;
         this.gameFilter = gameFilter;
-        this.playersFilter = playersFilter;
     }
 
-    public Ladder calculate(List<GameResult> results) {
+    @Override
+    public Ladder apply(List<GameResult> results) {
         Ladder ladder = new Ladder();
         ladder.setName(name);
         Map<String, StatisticsItem> statistics = results.stream()
@@ -84,10 +88,11 @@ public class RatingCalculator {
                             recalculateDraw(reporterStats, confirmerStats, res.cloned());
                             break;
                     }
+                    ladder.getTimingMap().compute(res.getTiming(), (key, old) -> old != null ? old + 1 : 1);
+                    ladder.setTotalGames(ladder.getTotalGames() + 1);
                 });
         List<StatisticsItem> ordered = statistics.entrySet().stream()
                 .map(Map.Entry::getValue)
-                .filter(playersFilter)
                 .sorted(Comparator.comparing(StatisticsItem::getRating).reversed())
                 .collect(Collectors.toList());
         ladder.setItems(IntStream.range(0, ordered.size())

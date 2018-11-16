@@ -25,11 +25,4 @@ public class OverallRatingServlet extends HttpServlet {
         context.setVariable("lastUpdate", GlobalStatistics.getInstance().getLastUpdate());
         Config.THYMELEAF.process("/templates/overallRating.html", context, response.getWriter());
     }
-
-    public static String getInfo() {
-        return "Version: " + System.getProperty("java.version")
-                + " OS: " + System.getProperty("os.name")
-                + " User: " + System.getProperty("user.name");
-    }
-
 }

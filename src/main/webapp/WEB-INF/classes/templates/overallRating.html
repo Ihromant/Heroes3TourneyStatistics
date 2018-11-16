@@ -9,7 +9,7 @@
 
 <body>
 
-<table width="100%" border="0" cellpadding="0" cellspacing="0">
+<table width="100%" border="0" cellpadding="0" cellspacing="0" th:replace="/templates/header.html :: header(name='(Total players statistics)')">
     <tr>
         <td width="150" rowspan="2">
             <div align="right"><a href="/"><img src="/img/logo.png" width="176" height="219" border="0"/></a></div>
@@ -73,7 +73,7 @@
                     <td>Total<br>games</td>
                     <td>Overall<br>rating</td>
                 </tr>
-                <tr th:each="e,iter : ${overall.items}" align=center>
+                <tr th:each="e,iter : ${overall.items}" th:if="${e.value.totalGames >= 20}" align=center>
                     <td th:text="${e.value.rank}">$foreach.count</td>
                     <td><a th:href="'/rating/overall/' + ${e.key}" th:text="${e.value.name}">$e.value.name</a></td>
                     <td th:text="${e.value.wins}">$e.value.wins</td>

@@ -2,6 +2,7 @@ package ua.ihromant.data;
 
 import java.time.LocalDate;
 import java.time.ZonedDateTime;
+import java.util.EnumMap;
 import java.util.Map;
 
 public class GlobalStatistics {
@@ -16,6 +17,8 @@ public class GlobalStatistics {
     private Unconfirmed unconfirmed;
 
     private ZonedDateTime lastUpdate;
+
+    private final Map<Template, Ladder> templates = new EnumMap<>(Template.class);
 
     public static GlobalStatistics getInstance() {
         return instance;
@@ -71,5 +74,9 @@ public class GlobalStatistics {
 
     public void setLastUpdate(ZonedDateTime lastUpdate) {
         this.lastUpdate = lastUpdate;
+    }
+
+    public Map<Template, Ladder> getTemplates() {
+        return templates;
     }
 }

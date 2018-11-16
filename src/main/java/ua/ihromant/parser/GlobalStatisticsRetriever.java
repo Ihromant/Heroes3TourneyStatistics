@@ -3,20 +3,42 @@ package ua.ihromant.parser;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import ua.ihromant.analisys.ActivityCalculator;
+import ua.ihromant.analisys.Calculator;
 import ua.ihromant.analisys.RatingCalculator;
 import ua.ihromant.analisys.UnconfirmedCollector;
 import ua.ihromant.config.Config;
 import ua.ihromant.data.GameResult;
 import ua.ihromant.data.GlobalStatistics;
+import ua.ihromant.data.Template;
 
 import java.io.IOException;
 import java.time.ZonedDateTime;
+import java.util.Arrays;
 import java.util.List;
+import java.util.stream.Stream;
 
 public class GlobalStatisticsRetriever {
     private static final Logger LOGGER = LoggerFactory.getLogger(GlobalStatisticsRetriever.class);
     private static UnconfirmedCollector uncCollector = new UnconfirmedCollector();
     private static ActivityCalculator actCalculator = new ActivityCalculator();
+
+    private static Stream<Calculator> calculators() {
+        ZonedDateTime now = ZonedDateTime.now();
+        Stream.Builder<Calculator> builder = Stream.builder();
+        builder.add(new Calculator<>(GlobalStatistics::setOverall, RatingCalculator.overall()));
+        builder.add(new Calculator<>(GlobalStatistics::setCurrentSeason, RatingCalculator.inSeason(now.toLocalDate())));
+        builder.add(new Calculator<>(GlobalStatistics::setPreviousSeason, RatingCalculator.inSeason(now.toLocalDate().minusMonths(6))));
+        builder.add(new Calculator<>(GlobalStatistics::setUnconfirmed, uncCollector));
+        builder.add(new Calculator<>(GlobalStatistics::setFrequencies, actCalculator));
+        builder.add(new Calculator<>(GlobalStatistics::setLastUpdate, res -> now));
+        Stream.of(Template.values())
+                .forEach(temp ->
+                        builder.add(
+                                new Calculator<>(
+                                        (stat, ladder) -> stat.getTemplates().put(temp, ladder),
+                                        RatingCalculator.templateCalculator(temp))));
+        return builder.build();
+    }
 
     public static GlobalStatistics retrieve() {
         long time = System.currentTimeMillis();
@@ -33,15 +55,9 @@ public class GlobalStatisticsRetriever {
         return calculate(results);
     }
 
-    public static GlobalStatistics calculate(List<GameResult> results) {
-        GlobalStatistics statistics = new GlobalStatistics();
-        statistics.setOverall(RatingCalculator.overall().calculate(results));
-        ZonedDateTime now = ZonedDateTime.now();
-        statistics.setCurrentSeason(RatingCalculator.inSeason(now.toLocalDate()).calculate(results));
-        statistics.setPreviousSeason(RatingCalculator.inSeason(now.toLocalDate().minusMonths(6)).calculate(results));
-        statistics.setUnconfirmed(uncCollector.unconfirmed(results));
-        statistics.setLastUpdate(now);
-        statistics.setFrequencies(actCalculator.frequencies(results));
-        return statistics;
+    private static GlobalStatistics calculate(List<GameResult> results) {
+        GlobalStatistics stat = new GlobalStatistics();
+        calculators().parallel().forEach(calc -> calc.accept(stat, results));
+        return stat;
     }
 }

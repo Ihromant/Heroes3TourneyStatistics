@@ -29,7 +29,7 @@ public abstract class PlayerGamesServlet extends HttpServlet {
         Context context = new Context(Locale.ENGLISH);
         context.setVariable("player", gamesExtractor.apply(GlobalStatistics.getInstance(), player));
         context.setVariable("lastUpdate", GlobalStatistics.getInstance().getLastUpdate());
-        context.setVariable("bannerServingUrl", String.format("[IMG]http://storage.googleapis.com/servlet.appspot.com/banners/%s.png[/IMG]", player));
+        context.setVariable("bannerServingUrl", String.format("[IMG]http://storage.googleapis.com/heroes3stat.appspot.com/banners/%s.png[/IMG]", player));
         Config.THYMELEAF.process("/templates/playerGames.html", context, response.getWriter());
     }
 

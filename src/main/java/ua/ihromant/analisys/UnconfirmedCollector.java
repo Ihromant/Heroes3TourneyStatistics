@@ -7,10 +7,12 @@ import java.util.Comparator;
 import java.util.LinkedHashMap;
 import java.util.List;
 import java.util.Map;
+import java.util.function.Function;
 import java.util.stream.Collectors;
 
-public class UnconfirmedCollector {
-    public Unconfirmed unconfirmed(List<GameResult> items) {
+public class UnconfirmedCollector implements Function<List<GameResult>, Unconfirmed> {
+    @Override
+    public Unconfirmed apply(List<GameResult> items) {
         Unconfirmed result = new Unconfirmed();
         result.setGames(items.stream()
                 .filter(it -> it.getConfirmer().getReportLink() == null)
