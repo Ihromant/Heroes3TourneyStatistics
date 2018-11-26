@@ -14,7 +14,7 @@ import java.time.format.DateTimeFormatter;
 import java.util.Locale;
 import java.util.stream.Collectors;
 
-@WebServlet(name = "homeServlet", value = "/home")
+@WebServlet("/home")
 public class HomeServlet extends HttpServlet {
 
     @Override
@@ -22,7 +22,7 @@ public class HomeServlet extends HttpServlet {
         response.setCharacterEncoding(StandardCharsets.UTF_8.name());
         Context context = new Context(Locale.ENGLISH);
         context.setVariable("frequencies",
-                GlobalStatistics.getInstance().getFrequencies().entrySet().stream()
+                GlobalStatistics.getInstance().getOverall().getActivities().entrySet().stream()
                         .map(e -> String.format("[new Date('%s'), %s]",
                                 DateTimeFormatter.ISO_LOCAL_DATE.format(e.getKey()),
                                 e.getValue()))

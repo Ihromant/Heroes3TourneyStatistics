@@ -14,7 +14,7 @@ import java.util.Locale;
 import java.util.Map;
 import java.util.stream.Collectors;
 
-@WebServlet(name = "listTemplatesServlet", value = "/templates")
+@WebServlet("/templates")
 public class ListTemplatesServlet extends HttpServlet {
     @Override
     public void doGet(HttpServletRequest request, HttpServletResponse response) throws IOException {

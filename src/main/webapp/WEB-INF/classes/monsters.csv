@@ -3,23 +3,23 @@
 611,Imp,50,1100
 911,Pixie,55,1150
 511,Troglodyte,59,1200
-712,Goblin,60,1250
+812,Goblin,60,1250
 312,Master Gremlin,66,1300
 612,Infernal Troglodyte,84,1315
 412,Skeleton Warrior,85,1330
-812,Gnoll Marauder,90,1345
+712,Gnoll Marauder,90,1345
 912,Sprite,95,1360
 112,Halbeidier,115,1375
 312,Centaur Captain,138,1390
 422,Zombie,128,1400
-822,Lizard Warrior,156,1415
+722,Lizard Warrior,156,1415
 322,Obsidian Gargoyle,201,1430
-722,Wolf Raider,203,1445
+822,Wolf Raider,203,1445
 222,Battle Dwaif,209,1460
 522,Harpy Hag,238,1475
 622,Magog,240,1490
-732,Orc Chieftain,240,1500
-832,Serpent Fly,256,1515
+832,Orc Chieftain,240,1500
+732,Serpent Fly,256,1515
 432,Wraith,315,1530
 332,Grand Elf,331,1545
 532,Evil Eye,367,1560
@@ -30,20 +30,20 @@
 242,Silver Pegasus,532,1630
 542,Medusa Oueen,577,1645
 142,Crusader,588,1660
-742,Ogre Mage,672,1675
-842,Greater Basilisk,714,1690
+842,Ogre Mage,672,1675
+742,Greater Basilisk,714,1690
 352,Master Genie,942,1700
-852,Mighty Gorgon,1028,1720
+752,Mighty Gorgon,1028,1720
 552,Minotaur King,1068,1740
-752,Thunder Bird,1106,1760
-762,Cyclops King,1443,1780
-862,Wyvern Monarch,1518,1800
+852,Thunder Bird,1106,1760
+862,Cyclops King,1443,1780
+762,Wyvern Monarch,1518,1800
 662,Efreet Sultan,1848,1820
 262,War Unicorn,2030,1840
 462,Dread Knight,2382,1860
 362,Naga Oueen,2840,1880
 472,Ghost Dragon,4696,1900
-772,Ancient Behemoth,6168,1950
+872,Ancient Behemoth,6168,1950
 972,Phoenix,6721,2000
 672,Arch Devil,7115,2050
 372,Titan,7500,2100

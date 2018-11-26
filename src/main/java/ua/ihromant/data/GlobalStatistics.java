@@ -11,8 +11,9 @@ public class GlobalStatistics {
     private Ladder overall;
     private Ladder currentSeason;
     private Ladder previousSeason;
-
-    private Map<LocalDate, Long> frequencies;
+    private Ladder tourney;
+    private Ladder currentTourney;
+    private Ladder twoYears;
 
     private Unconfirmed unconfirmed;
 
@@ -52,12 +53,28 @@ public class GlobalStatistics {
         this.previousSeason = previousSeason;
     }
 
-    public Map<LocalDate, Long> getFrequencies() {
-        return frequencies;
+    public Ladder getTourney() {
+        return tourney;
     }
 
-    public void setFrequencies(Map<LocalDate, Long> frequencies) {
-        this.frequencies = frequencies;
+    public void setTourney(Ladder tourney) {
+        this.tourney = tourney;
+    }
+
+    public Ladder getCurrentTourney() {
+        return currentTourney;
+    }
+
+    public void setCurrentTourney(Ladder currentTourney) {
+        this.currentTourney = currentTourney;
+    }
+
+    public Ladder getTwoYears() {
+        return twoYears;
+    }
+
+    public void setTwoYears(Ladder twoYears) {
+        this.twoYears = twoYears;
     }
 
     public Unconfirmed getUnconfirmed() {

@@ -33,24 +33,45 @@ public abstract class PlayerGamesServlet extends HttpServlet {
         Config.THYMELEAF.process("/templates/playerGames.html", context, response.getWriter());
     }
 
-    @WebServlet(name = "overallPlayerServlet", value = "/rating/overall/*")
+    @WebServlet("/rating/overall/*")
     public static class OverallGamesServlet extends PlayerGamesServlet {
         public OverallGamesServlet() {
             super((stat, player) -> stat.getOverall().getItems().get(player));
         }
     }
 
-    @WebServlet(name = "currentGamesServlet", value = "/rating/current/*")
+    @WebServlet("/rating/current/*")
     public static class CurrentGamesServlet extends PlayerGamesServlet {
         public CurrentGamesServlet() {
             super((stat, player) -> stat.getCurrentSeason().getItems().get(player));
         }
     }
 
-    @WebServlet(name = "previousGamesServlet", value = "/rating/previous/*")
+    @WebServlet("/rating/previous/*")
     public static class PreviousGamesServlet extends PlayerGamesServlet {
         public PreviousGamesServlet() {
             super((stat, player) -> stat.getPreviousSeason().getItems().get(player));
+        }
+    }
+
+    @WebServlet("/rating/tournament_rating/*")
+    public static class TourneyGamesServlet extends PlayerGamesServlet {
+        public TourneyGamesServlet() {
+            super((stat, player) -> stat.getTourney().getItems().get(player));
+        }
+    }
+
+    @WebServlet("/rating/current_tournament/*")
+    public static class CurrentTourneyServlet extends PlayerGamesServlet {
+        public CurrentTourneyServlet() {
+            super((stat, player) -> stat.getCurrentTourney().getItems().get(player));
+        }
+    }
+
+    @WebServlet("/rating/2years/*")
+    public static class TwoYearsGamesServlet extends PlayerGamesServlet {
+        public TwoYearsGamesServlet() {
+            super((stat, player) -> stat.getTwoYears().getItems().get(player));
         }
     }
 }

@@ -13,7 +13,7 @@ import java.io.IOException;
 import java.nio.charset.StandardCharsets;
 import java.util.Locale;
 
-@WebServlet(name = "templateRatingServlet", value = "/templates/*")
+@WebServlet("/templates/*")
 public class TemplateRatingServlet extends HttpServlet {
     @Override
     public void doGet(HttpServletRequest request, HttpServletResponse response) throws IOException {

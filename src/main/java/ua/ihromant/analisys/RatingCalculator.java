@@ -5,13 +5,11 @@ import ua.ihromant.data.Ladder;
 import ua.ihromant.data.StatisticsItem;
 import ua.ihromant.data.Template;
 
+import java.io.*;
 import java.time.LocalDate;
 import java.time.Month;
 import java.time.temporal.TemporalAdjusters;
-import java.util.Comparator;
-import java.util.LinkedHashMap;
-import java.util.List;
-import java.util.Map;
+import java.util.*;
 import java.util.function.Function;
 import java.util.function.Predicate;
 import java.util.stream.Collectors;
@@ -20,11 +18,32 @@ import java.util.stream.Stream;
 
 public class RatingCalculator implements Function<List<GameResult>, Ladder> {
     private static final Predicate<GameResult> CONFIRMED = res -> res.getConfirmer().getReportLink() != null;
+    private static final Map<String, StatisticsItem> OLD_ITEMS = getOldItems();
+    private static final Set<Integer> SEASON_THEMES = new HashSet<>(Arrays.asList(14259, 12859,
+            12410, 10979, 12145, 11151, 11634, 11896, 11369));
+
+    private static Predicate<GameResult> themeFilter(Set<Integer> filteredThemes) {
+        return res -> {
+            int counter = res.getTourneyLink().lastIndexOf('=');
+            return !filteredThemes.contains(Integer.parseInt(res.getTourneyLink().substring(counter + 1)));
+        };
+    }
+
     private final String name;
     private final Predicate<GameResult> gameFilter;
+    private final Map<String, StatisticsItem> initial;
 
     public static RatingCalculator overall() {
-        return new RatingCalculator("Overall rating", r -> true);
+        return new RatingCalculator("Overall rating", r -> true, OLD_ITEMS);
+    }
+
+    public static RatingCalculator tourneys() {
+        return new RatingCalculator("Tournament rating", themeFilter(SEASON_THEMES));
+    }
+
+    public static RatingCalculator last2Years() {
+        LocalDate now = LocalDate.now();
+        return new RatingCalculator("Last 2 years rating", themeFilter(SEASON_THEMES).and(r -> now.minusYears(2).isBefore(r.getDate())));
     }
 
     public static RatingCalculator inSeason(LocalDate at) {
@@ -49,13 +68,26 @@ public class RatingCalculator implements Function<List<GameResult>, Ladder> {
         return new RatingCalculator(name, res -> !res.getDate().isBefore(from) && !res.getDate().isAfter(to));
     }
 
+    public static RatingCalculator inTourneySeason() {
+        LocalDate now = LocalDate.now();
+        return new RatingCalculator("Last 6 months rating", themeFilter(SEASON_THEMES).and(r -> now.minusMonths(6).isBefore(r.getDate())));
+    }
+
     public static RatingCalculator templateCalculator(Template template) {
-        return new RatingCalculator(template.getTemplateName() + " template rating", r -> r.getTemplate() == template);
+        return new RatingCalculator(template.getTemplateName() + " template rating",
+                r -> r.getTemplate() == template || r.getTemplate().getParent() == template);
+    }
+
+    private RatingCalculator(String name, Predicate<GameResult> gameFilter, Map<String, StatisticsItem> initial) {
+        this.name = name;
+        this.gameFilter = gameFilter;
+        this.initial = initial;
     }
 
     private RatingCalculator(String name, Predicate<GameResult> gameFilter) {
         this.name = name;
         this.gameFilter = gameFilter;
+        this.initial = Collections.emptyMap();
     }
 
     @Override
@@ -66,11 +98,19 @@ public class RatingCalculator implements Function<List<GameResult>, Ladder> {
                 .filter(CONFIRMED.and(gameFilter))
                 .flatMap(res -> Stream.of(res.getConfirmer().getName(), res.getReporter().getName()))
                 .distinct().collect(Collectors.toMap(Function.identity(), name -> {
+                    if (initial.containsKey(name)) {
+                        return initial.get(name);
+                    }
                     StatisticsItem it = new StatisticsItem();
                     it.setName(name);
                     it.setRating(1500);
                     return it;
                 }));
+        ladder.setActivities(results.stream()
+                .filter(CONFIRMED.and(gameFilter))
+                .collect(Collectors.groupingBy(res -> res.getDate().with(TemporalAdjusters.firstDayOfMonth()),
+                        TreeMap::new,
+                        Collectors.counting())));
         results.stream()
                 .filter(CONFIRMED.and(gameFilter))
                 .sorted(Comparator.comparing(GameResult::getDate))
@@ -88,7 +128,7 @@ public class RatingCalculator implements Function<List<GameResult>, Ladder> {
                             recalculateDraw(reporterStats, confirmerStats, res.cloned());
                             break;
                     }
-                    ladder.getTimingMap().compute(res.getTiming(), (key, old) -> old != null ? old + 1 : 1);
+                    ladder.getTimingMap().compute(timingKey(res.getTiming()), (key, old) -> old != null ? old + 1 : 1);
                     ladder.setTotalGames(ladder.getTotalGames() + 1);
                 });
         List<StatisticsItem> ordered = statistics.entrySet().stream()
@@ -106,6 +146,19 @@ public class RatingCalculator implements Function<List<GameResult>, Ladder> {
                         (u,v) -> { throw new IllegalStateException(String.format("Duplicate key %s", u)); },
                         LinkedHashMap::new)));
         return ladder;
+    }
+
+    private static String timingKey(String timing) {
+        if ("114".compareTo(timing) >= 0) {
+            return "114-";
+        }
+        if ("221".compareTo(timing) <= 0 && "227".compareTo(timing) >= 0) {
+            return "221-227";
+        }
+        if ("231".compareTo(timing) <= 0) {
+            return "231+";
+        }
+        return timing;
     }
 
     private void recalculateWin(StatisticsItem winner, StatisticsItem loser, GameResult result) {
@@ -148,5 +201,26 @@ public class RatingCalculator implements Function<List<GameResult>, Ladder> {
         second.setRating(second.getRating() + result.getConfirmerChange());
         second.setDraws(second.getDraws() + 1);
         second.getResults().add(0, result.reversed());
+    }
+
+    private static Map<String, StatisticsItem> getOldItems() {
+        try (InputStream is = RatingCalculator.class.getResourceAsStream("/oldRating.csv");
+             InputStreamReader isr = new InputStreamReader(is);
+             BufferedReader br = new BufferedReader(isr)) {
+            return br.lines().map(line -> {
+                String[] split = line.split(",");
+                StatisticsItem item = new StatisticsItem();
+                item.setName(split[1]);
+                int wins = Integer.parseInt(split[2]);
+                item.setWins(wins);
+                int loses = Integer.parseInt(split[3]);
+                item.setLoses(loses);
+                item.setDraws(Integer.parseInt(split[4]) - wins - loses);
+                item.setRating(Integer.parseInt(split[5]));
+                return item;
+            }).collect(Collectors.toMap(StatisticsItem::getName, Function.identity()));
+        } catch (IOException e) {
+            throw new RuntimeException("Was not able to read config file", e);
+        }
     }
 }

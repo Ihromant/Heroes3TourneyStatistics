@@ -2,7 +2,6 @@ package ua.ihromant.parser;
 
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
-import ua.ihromant.analisys.ActivityCalculator;
 import ua.ihromant.analisys.Calculator;
 import ua.ihromant.analisys.RatingCalculator;
 import ua.ihromant.analisys.UnconfirmedCollector;
@@ -13,14 +12,12 @@ import ua.ihromant.data.Template;
 
 import java.io.IOException;
 import java.time.ZonedDateTime;
-import java.util.Arrays;
 import java.util.List;
 import java.util.stream.Stream;
 
 public class GlobalStatisticsRetriever {
     private static final Logger LOGGER = LoggerFactory.getLogger(GlobalStatisticsRetriever.class);
     private static UnconfirmedCollector uncCollector = new UnconfirmedCollector();
-    private static ActivityCalculator actCalculator = new ActivityCalculator();
 
     private static Stream<Calculator> calculators() {
         ZonedDateTime now = ZonedDateTime.now();
@@ -29,9 +26,12 @@ public class GlobalStatisticsRetriever {
         builder.add(new Calculator<>(GlobalStatistics::setCurrentSeason, RatingCalculator.inSeason(now.toLocalDate())));
         builder.add(new Calculator<>(GlobalStatistics::setPreviousSeason, RatingCalculator.inSeason(now.toLocalDate().minusMonths(6))));
         builder.add(new Calculator<>(GlobalStatistics::setUnconfirmed, uncCollector));
-        builder.add(new Calculator<>(GlobalStatistics::setFrequencies, actCalculator));
         builder.add(new Calculator<>(GlobalStatistics::setLastUpdate, res -> now));
+        builder.add(new Calculator<>(GlobalStatistics::setTourney, RatingCalculator.tourneys()));
+        builder.add(new Calculator<>(GlobalStatistics::setCurrentTourney, RatingCalculator.inTourneySeason()));
+        builder.add(new Calculator<>(GlobalStatistics::setTwoYears, RatingCalculator.last2Years()));
         Stream.of(Template.values())
+                .filter(t -> t.getParent() == null && t != Template.RANDOM)
                 .forEach(temp ->
                         builder.add(
                                 new Calculator<>(
