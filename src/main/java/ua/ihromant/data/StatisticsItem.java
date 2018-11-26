@@ -5,7 +5,7 @@ import com.fasterxml.jackson.annotation.JsonIgnore;
 import java.util.ArrayList;
 import java.util.List;
 
-public class StatisticsItem {
+public class StatisticsItem implements Cloneable {
     private String name;
     private int rating;
     private int rank;
@@ -74,5 +74,13 @@ public class StatisticsItem {
     @JsonIgnore
     public int getTotalGames() {
         return wins + loses + draws;
+    }
+
+    public StatisticsItem cloned() {
+        try {
+            return (StatisticsItem) this.clone();
+        } catch (CloneNotSupportedException e) {
+            throw new RuntimeException(e); // never happens
+        }
     }
 }

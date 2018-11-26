@@ -99,7 +99,7 @@ public class RatingCalculator implements Function<List<GameResult>, Ladder> {
                 .flatMap(res -> Stream.of(res.getConfirmer().getName(), res.getReporter().getName()))
                 .distinct().collect(Collectors.toMap(Function.identity(), name -> {
                     if (initial.containsKey(name)) {
-                        return initial.get(name);
+                        return initial.get(name).cloned();
                     }
                     StatisticsItem it = new StatisticsItem();
                     it.setName(name);
