@@ -78,7 +78,9 @@ public class StatisticsItem implements Cloneable {
 
     public StatisticsItem cloned() {
         try {
-            return (StatisticsItem) this.clone();
+            StatisticsItem result = (StatisticsItem) this.clone();
+            result.results = new ArrayList<>(this.results);
+            return result;
         } catch (CloneNotSupportedException e) {
             throw new RuntimeException(e); // never happens
         }
