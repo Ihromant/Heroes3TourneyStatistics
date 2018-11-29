@@ -1,6 +1,5 @@
 package ua.ihromant.analisys.builder;
 
-import ua.ihromant.analisys.builder.StatisticsBuilder;
 import ua.ihromant.data.GameResult;
 import ua.ihromant.data.Ladder;
 import ua.ihromant.data.StatisticsItem;
@@ -15,8 +14,8 @@ import java.util.stream.IntStream;
 import java.util.stream.Stream;
 
 public class StatisticsItemsBuilder extends StatisticsBuilder<Map<String, StatisticsItem>, Map<String, StatisticsItem>> {
-    public StatisticsItemsBuilder(Map<String, StatisticsItem> value) {
-        super(value, Ladder::setItems);
+    public StatisticsItemsBuilder(Map<String, StatisticsItem> initial) {
+        super(initial, Ladder::setItems);
     }
 
     @Override

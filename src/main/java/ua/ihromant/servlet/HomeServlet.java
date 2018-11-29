@@ -21,8 +21,14 @@ public class HomeServlet extends HttpServlet {
     public void doGet(HttpServletRequest request, HttpServletResponse response) throws IOException {
         response.setCharacterEncoding(StandardCharsets.UTF_8.name());
         Context context = new Context(Locale.ENGLISH);
-        context.setVariable("frequencies",
+        context.setVariable("gamesActivity",
                 GlobalStatistics.getInstance().getOverall().getActivities().entrySet().stream()
+                        .map(e -> String.format("[new Date('%s'), %s]",
+                                DateTimeFormatter.ISO_LOCAL_DATE.format(e.getKey()),
+                                e.getValue()))
+                        .collect(Collectors.joining(",")));
+        context.setVariable("playerActivity",
+                GlobalStatistics.getInstance().getOverall().getPlayerActivities().entrySet().stream()
                         .map(e -> String.format("[new Date('%s'), %s]",
                                 DateTimeFormatter.ISO_LOCAL_DATE.format(e.getKey()),
                                 e.getValue()))

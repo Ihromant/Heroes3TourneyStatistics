@@ -9,6 +9,7 @@ public class Ladder {
     private Map<String, Integer> timingMap;
     private int totalGames;
     private Map<LocalDate, Integer> activities;
+    private Map<LocalDate, Integer> playerActivities;
 
     public String getName() {
         return name;
@@ -48,5 +49,13 @@ public class Ladder {
 
     public void setActivities(Map<LocalDate, Integer> activities) {
         this.activities = activities;
+    }
+
+    public Map<LocalDate, Integer> getPlayerActivities() {
+        return playerActivities;
+    }
+
+    public void setPlayerActivities(Map<LocalDate, Integer> playerActivities) {
+        this.playerActivities = playerActivities;
     }
 }

@@ -82,7 +82,8 @@ public class RatingCalculator implements Function<List<GameResult>, Ladder> {
         this.name = name;
         this.gameFilter = gameFilter;
         this.builders = Arrays.asList(TimingBuilder::new, ActivityBuilder::new,
-                () -> new StatisticsItemsBuilder(initial), TotalGamesBuilder::new);
+                () -> new StatisticsItemsBuilder(initial), TotalGamesBuilder::new,
+                PlayerActivityBuilder::new);
     }
 
     private RatingCalculator(String name, Predicate<GameResult> gameFilter) {

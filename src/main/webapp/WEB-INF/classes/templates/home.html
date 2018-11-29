@@ -52,21 +52,23 @@
 <table width="90%" border="1" align="center">
     <tr>
         <td width="90%" bgcolor="#FFFFFF" class="old4">
-            <div id="chart_div" align="center">The HomePage Diagram (e.g. the timeline frequency of total matches)</div>
+            <div id="gamesActivity" align="center">The HomePage Diagram (e.g. the timeline frequency of total matches)</div>
+            <div id="playerActivity" align="center">The HomePage Diagram (e.g. the timeline activity of players)</div>
         </td>
     </tr>
 </table>
 <script th:inline="javascript">
-    google.charts.load('current', {packages: ['corechart', 'line']});
-google.charts.setOnLoadCallback(drawBackgroundColor);
+google.charts.load('current', {packages: ['corechart', 'line']});
+google.charts.setOnLoadCallback(drawGamesActivity);
+google.charts.setOnLoadCallback(drawPlayerActivity);
 
-function drawBackgroundColor() {
+function drawGamesActivity() {
       var data = new google.visualization.DataTable();
       data.addColumn('date', 'X');
       data.addColumn('number', 'Activity');
 
       data.addRows([
-      /*[(${frequencies})]*/ [new Date('2018-01-01'), 10]
+      /*[(${gamesActivity})]*/ [new Date('2018-01-01'), 10]
       ]);
 
       var options = {
@@ -81,9 +83,33 @@ function drawBackgroundColor() {
         height: 300
       };
 
-      var chart = new google.visualization.LineChart(document.getElementById('chart_div'));
+      var chart = new google.visualization.LineChart(document.getElementById('gamesActivity'));
       chart.draw(data, options);
-    }
+    };
+function drawPlayerActivity() {
+      var data = new google.visualization.DataTable();
+      data.addColumn('date', 'X');
+      data.addColumn('number', 'Activity');
+
+      data.addRows([
+      /*[(${playerActivity})]*/ [new Date('2018-01-01'), 10]
+      ]);
+
+      var options = {
+        hAxis: {
+          title: 'Time',
+          format: 'MM-yy'
+        },
+        vAxis: {
+          title: 'Active players'
+        },
+        width: 800,
+        height: 300
+      };
+
+      var chart = new google.visualization.LineChart(document.getElementById('playerActivity'));
+      chart.draw(data, options);
+    };
 </script>
 </body>
 </html>

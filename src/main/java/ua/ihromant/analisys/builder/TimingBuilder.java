@@ -1,6 +1,5 @@
 package ua.ihromant.analisys.builder;
 
-import ua.ihromant.analisys.builder.StatisticsBuilder;
 import ua.ihromant.data.GameResult;
 import ua.ihromant.data.Ladder;
 
