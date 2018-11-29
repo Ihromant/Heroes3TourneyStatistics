@@ -2,14 +2,13 @@ package ua.ihromant.data;
 
 import java.time.LocalDate;
 import java.util.Map;
-import java.util.TreeMap;
 
 public class Ladder {
     private String name;
     private Map<String, StatisticsItem> items;
-    private final Map<String, Integer> timingMap = new TreeMap<>();
+    private Map<String, Integer> timingMap;
     private int totalGames;
-    private Map<LocalDate, Long> activities;
+    private Map<LocalDate, Integer> activities;
 
     public String getName() {
         return name;
@@ -31,6 +30,10 @@ public class Ladder {
         return timingMap;
     }
 
+    public void setTimingMap(Map<String, Integer> timingMap) {
+        this.timingMap = timingMap;
+    }
+
     public int getTotalGames() {
         return totalGames;
     }
@@ -39,11 +42,11 @@ public class Ladder {
         this.totalGames = totalGames;
     }
 
-    public Map<LocalDate, Long> getActivities() {
+    public Map<LocalDate, Integer> getActivities() {
         return activities;
     }
 
-    public void setActivities(Map<LocalDate, Long> activities) {
+    public void setActivities(Map<LocalDate, Integer> activities) {
         this.activities = activities;
     }
 }
