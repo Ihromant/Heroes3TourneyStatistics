@@ -20,7 +20,7 @@ public class RatingCalculator implements Function<List<GameResult>, Ladder> {
     private static final Predicate<GameResult> CONFIRMED = res -> res.getConfirmer().getReportLink() != null;
     private static final Map<String, StatisticsItem> OLD_ITEMS = getOldItems();
     private static final Set<Integer> SEASON_THEMES = new HashSet<>(Arrays.asList(14259, 12859,
-            12410, 10979, 12145, 11151, 11634, 11896, 11369));
+            12410, 10979, 12145, 11151, 11634, 11896, 11369, 14413, 10864, 10746));
 
     private static Predicate<GameResult> themeFilter(Set<Integer> filteredThemes) {
         return res -> {
