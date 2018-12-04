@@ -33,20 +33,21 @@ public class RatingCalculator implements Function<List<GameResult>, Ladder> {
     private final Predicate<GameResult> gameFilter;
     private final List<Supplier<StatisticsBuilder>> builders;
 
-    public static RatingCalculator overall() {
-        return new RatingCalculator("Overall rating", r -> true, OLD_ITEMS);
+    public static RatingCalculator overall(LocalDate now) {
+        return new RatingCalculator("Overall rating", r -> true, now, OLD_ITEMS);
     }
 
-    public static RatingCalculator tourneys() {
-        return new RatingCalculator("Tournament rating", themeFilter(SEASON_THEMES));
+    public static RatingCalculator tourneys(LocalDate now) {
+        return new RatingCalculator("Tournament rating", themeFilter(SEASON_THEMES), now);
     }
 
-    public static RatingCalculator last2Years() {
-        LocalDate now = LocalDate.now();
-        return new RatingCalculator("Last 2 years rating", themeFilter(SEASON_THEMES).and(r -> now.minusYears(2).isBefore(r.getDate())));
+    public static RatingCalculator last2Years(LocalDate now) {
+        LocalDate date = now.minusYears(2);
+        return new RatingCalculator("Last 2 years rating", themeFilter(SEASON_THEMES).and(r -> date.isBefore(r.getDate())), now);
     }
 
-    public static RatingCalculator inSeason(LocalDate at) {
+    public static RatingCalculator inSeason(LocalDate now, int minusMonths) {
+        LocalDate at = now.minusMonths(minusMonths);
         LocalDate from;
         LocalDate to;
         String name;
@@ -65,29 +66,31 @@ public class RatingCalculator implements Function<List<GameResult>, Ladder> {
                 name = "Winter-Spring-" + at.getYear();
             }
         }
-        return new RatingCalculator(name, res -> !res.getDate().isBefore(from) && !res.getDate().isAfter(to));
+        return new RatingCalculator(name, res -> !res.getDate().isBefore(from) && !res.getDate().isAfter(to), now);
     }
 
-    public static RatingCalculator inTourneySeason() {
-        LocalDate now = LocalDate.now();
-        return new RatingCalculator("Last 6 months rating", themeFilter(SEASON_THEMES).and(r -> now.minusMonths(6).isBefore(r.getDate())));
+    public static RatingCalculator inTourneySeason(LocalDate now) {
+        LocalDate date = now.minusMonths(6);
+        return new RatingCalculator("Last 6 months rating", themeFilter(SEASON_THEMES).and(r -> date.isBefore(r.getDate())), now);
     }
 
-    public static RatingCalculator templateCalculator(Template template) {
+    public static RatingCalculator templateCalculator(Template template, LocalDate now) {
         return new RatingCalculator(template.getTemplateName() + " template rating",
-                r -> r.getTemplate() == template || r.getTemplate().getParent() == template);
+                r -> r.getTemplate() == template || r.getTemplate().getParent() == template, now);
     }
 
-    private RatingCalculator(String name, Predicate<GameResult> gameFilter, Map<String, StatisticsItem> initial) {
+    private RatingCalculator(String name, Predicate<GameResult> gameFilter, LocalDate now, Map<String, StatisticsItem> initial) {
         this.name = name;
         this.gameFilter = gameFilter;
-        this.builders = Arrays.asList(TimingBuilder::new, ActivityBuilder::new,
-                () -> new StatisticsItemsBuilder(initial), TotalGamesBuilder::new,
-                PlayerActivityBuilder::new);
+        this.builders = Arrays.asList(TimingBuilder::new,
+                TotalGamesBuilder::new,
+                () -> new ActivityBuilder(now.with(TemporalAdjusters.firstDayOfMonth())),
+                () -> new StatisticsItemsBuilder(initial),
+                () -> new PlayerActivityBuilder(now.with(TemporalAdjusters.firstDayOfMonth())));
     }
 
-    private RatingCalculator(String name, Predicate<GameResult> gameFilter) {
-        this(name, gameFilter, Collections.emptyMap());
+    private RatingCalculator(String name, Predicate<GameResult> gameFilter, LocalDate now) {
+        this(name, gameFilter, now, Collections.emptyMap());
     }
 
     @Override

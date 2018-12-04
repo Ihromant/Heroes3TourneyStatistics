@@ -73,12 +73,12 @@ public class RefreshBannerServlet extends HttpServlet {
         int nickSize = 22;
         int textSize = 12;
 
-        int labelxOff = - 6 * textSize;
-        int overallyOff = -textSize / 2 + 2;
-        int seasonyOff = 2 * textSize;
-        int ratingxOff = 25;
-        int winsxOff = 60;
-        int losesxOff = 85;
+        int labelxOff = 189 - 115;
+        int overallyOff = 44 - textSize;
+        int seasonyOff = 44 + 3 * textSize / 2 - 2;
+        int ratingxOff = 189 - 5;
+        int winsxOff = 189 + 57;
+        int losesxOff = 189 + 82;
 
         Image border = ImagesServiceFactory.makeImage(IOUtils.toByteArray(
                 getClass().getResourceAsStream("/imageParts/Border.png")));
@@ -91,23 +91,23 @@ public class RefreshBannerServlet extends HttpServlet {
                 .composite(Arrays.asList(
                         ImagesServiceFactory.makeComposite(back, 0, 0, 1, Composite.Anchor.TOP_LEFT),
                         ImagesServiceFactory.makeComposite(getImageWithText(global.getName(), nickSize, "FCE883"),
-                                - player.length() * nickSize / 4, 0, 1, Composite.Anchor.TOP_CENTER),
+                                189 - player.length() * nickSize / 3, 0, 1, Composite.Anchor.TOP_LEFT),
                         ImagesServiceFactory.makeComposite(getImageWithText(OVERALL, textSize, "FFFFFF"),
-                                labelxOff, overallyOff, 1, Composite.Anchor.CENTER_CENTER),
+                                labelxOff, overallyOff, 1, Composite.Anchor.TOP_LEFT),
                         ImagesServiceFactory.makeComposite(getImageWithText(SEASON, textSize, "FFFFFF"),
-                                labelxOff, seasonyOff, 1, Composite.Anchor.CENTER_CENTER),
+                                labelxOff, seasonyOff, 1, Composite.Anchor.TOP_LEFT),
                         ImagesServiceFactory.makeComposite(getImageWithText(global.getRating() + "(" + global.getRank() + ")",
-                                textSize, "FFFFFF"), ratingxOff, overallyOff, 1, Composite.Anchor.CENTER_CENTER),
-                        ImagesServiceFactory.makeComposite(getImageWithText((current != null ? current.getRating() : "--") + "(" + (current != null ? current.getRank() : "--") + ")",
-                                textSize, "FFFFFF"), ratingxOff, seasonyOff, 1, Composite.Anchor.CENTER_CENTER),
+                                textSize, "FFFFFF"), ratingxOff, overallyOff, 1, Composite.Anchor.TOP_LEFT),
+                        ImagesServiceFactory.makeComposite(getImageWithText((current != null ? current.getRating() : "-/-") + "(" + (current != null ? current.getRank() : "-/-") + ")",
+                                textSize, "FFFFFF"), ratingxOff, seasonyOff, 1, Composite.Anchor.TOP_LEFT),
                         ImagesServiceFactory.makeComposite(getImageWithText(String.valueOf(global.getWins()),
-                                textSize, "32CD32"), winsxOff, overallyOff, 1, Composite.Anchor.CENTER_CENTER),
-                        ImagesServiceFactory.makeComposite(getImageWithText(String.valueOf(current != null ? current.getWins() : "--"),
-                                textSize, "32CD32"), winsxOff, seasonyOff, 1, Composite.Anchor.CENTER_CENTER),
+                                textSize, "32CD32"), winsxOff, overallyOff, 1, Composite.Anchor.TOP_LEFT),
+                        ImagesServiceFactory.makeComposite(getImageWithText(String.valueOf(current != null ? current.getWins() : "-/-"),
+                                textSize, "32CD32"), winsxOff, seasonyOff, 1, Composite.Anchor.TOP_LEFT),
                         ImagesServiceFactory.makeComposite(getImageWithText(String.valueOf(global.getLoses()),
-                                textSize, "FF0000"), losesxOff, overallyOff, 1, Composite.Anchor.CENTER_CENTER),
-                        ImagesServiceFactory.makeComposite(getImageWithText(String.valueOf((current != null ? current.getLoses() : "--")),
-                                textSize, "FF0000"), losesxOff, seasonyOff, 1, Composite.Anchor.CENTER_CENTER),
+                                textSize, "FF0000"), losesxOff, overallyOff, 1, Composite.Anchor.TOP_LEFT),
+                        ImagesServiceFactory.makeComposite(getImageWithText(String.valueOf((current != null ? current.getLoses() : "-/-")),
+                                textSize, "FF0000"), losesxOff, seasonyOff, 1, Composite.Anchor.TOP_LEFT),
                         ImagesServiceFactory.makeComposite(bird, 0, 0, 1, Composite.Anchor.TOP_LEFT),
                         ImagesServiceFactory.makeComposite(border, 0, 0, 1, Composite.Anchor.TOP_LEFT)),
                         back.getWidth(), back.getHeight(), 0x00FFFFFFL, ImagesService.OutputEncoding.PNG);

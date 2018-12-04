@@ -9,13 +9,18 @@ import java.util.Map;
 import java.util.TreeMap;
 
 public class ActivityBuilder extends StatisticsBuilder<Map<LocalDate, Integer>, Map<LocalDate, Integer>> {
-    public ActivityBuilder() {
+    private LocalDate current;
+    public ActivityBuilder(LocalDate current) {
         super(new TreeMap<>(), Ladder::setActivities);
+        this.current = current;
     }
 
     @Override
     public void append(GameResult res) {
-        value.compute(res.getDate().with(TemporalAdjusters.firstDayOfMonth()), (key, old) -> old != null ? old + 1 : 1);
+        LocalDate date = res.getDate().with(TemporalAdjusters.firstDayOfMonth());
+        if (date.isBefore(current)) {
+            value.compute(date, (key, old) -> old != null ? old + 1 : 1);
+        }
     }
 
     @Override

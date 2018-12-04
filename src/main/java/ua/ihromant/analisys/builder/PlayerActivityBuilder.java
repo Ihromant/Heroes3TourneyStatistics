@@ -9,14 +9,18 @@ import java.util.*;
 import java.util.stream.Collectors;
 
 public class PlayerActivityBuilder extends StatisticsBuilder<Map<LocalDate, Set<String>>, Map<LocalDate, Integer>> {
-    public PlayerActivityBuilder() {
+    private LocalDate current;
+    public PlayerActivityBuilder(LocalDate current) {
         super(new TreeMap<>(), Ladder::setPlayerActivities);
+        this.current = current;
     }
 
     @Override
     public void append(GameResult res) {
-        value.compute(res.getDate().with(TemporalAdjusters.firstDayOfMonth()),
-                (key, old) -> append(old, res.getConfirmer().getName(), res.getReporter().getName()));
+        LocalDate date = res.getDate().with(TemporalAdjusters.firstDayOfMonth());
+        if (date.isBefore(current)) {
+            value.compute(date, (key, old) -> append(old, res.getConfirmer().getName(), res.getReporter().getName()));
+        }
     }
 
     private Set<String> append(Set<String> old, String... players) {

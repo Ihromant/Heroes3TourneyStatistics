@@ -11,6 +11,7 @@ import ua.ihromant.data.GlobalStatistics;
 import ua.ihromant.data.Template;
 
 import java.io.IOException;
+import java.time.LocalDate;
 import java.time.ZonedDateTime;
 import java.util.List;
 import java.util.stream.Stream;
@@ -21,22 +22,23 @@ public class GlobalStatisticsRetriever {
 
     private static Stream<Calculator> calculators() {
         ZonedDateTime now = ZonedDateTime.now();
+        LocalDate date = now.toLocalDate();
         Stream.Builder<Calculator> builder = Stream.builder();
-        builder.add(new Calculator<>(GlobalStatistics::setOverall, RatingCalculator.overall()));
-        builder.add(new Calculator<>(GlobalStatistics::setCurrentSeason, RatingCalculator.inSeason(now.toLocalDate())));
-        builder.add(new Calculator<>(GlobalStatistics::setPreviousSeason, RatingCalculator.inSeason(now.toLocalDate().minusMonths(6))));
+        builder.add(new Calculator<>(GlobalStatistics::setOverall, RatingCalculator.overall(date)));
+        builder.add(new Calculator<>(GlobalStatistics::setCurrentSeason, RatingCalculator.inSeason(date, 0)));
+        builder.add(new Calculator<>(GlobalStatistics::setPreviousSeason, RatingCalculator.inSeason(date, 6)));
         builder.add(new Calculator<>(GlobalStatistics::setUnconfirmed, uncCollector));
         builder.add(new Calculator<>(GlobalStatistics::setLastUpdate, res -> now));
-        builder.add(new Calculator<>(GlobalStatistics::setTourney, RatingCalculator.tourneys()));
-        builder.add(new Calculator<>(GlobalStatistics::setCurrentTourney, RatingCalculator.inTourneySeason()));
-        builder.add(new Calculator<>(GlobalStatistics::setTwoYears, RatingCalculator.last2Years()));
+        builder.add(new Calculator<>(GlobalStatistics::setTourney, RatingCalculator.tourneys(date)));
+        builder.add(new Calculator<>(GlobalStatistics::setCurrentTourney, RatingCalculator.inTourneySeason(date)));
+        builder.add(new Calculator<>(GlobalStatistics::setTwoYears, RatingCalculator.last2Years(date)));
         Stream.of(Template.values())
                 .filter(t -> t.getParent() == null && t != Template.RANDOM)
                 .forEach(temp ->
                         builder.add(
                                 new Calculator<>(
                                         (stat, ladder) -> stat.getTemplates().put(temp, ladder),
-                                        RatingCalculator.templateCalculator(temp))));
+                                        RatingCalculator.templateCalculator(temp, date))));
         return builder.build();
     }
 
