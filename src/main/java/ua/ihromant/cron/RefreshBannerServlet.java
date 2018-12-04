@@ -122,7 +122,7 @@ public class RefreshBannerServlet extends HttpServlet {
 
     private Image getImageWithText(String text, int size, String color) throws IOException {
         return ImagesServiceFactory.makeImage(IOUtils.toByteArray(new URL(String.format(
-                "http://chart.apis.google.com/chart?chs=%sx%s&cht=p3&chtt=%s&chts=%s,%s&chf=bg,s,00000000",
+                "http://chart.apis.google.com/chart?chs=%sx%s&cht=p3&chtt=%s&chts=%s,%s,l&chf=bg,s,00000000",
                 size * text.length(),
                 size * 6 / 4,
                 URLEncoder.encode(text, StandardCharsets.UTF_8.name()),
