@@ -24,7 +24,7 @@ public abstract class PlayerGamesServlet extends HttpServlet {
     @Override
     public void doGet(HttpServletRequest request, HttpServletResponse response) throws IOException {
         response.setCharacterEncoding(StandardCharsets.UTF_8.name());
-        String player = request.getPathInfo().split("/")[1].toLowerCase();
+        String player = request.getPathInfo().split("/", 2)[1].toLowerCase();
 
         Context context = new Context(Locale.ENGLISH);
         context.setVariable("player", gamesExtractor.apply(GlobalStatistics.getInstance(), player));
