@@ -5,7 +5,7 @@ import java.util.Map;
 
 public class Ladder {
     private String name;
-    private Map<String, StatisticsItem> items;
+    private Map<String, PlayerStatisticsItem> items;
     private Map<String, Integer> timingMap;
     private int totalGames;
     private Map<LocalDate, Integer> activities;
@@ -19,11 +19,11 @@ public class Ladder {
         this.name = name;
     }
 
-    public Map<String, StatisticsItem> getItems() {
+    public Map<String, PlayerStatisticsItem> getItems() {
         return items;
     }
 
-    public void setItems(Map<String, StatisticsItem> items) {
+    public void setItems(Map<String, PlayerStatisticsItem> items) {
         this.items = items;
     }
 

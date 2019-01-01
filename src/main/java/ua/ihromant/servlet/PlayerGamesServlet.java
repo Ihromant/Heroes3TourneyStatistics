@@ -3,7 +3,7 @@ package ua.ihromant.servlet;
 import org.thymeleaf.context.Context;
 import ua.ihromant.config.Config;
 import ua.ihromant.data.GlobalStatistics;
-import ua.ihromant.data.StatisticsItem;
+import ua.ihromant.data.PlayerStatisticsItem;
 
 import javax.servlet.annotation.WebServlet;
 import javax.servlet.http.HttpServlet;
@@ -15,9 +15,9 @@ import java.util.Locale;
 import java.util.function.BiFunction;
 
 public abstract class PlayerGamesServlet extends HttpServlet {
-    private final BiFunction<GlobalStatistics, String, StatisticsItem> gamesExtractor;
+    private final BiFunction<GlobalStatistics, String, PlayerStatisticsItem> gamesExtractor;
 
-    public PlayerGamesServlet(BiFunction<GlobalStatistics, String, StatisticsItem> gamesExtractor) {
+    public PlayerGamesServlet(BiFunction<GlobalStatistics, String, PlayerStatisticsItem> gamesExtractor) {
         this.gamesExtractor = gamesExtractor;
     }
 

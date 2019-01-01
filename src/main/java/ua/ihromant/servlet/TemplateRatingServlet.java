@@ -37,4 +37,6 @@ public class TemplateRatingServlet extends HttpServlet {
             Config.THYMELEAF.process("/templates/playerGames.html", context, response.getWriter());
         }
     }
+
+    //private
 }

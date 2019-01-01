@@ -5,6 +5,7 @@
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
     <title th:text="${template.templateName} + ' template rating'">Jebus cross template rating</title>
     <link href="/css/main.css" rel="stylesheet" type="text/css"/>
+    <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
 </head>
 
 <body>
@@ -61,11 +62,11 @@
     </tr>
     <tr>
         <td valign="top">
-            <table border=2>
-                <tr align=center>
-                    <td colspan=7 th:text="'Calculated rating for ' + ${template.templateName} + ' template'">Calculated rating for Jebus Cross template</td>
+            <table border="2">
+                <tr align="center">
+                    <td colspan="7" th:text="'Calculated rating for ' + ${template.templateName} + ' template'">Calculated rating for Jebus Cross template</td>
                 </tr>
-                <tr align=center>
+                <tr align="center">
                     <td>№</td>
                     <td>Nickname</td>
                     <td>Wins</td>
@@ -83,7 +84,90 @@
                 </tr>
             </table>
         </td>
+        <td>
+            <div id="gamesActivity"></div>
+            <div id="playersActivity"></div>
+            <div id="timings"></div>
+            <table border="2">
+
+            </table>
+        </td>
     </tr>
 </table>
+<script th:inline="javascript">
+google.charts.load('current', {packages: ['corechart', 'line']});
+google.charts.load('current1', {packages: ['corechart', 'bar']});
+google.charts.setOnLoadCallback(drawGamesActivity);
+google.charts.setOnLoadCallback(drawPlayerActivity);
+
+function drawGamesActivity() {
+      var data = new google.visualization.DataTable();
+      data.addColumn('date', 'X');
+      data.addColumn('number', 'Activity');
+
+      data.addRows([
+      /*[(${gamesActivity})]*/ [new Date('2018-01-01'), 10]
+      ]);
+
+      var options = {
+        hAxis: {
+          title: 'Time',
+          format: 'MM-yy'
+        },
+        vAxis: {
+          title: 'Games played'
+        }
+      };
+
+      var chart = new google.visualization.LineChart(document.getElementById('gamesActivity'));
+      chart.draw(data, options);
+    };
+function drawPlayerActivity() {
+      var data = new google.visualization.DataTable();
+      data.addColumn('date', 'X');
+      data.addColumn('number', 'Activity');
+
+      data.addRows([
+      /*[(${playerActivity})]*/ [new Date('2018-01-01'), 10]
+      ]);
+
+      var options = {
+        hAxis: {
+          title: 'Time',
+          format: 'MM-yy'
+        },
+        vAxis: {
+          title: 'Active players'
+        }
+      };
+
+      var chart = new google.visualization.LineChart(document.getElementById('playerActivity'));
+      chart.draw(data, options);
+    };
+function drawTimings() {
+    var data = new google.visualization.DataTable();
+    data.addColumn('string', 'Timings');
+    data.addColumn('number', 'Number of games');
+
+    data.addRows([
+        [(${timings})]
+    ]);
+
+    var options = {
+        title: '[(${templateName})]\'s template timings',
+        hAxis: {
+            title: 'Timings'
+        },
+        vAxis: {
+            title: 'Number of games'
+        }
+    };
+
+    var chart = new google.visualization.ColumnChart(
+    document.getElementById('[(${template.name})]'));
+
+    chart.draw(data, options);
+    };
+</script>
 </body>
 </html>

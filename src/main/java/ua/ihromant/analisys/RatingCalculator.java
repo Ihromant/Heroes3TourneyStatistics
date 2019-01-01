@@ -3,7 +3,7 @@ package ua.ihromant.analisys;
 import ua.ihromant.analisys.builder.*;
 import ua.ihromant.data.GameResult;
 import ua.ihromant.data.Ladder;
-import ua.ihromant.data.StatisticsItem;
+import ua.ihromant.data.PlayerStatisticsItem;
 import ua.ihromant.data.Template;
 
 import java.io.*;
@@ -18,7 +18,7 @@ import java.util.stream.Collectors;
 
 public class RatingCalculator implements Function<List<GameResult>, Ladder> {
     private static final Predicate<GameResult> CONFIRMED = res -> res.getConfirmer().getReportLink() != null;
-    private static final Map<String, StatisticsItem> OLD_ITEMS = getOldItems();
+    private static final Map<String, PlayerStatisticsItem> OLD_ITEMS = getOldItems();
     private static final Set<Integer> SEASON_THEMES = new HashSet<>(Arrays.asList(14259, 12859,
             12410, 10979, 12145, 11151, 11634, 11896, 11369, 14413, 10864, 10746));
 
@@ -79,7 +79,7 @@ public class RatingCalculator implements Function<List<GameResult>, Ladder> {
                 r -> r.getTemplate() == template || r.getTemplate().getParent() == template, now);
     }
 
-    private RatingCalculator(String name, Predicate<GameResult> gameFilter, LocalDate now, Map<String, StatisticsItem> initial) {
+    private RatingCalculator(String name, Predicate<GameResult> gameFilter, LocalDate now, Map<String, PlayerStatisticsItem> initial) {
         this.name = name;
         this.gameFilter = gameFilter;
         this.builders = Arrays.asList(TimingBuilder::new,
@@ -108,13 +108,13 @@ public class RatingCalculator implements Function<List<GameResult>, Ladder> {
         return ladder;
     }
 
-    private static Map<String, StatisticsItem> getOldItems() {
+    private static Map<String, PlayerStatisticsItem> getOldItems() {
         try (InputStream is = RatingCalculator.class.getResourceAsStream("/oldRating.csv");
              InputStreamReader isr = new InputStreamReader(is);
              BufferedReader br = new BufferedReader(isr)) {
             return br.lines().map(line -> {
                 String[] split = line.split(",");
-                StatisticsItem item = new StatisticsItem();
+                PlayerStatisticsItem item = new PlayerStatisticsItem();
                 item.setName(split[1]);
                 int wins = Integer.parseInt(split[2]);
                 item.setWins(wins);
@@ -123,7 +123,7 @@ public class RatingCalculator implements Function<List<GameResult>, Ladder> {
                 item.setDraws(Integer.parseInt(split[4]) - wins - loses);
                 item.setRating(Integer.parseInt(split[5]));
                 return item;
-            }).collect(Collectors.toMap(StatisticsItem::getName, Function.identity()));
+            }).collect(Collectors.toMap(PlayerStatisticsItem::getName, Function.identity()));
         } catch (IOException e) {
             throw new RuntimeException("Was not able to read config file", e);
         }

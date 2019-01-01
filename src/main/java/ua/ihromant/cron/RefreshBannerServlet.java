@@ -9,7 +9,7 @@ import org.apache.commons.io.IOUtils;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import ua.ihromant.data.GlobalStatistics;
-import ua.ihromant.data.StatisticsItem;
+import ua.ihromant.data.PlayerStatisticsItem;
 
 import javax.servlet.annotation.WebServlet;
 import javax.servlet.http.HttpServlet;
@@ -46,7 +46,7 @@ public class RefreshBannerServlet extends HttpServlet {
 
     @Override
     public void doGet(HttpServletRequest request, HttpServletResponse response) {
-        for (Map.Entry<String, StatisticsItem> e : GlobalStatistics.getInstance().getOverall().getItems().entrySet()) {
+        for (Map.Entry<String, PlayerStatisticsItem> e : GlobalStatistics.getInstance().getOverall().getItems().entrySet()) {
             try {
                 LOG.info("Generating banner for " + e.getKey());
                 String player = e.getKey();
@@ -60,7 +60,7 @@ public class RefreshBannerServlet extends HttpServlet {
         }
     }
 
-    private String getMonster(StatisticsItem global) {
+    private String getMonster(PlayerStatisticsItem global) {
         if (global.getTotalGames() <= 20) {
             return "021";
         }
@@ -69,7 +69,7 @@ public class RefreshBannerServlet extends HttpServlet {
         return floor != null ? floor.getValue() : "011";
     }
 
-    private Image generateImage(String player, StatisticsItem global, StatisticsItem current) throws IOException {
+    private Image generateImage(String player, PlayerStatisticsItem global, PlayerStatisticsItem current) throws IOException {
         int nickSize = 22;
         int textSize = 12;
 

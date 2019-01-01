@@ -2,7 +2,7 @@ package ua.ihromant.analisys.builder;
 
 import ua.ihromant.data.GameResult;
 import ua.ihromant.data.Ladder;
-import ua.ihromant.data.StatisticsItem;
+import ua.ihromant.data.PlayerStatisticsItem;
 
 import java.util.Comparator;
 import java.util.LinkedHashMap;
@@ -13,8 +13,8 @@ import java.util.stream.Collectors;
 import java.util.stream.IntStream;
 import java.util.stream.Stream;
 
-public class StatisticsItemsBuilder extends StatisticsBuilder<Map<String, StatisticsItem>, Map<String, StatisticsItem>> {
-    public StatisticsItemsBuilder(Map<String, StatisticsItem> initial) {
+public class StatisticsItemsBuilder extends StatisticsBuilder<Map<String, PlayerStatisticsItem>, Map<String, PlayerStatisticsItem>> {
+    public StatisticsItemsBuilder(Map<String, PlayerStatisticsItem> initial) {
         super(initial, Ladder::setItems);
     }
 
@@ -26,7 +26,7 @@ public class StatisticsItemsBuilder extends StatisticsBuilder<Map<String, Statis
             if (initial.containsKey(name)) {
                 return initial.get(name).cloned();
             }
-            StatisticsItem it = new StatisticsItem();
+            PlayerStatisticsItem it = new PlayerStatisticsItem();
             it.setName(name);
             it.setRating(1500);
             return it;
@@ -35,8 +35,8 @@ public class StatisticsItemsBuilder extends StatisticsBuilder<Map<String, Statis
 
     @Override
     public void append(GameResult res) {
-        StatisticsItem reporterStats = value.get(res.getReporter().getName());
-        StatisticsItem confirmerStats = value.get(res.getConfirmer().getName());
+        PlayerStatisticsItem reporterStats = value.get(res.getReporter().getName());
+        PlayerStatisticsItem confirmerStats = value.get(res.getConfirmer().getName());
         switch (res.getResult()) {
             case DEF:
                 recalculateWin(reporterStats, confirmerStats, res.cloned());
@@ -51,14 +51,14 @@ public class StatisticsItemsBuilder extends StatisticsBuilder<Map<String, Statis
     }
 
     @Override
-    public Map<String, StatisticsItem> build() {
-        List<StatisticsItem> ordered = value.entrySet().stream()
+    public Map<String, PlayerStatisticsItem> build() {
+        List<PlayerStatisticsItem> ordered = value.entrySet().stream()
                 .map(Map.Entry::getValue)
-                .sorted(Comparator.comparing(StatisticsItem::getRating).reversed())
+                .sorted(Comparator.comparing(PlayerStatisticsItem::getRating).reversed())
                 .collect(Collectors.toList());
         return IntStream.range(0, ordered.size())
                 .mapToObj(i -> {
-                    StatisticsItem item = ordered.get(i);
+                    PlayerStatisticsItem item = ordered.get(i);
                     item.setRank(i + 1);
                     return item;
                 })
@@ -68,7 +68,7 @@ public class StatisticsItemsBuilder extends StatisticsBuilder<Map<String, Statis
                         LinkedHashMap::new));
     }
 
-    private void recalculateWin(StatisticsItem winner, StatisticsItem loser, GameResult result) {
+    private void recalculateWin(PlayerStatisticsItem winner, PlayerStatisticsItem loser, GameResult result) {
         float f1 = Math.max(-1, Math.min(1.0f * (winner.getRating() - loser.getRating()) / 400, 1));
         float f2 = Math.max(-1, Math.min(1.0f * (loser.getRating() - winner.getRating()) / 400, 1));
 
@@ -89,7 +89,7 @@ public class StatisticsItemsBuilder extends StatisticsBuilder<Map<String, Statis
         loser.getResults().add(0, result.reversed());
     }
 
-    private void recalculateDraw(StatisticsItem first, StatisticsItem second, GameResult result) {
+    private void recalculateDraw(PlayerStatisticsItem first, PlayerStatisticsItem second, GameResult result) {
         float f1 = Math.max(-1, Math.min(1.0f * (first.getRating() - second.getRating()) / 400, 1));
         float f2 = Math.max(-1, Math.min(1.0f * (second.getRating() - first.getRating()) / 400, 1));
 
